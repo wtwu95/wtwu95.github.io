@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "Yi Ren (任意)"
 description              : "Research scientist in Bytedance AI Lab, Speech & Audio Team. Focusing on speech, NLP and music."
-repository               : "rayeren/rayeren.github.io"
+repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -27,7 +27,7 @@ author:
   location         : "Singapore"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=4FA6C0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=WGp4lBIAAAAJ"
   email            : "rayeren613@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
