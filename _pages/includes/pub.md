@@ -1,108 +1,145 @@
-
 # 📝 Publications 
-## 🎙 Speech Synthesis
 
+### Selected Papers
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2019</div><img src='images/fs.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2023</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[FastSpeech: Fast, Robust and Controllable Text to Speech](https://papers.nips.cc/paper/8580-fastspeech-fast-robust-and-controllable-text-to-speech.pdf) \\
-**Yi Ren**, Yangjun Ruan, Xu Tan, Tao Qin, Sheng Zhao, Zhou Zhao, Tie-Yan Liu
+[Constrained Safe Cooperative Maneuvering of Autonomous Surface Vehicles: A Control Barrier Function Approach](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)
 
-[**Project**](https://speechresearch.github.io/fastspeech/) <strong><span class='show_paper_citations' data='4FA6C0AAAAAJ:qjMakFHDy7sC'></span></strong>
+**Wentao Wu**, Yibo Zhang, Zhenhua Li, Jun-Guo Lu, Weidong Zhang
 
-- FastSpeech is the first fully parallel end-to-end speech synthesis model.
-- **Academic Impact**: This work is included by many famous speech synthesis open-source projects, such as [ESPNet ![](https://img.shields.io/github/stars/espnet/espnet?style=social)](https://github.com/espnet/espnet). Our work are promoted by more than 20 media and forums, such as [机器之心](https://mp.weixin.qq.com/s/UkFadiUBy-Ymn-zhJ95JcQ)、[InfoQ](https://www.infoq.cn/article/tvy7hnin8bjvlm6g0myu).
-- **Industry Impact**: FastSpeech has been deployed in [Microsoft Azure TTS service](https://techcommunity.microsoft.com/t5/azure-ai/neural-text-to-speech-extends-support-to-15-more-languages-with/ba-p/1505911) and supports 49 more languages with state-of-the-art AI quality. It was also shown as a text-to-speech system acceleration example in [NVIDIA GTC2020](https://resources.nvidia.com/events/GTC2020s21420).
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
+
+- 
+- 
+- 
 </div>
 </div>
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2021</div><img src='images/fs2.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-ITS 2023</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-TITS.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[FastSpeech 2: Fast and High-Quality End-to-End Text to Speech](https://arxiv.org/abs/2006.04558) \\
-**Yi Ren**, Chenxu Hu, Xu Tan, Tao Qin, Sheng Zhao, Zhou Zhao, Tie-Yan Liu
+[Transient-Reinforced Tunnel Coordinated Control of Underactuated Marine Surface Vehicles with Actuator Faults](https://ieeexplore.ieee.org/document/10292769)
 
-[**Project**](https://speechresearch.github.io/fastspeech2/) <strong><span class='show_paper_citations' data='4FA6C0AAAAAJ:LkGwnXOMwfcC'></span></strong>
-  - This work is included by many famous speech synthesis open-source projects, such as [PaddlePaddle/Parakeet ![](https://img.shields.io/github/stars/PaddlePaddle/PaddleSpeech?style=social)](https://github.com/PaddlePaddle/PaddleSpeech), [ESPNet ![](https://img.shields.io/github/stars/espnet/espnet?style=social)](https://github.com/espnet/espnet) and [fairseq ![](https://img.shields.io/github/stars/pytorch/fairseq?style=social)](https://github.com/pytorch/fairseq).
+**Wentao Wu**, Ruihang Ji, Weidong Zhang, Yibo Zhang
+
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-TITS.pdf) [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TITS.mp4) 
+
+- 
+- 
+- 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2022</div><img src='images/diffsinger.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE CAA/JAS 2023</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[DiffSinger: Singing Voice Synthesis via Shallow Diffusion Mechanism](https://arxiv.org/abs/2105.02446) \\
-Jinglin Liu, Chengxi Li, **Yi Ren**, Feiyang Chen, Zhou Zhao
+[Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)
 
-- Many [video demos](https://www.bilibili.com/video/BV1be411N7JA) created by the [DiffSinger community](https://github.com/openvpi) are released.
-- DiffSinger was introduced in [a very popular video](https://www.bilibili.com/video/BV1uM411t7ZJ) (1600k+ views) on Bilibili!
+**Wentao Wu**, Di Wu, Yibo Zhang, Shukang Chen, Weidong Zhang
 
-- [**Project**](https://diffsinger.github.io/) \| [![](https://img.shields.io/github/stars/NATSpeech/NATSpeech?style=social&label=DiffSpeech Stars)](https://github.com/NATSpeech/NATSpeech) \| [![](https://img.shields.io/github/stars/MoonInTheRiver/DiffSinger?style=social&label=DiffSinger Stars)](https://github.com/MoonInTheRiver/DiffSinger) \| [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Demo)](https://huggingface.co/spaces/NATSpeech/DiffSpeech)
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.mp4)  [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  [![Video-Expb](https://img.shields.io/badge/%F0%9F%A4%97%20Expb--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASb.mp4)
+
+- 
+- 
+- 
 </div>
 </div>
 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2021</div><img src='images/portaspeech.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2022</div><img src='assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[PortaSpeech: Portable and High-Quality Generative Text-to-Speech](https://arxiv.org/abs/2109.15166) \\
-**Yi Ren**, Jinglin Liu, Zhou Zhao
+[Output-Feedback Finite-Time Safety-Critical Coordinated Control of Path-Guided Marine Surface Vehicles Based on Neurodynamic Optimization](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)
 
-[**Project**](https://portaspeech.github.io/) \| [![](https://img.shields.io/github/stars/NATSpeech/NATSpeech?style=social&label=Code+Stars)](https://github.com/NATSpeech/NATSpeech) \| [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Demo)](https://huggingface.co/spaces/NATSpeech/PortaSpeech)
+**Wentao Wu**, Yibo Zhang, Weidong Zhang, Wei Xie
+
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.mp4)
+
+- 
+- 
+- 
 </div>
 </div>
 
-- ``ICML 2023`` [Make-An-Audio: Text-To-Audio Generation with Prompt-Enhanced Diffusion Models](https://text-to-audio.github.io/paper.pdf), Rongjie Huang, Jiawei Huang, Dongchao Yang, **Yi Ren**, Luping liu, Mingze Li, Zhenhui Ye, Jinglin Liu, Xiang Yin, Zhou Zhao
-- ``ACL 2023`` [CLAPSpeech: Learning Prosody from Text Context with Contrastive Language-Audio Pre-Training](), Zhenhui Ye, Rongjie Huang, Yi Ren, Ziyue Jiang, Jinglin Liu, Jinzheng He, Xiang Yin and Zhou Zhao
-- ``ACL 2023`` [FluentSpeech: Stutter-Oriented Automatic Speech Editing with Context-Aware Diffusion Models](), Ziyue Jiang, Qian Yang, Jialong Zuo, Zhenhui Ye, Rongjie Huang, **Yi Ren** and Zhou Zhao
-- ``ACL 2023`` [Revisiting and Incorporating GAN and Diffusion Models in High-Fidelity Speech Synthesis](), Rongjie Huang, **Yi Ren**, Ziyue Jiang, Chenye Cui, Jinglin Liu and Zhou Zhao
-- ``ACL 2023`` [Improving Prosody with Masked Autoencoder and Conditional Diffusion Model For Expressive Text-to-Speech](), Rongjie Huang, Chunlei Zhang, **Yi Ren**, Zhou Zhao and Dong Yu
-- `ICLR 2023` [Bag of Tricks for Unsupervised Text-to-Speech](https://openreview.net/forum?id=SbR9mpTuBn), **Yi Ren**, Chen Zhang, Shuicheng Yan
-- `NeurIPS 2022` [Dict-TTS: Learning to Pronounce with Prior Dictionary Knowledge for Text-to-Speech](), Ziyue Jiang, Zhe Su, Zhou Zhao, Qian Yang, **Yi Ren**, Jinglin Liu, Zhenhui Ye [![](https://img.shields.io/github/stars/Zain-Jiang/Dict-TTS?style=social&label=Code+Stars)](https://github.com/Zain-Jiang/Dict-TTS)
-- `NeurIPS 2022` [GenerSpeech: Towards Style Transfer for Generalizable Out-Of-Domain Text-to-Speech](), Rongjie Huang, **Yi Ren**, Jinglin Liu, Chenye Cui, Zhou Zhao
-- `NeurIPS 2022` [M4Singer: a Multi-Style, Multi-Singer and Musical Score Provided Mandarin Singing Corpus](), Lichao Zhang, Ruiqi Li, Shoutong Wang, Liqun Deng, Jinglin Liu, **Yi Ren**, Jinzheng He, Rongjie Huang, Jieming Zhu, Xiao Chen, Zhou Zhao, *(Datasets and Benchmarks Track)* [![](https://img.shields.io/github/stars/M4Singer/M4Singer?style=social&label=Dataset+Stars)](https://github.com/M4Singer/M4Singer)
-- ``ACM-MM 2022`` [ProDiff: Progressive Fast Diffusion Model for High-Quality Text-to-Speech](), Rongjie Huang, Zhou Zhao, Huadai Liu, Jinglin Liu, Chenye Cui, **Yi Ren**, [![](https://img.shields.io/github/stars/Rongjiehuang/ProDiff?style=social&label=Code+Stars)](https://github.com/Rongjiehuang/ProDiff)
-- ``ACM-MM 2022`` [SingGAN: Generative Adversarial Network For High-Fidelity Singing Voice Generation](https://arxiv.org/abs/2110.07468), Rongjie Huang, Chenye Cui, Chen Feiayng, **Yi Ren**, Jinglin Liu, Zhou Zhao, Baoxing Huai, Zhefeng Wang
-- ``IJCAI 2022`` [SyntaSpeech: Syntax-Aware Generative Adversarial Text-to-Speech](), Zhenhui Ye, Zhou Zhao, **Yi Ren**, Fei Wu, [![](https://img.shields.io/github/stars/yerfor/SyntaSpeech?style=social&label=Code+Stars)](https://github.com/yerfor/SyntaSpeech)
-- ``IJCAI 2022`` <span style="color:red">(Oral)</span> [EditSinger: Zero-Shot Text-Based Singing Voice Editing System with Diverse Prosody Modeling](), Lichao Zhang, Zhou Zhao, **Yi Ren**, Liqun Deng, 
-- ``IJCAI 2022`` [FastDiff: A Fast Conditional Diffusion Model for High-Quality Speech Synthesis](), Rongjie Huang, Max W. Y. Lam, Jun Wang, Dan Su, Dong Yu, **Yi Ren**, Zhou Zhao,  <span style="color:red">(Oral)</span>, [![](https://img.shields.io/github/stars/Rongjiehuang/FastDiff?style=social&label=Code+Stars)](https://github.com/Rongjiehuang/FastDiff)
-- ``NAACL 2022`` [A Study of Syntactic Multi-Modality in Non-Autoregressive Machine Translation](), Kexun Zhang, Rui Wang, Xu Tan, Junliang Guo, **Yi Ren**, Tao Qin, Tie-Yan Liu
-- ``ACL 2022`` [Revisiting Over-Smoothness in Text to Speech](https://arxiv.org/abs/2202.13066), **Yi Ren**, Xu Tan, Tao Qin, Zhou Zhao, Tie-Yan Liu
-- ``ACL 2022`` [Learning the Beauty in Songs: Neural Singing Voice Beautifier](https://arxiv.org/abs/2202.13277), Jinglin Liu, Chengxi Li, **Yi Ren**, Zhiying Zhu, Zhou Zhao \| [![](https://img.shields.io/github/stars/MoonInTheRiver/NeuralSVB?style=social&label=Code+Stars)](https://github.com/MoonInTheRiver/NeuralSVB)
-- ``ICASSP 2022`` [ProsoSpeech: Enhancing Prosody With Quantized Vector Pre-training in Text-to-Speech](https://prosospeech.github.io/), **Yi Ren**, Ming Lei, Zhiying Huang,  Shiliang Zhang, Qian Chen, Zhijie Yan, Zhou Zhao
-- ``INTERSPEECH 2021`` [EMOVIE: A Mandarin Emotion Speech Dataset with a Simple Emotional Text-to-Speech Model](https://arxiv.org/abs/2106.09317), Chenye Cui, **Yi Ren**, Jinglin Liu, Feiyang Chen, Rongjie Huang, Ming Lei and Zhou Zhao
-- ``INTERSPEECH 2021`` <span style="color:red">(best student paper award candidate)</span> [WSRGlow: A Glow-based Waveform Generative Model for Audio Super-Resolution](https://arxiv.org/abs/2106.08507), Kexun Zhang, **Yi Ren**, Changliang Xu and Zhou Zhao
-- ``ICASSP 2021`` [Denoising Text to Speech with Frame-Level Noise Modeling](https://arxiv.org/abs/2012.09547), Chen Zhang, **Yi Ren**, Xu Tan, Jinglin Liu, Kejun Zhang, Tao Qin, Sheng Zhao, Tie-Yan Liu \| [**Project**](https://speechresearch.github.io/denoispeech/)
-- ``ACM-MM 2021`` [Multi-Singer: Fast Multi-Singer Singing Voice Vocoder With A Large-Scale Corpus](https://arxiv.org/pdf/2112.10358), Rongjie Huang, Feiyang Chen, **Yi Ren**, Jinglin Liu, Chenye Cui, Zhou Zhao <span style="color:red">(Oral)</span>
-- ``IJCAI 2021`` [FedSpeech: Federated Text-to-Speech with Continual Learning](https://www.ijcai.org/proceedings/2021/527), Ziyue Jiang, **Yi Ren**, Ming Lei and Zhou Zhao
-- ``KDD 2020`` [DeepSinger: Singing Voice Synthesis with Data Mined From the Web](https://dl.acm.org/doi/abs/10.1145/3394486.3403249), **Yi Ren**, Xu Tan, Tao Qin, Jian Luan, Zhou Zhao, Tie-Yan Liu \| [**Project**](https://speechresearch.github.io/deepsinger/)
-- ``KDD 2020`` [LRSpeech: Extremely Low-Resource Speech Synthesis and Recognition](https://dl.acm.org/doi/abs/10.1145/3394486.3403331), Jin Xu, Xu Tan, **Yi Ren**, Tao Qin, Jian Li, Sheng Zhao, Tie-Yan Liu \| [**Project**](https://speechresearch.github.io/lrspeech/)
-- ``INTERSPEECH 2020`` [MultiSpeech: Multi-Speaker Text to Speech with Transformer](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/3139.pdf), Mingjian Chen, Xu Tan, **Yi Ren**, Jin Xu, Hao Sun, Sheng Zhao, Tao Qin \| [**Project**](https://speechresearch.github.io/multispeech/)
-- ``ICML 2019`` <span style="color:red">(Oral)</span> [Almost Unsupervised Text to Speech and Automatic Speech Recognition](https://pdfs.semanticscholar.org/9075/a3e6271e5ef4953491488d1776527e632408.pdf), **Yi Ren**, Xu Tan, Tao Qin, Sheng Zhao, Zhou Zhao, Tie-Yan Liu  \| [**Project**](https://speechresearch.github.io/unsuper/) 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TIV 2022</div><img src='assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-## 👄 Talkingface Generation
-- `ICLR 2023` [GeneFace: Generalized and High-Fidelity Audio-Driven 3D Talking Face Synthesis](https://openreview.net/forum?id=YfwMIDhPccD), Zhenhui Ye, Ziyue Jiang, **Yi Ren**, Jinglin Liu, Jinzheng He, Zhou Zhao
-- ``AAAI 2022`` [Parallel and High-Fidelity Text-to-Lip Generation](https://arxiv.org/abs/2107.06831), Jinglin Liu, Zhiying Zhu, **Yi Ren**, Wencan Huang, Baoxing Huai, Nicholas Yuan, Zhou Zhao \| [![](https://img.shields.io/github/stars/Dianezzy/ParaLip?style=social&label=ParaLip Stars)](https://github.com/Dianezzy/ParaLip)
-- ``AAAI 2022`` [Flow-based Unconstrained Lip to Speech Generation](https://ojs.aaai.org/index.php/AAAI/article/view/19966), Jinzheng He, Zhou Zhao, **Yi Ren**, Jinglin Liu, Baoxing Huai, Nicholas Yuan
-- ``ACM-MM 2020`` [FastLR: Non-Autoregressive Lipreading Model with Integrate-and-Fire](https://dl.acm.org/doi/10.1145/3394171.3413740), Jinglin Liu, **Yi Ren**, Zhou Zhao, Chen Zhang, Baoxing Huai, Jing Yuan
+[A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train](https://ieeexplore.ieee.org/abstract/document/9762043) \\
+**Wentao Wu**, Zhouhua Peng, Lu Liu, Dan Wang
 
-## 📚 Machine Translation 
-- ``ACL 2023`` [AV-TranSpeech: Audio-Visual Robust Speech-to-Speech Translation](), Rongjie Huang, Huadai Liu, Xize Cheng, **Yi Ren**, Linjun Li, Zhenhui Ye, Jinzheng He, Lichao Zhang, Jinglin Liu, Xiang Yin and Zhou Zhao
-- `ICLR 2023` [TranSpeech: Speech-to-Speech Translation With Bilateral Perturbation](https://openreview.net/forum?id=UVAmFAtC5ye), Rongjie Huang, Jinglin Liu, Huadai Liu, **Yi Ren**, Lichao Zhang, Jinzheng He, Zhou Zhao
-- ``AAAI 2021`` [UWSpeech: Speech to Speech Translation for Unwritten Languages](https://arxiv.org/abs/2006.07926), Chen Zhang, Xu Tan, **Yi Ren**, Tao Qin, Kejun Zhang, Tie-Yan Liu \| [**Project**](https://speechresearch.github.io/uwspeech/)
-- ``IJCAI 2020`` [Task-Level Curriculum Learning for Non-Autoregressive Neural Machine Translation](https://www.ijcai.org/Proceedings/2020/0534.pdf), Jinglin Liu, **Yi Ren**, Xu Tan, Chen Zhang, Tao Qin, Zhou Zhao and Tie-Yan Liu
-- ``ACL 2020`` [SimulSpeech: End-to-End Simultaneous Speech to Text Translation](https://www.aclweb.org/anthology/2020.acl-main.350), **Yi Ren**, Jinglin Liu, Xu Tan, Chen Zhang, Qin Tao, Zhou Zhao, Tie-Yan Liu
-- ``ACL 2020`` [A Study of Non-autoregressive Model for Sequence Generation](https://arxiv.org/abs/2004.10454), **Yi Ren**, Jinglin Liu, Xu Tan, Zhou Zhao, Sheng Zhao, Tie-Yan Liu
-- ``ICLR 2019`` [Multilingual Neural Machine Translation with Knowledge Distillation](https://openreview.net/forum?id=S1gUsoR9YX), Xu Tan, **Yi Ren**, Di He, Tao Qin, Zhou Zhao, Tie-Yan Liu
+<strong><span class='show_paper_citations' data='4FA6C0AAAAAJ:LkGwnXOMwfcC'></span></strong>
+ [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4) 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CYB 2021</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)
+
+**Wentao Wu**, Zhouhua Peng, Dan Wang, Lu Liu, Qing-Long Han
+
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
+
+- 
+- 
+- 
+</div>
+</div>
+
+### Review Papers
+- ``2021/01`` 彭周华，**吴文涛**，王丹， 刘陆, "[多无人艇集群协同控制研究进展与未来趋势](http://zgjcyj.xml-journal.net/cn/article/doi/10.19693/j.issn.1673-3185.01923)," [*中国舰船研究*](http://zgjcyj.xml-journal.net/index.htm), vol. 61, no. 1, pp. 51-64, 2021. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/ZWHX/J-核心-2020-Pengzhouhua-中国舰船研究.pdf)
+
+### Journal Papers
+- ``2023/12`` Yibo Zhang, **Wentao Wu**, Weixing Chen, Haibo Lu, and Weidong Zhang*, ''[Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multi-Agent Systems Based on a High-Order Neural Observer](https://mc.manuscriptcentral.com/systems),'' [*IEEE Trans. Cybern.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), Dec. 2023, Accepted. [中科院 1区, JCR 1区, Top, IF: 11.8]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf) 
+
+- ``2023/12`` **Wentao Wu**, Yibo Zhang, Zhenhua Li, Jun-Guo Lu, and Weidong Zhang*, ''[Constrained Safe Cooperative Maneuvering of Autonomous Surface Vehicles: A Control Barrier Function Approach](https://mc.manuscriptcentral.com/systems),'' [*IEEE Trans. Syst. Man, Cybern. , Syst.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021), Dec. 2023, doi: 10.1109/TSMC.2023.3345847. [中科院 1区, JCR 1区, Top, IF: 8.7]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
 
 
-## 🎼 Music Generation 
-- ``AAAI 2021`` [SongMASS: Automatic Song Writing with Pre-training and Alignment Constraint](https://arxiv.org/abs/2012.05168), Zhonghao Sheng, Kaitao Song, Xu Tan, **Yi Ren**, Wei Ye, Shikun Zhang, Tao Qin
-- ``ACM-MM 2020`` <span style="color:red">(Oral)</span> [PopMAG: Pop Music Accompaniment Generation](https://dl.acm.org/doi/10.1145/3394171.3413721), **Yi Ren**, Jinzheng He, Xu Tan, Tao Qin, Zhou Zhao, Tie-Yan Liu \| [**Project**](https://speechresearch.github.io/popmag/)
+- ``2023/12`` Yibo Zhang, Di Wu, Peng Cheng, **Wentao Wu**, and Weidong Zhang, ''[Robust Adaptive Fault-tolerant Control for Path Maneuvering of Autonomous Surface Vehicles with Actuator Faults Based on the Noncooperative Game Strategy](https://www.sciencedirect.com/science/article/pii/S0029801823029256?dgcid=coauthor),'' [*Ocean. Eng.*](https://www.sciencedirect.com/journal/ocean-engineering), Dec. 2023, doi: 10.1016/j.oceaneng.2023.116541. [中科院 2区, JCR 1区, Top, IF: 5.0]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-OE.pdf)
 
-## 🧑‍🎨 Generative Model
-- ``ICLR 2022`` [Pseudo Numerical Methods for Diffusion Models on Manifolds](https://openreview.net/forum?id=PlKWVd2yBkY), Luping Liu, **Yi Ren**, Zhijie Lin, Zhou Zhao \| [![](https://img.shields.io/github/stars/luping-liu/PNDM?style=social&label=Code+Stars)](https://github.com/luping-liu/PNDM) \| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pseudo-numerical-methods-for-diffusion-models-1/image-generation-on-celeba-64x64)](https://paperswithcode.com/sota/image-generation-on-celeba-64x64?p=pseudo-numerical-methods-for-diffusion-models-1)
+- ``2023/09`` **Wentao Wu**, Ruihang Ji, Weidong Zhang, and Yibo Zhang, ''[Transient-Reinforced Tunnel Coordinated Control of Underactuated Marine Surface Vehicles with Actuator Faults](https://ieeexplore.ieee.org/document/10292769),'' [*IEEE Trans. Intell. Transp. Syst.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979), 2023, doi: 10.1109/TITS.2023.3324346. [中科院 1区, JCR 1区, Top, IF: 8.5]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-TITS.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TITS.mp4)
 
-## Others
-- ``ACM-MM 2022`` [Video-Guided Curriculum Learning for Spoken Video Grounding](), Yan Xia, Zhou Zhao, Shangwei Ye, Yang Zhao, Haoyuan Li, **Yi Ren**
+- ``2023/08`` **Wentao Wu**, Di Wu, Yibo Zhang, Shukang Chen, and Weidong Zhang, ''[Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf),'' [*IEEE/CAA J. Autom. Sinica*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570654), 2023, doi: 10.1109/JAS.2023.123864. [中科院 1区, JCR 1区, Top, IF: 11.8]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.mp4)  [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  [![Video-Expb](https://img.shields.io/badge/%F0%9F%A4%97%20Expb--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASb.mp4)
+
+- ``2023/02`` Yibo Zhang, **Wentao Wu**, Jinhui Lu, and Weidong Zhang, ''[Neural Predictor-based Dynamic Surface Parallel Control for MIMO Uncertain Nonlinear Strict-feedback Systems](https://ieeexplore.ieee.org/abstract/document/10059139),'' [*IEEE Trans. Circuits Syst. II Express Briefs*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8920), Feb. 2023, doi: 10.1109/TCSII.2023.3252562. [中科院 2区, JCR 2区, Top, IF: 4.4]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCASII.pdf)
+
+- ``2022/11`` Yibo Zhang, **Wentao Wu**, and Weidong Zhang, ''[Noncooperative Game-Based Cooperative Maneuvering of Intelligent Surface Vehicles Via Accelerated Learning-Based Neural Predictors](https://ieeexplore.ieee.org/abstract/document/9950329),'' [*IEEE Trans. Intell. Veh.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857), vol. 8, no. 3, pp. 2212-2221, Mar. 2023. [中科院 1区, JCR 1区, IF: 8.2]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2022-IEEE-TIV.pdf)
+
+- ``2022/10`` **Wentao Wu**, Yibo Zhang, Weidong Zhang, and Wei Xie, ''[Distributed Finite-Time Performance-Prescribed Time-Varying Formation Control of Autonomous Surface Vehicles with Saturated Inputs](https://www.sciencedirect.com/science/article/abs/pii/S0029801822021497),'' [*Ocean. Eng.*](https://www.sciencedirect.com/journal/ocean-engineering), vol. 266, pp. 12866, Oct. 2022. [中科院 2区, JCR 1区, Top, IF: 5.0]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-OEb.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-OEb.mp4)
+
+- ``2022/09`` **Wentao Wu**, Yibo Zhang, Weidong Zhang, and Wei Xie, ''[Output-Feedback Finite-Time Safety-Critical Coordinated Control of Path-Guided Marine Surface Vehicles Based on Neurodynamic Optimization](https://ieeexplore.ieee.org/abstract/document/9900363),'' [*IEEE Trans. Syst. Man, Cybern., Syst.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021), vol. 53, no. 3, pp. 1788-1800, Sep. 2022. [中科院 1区, JCR 1区, Top, IF: 8.7]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.mp4)
+
+- ``2022/08`` Xiangxuan Ren, Min Li, Zhi Liu, Zhenhua Li, **Wentao Wu**, Lin Bai, and Weidong Zhang, ''[Curiosity-Driven Attention for Anomaly Road Obstacles Segmentation in Autonomous Driving](https://ieeexplore.ieee.org/abstract/document/9878245),'' [*IEEE Trans. Intell. Veh.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857), vol. 8, no. 3, pp. 2233-2243, Mar. 2023. [中科院 1区, JCR 1区, IF: 8.2]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/RenXiangxuan-2022-IEEE-TIV.pdf)
+
+- ``2022/04`` **Wentao Wu**, Zhouhua Peng, Lu Liu, and Dan Wang, ''[A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train](https://ieeexplore.ieee.org/abstract/document/9762043),'' [*IEEE Trans. Intell. Veh.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857), vol. 7, no. 3, pp. 627-637, Sep. 2022. [中科院 1区, JCR 1区, IF: 8.2]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4)
+
+- ``2022/01`` **Wentao Wu**, Zhouhua Peng, Dan Wang, Lu Liu, and Gan Nan, ''[Anti-Disturbance Leader–Follower Synchronization Control of Marine Vessels for Underway Replenishment Based on Robust Exact Differentiators](https://www.sciencedirect.com/science/article/abs/pii/S0029801822001445),'' [*Ocean. Eng.*](https://www.sciencedirect.com/journal/ocean-engineering), vol. 248, pp. 110686, 2022. [中科院 2区, JCR 1区, Top, IF: 5.0]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-OE.pdf)
+
+- ``2021/04`` **Wentao Wu**, Zhouhua Peng, Dan Wang, Lu Liu, and Qing-Long Han*, ''[Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results](https://ieeexplore.ieee.org/abstract/document/9440777),'' [*IEEE Trans. Cybern.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), vol. 52, no. 10, pp. 10937-10947, Oct. 2022. [中科院 1区, JCR 1区, Top, IF: 11.8]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)
+
+- ``2021/01`` **吴文涛**, 彭周华*, 王丹, 刘陆, 姜继洲, 任帅, ''[基于扩张状态观测器的双桨推进无人艇抗干扰目标跟踪控制](http://www.ship-research.com/cn/article/doi/10.19693/j.issn.1673-3185.01665?viewType=HTML),'' [*中国舰船研究*](http://zgjcyj.xml-journal.net/index.htm), vol. 61, no. 1, pp. 128-135, 2021. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/ZWHX/J-核心-2020-WuWentao-中国舰船研究a.pdf)
+
+- ``2020/09`` **吴文涛**，古楠，彭周华，刘陆，王丹, ''[多领航者导引无人船集群的分布式时变队形控制](https://web.archive.org/web/20201126111532id_/http://html.rhhz.net/ZGJCYJ/html/2020-1-21.htm),'' [*中国舰船研究*](http://zgjcyj.xml-journal.net/index.htm), vol. 15, no. 1, pp. 21-30, 2020. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/ZWHX/J-核心-2020-WuWentao-中国舰船研究b.pdf)
+
+### Conference Papers
+- ``2023/09`` **Wentao Wu**, Chenming Zhang, Zhenhua Li, Weidong Zhang, and Yibo Zhang, "Finite-time Extended State Observer-Based Performance-Critical Control for Uncertain MIMO Nonlinear Systems," [*2023 7th Chinese Conference on Swarm Intelligence and Cooperative Control (CCSICC)*](http://ccsicc.c2.org.cn/), Sept., 2023. [**<span style="color:red">Best Student Paper Nomination Award</span>**]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/2023-CCSICC.pdf)
+
+- ``2023/09`` **Wentao Wu**, Zhenhua Li, Yibo Zhang, and Weidong Zhang, "[Noncooperative Containment Control for Multiple Unmanned Surface Vehicles With Improved Extended State Observer](https://review.cacpaper.com/914/paper)," [*2023 China Automation Congress (CAC)*](https://ieeexplore.ieee.org/xpl/conhome/10054511/proceeding), 2023. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/2023-CAC.pdf)
+
+- ``2022/09`` Yibo Zhang, **Wentao Wu**, Di Wu, Yuanhui Wang, Weidong Zhang, "[DSC-based Parallel Control for Consensus Maneuvering of Multi-agent Systems subject to Unmatched Uncertainties based on Distributed Nash Equilibrium Seeking](https://ieeexplore.ieee.org/abstract/document/10056005),” [*2022 China Automation Congress (CAC)*](https://ieeexplore.ieee.org/xpl/conhome/10054511/proceeding), IEEE, pp. 1125-1130, 2022. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/ZhangYibo-2022-CAC.pdf)
+
+- ``2022/04`` **Wentao Wu**, Yibo Zhang, Weidong Zhang, and Di Wu, "[Safety-Certified Consensus Control of Multi-Agent Systems Based on Finite-Time Control Barrier Function](https://ieeexplore.ieee.org/abstract/document/9902172),” [*2022 41th Chinese Control Conference (CCC)*](https://ieeexplore.ieee.org/xpl/conhome/9901509/proceeding), IEEE, pp. 4661-4665, 2022. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/2022-CCC.pdf)
+
+- ``2020/04`` **Wentao Wu**, Dan Wang, Mingao Lv, Jizhou Jiang, Lu Liu, and Zhouhua Peng, "[Event-triggered LOS Guidance for Path Following of an Unmanned Surface Vehicle over Wireless Network](https://ieeexplore.ieee.org/abstract/document/9189015),” [*2020 39th Chinese Control Conference (CCC)*](https://ieeexplore.ieee.org/xpl/conhome/9181388/proceeding), IEEE, pp. 4475-4480, 2020. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/2020-CCC.pdf)
+
+- ``2020/04`` Haoliang Wang, Jizhou Jiang, **Wentao Wu**, Lu Liu, Dan Wang, Zhouhua Peng, "[Robust distributed guidance and control of multiple autonomous surface vehicles based on extended state observers and finite-set model predictive control](https://ieeexplore.ieee.org/abstract/document/9230166),” [*2020 5th International Conference on Automation, Control and Robotics Engineering (CACRE)*](https://ieeexplore.ieee.org/xpl/conhome/9229471/proceeding), IEEE, pp. 235-239, 2020. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/WangHaoliang-2020-CACRE.pdf)
+
+### Patents
+
+- ``2023/12[已受理]`` **吴文涛**，张卫东，张义博，李镇华，李兰. 一种无人船容饱和预设性能船舶列车编队控制系统及方法[P]. 上海市：202311691127.8, 2023-12-11. 
+
+- ``2023/12[已公开]`` 张卫东，郑建文, **吴文涛**等. 一种基于领导者协同的多无人船编队的严格安全控制方法[P]. 上海市：CN115903800A,2023-04-04.
+
+- ``2023/12[已授权]`` 王丹, 张宝, 孙邱越, 彭周华, 刘陆, 李铁山, **吴文涛**, 姜继州. 一种海洋机器人轨迹跟踪控制结构的设计方法[P]. 辽宁省：CN110262513B, 2022-01-28.
