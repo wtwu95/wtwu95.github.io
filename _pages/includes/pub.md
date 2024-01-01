@@ -2,7 +2,7 @@
 
 ### Selected Papers
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CYB 2021</div><img src='assets/Video/Video-Sim/WuWentao-2021-IEEE-TCYB.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CYB 2021</div><img src='assets/Video/Video-Sim/WuWentao-2021-IEEE-TCYB.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)
