@@ -3,7 +3,6 @@ Wentao Wu, born in October 1995, from Qiqihar, received the B.E. degree in elect
 
 My current research interests include distributed control, safety-critical control, and game-based control with their applications to unmanned marine vehicles. I have published more than 10 papers at the top international  journals with total <a href='https://scholar.google.com/citations?user=WGp4lBIAAAAJ'>google scholar citations <img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fwtwu95%2Fwtwu95.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. 
 
-
 <span class='anchor' id='educations'></span>
 # 📖 Educations
 - **2023.12 - Now**, I am a Visiting PhD Student at [Department of Mechanical Engineering](https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php), [University of Victoria](https://www.uvic.ca/), Canada, under the supervision of Prof. [Yang Shi](https://www.engr.uvic.ca/~yshi/index.html) (Fellow of CAE, EIC, IEEE, ASME, CSME).
