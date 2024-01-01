@@ -8,6 +8,7 @@
 [Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)
 
 **Wentao Wu**, Zhouhua Peng, Dan Wang, Lu Liu, Qing-Long Han 
+
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:W7OEmFMy1HYC'></span></strong>
 
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
@@ -23,6 +24,7 @@
 
 [A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train](https://ieeexplore.ieee.org/abstract/document/9762043) \\
 **Wentao Wu**, Zhouhua Peng, Lu Liu, Dan Wang 
+
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:UeHWp8X0CEIC'></span></strong>
 
  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4) 
@@ -35,6 +37,7 @@
 [Output-Feedback Finite-Time Safety-Critical Coordinated Control of Path-Guided Marine Surface Vehicles Based on Neurodynamic Optimization](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)
 
 **Wentao Wu**, Yibo Zhang, Weidong Zhang, Wei Xie
+
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ufrVoPGSRksC'></span></strong>
 
 
@@ -83,6 +86,7 @@
 [Transient-Reinforced Tunnel Coordinated Control of Underactuated Marine Surface Vehicles with Actuator Faults](https://ieeexplore.ieee.org/document/10292769)
 
 **Wentao Wu**, Ruihang Ji, Weidong Zhang, Yibo Zhang
+
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
 
 
