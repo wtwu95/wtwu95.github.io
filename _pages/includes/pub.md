@@ -10,7 +10,6 @@
 **Wentao Wu**, Zhouhua Peng, Dan Wang, Lu Liu, Qing-Long Han 
 
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:W7OEmFMy1HYC'></span></strong>
-
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
 
 - 
@@ -26,10 +25,9 @@
 **Wentao Wu**, Zhouhua Peng, Lu Liu, Dan Wang 
 
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:UeHWp8X0CEIC'></span></strong>
-
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4) 
 
-- 
+-
 -
 - 
 </div>
