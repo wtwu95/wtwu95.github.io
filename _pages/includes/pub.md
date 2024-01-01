@@ -70,10 +70,8 @@
 
 **Wentao Wu**, Di Wu, Yibo Zhang, Shukang Chen, Weidong Zhang
 
-
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.mp4)  [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  [![Video-Expb](https://img.shields.io/badge/%F0%9F%A4%97%20Expb--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASb.mp4)
 
-- 
 - 
 - 
 </div>
