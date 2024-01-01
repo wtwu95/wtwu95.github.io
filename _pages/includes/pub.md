@@ -2,6 +2,50 @@
 
 ### Selected Papers
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CYB 2021</div><img src='assets/Video/Video-Sim/WuWentao-2021-IEEE-TCYB.pdf' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)
+
+**Wentao Wu**, Zhouhua Peng, Dan Wang, Lu Liu, Qing-Long Han 
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:W7OEmFMy1HYC'></span></strong>
+
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
+
+- 
+- 
+- 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TIV 2022</div><img src='assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train](https://ieeexplore.ieee.org/abstract/document/9762043) \\
+**Wentao Wu**, Zhouhua Peng, Lu Liu, Dan Wang 
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:UeHWp8X0CEIC'></span></strong>
+
+ [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4) 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2022</div><img src='assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Output-Feedback Finite-Time Safety-Critical Coordinated Control of Path-Guided Marine Surface Vehicles Based on Neurodynamic Optimization](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)
+
+**Wentao Wu**, Yibo Zhang, Weidong Zhang, Wei Xie
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ufrVoPGSRksC'></span></strong>
+
+
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.mp4)
+
+- 
+- 
+- 
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2023</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -9,7 +53,25 @@
 
 **Wentao Wu**, Yibo Zhang, Zhenhua Li, Jun-Guo Lu, Weidong Zhang
 
+
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
+
+- 
+- 
+- 
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE CAA/JAS 2023</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)
+
+**Wentao Wu**, Di Wu, Yibo Zhang, Shukang Chen, Weidong Zhang
+
+
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.mp4)  [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  [![Video-Expb](https://img.shields.io/badge/%F0%9F%A4%97%20Expb--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASb.mp4)
 
 - 
 - 
@@ -23,6 +85,8 @@
 [Transient-Reinforced Tunnel Coordinated Control of Underactuated Marine Surface Vehicles with Actuator Faults](https://ieeexplore.ieee.org/document/10292769)
 
 **Wentao Wu**, Ruihang Ji, Weidong Zhang, Yibo Zhang
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
+
 
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-TITS.pdf) [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TITS.mp4) 
 
@@ -32,64 +96,11 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE CAA/JAS 2023</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-[Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)
-
-**Wentao Wu**, Di Wu, Yibo Zhang, Shukang Chen, Weidong Zhang
-
-[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.mp4)  [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  [![Video-Expb](https://img.shields.io/badge/%F0%9F%A4%97%20Expb--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASb.mp4)
-
-- 
-- 
-- 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2022</div><img src='assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Output-Feedback Finite-Time Safety-Critical Coordinated Control of Path-Guided Marine Surface Vehicles Based on Neurodynamic Optimization](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)
-
-**Wentao Wu**, Yibo Zhang, Weidong Zhang, Wei Xie
-
-[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.mp4)
-
-- 
-- 
-- 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TIV 2022</div><img src='assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.gif' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train](https://ieeexplore.ieee.org/abstract/document/9762043) \\
-**Wentao Wu**, Zhouhua Peng, Lu Liu, Dan Wang
-
-<strong><span class='show_paper_citations' data='4FA6C0AAAAAJ:LkGwnXOMwfcC'></span></strong>
- [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4) 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CYB 2021</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)
-
-**Wentao Wu**, Zhouhua Peng, Dan Wang, Lu Liu, Qing-Long Han
-
-[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
-
-- 
-- 
-- 
-</div>
-</div>
 
 ### Review Papers
-- ``2021/01`` 彭周华，**吴文涛**，王丹， 刘陆, "[多无人艇集群协同控制研究进展与未来趋势](http://zgjcyj.xml-journal.net/cn/article/doi/10.19693/j.issn.1673-3185.01923)," [*中国舰船研究*](http://zgjcyj.xml-journal.net/index.htm), vol. 61, no. 1, pp. 51-64, 2021. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/ZWHX/J-核心-2020-Pengzhouhua-中国舰船研究.pdf)
+- ``2021/01`` 彭周华，**吴文涛**，王丹， 刘陆, "[多无人艇集群协同控制研究进展与未来趋势](http://zgjcyj.xml-journal.net/cn/article/doi/10.19693/j.issn.1673-3185.01923)," [*中国舰船研究*](http://zgjcyj.xml-journal.net/index.htm), vol. 61, no. 1, pp. 51-64, 2021. <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:0EnyYjriUFMC'></span></strong>
+ [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/ZWHX/J-核心-2020-Pengzhouhua-中国舰船研究.pdf)
 
 ### Journal Papers
 - ``2023/12`` Yibo Zhang, **Wentao Wu**, Weixing Chen, Haibo Lu, and Weidong Zhang*, ''[Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multi-Agent Systems Based on a High-Order Neural Observer](https://mc.manuscriptcentral.com/systems),'' [*IEEE Trans. Cybern.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), Dec. 2023, Accepted. [中科院 1区, JCR 1区, Top, IF: 11.8]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf) 
