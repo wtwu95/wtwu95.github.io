@@ -159,7 +159,7 @@
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:5nxA0vEk-isC'></span></strong>
 
 ### Conference Papers
-- ``2023/09`` **Wentao Wu**, Chenming Zhang, Zhenhua Li, Weidong Zhang, and Yibo Zhang, "Finite-time Extended State Observer-Based Performance-Critical Control for Uncertain MIMO Nonlinear Systems," [*2023 7th Chinese Conference on Swarm Intelligence and Cooperative Control (CCSICC)*](http://ccsicc.c2.org.cn/), Sept., 2023. [**<span style="color:red">Best Student Paper Nomination Award</span>**]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/2023-CCSICC.pdf)
+- ``2023/09`` **Wentao Wu**, Chenming Zhang, Zhenhua Li, Weidong Zhang, and Yibo Zhang, "Finite-time Extended State Observer-Based Performance-Critical Control for Uncertain MIMO Nonlinear Systems," [*2023 7th Chinese Conference on Swarm Intelligence and Cooperative Control (CCSICC)*](http://ccsicc.c2.org.cn/), Sept., 2023. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/2023-CCSICC.pdf) [**<span style="color:red">Best Student Paper Nomination Award</span>**] [![](https://img.shields.io/badge/Best%20Student%20Paper%20Nomination%20Award-8A2BE2)]
 
 - ``2023/09`` **Wentao Wu**, Zhenhua Li, Yibo Zhang, and Weidong Zhang, "[Noncooperative Containment Control for Multiple Unmanned Surface Vehicles With Improved Extended State Observer](https://review.cacpaper.com/914/paper)," [*2023 China Automation Congress (CAC)*](https://ieeexplore.ieee.org/xpl/conhome/10054511/proceeding), 2023. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/2023-CAC.pdf)
 
