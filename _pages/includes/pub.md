@@ -106,7 +106,7 @@
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:0EnyYjriUFMC'></span></strong>
 
 ### Journal Papers
-- ``2023/12`` Yibo Zhang, **Wentao Wu**, Weixing Chen, Haibo Lu, and Weidong Zhang*, ''[Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multi-Agent Systems Based on a High-Order Neural Observer](https://mc.manuscriptcentral.com/systems),'' [*IEEE Trans. Cybern.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), Dec. 2023, Accepted. [中科院 1区, JCR 1区, Top, IF: 11.8]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf) 
+- ``2023/12`` Yibo Zhang, **Wentao Wu**, Weixing Chen, Haibo Lu, and Weidong Zhang*, ''[Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multi-Agent Systems Based on a High-Order Neural Observer](https://mc.manuscriptcentral.com/systems),'' [*IEEE Trans. Cybern.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), Dec. 2023, doi: 10.1109/TCYB.2024.3351476. [中科院 1区, JCR 1区, Top, IF: 11.8]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf) 
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
 
 
