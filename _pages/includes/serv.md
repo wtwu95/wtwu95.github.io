@@ -1,5 +1,6 @@
 # 💻 Professional Services:
 ### Journal Reviewers
+- *2024~Now* IEEE Transactions on Transportation Electrification
 - *2023~Now* ISA Transactions
 - *2023~Now* IEEE/CAA Journal of Automatica Sinica
 - *2023~Now* IEEE Transactions on Industrial Electronics
@@ -10,4 +11,4 @@
 - *2021~Now* Ocean Engineering
 
 ### Conference Reviewers
-- ACC (2022), CCC (2023), CCDC (2022,2023)
+- ACC (2022), CCC (2023), CCDC (2022,2023,2024)
