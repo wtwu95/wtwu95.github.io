@@ -49,7 +49,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2023</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2024</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Constrained Safe Cooperative Maneuvering of Autonomous Surface Vehicles: A Control Barrier Function Approach](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)
@@ -58,7 +58,7 @@
 
 
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
-<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
 
 - 
 - 
@@ -106,12 +106,12 @@
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:0EnyYjriUFMC'></span></strong>
 
 ### Journal Papers
-- ``2023/12`` Yibo Zhang, **Wentao Wu**, Weixing Chen, Haibo Lu, and Weidong Zhang*, ''[Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multi-Agent Systems Based on a High-Order Neural Observer](https://mc.manuscriptcentral.com/systems),'' [*IEEE Trans. Cybern.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), Dec. 2023, doi: 10.1109/TCYB.2024.3351476. [中科院 1区, JCR 1区, Top, IF: 11.8]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf) 
+- ``2023/12`` Yibo Zhang, **Wentao Wu**, Weixing Chen, Haibo Lu, and Weidong Zhang*, ''[Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multiagent Systems Based on a High-Order Neural Observer](https://ieeexplore.ieee.org/document/10416809),'' [*IEEE Trans. Cybern.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), Dec. 2023, doi: 10.1109/TCYB.2024.3351476. [中科院 1区, JCR 1区, Top, IF: 11.8]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf) 
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
 
 
 - ``2023/12`` **Wentao Wu**, Yibo Zhang, Zhenhua Li, Jun-Guo Lu, and Weidong Zhang*, ''[Constrained Safe Cooperative Maneuvering of Autonomous Surface Vehicles: A Control Barrier Function Approach](https://ieeexplore.ieee.org/document/10414035),'' [*IEEE Trans. Syst. Man, Cybern. , Syst.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021), Dec. 2023, doi: 10.1109/TSMC.2023.3345847. [中科院 1区, JCR 1区, Top, IF: 8.7]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
-<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
 
 - ``2023/12`` Yibo Zhang, Di Wu, Peng Cheng, **Wentao Wu**, and Weidong Zhang, ''[Robust Adaptive Fault-tolerant Control for Path Maneuvering of Autonomous Surface Vehicles with Actuator Faults Based on the Noncooperative Game Strategy](https://www.sciencedirect.com/science/article/pii/S0029801823029256?dgcid=coauthor),'' [*Ocean. Eng.*](https://www.sciencedirect.com/journal/ocean-engineering), Dec. 2023, doi: 10.1016/j.oceaneng.2023.116541. [中科院 2区, JCR 1区, Top, IF: 5.0]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-OE.pdf)
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:YOwf2qJgpHMC'></span></strong>
