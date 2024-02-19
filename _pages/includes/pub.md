@@ -81,7 +81,7 @@
 - 
 </div>
 </div>
-
+<!-- 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-ITS 2023</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-TITS.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -96,7 +96,7 @@
 - 
 - 
 </div>
-</div>
+</div> -->
 
 
 
