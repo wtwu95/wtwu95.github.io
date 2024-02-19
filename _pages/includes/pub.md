@@ -106,6 +106,10 @@
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:0EnyYjriUFMC'></span></strong>
 
 ### Journal Papers
+- ``2024/02`` Zhenhua Li, Hongtian Chen, **Wentao Wu**, and Weidong Zhang, ''[Dynamic Output Feedback Fault-Tolerant Control for Switched Vehicle Active Suspension Delayed Systems](https://ieeexplore.ieee.org/document/10416809),'' [*IEEE Trans. Veh. Tech.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), Feb. 2024, Accepted. [中科院 2区, JCR 1区, Top, IF: 6.8] [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf) 
+<strong><span class='show_paper_citations' data=' '></span></strong>
+
+
 - ``2023/12`` Yibo Zhang, **Wentao Wu**, Weixing Chen, Haibo Lu, and Weidong Zhang*, ''[Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multiagent Systems Based on a High-Order Neural Observer](https://ieeexplore.ieee.org/document/10416809),'' [*IEEE Trans. Cybern.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), Dec. 2023, doi: 10.1109/TCYB.2024.3351476. [中科院 1区, JCR 1区, Top, IF: 11.8]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf) 
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
 

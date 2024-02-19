@@ -1,7 +1,8 @@
 # 💬 Recent News
-- *2023.12* &nbsp;🎉 One co-author new paper has been accepted by **IEEE T-CYB** ([Link]())!
+- *2024.02* &nbsp;🎉 One co-author new paper has been accepted by **IEEE T-VT** ([Link]())!
+- *2023.12* &nbsp;🎉 One co-author new paper has been accepted by **IEEE T-CYB** ([Link](https://ieeexplore.ieee.org/document/10416809))!
 - *2023.12* &nbsp;👏👏 I was recognised as '**Research Talents**' in Sanya Yazhou Bay Science and Technology City!
-- *2023.12* &nbsp;🎉  One new paper has been accepted by **IEEE T-SMCA** (Link)!
+- *2023.12* &nbsp;🎉  One new paper has been accepted by **IEEE T-SMCA** ([Link](https://ieeexplore.ieee.org/document/10414035))!
 - *2023.12* &nbsp;🎉 One co-author new paper has been accepted by **OE** ([Link](https://www.sciencedirect.com/science/article/abs/pii/S0029801822021497))!
 - *2023.11* &nbsp;👏👏  One conference paper was awarded by **Best Student Paper Nomination Award** of 7th CCSICC!
 - *2023.11* &nbsp;👏👏  I won the **national third prize** in the First Air Force Aviation Innovation Challenge in 2023!
