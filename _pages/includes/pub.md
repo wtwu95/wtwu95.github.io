@@ -106,12 +106,12 @@
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:0EnyYjriUFMC'></span></strong>
 
 ### Journal Papers
-- ``2024/02`` Zhenhua Li, Hongtian Chen, **Wentao Wu**, and Weidong Zhang, ''[Dynamic Output Feedback Fault-Tolerant Control for Switched Vehicle Active Suspension Delayed Systems](https://ieeexplore.ieee.org/document/10416809),'' [*IEEE Trans. Veh. Tech.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), Feb. 2024, Accepted. [中科院 2区, JCR 1区, Top, IF: 6.8] [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf) 
-<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
+- ``2024/02`` Zhenhua Li, Hongtian Chen, **Wentao Wu**, and Weidong Zhang, ''[Dynamic Output Feedback Fault-Tolerant Control for Switched Vehicle Active Suspension Delayed Systems](https://ieeexplore.ieee.org/document/10449447),'' [*IEEE Trans. Veh. Tech.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25), Feb. 2024, doi: 10.1109/TVT.2024.3370094. [中科院 2区, JCR 1区, Top, IF: 6.8] [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/LiZhenhua-2024-IEEE-TVT.pdf) 
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
 
 
 - ``2023/12`` Yibo Zhang, **Wentao Wu**, Weixing Chen, Haibo Lu, and Weidong Zhang*, ''[Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multiagent Systems Based on a High-Order Neural Observer](https://ieeexplore.ieee.org/document/10416809),'' [*IEEE Trans. Cybern.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036), Dec. 2023, doi: 10.1109/TCYB.2024.3351476. [中科院 1区, JCR 1区, Top, IF: 11.8]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf) 
-<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
 
 
 - ``2023/12`` **Wentao Wu**, Yibo Zhang, Zhenhua Li, Jun-Guo Lu, and Weidong Zhang*, ''[Constrained Safe Cooperative Maneuvering of Autonomous Surface Vehicles: A Control Barrier Function Approach](https://ieeexplore.ieee.org/document/10414035),'' [*IEEE Trans. Syst. Man, Cybern. , Syst.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021), Dec. 2023, doi: 10.1109/TSMC.2023.3345847. [中科院 1区, JCR 1区, Top, IF: 8.7]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
