@@ -106,6 +106,9 @@
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:0EnyYjriUFMC'></span></strong>
 
 ### Journal Papers
+- ``2024/02`` Di Wu, Yibo Zhang, **Wentao Wu**, Edmond Q. Wu, and Weidong Zhang, ''[Tunnel Prescribed Performance Control for Distributed Path Maneuvering of Multi-UAV Swarms via Distributed Neural Predictor](https://ieeexplore.ieee.org/document/10449447),'' [*IEEE Trans. Circuits Syst. II Express Briefs*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8920), Feb. 2024, doi: 10.1109/TCSII.2024.3371981. [中科院 2区, JCR 2区, Top, IF: 4.4] [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuDi-2024-IEEE-TCSII.pdf) 
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
+
 - ``2024/02`` Zhenhua Li, Hongtian Chen, **Wentao Wu**, and Weidong Zhang, ''[Dynamic Output Feedback Fault-Tolerant Control for Switched Vehicle Active Suspension Delayed Systems](https://ieeexplore.ieee.org/document/10449447),'' [*IEEE Trans. Veh. Tech.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25), Feb. 2024, doi: 10.1109/TVT.2024.3370094. [中科院 2区, JCR 1区, Top, IF: 6.8] [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/LiZhenhua-2024-IEEE-TVT.pdf) 
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
 
