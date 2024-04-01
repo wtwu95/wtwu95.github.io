@@ -1,4 +1,5 @@
 # 💬 Recent News
+- *2024.03* &nbsp;🎉 One  new paper has been accepted by **IEEE T-FS** ([Link](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91))!
 - *2024.02* &nbsp;🎉 One co-author new paper has been accepted by **IEEE T-CSII** ([Link](https://ieeexplore.ieee.org/document/10462491))!
 - *2024.02* &nbsp;🎉 One co-author new paper has been accepted by **IEEE T-VT** ([Link](https://ieeexplore.ieee.org/document/10449447))!
 - *2023.12* &nbsp;🎉 One co-author new paper has been accepted by **IEEE T-CYB** ([Link](https://ieeexplore.ieee.org/document/10416809))!

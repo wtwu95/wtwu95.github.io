@@ -106,6 +106,10 @@
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:0EnyYjriUFMC'></span></strong>
 
 ### Journal Papers
+
+- ``2024/03`` **Wentao Wu**, Yibo Zhang, Zehua Jia, Jun-Guo Lu, and Weidong Zhang*, ''[Adaptive Fault-Tolerant Fuzzy Containment Control for Networked Autonomous Surface Vehicles: A Noncooperative Game Approach](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91),'' [*IEEE Trans. Fuzzy Syst.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91), Mar. 2024, Accepted. [中科院 1区, JCR 1区, Top, IF: 11.9]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2024-IEEE-TFS.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2024-IEEE-TFS.mp4)
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
+
 - ``2024/02`` Di Wu, Yibo Zhang, **Wentao Wu**, Edmond Q. Wu, and Weidong Zhang, ''[Tunnel Prescribed Performance Control for Distributed Path Maneuvering of Multi-UAV Swarms via Distributed Neural Predictor](https://ieeexplore.ieee.org/document/10462491),'' [*IEEE Trans. Circuits Syst. II Express Briefs*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8920), Feb. 2024, doi: 10.1109/TCSII.2024.3371981. [中科院 2区, JCR 2区, Top, IF: 4.4] [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuDi-2024-IEEE-TCSII.pdf) 
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
 
