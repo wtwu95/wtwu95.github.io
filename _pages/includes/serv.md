@@ -11,4 +11,4 @@
 - *2021~Now* Ocean Engineering
 
 ### Conference Reviewers
-- ACC (2022), CCC (2023), CCDC (2022,2023,2024)
+- CDC (2024), ACC (2022), CCC (2023), CCDC (2022,2023,2024)
