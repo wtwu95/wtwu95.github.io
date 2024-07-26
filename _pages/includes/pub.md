@@ -107,6 +107,9 @@
 
 ### Journal Papers
 
+- ``2024/07``  Zhenhua Li, Hongtian Chen, Hak-Keung Lam, **Wentao Wu**, and Weidong Zhang*, ''[Switched Command-Filtered-Based Adaptive Fuzzy Output-Feedback Funnel Control for Switched Nonlinear MIMO Delayed Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91),'' [*IEEE Trans. Fuzzy Syst.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91), Jul. 2024, doi:10.1109/TFUZZ.2024.3434711. [中科院 1区, JCR 1区, Top, IF: 11.9]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2024-IEEE-TFS.pdf) 
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
+
 - ``2024/03`` **Wentao Wu**, Yibo Zhang, Zehua Jia, Jun-Guo Lu, and Weidong Zhang*, ''[Adaptive Fault-Tolerant Fuzzy Containment Control for Networked Autonomous Surface Vehicles: A Noncooperative Game Approach](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91),'' [*IEEE Trans. Fuzzy Syst.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91), Mar. 2024, doi: 10.1109/TFUZZ.2024.3386849. [中科院 1区, JCR 1区, Top, IF: 11.9]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2024-IEEE-TFS.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2024-IEEE-TFS.mp4)
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
 
@@ -170,6 +173,8 @@
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:5nxA0vEk-isC'></span></strong>
 
 ### Conference Papers
+- ``2024/07`` Yibo zhang*, **Wentao Wu**, Tao Xie, Peng Cheng, Di Wu, and Weidong Zhang, "[Maneuvering Control of Uncertain Nonlinear Systems: An Output Regulation Viewpoint](https://review.cacpaper.com/914/paper)," [*2024 63rd IEEE Conference on Decision and Control (CDC)*](https://ieeexplore.ieee.org/xpl/conhome/1000188/all-proceedings), 2024. [![PDF](https://img.shields.io/badge/Link-PDF-gree)]()
+
 - ``2023/09`` **Wentao Wu**, Chenming Zhang, Zhenhua Li, Weidong Zhang, and Yibo Zhang, "Finite-time Extended State Observer-Based Performance-Critical Control for Uncertain MIMO Nonlinear Systems," [*2023 7th Chinese Conference on Swarm Intelligence and Cooperative Control (CCSICC)*](http://ccsicc.c2.org.cn/), Sept., 2023. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/2023-CCSICC.pdf)  ![Awards](https://img.shields.io/badge/Best%20Student%20Paper%20Nomination%20Award-8A2BE2)
 
 - ``2023/09`` **Wentao Wu**, Zhenhua Li, Yibo Zhang, and Weidong Zhang, "[Noncooperative Containment Control for Multiple Unmanned Surface Vehicles With Improved Extended State Observer](https://review.cacpaper.com/914/paper)," [*2023 China Automation Congress (CAC)*](https://ieeexplore.ieee.org/xpl/conhome/10054511/proceeding), 2023. [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/EI/2023-CAC.pdf)
