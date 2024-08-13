@@ -12,7 +12,7 @@ repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
-google_analytics_id      : # "https://analytics.google.com/analytics/e2ban1wAAAAJ&hl" 
+google_analytics_id      : "https://analytics.google.com/analytics/e2ban1wAAAAJ" 
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
@@ -27,7 +27,7 @@ author:
   location         : "Shanghai, China"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=e2ban1wAAAAJ&hl"
+  googlescholar    : "https://scholar.google.com/citations?user=e2ban1wAAAAJ"
   email            : "wtwu95@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Wu-Wentao-5"
   uri              :
