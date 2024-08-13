@@ -1,5 +1,6 @@
 # 💻 Professional Services:
 ### Journal Reviewers
+- *2024~Now* IEEE Transactions on Vehicular Technology
 - *2024~Now* IEEE Transactions on Transportation Electrification
 - *2023~Now* ISA Transactions
 - *2023~Now* IEEE/CAA Journal of Automatica Sinica
