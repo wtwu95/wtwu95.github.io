@@ -107,6 +107,11 @@
 
 ### Journal Papers
 
+- ``2024/08`` **Wentao Wu**, Yibo Zhang, Weidong Zhang, Ruihang Ji, and Hongtian Chen, ''[Saturation-Tolerant Tunnel Prescribed Control for
+Vessel-Train Formation of Underactuated MSVs](),'' [*IEEE Trans. Veh. Tech.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25), Aug. 2024, Accepted. [中科院 2区, JCR 1区, Top, IF: 6.8] [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2024-IEEE-TVT.pdf) 
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
+
+
 - ``2024/07``  Zhenhua Li, Hongtian Chen, Hak-Keung Lam, **Wentao Wu**, and Weidong Zhang*, ''[Switched Command-Filtered-Based Adaptive Fuzzy Output-Feedback Funnel Control for Switched Nonlinear MIMO Delayed Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91),'' [*IEEE Trans. Fuzzy Syst.*](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91), Jul. 2024, doi:10.1109/TFUZZ.2024.3434711. [中科院 1区, JCR 1区, Top, IF: 11.9]  [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2024-IEEE-TFS.pdf) 
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
 
