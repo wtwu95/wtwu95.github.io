@@ -16,7 +16,7 @@ If you are seeking any form of academic cooperation, please feel free to email m
   <a href="https://www.polyu.edu.hk/aae/">Department of Aeronautical and Aviation Engineering (AAE)</a>,  
   <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University (PolyU)</a>, Hong Kong, China.</p>
   <p><span class="supervisor">Supervisor:</span> Prof. <a href="https://www.engr.uvic.ca/~yshi/index.html">Wen-Hua Chen</a> (Fellow of IEEE, IMechE, IET, HEA).</p>
-  
+
   <p><strong>01/2024 – 11/2024</strong>  
   <em>Visiting Scholar</em>,  
   <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Department of Mechanical Engineering</a>,  
@@ -36,17 +36,13 @@ If you are seeking any form of academic cooperation, please feel free to email m
   <a href="https://www.seiee.sjtu.edu.cn/">School of Electronic Information and Electrical Engineering</a>,  
   <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>, Shanghai, China.</p>
   <p><span class="supervisor">Supervisors:</span> Chair Prof. <a href="https://automation.sjtu.edu.cn/wdzhang"><strong>Weidong Zhang</strong></a> and Prof. <a href="https://automation.sjtu.edu.cn/Jun-Guo"><strong>Junguo Lu</strong></a>.</p>
-</div>
 
-<div class="edu-card">
   <p><strong>09/2018 – 06/2021</strong>  
   <em>M.E.</em> in Electrical Engineering,  
   <a href="https://cbdq.dlmu.edu.cn/index.htm">College of Marine Electrical Engineering</a>,  
   <a href="https://www.dlmu.edu.cn/">Dalian Maritime University</a>, Dalian, China.</p>
   <p><span class="supervisor">Supervisors:</span> Prof. <a href="https://scholar.google.com/citations?user=kc8gnlMAAAAJ"><strong>Dan Wang</strong></a> and Prof. <a href="https://scholar.google.com/citations?user=hM_5JDYAAAAJ"><strong>Zhouhua Peng</strong></a>.</p>
-</div>
 
-<div class="edu-card">
   <p><strong>09/2014 – 06/2018</strong>  
   <em>B.E.</em> in Electrical Engineering and Automation,  
   <a href="https://www.seiee.sjtu.edu.cn/">School of Electrical and Electronic Engineering</a>,  
