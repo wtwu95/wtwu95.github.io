@@ -1,8 +1,45 @@
 # 💬 News
 
-<div style="max-height: 200px; overflow-y: auto; padding: 10px; border: 1px solid #ddd; border-radius: 6px; background-color: #fafafa;">
+# 💬 News
 
-- *2024.09* &nbsp;👏👏👏 I have been awarded the **National Scholarship** for Ph.D. Students at Shanghai Jiao Tong University!
+<div style="
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 15px;
+  line-height: 1.6;
+">
+
+<div style="padding: 6px 10px; border-bottom: 1px solid #f0f0f0;">
+  <span style="color:#2563eb; font-weight:600;">2024.09</span> 👏👏👏 I have been awarded the <strong>National Scholarship</strong> for Ph.D. Students at Shanghai Jiao Tong University!
+</div>
+
+<div style="padding: 6px 10px; border-bottom: 1px solid #f0f0f0;">
+  <span style="color:#2563eb; font-weight:600;">2024.08</span> 🎉 One paper has been accepted by <strong>IEEE T-VT</strong> (<a href="https://ieeexplore.ieee.org/document/" target="_blank">Link</a>).
+</div>
+
+<div style="padding: 6px 10px; border-bottom: 1px solid #f0f0f0;">
+  <span style="color:#2563eb; font-weight:600;">2024.07</span> 🎉 One co-author's paper has been accepted by <strong>IEEE CDC</strong>.
+</div>
+
+<div style="padding: 6px 10px; border-bottom: 1px solid #f0f0f0;">
+  <span style="color:#2563eb; font-weight:600;">2024.07</span> 🎉 One co-author's paper has been accepted by <strong>IEEE T-FS</strong> (<a href="https://doi.org/10.1109/TFUZZ.2024.3434711" target="_blank">Link</a>).
+</div>
+
+<div style="padding: 6px 10px; border-bottom: 1px solid #f0f0f0;">
+  <span style="color:#2563eb; font-weight:600;">2024.03</span> 🎉 One paper has been accepted by <strong>IEEE T-FS</strong> (<a href="https://ieeexplore.ieee.org/document/10549852" target="_blank">Link</a>).
+</div>
+
+<!-- 其余消息照常继续列在这里 -->
+</div>
+
+
+
+<!-- - *2024.09* &nbsp;👏👏👏 I have been awarded the **National Scholarship** for Ph.D. Students at Shanghai Jiao Tong University!
 - *2024.08* &nbsp;🎉 One paper has been accepted by **IEEE T-VT** ([Link](https://ieeexplore.ieee.org/document/))!
 - *2024.07* &nbsp;🎉  One co-author's's paper has been accepted by IEEE **CDC** ([Link]())!
 - *2024.07* &nbsp;🎉 One co-author's paper has been accepted by **IEEE T-FS** ([Link](10.1109/TFUZZ.2024.3434711))!
@@ -29,6 +66,4 @@
 - *2022.04* &nbsp;🎉  One paper has been accepted by **IEEE T-IV** ([Link](https://ieeexplore.ieee.org/abstract/document/9762043))!
 - *2022.01* &nbsp;🎉  One paper has been accepted by **OE** ([Link](https://www.sciencedirect.com/science/article/abs/pii/S0029801822001445))!
 - *2021.04* &nbsp;🎉  One paper has been accepted by **IEEE T-CYB** ([Link](https://ieeexplore.ieee.org/abstract/document/9440777))!
-
-</div>
-
+ -->
