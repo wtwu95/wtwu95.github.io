@@ -8,22 +8,49 @@ If you are seeking any form of academic cooperation, please feel free to email m
 
 <span class='anchor' id='experiences'></span>
 # 📖 Experiences
-- 04/2025-Present, **Postdoctoral Fellow**, [Research Centre for Low Altitude Economy (RCLAE)](https://www.polyu.edu.hk/rclae/), [Department of Aeronautical and Aviation Engineering (AAE)](https://www.polyu.edu.hk/aae/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), Hong Kong, China.
 
-Supervisor: Prof. [Wen-Hua Chen](https://www.engr.uvic.ca/~yshi/index.html) (Fellow of IEEE, IMechE, IET, HEA).
+<div class="experience-card">
+  <p><strong>04/2025 – Present</strong>  
+  <em>Postdoctoral Fellow</em>,  
+  <a href="https://www.polyu.edu.hk/rclae/">Research Centre for Low Altitude Economy (RCLAE)</a>,  
+  <a href="https://www.polyu.edu.hk/aae/">Department of Aeronautical and Aviation Engineering (AAE)</a>,  
+  <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University (PolyU)</a>, Hong Kong, China.</p>
+  <p><span class="supervisor">Supervisor:</span> Prof. <a href="https://www.engr.uvic.ca/~yshi/index.html">Wen-Hua Chen</a> (Fellow of IEEE, IMechE, IET, HEA).</p>
+</div>
 
-- 01/2024-11/2024, **Visiting Scholar**, [Department of Mechanical Engineering](https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php), [University of Victoria](https://www.uvic.ca/), Victoria, Canada.
+<div class="experience-card">
+  <p><strong>01/2024 – 11/2024</strong>  
+  <em>Visiting Scholar</em>,  
+  <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Department of Mechanical Engineering</a>,  
+  <a href="https://www.uvic.ca/">University of Victoria</a>, Victoria, Canada.</p>
+  <p><span class="supervisor">Supervisor:</span> Prof. <a href="https://www.engr.uvic.ca/~yshi/index.html">Yang Shi</a> (Fellow of RSC, CAE, EIC, IEEE, ASME, CSME).</p>
+</div>
 
-Supervisor: Prof. [Yang Shi](https://www.engr.uvic.ca/~yshi/index.html) (Fellow of RSC, CAE, EIC, IEEE, ASME, CSME).
+---
 
 <span class='anchor' id='educations'></span>
-# 📖 Educations
-- 09/2021-03/2025, **Ph.D.**, Electronic Information Engineering, [Department of Automation](https://automation.sjtu.edu.cn/), [School of Electronic Information and Electrical Engineering](https://www.seiee.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/), Shanghai, China.
+# 🎓 Educations
 
-Supervisors: Chair Prof. [**Weidong Zhang**](https://automation.sjtu.edu.cn/wdzhang) and Prof. [**Junguo Lu**](https://automation.sjtu.edu.cn/Jun-Guo).
+<div class="edu-card">
+  <p><strong>09/2021 – 03/2025</strong>  
+  <em>Ph.D.</em> in Electronic Information Engineering,  
+  <a href="https://automation.sjtu.edu.cn/">Department of Automation</a>,  
+  <a href="https://www.seiee.sjtu.edu.cn/">School of Electronic Information and Electrical Engineering</a>,  
+  <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>, Shanghai, China.</p>
+  <p><span class="supervisor">Supervisors:</span> Chair Prof. <a href="https://automation.sjtu.edu.cn/wdzhang"><strong>Weidong Zhang</strong></a> and Prof. <a href="https://automation.sjtu.edu.cn/Jun-Guo"><strong>Junguo Lu</strong></a>.</p>
+</div>
 
-- 09/2018-06/2021, **M.E.**, Electrical Engineering, [College of Marine Electrical Engineering](https://cbdq.dlmu.edu.cn/index.htm), [Dalian Maritime University](https://www.dlmu.edu.cn/), Dalian, China.
+<div class="edu-card">
+  <p><strong>09/2018 – 06/2021</strong>  
+  <em>M.E.</em> in Electrical Engineering,  
+  <a href="https://cbdq.dlmu.edu.cn/index.htm">College of Marine Electrical Engineering</a>,  
+  <a href="https://www.dlmu.edu.cn/">Dalian Maritime University</a>, Dalian, China.</p>
+  <p><span class="supervisor">Supervisors:</span> Prof. <a href="https://scholar.google.com/citations?user=kc8gnlMAAAAJ"><strong>Dan Wang</strong></a> and Prof. <a href="https://scholar.google.com/citations?user=hM_5JDYAAAAJ"><strong>Zhouhua Peng</strong></a>.</p>
+</div>
 
-Supervisors: Prof. [**Dan Wang**](https://scholar.google.com/citations?user=kc8gnlMAAAAJ) and Prof. [**Zhouhua Peng**](https://scholar.google.com/citations?user=hM_5JDYAAAAJ).
-
-- 09/2014-06/2018, **B.E.**, Electrical Engineering and Automation, [School of Electrical and Electronic Engineering](https://www.seiee.sjtu.edu.cn/), [Harbin University of Science and Technology](http://www.hrbust.edu.cn/), Harbin, China. 
+<div class="edu-card">
+  <p><strong>09/2014 – 06/2018</strong>  
+  <em>B.E.</em> in Electrical Engineering and Automation,  
+  <a href="https://www.seiee.sjtu.edu.cn/">School of Electrical and Electronic Engineering</a>,  
+  <a href="http://www.hrbust.edu.cn/">Harbin University of Science and Technology</a>, Harbin, China.</p>
+</div>
