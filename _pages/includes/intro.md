@@ -10,7 +10,7 @@ I am open to research discussion and collaboration. Please feel free to reach ou
 - 2024.01 - Present,  at [Department of Mechanical Engineering](https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php), [University of Victoria](https://www.uvic.ca/), Canada, under the supervision of Prof. [Yang Shi](https://www.engr.uvic.ca/~yshi/index.html) (Fellow of CAE, EIC, IEEE, ASME, CSME).
 - 2021.09 - 2025.03, Ph.D., Electronic Information Engineering, [Department of Automation](https://automation.sjtu.edu.cn/), [School of Electronic Information and Electrical Engineering](https://www.seiee.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/), Shanghai, China.
 
-Supervisors: Prof. [**Weidong Zhang**](https://automation.sjtu.edu.cn/wdzhang) (Distinguished Young Scholar and Cheung Kong Scholar) and Prof. [**Junguo Lu**](https://automation.sjtu.edu.cn/Jun-Guo).
+Supervisors: Chair Prof. [**Weidong Zhang**](https://automation.sjtu.edu.cn/wdzhang) and Prof. [**Junguo Lu**](https://automation.sjtu.edu.cn/Jun-Guo).
 - 09/2018-06/2021, M.E., Electrical Engineering, [College of Marine Electrical Engineering](https://cbdq.dlmu.edu.cn/index.htm), [Dalian Maritime University](https://www.dlmu.edu.cn/), Dalian, China.
 
 Supervisors: Prof. [**Dan Wang**](https://scholar.google.com/citations?user=kc8gnlMAAAAJ) and Prof. [**Zhouhua Peng**](https://scholar.google.com/citations?user=hM_5JDYAAAAJ).
