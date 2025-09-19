@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Dr. Wentao Wu (吴文涛)"
-description              : ""
+description              : " AAE, PolyU"
 repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Dr. Wentao Wu (吴文涛)"
   avatar           : "images/avatar.jpg"
-  bio              : "PdF from AAE in PolyU"
-  location         : "Shanghai, China"
+  bio              : "Postdoctoral Fellow"
+  location         : "Hong Kong"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=e2ban1wAAAAJ"
