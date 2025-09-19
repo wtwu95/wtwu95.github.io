@@ -18,7 +18,7 @@ If you are seeking any form of academic cooperation, please feel free to email m
       </div>
       <div class="cv-date">04/2025–Present</div>
     </div>
-    <div class="cv-sub">Supervisor: Chair Professor <a href="https://scholar.google.com/citations?user=UfIb9GkAAAAJ">Wen-Hua Chen (陈文华)</a> (FIEEE, FIMechE, FIET, FHEA)</div>
+    <div class="cv-sub">Supervisor: Chair Professor <a href="https://scholar.google.com/citations?user=UfIb9GkAAAAJ"><b>Wen-Hua Chen (陈文华)</b></a> (FIEEE, FIMechE, FIET, FHEA)</div>
   </li>
 
   <li class="cv-item">
@@ -30,7 +30,7 @@ If you are seeking any form of academic cooperation, please feel free to email m
       </div>
       <div class="cv-date">01/2024–11/2024</div>
     </div>
-    <div class="cv-sub">Supervisor: Professor <a href="https://scholar.google.com/citations?user=LVnHobEAAAAJ">Yang Shi (施阳)</a> (FRSC, FCAE, FEIC, FIEEE, FASME, FCSME)</div>
+    <div class="cv-sub">Supervisor: Professor <a href="https://scholar.google.com/citations?user=LVnHobEAAAAJ"><b>Yang Shi (施阳)</b></a> (FRSC, FCAE, FEIC, FIEEE, FASME, FCSME)</div>
   </li>
 </ul>
 
