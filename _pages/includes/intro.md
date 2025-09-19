@@ -1,6 +1,16 @@
 <!-- # 👨🏻‍🎓 Biography -->
 
-My current research interests include distributed control, safety-critical control, and game-based control with their applications to unmanned marine vehicles. I have published more than 10 papers at the top international  journals with total <a href='https://scholar.google.com/citations?user=e2ban1wAAAAJ'>google scholar citations <img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fwtwu95%2Fwtwu95.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>. 
+My current research interests include distributed control, safety-critical control, and game-based control with their applications to unmanned marine vehicles. I have published more than 10 papers at the top international  journals with total 
+
+My research interests include autonomous systems, cooperative control, game theory, and hyperspectral image processing. 
+I have published more than 30 papers in top journals and international conferences with total 
+<a href='https://scholar.google.com/citations?user=e2ban1wAAAAJ'>
+  Google Scholar citations <strong><span id='total_cit'>{{ site.data.scholar_stats.citedby }}</span></strong>
+</a> 
+(You can also use Google Scholar badge 
+<a href='https://scholar.google.com/citations?user=e2ban1wAAAAJ'>
+  <img src="https://img.shields.io/endpoint?url={{ site.url }}/google-scholar-stats/gs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations">
+</a>).
 
 If you are seeking any form of academic cooperation, please feel free to email me at wtwu95@gmail.com or wen-tao.wu@polyu.edu.hk.
 
