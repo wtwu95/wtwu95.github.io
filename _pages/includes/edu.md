@@ -6,7 +6,7 @@
       <div class="cv-main">
         <span class="cv-degree">Ph.D.</span>, Electronic Information Engineering ·
         <a href="https://sais.sjtu.edu.cn/">School of Automation and Intelligent Sensing</a> (<a href="https://automation.sjtu.edu.cn/">Department of Automation</a>), 
-        <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, Shanghai
+        <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, Shanghai, China
       </div>
       <div class="cv-date">09/2021–03/2025</div>
     </div>
