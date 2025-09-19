@@ -25,8 +25,8 @@ If you are seeking any form of academic cooperation, please feel free to email m
     <div class="cv-row">
       <div class="cv-main">
         <span class="cv-role">Visiting Scholar</span> ·
-        <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Department of Mechanical Engineering</a>, 
-        <a href="https://www.uvic.ca/">University of Victoria</a>, Victoria, Canada
+        <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Department of Mechanical Engineering (ME)</a>, 
+        <a href="https://www.uvic.ca/">University of Victoria (UVic)</a>, Victoria, Canada
       </div>
       <div class="cv-date">01/2024–11/2024</div>
     </div>
@@ -42,12 +42,12 @@ If you are seeking any form of academic cooperation, please feel free to email m
     <div class="cv-row">
       <div class="cv-main">
         <span class="cv-degree">Ph.D.</span>, Electronic Information Engineering ·
-        <a href="https://automation.sjtu.edu.cn/">Department of Automation</a>, 
+        <a href="https://sais.sjtu.edu.cn/">School of Automation and Intelligent Sensing</a> (<a href="https://automation.sjtu.edu.cn/">Department of Automation</a>), 
         <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, Shanghai
       </div>
       <div class="cv-date">09/2021–03/2025</div>
     </div>
-    <div class="cv-sub">Supervisors: Chair Professor <a href="https://automation.sjtu.edu.cn/wdzhang"><b>Weidong Zhang</b></a>, Professor <a href="https://automation.sjtu.edu.cn/Jun-Guo"><b>Junguo Lu</b></a></div>
+    <div class="cv-sub">Supervisors: Chair Professor <a href="https://automation.sjtu.edu.cn/wdzhang"><b>Weidong Zhang (张卫东)</b></a>, Professor <a href="https://automation.sjtu.edu.cn/Jun-Guo"><b>Junguo Lu (卢俊国)</b></a></div>
   </li>
 
   <li class="cv-item">
@@ -59,7 +59,7 @@ If you are seeking any form of academic cooperation, please feel free to email m
       </div>
       <div class="cv-date">09/2018–06/2021</div>
     </div>
-    <div class="cv-sub">Supervisors: Professor <a href="https://scholar.google.com/citations?user=kc8gnlMAAAAJ"><b>Dan Wang</b></a>, Professor <a href="https://scholar.google.com/citations?user=hM_5JDYAAAAJ"><b>Zhouhua Peng</b></a></div>
+    <div class="cv-sub">Supervisors: Professor <a href="https://scholar.google.com/citations?user=kc8gnlMAAAAJ"><b>Dan Wang (王丹)</b></a>, Professor <a href="https://scholar.google.com/citations?user=hM_5JDYAAAAJ"><b>Zhouhua Peng (彭周华)</b></a></div>
   </li>
 
   <li class="cv-item">
