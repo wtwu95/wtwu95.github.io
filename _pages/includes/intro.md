@@ -8,7 +8,7 @@ If you are seeking any form of academic cooperation, please feel free to email m
 
 <span class='anchor' id='experiences'></span>
 # 📖 Experiences
-- 04/2025-Present, **Postdoctoral Fellow**, [Research Centre for Low Altitude Economy (RCLAE)](https://www.polyu.edu.hk/rclae/) & [Department of Aeronautical and Aviation Engineering (AAE)](https://www.polyu.edu.hk/aae/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), Hong Kong, China.
+- 04/2025-Present, **Postdoctoral Fellow**, [Research Centre for Low Altitude Economy (RCLAE)](https://www.polyu.edu.hk/rclae/), [Department of Aeronautical and Aviation Engineering (AAE)](https://www.polyu.edu.hk/aae/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), Hong Kong, China.
 
 Supervisor: Prof. [Wen-Hua Chen](https://www.engr.uvic.ca/~yshi/index.html) (Fellow of IEEE, IMechE, IET, HEA).
 
