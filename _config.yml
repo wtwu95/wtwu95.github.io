@@ -24,7 +24,7 @@ author:
   name             : "Dr. Wentao Wu (吴文涛)"
   avatar           : "images/avatar.jpg"
   bio              : "Postdoctoral Fellow"
-  location         : "Hong Kong"
+  location         : "Hong Kong, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=e2ban1wAAAAJ"
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "wtwu95"
+  github           : # "wtwu95"
   google_plus      :
   keybase          :
   instagram        :
