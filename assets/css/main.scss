@@ -107,3 +107,39 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+
+/* Compact CV list */
+.cv-list { list-style: none; margin: 10px 0 24px; padding: 0; }
+.cv-item { padding: 8px 0; border-bottom: 1px dashed #e6e6e6; }
+.cv-item:last-child { border-bottom: none; }
+
+.cv-row {
+  display: grid;
+  grid-template-columns: 1fr auto;   /* 主体 + 右侧日期 */
+  gap: 12px;
+  align-items: baseline;
+}
+
+.cv-main { font-size: 15.5px; line-height: 1.5; color: #222; }
+.cv-role, .cv-degree { font-weight: 600; }
+.cv-date { font-size: 13px; color: #666; white-space: nowrap; }
+
+.cv-sub {
+  margin-top: 2px;
+  font-size: 13.5px; line-height: 1.45; color: #6a6a6a;
+}
+
+/* 链接更轻一点 */
+.cv-list a { text-decoration: none; border-bottom: 1px dotted rgba(0,0,0,0.2); }
+.cv-list a:hover { border-bottom-style: solid; }
+
+/* 更紧凑的标题与段距 */
+h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
+#experiences + h1, #educations + h1 { margin-top: 0; }
+
+/* 移动端收紧布局：日期换行到下一行 */
+@media (max-width: 640px) {
+  .cv-row { grid-template-columns: 1fr; gap: 4px; }
+  .cv-date { order: 2; }
+}
