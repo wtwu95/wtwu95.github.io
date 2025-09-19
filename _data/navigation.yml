@@ -3,11 +3,11 @@ main:
   - title: "Biography"
     url: "/#-biography"
 
-  - title: "Experiences"
-    url: "/#-experiences"
+  # - title: "Experiences"
+  #   url: "/#-experiences"
 
-  - title: "Educations"
-    url: "/#-educations"
+  # - title: "Educations"
+  #   url: "/#-educations"
 
   - title: "News"
     url: "/#-recent-news"
@@ -16,7 +16,7 @@ main:
     url: "/#-publications"
 
   - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+    url: "/#-honors"
 
   - title: "Academic Services"
     url: "/#-academic-services"
