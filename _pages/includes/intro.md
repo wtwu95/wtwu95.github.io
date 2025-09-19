@@ -9,6 +9,7 @@ I am open to research discussion and collaboration. Please feel free to reach ou
 # 📖 Educations
 - **2024.01 - Present**,  at [Department of Mechanical Engineering](https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php), [University of Victoria](https://www.uvic.ca/), Canada, under the supervision of Prof. [Yang Shi](https://www.engr.uvic.ca/~yshi/index.html) (Fellow of CAE, EIC, IEEE, ASME, CSME).
 - **2021.09 - 2025.03**, I am a Ph.D. student at [Department of Automation](https://automation.sjtu.edu.cn/), [School of Electronic Information and Electrical Engineering](https://www.seiee.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/), Shanghai, China, under the supervision of Prof. [Weidong Zhang](https://automation.sjtu.edu.cn/wdzhang) (Distinguished Young Scholar and Cheung Kong Scholar) and Prof. [Junguo Lu](https://automation.sjtu.edu.cn/Jun-Guo).
-- **2018.09 - 2021.06**, M.E.  at College of Marine Electrical Engineering, Dalian Maritime University, Dalian, China, under the supervision of Prof. [Dan Wang](https://scholar.google.com/citations?user=kc8gnlMAAAAJ" target="_blank) and Prof. [Zhouhua Peng](https://scholar.google.com/citations?user=hM_5JDYAAAAJ).
-- **2014.09 - 2018.06**, I was a B.E. student at [School of Electrical and Electronic Engineering](https://www.seiee.sjtu.edu.cn/), [Harbin University of Science and Technology](http://www.hrbust.edu.cn/), Harbin, China. 
-e2ban1wAAAAJ
+- **09/2018-06/2021**, M.E., Electrical Engineering, [College of Marine Electrical Engineering](https://cbdq.dlmu.edu.cn/index.htm), [Dalian Maritime University](https://www.dlmu.edu.cn/), Dalian, China.
+
+Supervisors: Prof. [Dan Wang](https://scholar.google.com/citations?user=kc8gnlMAAAAJ" target="_blank) and Prof. [Zhouhua Peng](https://scholar.google.com/citations?user=hM_5JDYAAAAJ).
+- **09/2014-06/2018**, B.E., Electrical Engineering and Automation, [School of Electrical and Electronic Engineering](https://www.seiee.sjtu.edu.cn/), [Harbin University of Science and Technology](http://www.hrbust.edu.cn/), Harbin, China. 
