@@ -6,13 +6,13 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Wentao Wu"
-description              : "Department of Automation, Shanghai Jiao Tong University"
+title                    : "Dr. Wentao Wu (吴文涛)"
+description              : ""
 repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
-google_analytics_id      : "https://analytics.google.com/analytics/e2ban1wAAAAJ" 
+google_analytics_id      : # "https://analytics.google.com/analytics/e2ban1wAAAAJ" 
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
@@ -21,9 +21,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Wentao Wu"
+  name             : "Dr. Wentao Wu (吴文涛)"
   avatar           : "images/avatar.jpg"
-  bio              : "Ph.D Candidate"
+  bio              : "PdF from AAE in PolyU"
   location         : "Shanghai, China"
   employer         :
   pubmed           : 
