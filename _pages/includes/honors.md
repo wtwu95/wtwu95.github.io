@@ -1,5 +1,5 @@
 # 🎖 Honors & Awards
-- *2024.09* &nbsp; **<span style="color:red">National Scholarship for Ph.D. Candidates</span>** at Shanghai Jiao Tong University
+- *2024.09* &nbsp; **<span style="color:red">National Scholarships for Doctoral Students (Top 1%)</span>** at Shanghai Jiao Tong University
 - *2023.12* &nbsp; 'Research Talent' at Sanya Yazhou Bay Science and Technology City
 - *2023.11* &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span> of 2023 7th（CCSICC）**
 - *2023.11* &nbsp; First-Class Scholarship for Ph.D. Students at SJTU Sanya Yazhou Bay Institute of DeepSea Science and Technology
