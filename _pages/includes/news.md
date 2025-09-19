@@ -1,4 +1,4 @@
-# 💬 Recent News
+# 💬 News
 - *2024.09* &nbsp;👏👏👏 I have been awarded the **National Scholarship** for Ph.D. Students at Shanghai Jiao Tong University!
 - *2024.08* &nbsp;🎉 One paper has been accepted by **IEEE T-VT** ([Link](https://ieeexplore.ieee.org/document/))!
 - *2024.07* &nbsp;🎉  One co-author's's paper has been accepted by IEEE **CDC** ([Link]())!

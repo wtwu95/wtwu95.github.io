@@ -1,8 +1,6 @@
 # 👨🏻‍🎓 Biography
 
-Currently, I am a Postdoctoral Fellow of the Department of Engineering at the University of Cambridge advised by Prof. Brian Sheil.
-
-I obtain my Ph.D. degree in the Intelligent Robotics and Machine Vision (IRMV) Lab at the Shanghai Jiao Tong University advised by Prof. Hesheng Wang.
+Dr. Wu is currently a Postdoctoral Fellow of [Research Centre for Low Altitude Economy (RCLAE)](https://www.polyu.edu.hk/rclae/), [Department of Aeronautical and Aviation Engineering (AAE)](https://www.polyu.edu.hk/aae/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/) under the supervision of Prof. [Wen-Hua Chen](https://www.engr.uvic.ca/~yshi/index.html).
 
 I have a lot of collaborations with Prof. Masayoshi Tomizuka from UC Berkeley. I spent a happy time as a visiting researcher in the Computer Vision and Geometry Group (CVG), ETH Zurich, advised by Prof. Marc Pollefeys.
 
