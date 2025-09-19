@@ -4,7 +4,7 @@
   <li class="cv-item">
     <div class="cv-row">
       <div class="cv-main">
-        <span class="cv-degree">Ph.D.</span>, Electronic Information Engineering ·
+        <span class="cv-degree">Ph.D.</span>, Electronic Information Engineering in
         <a href="https://sais.sjtu.edu.cn/">School of Automation and Intelligent Sensing</a> (<a href="https://automation.sjtu.edu.cn/">Department of Automation</a>), 
         <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, Shanghai, China
       </div>
@@ -16,7 +16,7 @@
   <li class="cv-item">
     <div class="cv-row">
       <div class="cv-main">
-        <span class="cv-degree">M.E.</span>, Electrical Engineering ·
+        <span class="cv-degree">M.E.</span>, Electrical Engineering in
         <a href="https://cbdq.dlmu.edu.cn/index.htm">College of Marine Electrical Engineering</a>, 
         <a href="https://www.dlmu.edu.cn/">Dalian Maritime University (DMU)</a>, Dalian, China
       </div>
@@ -28,7 +28,7 @@
   <li class="cv-item">
     <div class="cv-row">
       <div class="cv-main">
-        <span class="cv-degree">B.E.</span>, Electrical Engineering and Automation ·
+        <span class="cv-degree">B.E.</span>, Electrical Engineering and Automation in
         <a href="https://www.seiee.sjtu.edu.cn/">School of Electrical and Electronic Engineering</a>, 
         <a href="http://www.hrbust.edu.cn/">Harbin University of Science and Technology (HUST)</a>, Harbin, China
       </div>

@@ -3,7 +3,7 @@
   <li class="cv-item">
     <div class="cv-row">
       <div class="cv-main">
-        <span class="cv-role">Postdoctoral Fellow</span> ·
+        <span class="cv-role">Postdoctoral Fellow</span> in
         <a href="https://www.polyu.edu.hk/rclae/">Research Centre for Low Altitude Economy (RCLAE)</a> &
         <a href="https://www.polyu.edu.hk/aae/">Department of Aeronautical and Aviation Engineering (AAE)</a>, 
         <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University (PolyU)</a>, Hong Kong, China
@@ -16,7 +16,7 @@
   <li class="cv-item">
     <div class="cv-row">
       <div class="cv-main">
-        <span class="cv-role">Visiting Scholar</span> ·
+        <span class="cv-role">Visiting Scholar</span> in
         <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Department of Mechanical Engineering (ME)</a>, 
         <a href="https://www.uvic.ca/">University of Victoria (UVic)</a>, Victoria, Canada
       </div>
