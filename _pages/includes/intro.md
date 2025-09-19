@@ -5,46 +5,73 @@ My current research interests include distributed control, safety-critical contr
 
 If you are seeking any form of academic cooperation, please feel free to email me at wtwu95@gmail.com or wen-tao.wu@polyu.edu.hk.
 
-
 <span class='anchor' id='experiences'></span>
 # 📖 Experiences
 
-<div class="experience-card">
-  <p><strong>04/2025 – Present</strong>  
-  <em>Postdoctoral Fellow</em>,  
-  <a href="https://www.polyu.edu.hk/rclae/">Research Centre for Low Altitude Economy (RCLAE)</a>,  
-  <a href="https://www.polyu.edu.hk/aae/">Department of Aeronautical and Aviation Engineering (AAE)</a>,  
-  <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University (PolyU)</a>, Hong Kong, China.</p>
-  <p><span class="supervisor">Supervisor:</span> Prof. <a href="https://www.engr.uvic.ca/~yshi/index.html">Wen-Hua Chen</a> (Fellow of IEEE, IMechE, IET, HEA).</p>
+<ul class="cv-list">
+  <li class="cv-item">
+    <div class="cv-row">
+      <div class="cv-main">
+        <span class="cv-role">Postdoctoral Fellow</span> ·
+        <a href="https://www.polyu.edu.hk/rclae/">RCLAE</a>, 
+        <a href="https://www.polyu.edu.hk/aae/">AAE</a>, 
+        <a href="https://www.polyu.edu.hk/">PolyU</a>, Hong Kong
+      </div>
+      <div class="cv-date">04/2025–Present</div>
+    </div>
+    <div class="cv-sub">Supervisor: Prof. <a href="https://www.engr.uvic.ca/~yshi/index.html">Wen-Hua Chen</a> (FIEEE, FIMechE, FIET, FHEA)</div>
+  </li>
 
-  <p><strong>01/2024 – 11/2024</strong>  
-  <em>Visiting Scholar</em>,  
-  <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Department of Mechanical Engineering</a>,  
-  <a href="https://www.uvic.ca/">University of Victoria</a>, Victoria, Canada.</p>
-  <p><span class="supervisor">Supervisor:</span> Prof. <a href="https://www.engr.uvic.ca/~yshi/index.html">Yang Shi</a> (Fellow of RSC, CAE, EIC, IEEE, ASME, CSME).</p>
-</div>
-
----
+  <li class="cv-item">
+    <div class="cv-row">
+      <div class="cv-main">
+        <span class="cv-role">Visiting Scholar</span> ·
+        <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Dept. of Mechanical Eng.</a>, 
+        <a href="https://www.uvic.ca/">University of Victoria</a>, Canada
+      </div>
+      <div class="cv-date">01/2024–11/2024</div>
+    </div>
+    <div class="cv-sub">Supervisor: Prof. <a href="https://www.engr.uvic.ca/~yshi/index.html">Yang Shi</a> (FRSC, FCAE, FEIC, FIEEE, FASME, FCSME)</div>
+  </li>
+</ul>
 
 <span class='anchor' id='educations'></span>
 # 🎓 Educations
 
-<div class="edu-card">
-  <p><strong>09/2021 – 03/2025</strong>  
-  <em>Ph.D.</em> in Electronic Information Engineering,  
-  <a href="https://automation.sjtu.edu.cn/">Department of Automation</a>,  
-  <a href="https://www.seiee.sjtu.edu.cn/">School of Electronic Information and Electrical Engineering</a>,  
-  <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>, Shanghai, China.</p>
-  <p><span class="supervisor">Supervisors:</span> Chair Prof. <a href="https://automation.sjtu.edu.cn/wdzhang"><strong>Weidong Zhang</strong></a> and Prof. <a href="https://automation.sjtu.edu.cn/Jun-Guo"><strong>Junguo Lu</strong></a>.</p>
+<ul class="cv-list">
+  <li class="cv-item">
+    <div class="cv-row">
+      <div class="cv-main">
+        <span class="cv-degree">Ph.D.</span>, Electronic Information Engineering ·
+        <a href="https://automation.sjtu.edu.cn/">Dept. of Automation</a>, 
+        <a href="https://www.seiee.sjtu.edu.cn/">SEIEE</a>, 
+        <a href="https://www.sjtu.edu.cn/">SJTU</a>, Shanghai
+      </div>
+      <div class="cv-date">09/2021–03/2025</div>
+    </div>
+    <div class="cv-sub">Supervisors: Chair Prof. <a href="https://automation.sjtu.edu.cn/wdzhang"><b>Weidong Zhang</b></a>, Prof. <a href="https://automation.sjtu.edu.cn/Jun-Guo"><b>Junguo Lu</b></a></div>
+  </li>
 
-  <p><strong>09/2018 – 06/2021</strong>  
-  <em>M.E.</em> in Electrical Engineering,  
-  <a href="https://cbdq.dlmu.edu.cn/index.htm">College of Marine Electrical Engineering</a>,  
-  <a href="https://www.dlmu.edu.cn/">Dalian Maritime University</a>, Dalian, China.</p>
-  <p><span class="supervisor">Supervisors:</span> Prof. <a href="https://scholar.google.com/citations?user=kc8gnlMAAAAJ"><strong>Dan Wang</strong></a> and Prof. <a href="https://scholar.google.com/citations?user=hM_5JDYAAAAJ"><strong>Zhouhua Peng</strong></a>.</p>
+  <li class="cv-item">
+    <div class="cv-row">
+      <div class="cv-main">
+        <span class="cv-degree">M.E.</span>, Electrical Engineering ·
+        <a href="https://cbdq.dlmu.edu.cn/index.htm">College of Marine Electrical Eng.</a>, 
+        <a href="https://www.dlmu.edu.cn/">Dalian Maritime Univ.</a>, Dalian
+      </div>
+      <div class="cv-date">09/2018–06/2021</div>
+    </div>
+    <div class="cv-sub">Supervisors: Prof. <a href="https://scholar.google.com/citations?user=kc8gnlMAAAAJ"><b>Dan Wang</b></a>, Prof. <a href="https://scholar.google.com/citations?user=hM_5JDYAAAAJ"><b>Zhouhua Peng</b></a></div>
+  </li>
 
-  <p><strong>09/2014 – 06/2018</strong>  
-  <em>B.E.</em> in Electrical Engineering and Automation,  
-  <a href="https://www.seiee.sjtu.edu.cn/">School of Electrical and Electronic Engineering</a>,  
-  <a href="http://www.hrbust.edu.cn/">Harbin University of Science and Technology</a>, Harbin, China.</p>
-</div>
+  <li class="cv-item">
+    <div class="cv-row">
+      <div class="cv-main">
+        <span class="cv-degree">B.E.</span>, EE & Automation ·
+        <a href="https://www.seiee.sjtu.edu.cn/">SEEE</a>, 
+        <a href="http://www.hrbust.edu.cn/">HRBUST</a>, Harbin
+      </div>
+      <div class="cv-date">09/2014–06/2018</div>
+    </div>
+  </li>
+</ul>
