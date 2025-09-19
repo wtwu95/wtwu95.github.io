@@ -16,9 +16,7 @@ If you are seeking any form of academic cooperation, please feel free to email m
   <a href="https://www.polyu.edu.hk/aae/">Department of Aeronautical and Aviation Engineering (AAE)</a>,  
   <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University (PolyU)</a>, Hong Kong, China.</p>
   <p><span class="supervisor">Supervisor:</span> Prof. <a href="https://www.engr.uvic.ca/~yshi/index.html">Wen-Hua Chen</a> (Fellow of IEEE, IMechE, IET, HEA).</p>
-</div>
-
-<div class="experience-card">
+  
   <p><strong>01/2024 – 11/2024</strong>  
   <em>Visiting Scholar</em>,  
   <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Department of Mechanical Engineering</a>,  
