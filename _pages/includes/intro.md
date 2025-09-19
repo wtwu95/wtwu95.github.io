@@ -1,4 +1,4 @@
-<!-- # 👨🏻‍🎓 Biography -->
+# 👨🏻‍🎓 Biography
 
 Currently, I am a Postdoctoral Fellow of the Department of Engineering at the University of Cambridge advised by Prof. Brian Sheil.
 
