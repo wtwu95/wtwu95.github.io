@@ -1,4 +1,4 @@
- # 💬 News
+# 💬 News
 
 <div class="news-window">
   <div class="news-scroll" role="region" aria-label="Latest news" markdown="1" tabindex="0">
