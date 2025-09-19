@@ -7,6 +7,10 @@ I am open to research discussion and collaboration. Please feel free to reach ou
 
 <span class='anchor' id='experiences'></span>
 # 📖 Experiences
+- 04/2025-Present, **Postdoctoral Fellow**, [Research Centre for Low Altitude Economy (RCLAE)](https://www.polyu.edu.hk/rclae/) & [Department of Aeronautical and Aviation Engineering (AAE)](https://www.polyu.edu.hk/aae/), [The Hong Kong Polytechnic University (PolyU)](https://www.polyu.edu.hk/), Hong Kong, China.
+
+Supervisor: Prof. [Wen-Hua Chen](https://www.engr.uvic.ca/~yshi/index.html) (Fellow of IEEE, IMechE, IET, HEA).
+
 - 01/2024-11/2024, **Visiting Scholar**, [Department of Mechanical Engineering](https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php), [University of Victoria](https://www.uvic.ca/), Victoria, Canada.
 
 Supervisor: Prof. [Yang Shi](https://www.engr.uvic.ca/~yshi/index.html) (Fellow of RSC, CAE, EIC, IEEE, ASME, CSME).
