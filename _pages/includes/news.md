@@ -1,9 +1,10 @@
  # 💬 News
+
 <div class="news-window">
   <div class="news-scroll" role="region" aria-label="Latest news" markdown="1" tabindex="0">
  - *2024.09* &nbsp;👏👏👏 I have been awarded the **National Scholarship** for Ph.D. Students at Shanghai Jiao Tong University!
  - *2024.08* &nbsp;🎉 One paper has been accepted by **IEEE T-VT** ([Link](https://ieeexplore.ieee.org/document/))!
- - *2024.07* &nbsp;🎉  One co-author's's paper has been accepted by IEEE **CDC** ([Link]())!
+ - *2024.07* &nbsp;🎉  One co-author's paper has been accepted by IEEE **CDC** ([Link]())!
  - *2024.07* &nbsp;🎉 One co-author's paper has been accepted by **IEEE T-FS** ([Link](10.1109/TFUZZ.2024.3434711))!
  - *2024.03* &nbsp;🎉 One  paper has been accepted by **IEEE T-FS** ([Link](https://ieeexplore.ieee.org/document/10549852))!
  - *2024.02* &nbsp;🎉 One co-author's paper has been accepted by **IEEE T-CSII** ([Link](https://ieeexplore.ieee.org/document/10462491))!
