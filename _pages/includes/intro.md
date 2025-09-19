@@ -2,6 +2,7 @@
 My research interests include distributed control, safety-critical control, game-based optimation, and their applications to autonomous vehicle systems. 
 I have published 30+ papers  <a href='https://scholar.google.com/citations?user=e2ban1wAAAAJ'>
 <img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https://raw.githubusercontent.com/wtwu95/wtwu95.github.io/google-scholar-stats/gs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations">
+</a> 
 in top journals and international conferences such as IEEE T-CYB, IEEE/CAA JAS, IEEE T-ITS, IEEE T-FS, IEEE CDC.
 
 
