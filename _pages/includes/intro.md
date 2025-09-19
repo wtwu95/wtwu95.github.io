@@ -5,15 +5,10 @@ I have published 30+ papers <a href='https://scholar.google.com/citations?user=e
 
 If you are seeking any form of academic cooperation, please feel free to email me at wtwu95@gmail.com or wen-tao.wu@polyu.edu.hk.
 
-## Biography
 
-My research interests include autonomous systems, cooperative control, game theory, and hyperspectral image processing.  
-I have published more than 30 papers in top IEEE journals and international conferences with total  
 <a href='https://scholar.google.com/citations?user=e2ban1wAAAAJ'>
   Google Scholar citations <strong><span id='total_cit'>{{ site.data.scholar_stats.citedby }}</span></strong>
 </a>  
-
-(You can also use a dynamic Google Scholar badge:  
 <a href='https://scholar.google.com/citations?user=e2ban1wAAAAJ'>
   <img src="https://img.shields.io/endpoint?url={{ site.url }}/google-scholar-stats/gs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations">
 </a>).
