@@ -10,12 +10,12 @@ main:
   #   url: "/#-educations"
 
   - title: "News"
-    url: "/#-recent-news"
+    url: "/#-news"
 
   - title: "Publications"
     url: "/#-publications"
 
-  - title: "Honors and Awards"
+  - title: "Honors & Awards"
     url: "/#-honors"
 
   - title: "Academic Services"

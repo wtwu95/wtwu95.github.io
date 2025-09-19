@@ -1,3 +1,4 @@
+<span class='anchor' id='-news'></span>
 # 💬 News
 
 <div class="news-window">
