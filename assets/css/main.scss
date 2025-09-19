@@ -147,7 +147,7 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 /* Scrollable news list */
 .news-window {
   margin-top: 0.75rem;
-  padding: 1.5rem clamp(1.25rem, 1.5vw + 0.5rem, 2rem);
+  padding: 1.5rem clamp(1.25rem, calc(1.5vw + 0.5rem), 2rem);
   border-radius: 18px;
   border: 1px solid rgba(0, 54, 159, 0.12);
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(244, 248, 255, 0.8));
