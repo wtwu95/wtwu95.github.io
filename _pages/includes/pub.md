@@ -331,10 +331,6 @@ ol.publication-list > li {
   font-variant-numeric: tabular-nums;
 }
 
-.publication-body {
-  color: #0969da;
-}
-
 .publication-body p {
   margin: 0;
 }
