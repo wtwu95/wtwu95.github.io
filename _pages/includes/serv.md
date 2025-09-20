@@ -1,5 +1,5 @@
 # 💻 Academic Services:
-### Journal Reviewers
+### Journal Reviewer
 - *2024~:* IEEE Transactions on Vehicular Technology
 - *2024~:* IEEE Transactions on Transportation Electrification
 - *2023~:* ISA Transactions
