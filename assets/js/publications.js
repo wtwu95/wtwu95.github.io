@@ -193,7 +193,7 @@
         bodyEl.className = 'publication-body';
         bodyEl.innerHTML = pub.content;
 
-        enhanceDisplay(bodyEl);
+        enhanceDisplay(bodyEl, pub);
         applySearchHighlight(bodyEl, highlightTerm);
 
         var actions = document.createElement('div');
@@ -304,7 +304,7 @@
       });
     }
 
-    function enhanceDisplay(container) {
+    function enhanceDisplay(container, publication) {
       Array.prototype.slice.call(container.querySelectorAll('p')).forEach(function (p) {
         p.innerHTML = p.innerHTML.replace(/''([^']+?)''/g, function (_, title) {
           var trimmed = title.trim();
@@ -315,6 +315,74 @@
           return '“' + trimmed + '.”';
         });
       });
+
+      stylePublicationVenues(container, publication);
+    }
+
+    function stylePublicationVenues(container, publication) {
+      if (!container) {
+        return;
+      }
+
+      var venueElements = Array.prototype.slice.call(container.querySelectorAll('p em')).filter(function (el) {
+        return el && el.textContent && el.textContent.trim().length > 0;
+      });
+
+      if (venueElements.length === 0) {
+        return;
+      }
+
+      var category = determineVenueCategory(publication, venueElements);
+      if (!category) {
+        return;
+      }
+
+      var baseClass = 'publication-venue';
+      var categoryClass = baseClass + '--' + category;
+
+      venueElements.forEach(function (element) {
+        element.classList.add(baseClass);
+        element.classList.add(categoryClass);
+      });
+    }
+
+    function determineVenueCategory(publication, venueElements) {
+      if (!publication) {
+        return null;
+      }
+
+      if (publication.type === 'conference') {
+        return 'conference';
+      }
+
+      var primaryVenue = '';
+      if (venueElements && venueElements.length > 0) {
+        primaryVenue = venueElements[0].textContent || '';
+      }
+
+      if (!primaryVenue) {
+        return null;
+      }
+
+      var trimmed = primaryVenue.trim();
+
+      if (!trimmed) {
+        return null;
+      }
+
+      if (containsChineseCharacters(trimmed)) {
+        return 'chinese-journal';
+      }
+
+      if (/IEEE/i.test(trimmed)) {
+        return 'ieee-journal';
+      }
+
+      return 'non-ieee-journal';
+    }
+
+    function containsChineseCharacters(text) {
+      return /[\u3400-\u9fff\uf900-\ufaff]/.test(text);
     }
 
     function applySearchHighlight(container, term) {

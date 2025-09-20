@@ -396,22 +396,46 @@ ol.publication-list > li {
 }
 
 .publication-body em {
-  color: #0969da;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+  font-style: normal;
 }
 
 .publication-body em a {
   color: inherit;
 }
 
-.publication-body em:hover,
-.publication-body em:focus,
-.publication-body em a:hover,
-.publication-body em a:focus {
-  color: #0550ae;
+.publication-body em.publication-venue {
+  color: #0969da;
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.publication-body em.publication-venue a {
+  color: inherit;
+}
+
+.publication-body em.publication-venue:hover,
+.publication-body em.publication-venue:focus,
+.publication-body em.publication-venue a:hover,
+.publication-body em.publication-venue a:focus {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.publication-body em.publication-venue--ieee {
+  color: #18445a;
+}
+
+.publication-body em.publication-venue--non-ieee-journal {
+  color: #e9711d;
+}
+
+.publication-body em.publication-venue--chinese-journal {
+  color: #0969da;
+}
+
+.publication-body em.publication-venue--conference {
+  color: #e5a42c;
 }
 
 mark.publication-highlight {
