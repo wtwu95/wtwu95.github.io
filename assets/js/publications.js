@@ -202,7 +202,7 @@
           var citeButton = document.createElement('button');
           citeButton.type = 'button';
           citeButton.className = 'publication-cite';
-          citeButton.innerHTML = '<img src="https://img.shields.io/badge/Link-Cite-0969da?labelColor=555" alt="Cite badge">';
+          citeButton.innerHTML = '<img src="https://img.shields.io/badge/Link-Cite-224b8d?labelColor=555" alt="Cite badge">';
           citeButton.setAttribute('aria-label', 'Cite this publication');
           citeButton.addEventListener('click', function () {
             openCitation(number, pub.citations);

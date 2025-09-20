@@ -245,6 +245,10 @@
 <style>
 :root {
   --publication-control-height: 2.5rem;
+  --publication-accent-color: #224b8d;
+  --publication-accent-color-hover: #1a386a;
+  --publication-accent-color-muted: rgba(34, 75, 141, 0.12);
+  --publication-text-color: #494e52;
 }
 
 .publication-controls {
@@ -272,31 +276,39 @@
 .publication-search {
   flex: 1 1 240px;
   min-width: 200px;
-  line-height: normal;
+  padding: 0 0.75rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
   -webkit-appearance: none;
   appearance: none;
+}
+
+.publication-search::-webkit-search-decoration,
+.publication-search::-webkit-search-cancel-button {
+  display: none;
 }
 
 .publication-controls select:focus,
 .publication-controls button:focus,
 .publication-search:focus {
   outline: none;
-  border-color: #0969da;
-  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.15);
+  border-color: var(--publication-accent-color);
+  box-shadow: 0 0 0 3px rgba(34, 75, 141, 0.18);
 }
 
 .publication-controls button {
   cursor: pointer;
-  background-color: #0969da;
+  background-color: var(--publication-accent-color);
   color: #fff;
-  border-color: #0969da;
+  border-color: var(--publication-accent-color);
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .publication-controls button:hover {
-  background-color: #0550ae;
+  background-color: var(--publication-accent-color-hover);
 }
 
 ol.publication-list {
@@ -312,6 +324,10 @@ ol.publication-list > li {
   margin-bottom: 1.25rem;
   line-height: 1.65;
   align-items: flex-start;
+}
+
+.publication-body {
+  color: var(--publication-text-color);
 }
 
 .publication-index {
@@ -377,25 +393,31 @@ ol.publication-list > li {
 
 .publication-body p a:first-of-type {
   text-decoration: none;
-  color: #111;
+  color: var(--publication-accent-color);
 }
 
 .publication-body p a:first-of-type:hover,
 .publication-body p a:first-of-type:focus {
-  color: #111;
+  color: var(--publication-accent-color-hover);
   text-decoration: none;
 }
 
-.publication-body em a {
-  color: #0969da;
+.publication-body em {
+  color: var(--publication-accent-color);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
 
+.publication-body em a {
+  color: inherit;
+}
+
+.publication-body em:hover,
+.publication-body em:focus,
 .publication-body em a:hover,
 .publication-body em a:focus {
-  color: #0550ae;
+  color: var(--publication-accent-color-hover);
   text-decoration: underline;
 }
 
@@ -461,8 +483,8 @@ ol.publication-list > li {
 }
 
 .citation-modal__tab.is-active {
-  background: #0969da;
-  border-color: #0969da;
+  background: var(--publication-accent-color);
+  border-color: var(--publication-accent-color);
   color: #fff;
 }
 
@@ -487,8 +509,8 @@ ol.publication-list > li {
 .citation-modal__action {
   padding: 0.45rem 1.1rem;
   border-radius: 0.6rem;
-  border: 1px solid #0969da;
-  background: #0969da;
+  border: 1px solid var(--publication-accent-color);
+  background: var(--publication-accent-color);
   color: #fff;
   cursor: pointer;
   font-size: 0.95rem;
@@ -497,15 +519,15 @@ ol.publication-list > li {
 
 .citation-modal__action[data-action="copy"] {
   background: #fff;
-  color: #0969da;
+  color: var(--publication-accent-color);
 }
 
 .citation-modal__action[data-action="copy"]:hover {
-  background: rgba(9, 105, 218, 0.1);
+  background: var(--publication-accent-color-muted);
 }
 
 .citation-modal__action[data-action="download"]:hover {
-  background: #0550ae;
+  background: var(--publication-accent-color-hover);
 }
 
 @media (max-width: 600px) {
