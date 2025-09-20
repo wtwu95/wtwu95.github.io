@@ -85,11 +85,11 @@
 ### Publications Explorer
 
 <div class="publication-controls">
-  <label for="publication-type-filter">Type</label>
+  <!-- <label for="publication-type-filter">Type</label> -->
   <select id="publication-type-filter">
     <option value="all">Type</option>
   </select>
-  <label for="publication-year-filter">Date</label>
+  <!-- <label for="publication-year-filter">Date</label> -->
   <select id="publication-year-filter">
     <option value="all">Date</option>
   </select>
