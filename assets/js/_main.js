@@ -1,98 +1,181 @@
-/* ==========================================================================
-   jQuery plugin settings and other scripts
-   ========================================================================== */
+$(document).ready(function () {
+  'use strict';
 
-$(document).ready(function(){
-   // Sticky footer
-  var bumpIt = function() {
-      $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-    },
-    didResize = false;
+  var requestFrame =
+    window.requestAnimationFrame ||
+    function (callback) {
+      return window.setTimeout(callback, 16);
+    };
+  var cancelFrame = window.cancelAnimationFrame || window.clearTimeout;
 
-  bumpIt();
+  var $window = $(window);
+  var $body = $('body');
+  var $footer = $('.page__footer');
+  var $authorWrapper = $('.author__urls-wrapper');
+  var $authorButton = $authorWrapper.find('button');
+  var $authorUrls = $('.author__urls');
+  var $main = $('#main');
+  var $sticky = $('.sticky');
 
-  $(window).resize(function() {
-    didResize = true;
-  });
-  setInterval(function() {
-    if (didResize) {
-      didResize = false;
-      bumpIt();
+  var stickyfill = typeof Stickyfill !== 'undefined' ? Stickyfill : null;
+  var hasSmoothScroll = typeof $.fn.smoothScroll === 'function';
+  var hasMagnificPopup = typeof $.fn.magnificPopup === 'function';
+
+  var isSidebarVisible = null;
+  var resizeFrame = null;
+
+  function updateFooterSpacing() {
+    if (!$footer.length) {
+      $body.css('margin-bottom', '');
+      return;
     }
-  }, 250);
-  // FitVids init
-  $("#main").fitVids();
 
-  // init sticky sidebar
-  $(".sticky").Stickyfill();
+    $body.css('margin-bottom', $footer.outerHeight(true));
+  }
 
-  var stickySideBar = function(){
-    var show = $(".author__urls-wrapper button").length === 0 ? $(window).width() > 925 : !$(".author__urls-wrapper button").is(":visible");
-    // console.log("has button: " + $(".author__urls-wrapper button").length === 0);
-    // console.log("Window Width: " + windowWidth);
-    // console.log("show: " + show);
-    //old code was if($(window).width() > 1024)
-    if (show) {
-      // fix
-      Stickyfill.rebuild();
-      Stickyfill.init();
-      $(".author__urls").show();
-    } else {
-      // unfix
-      Stickyfill.stop();
-      $(".author__urls").hide();
+  function matchDesktopQuery() {
+    if (typeof window.matchMedia === 'function') {
+      return window.matchMedia('(min-width: 926px)').matches;
     }
-  };
 
-  stickySideBar();
+    return $window.width() > 925;
+  }
 
-  $(window).resize(function(){
-    stickySideBar();
-  });
+  function shouldShowSidebar() {
+    if (!$authorUrls.length) {
+      return false;
+    }
 
-  // Follow menu drop down
+    if (!$authorButton.length) {
+      return matchDesktopQuery();
+    }
 
-  $(".author__urls-wrapper button").on("click", function() {
-    $(".author__urls").fadeToggle("fast", function() {});
-    $(".author__urls-wrapper button").toggleClass("open");
-  });
+    return !$authorButton.is(':visible');
+  }
 
-  // init smooth scroll
-  $("a").smoothScroll({offset: -20});
+  function applyStickyState(shouldEnable) {
+    if (!stickyfill) {
+      return;
+    }
 
-  // add lightbox class to all image links
-  $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
-
-  // Magnific-Popup options
-  $(".image-popup").magnificPopup({
-    // disableOn: function() {
-    //   if( $(window).width() < 500 ) {
-    //     return false;
-    //   }
-    //   return true;
-    // },
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-      tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
-    },
-    removalDelay: 500, // Delay in milliseconds before popup is removed
-    // Class that is added to body when popup is open.
-    // make it unique to apply your CSS animations just to this exact popup
-    mainClass: 'mfp-zoom-in',
-    callbacks: {
-      beforeOpen: function() {
-        // just a hack that adds mfp-anim class to markup
-        this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+    if (shouldEnable) {
+      if (typeof stickyfill.rebuild === 'function') {
+        stickyfill.rebuild();
       }
-    },
-    closeOnContentClick: true,
-    midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-  });
 
+      if (typeof stickyfill.init === 'function') {
+        stickyfill.init();
+      }
+
+      return;
+    }
+
+    if (typeof stickyfill.stop === 'function') {
+      stickyfill.stop();
+    }
+  }
+
+  function updateStickySidebar(force) {
+    if (!$authorUrls.length) {
+      return;
+    }
+
+    var shouldShow = shouldShowSidebar();
+
+    if (!force && shouldShow === isSidebarVisible) {
+      return;
+    }
+
+    isSidebarVisible = shouldShow;
+    applyStickyState(shouldShow);
+
+    if (shouldShow) {
+      $authorUrls.stop(true, true).show();
+    } else {
+      $authorUrls.stop(true, true).hide();
+    }
+  }
+
+  function handleResize() {
+    updateFooterSpacing();
+    updateStickySidebar(false);
+  }
+
+  function scheduleResize() {
+    if (resizeFrame !== null) {
+      cancelFrame(resizeFrame);
+    }
+
+    resizeFrame = requestFrame(function () {
+      resizeFrame = null;
+      handleResize();
+    });
+  }
+
+  updateFooterSpacing();
+  updateStickySidebar(true);
+
+  if ($footer.length) {
+    $window.on('load', updateFooterSpacing);
+  }
+
+  $window.on('resize orientationchange', scheduleResize);
+
+  if ($authorButton.length) {
+    $authorButton.on('click', function () {
+      $authorUrls.stop(true, true).fadeToggle('fast');
+      $authorButton.toggleClass('open');
+    });
+  }
+
+  if ($main.length && typeof $main.fitVids === 'function') {
+    $main.fitVids();
+  }
+
+  if ($sticky.length && typeof $sticky.Stickyfill === 'function') {
+    $sticky.Stickyfill();
+  }
+
+  if (hasSmoothScroll) {
+    $('a').smoothScroll({ offset: -20 });
+  }
+
+  var $imageLinks = $(
+    "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']"
+  );
+
+  if ($imageLinks.length) {
+    $imageLinks.addClass('image-popup');
+  }
+
+  if (hasMagnificPopup) {
+    var $popups = $('.image-popup');
+
+    if ($popups.length) {
+      $popups.magnificPopup({
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0, 1],
+        },
+        image: {
+          tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
+        },
+        removalDelay: 500,
+        mainClass: 'mfp-zoom-in',
+        callbacks: {
+          beforeOpen: function () {
+            this.st.image.markup = this.st.image.markup.replace(
+              'mfp-figure',
+              'mfp-figure mfp-with-anim'
+            );
+          },
+        },
+        closeOnContentClick: true,
+        midClick: true,
+      });
+    }
+  }
 });
