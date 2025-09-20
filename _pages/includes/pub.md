@@ -272,9 +272,17 @@
 .publication-search {
   flex: 1 1 240px;
   min-width: 200px;
-  line-height: normal;
+  padding: 0 0.75rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
   -webkit-appearance: none;
   appearance: none;
+}
+
+.publication-search::-webkit-search-decoration,
+.publication-search::-webkit-search-cancel-button {
+  display: none;
 }
 
 .publication-controls select:focus,
@@ -386,13 +394,19 @@ ol.publication-list > li {
   text-decoration: none;
 }
 
-.publication-body em a {
+.publication-body em {
   color: #0969da;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
 
+.publication-body em a {
+  color: inherit;
+}
+
+.publication-body em:hover,
+.publication-body em:focus,
 .publication-body em a:hover,
 .publication-body em a:focus {
   color: #0550ae;
