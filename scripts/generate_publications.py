@@ -81,6 +81,18 @@ MONTH_ALIASES = {
 }
 
 
+def venue_class(entry_type: str, venue_name: str):
+    name = (venue_name or "").strip()
+    base_class = "publication-venue"
+    if entry_type == "conference":
+        return f"{base_class} publication-venue--conference"
+    if re.search(r"[\u4e00-\u9fff]", name):
+        return f"{base_class} publication-venue--chinese-journal"
+    if "IEEE" in name.upper():
+        return f"{base_class} publication-venue--ieee-journal"
+    return f"{base_class} publication-venue--english-journal"
+
+
 def load_entries(path: Path):
     html = path.read_text()
     soup = BeautifulSoup(html, "html.parser")
@@ -372,10 +384,18 @@ def generate():
             title_html = f"<a href=\"{entry['title_url']}\">{html.escape(entry['title'])}</a>"
         else:
             title_html = html.escape(entry['title'])
+        venue_classes = venue_class(entry['type'], venue_name)
+        class_attr = f" class=\"{venue_classes}\"" if venue_classes else ""
         if entry['type'] == 'conference':
-            venue_html = f"in <em><a href=\"{entry['venue_url']}\">{venue_name}</a></em>" if entry['venue_url'] else f"in <em>{venue_name}</em>"
+            if entry['venue_url']:
+                venue_html = f"in <em{class_attr}><a href=\"{entry['venue_url']}\">{venue_name}</a></em>"
+            else:
+                venue_html = f"in <em{class_attr}>{venue_name}</em>"
         else:
-            venue_html = f"<em><a href=\"{entry['venue_url']}\">{venue_name}</a></em>" if entry['venue_url'] else f"<em>{venue_name}</em>"
+            if entry['venue_url']:
+                venue_html = f"<em{class_attr}><a href=\"{entry['venue_url']}\">{venue_name}</a></em>"
+            else:
+                venue_html = f"<em{class_attr}>{venue_name}</em>"
         info_suffix = f", {info_display}" if info_display else ''
         tail_html = ''
         if entry['resources']:
