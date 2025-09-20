@@ -194,9 +194,11 @@
 
         enhanceDisplay(bodyEl);
 
+        var actions = document.createElement('div');
+        actions.className = 'publication-actions';
+        var hasActions = false;
+
         if (citationModal && pub.citations) {
-          var actions = document.createElement('div');
-          actions.className = 'publication-actions';
           var citeButton = document.createElement('button');
           citeButton.type = 'button';
           citeButton.className = 'publication-cite';
@@ -206,11 +208,81 @@
             openCitation(number, pub.citations);
           });
           actions.appendChild(citeButton);
+          hasActions = true;
+        }
+
+        var findAncestorLink = function (node) {
+          var current = node;
+          while (current) {
+            if (current.tagName && current.tagName.toLowerCase() === 'a') {
+              return current;
+            }
+            if (current === bodyEl) {
+              return null;
+            }
+            current = current.parentNode;
+          }
+          return null;
+        };
+
+        var badgeImages = Array.prototype.slice.call(bodyEl.querySelectorAll('a img'));
+        var pdfBadges = [];
+        var videoBadges = [];
+        var otherBadges = [];
+
+        badgeImages.forEach(function (img) {
+          var link = findAncestorLink(img);
+          if (!link) {
+            return;
+          }
+          var altText = (img.getAttribute('alt') || '').toLowerCase();
+          if (altText.indexOf('pdf') !== -1 && altText.indexOf('badge') !== -1) {
+            pdfBadges.push(link);
+            return;
+          }
+          if (altText.indexOf('video') !== -1 && altText.indexOf('badge') !== -1) {
+            videoBadges.push(link);
+            return;
+          }
+          if (altText.indexOf('badge') !== -1) {
+            otherBadges.push(link);
+          }
+        });
+
+        var appendedBadges = [];
+        var appendBadge = function (link) {
+          if (!link || appendedBadges.indexOf(link) !== -1) {
+            return;
+          }
+          if (link.parentNode) {
+            link.parentNode.removeChild(link);
+          }
+          link.classList.add('publication-badge');
+          var badgeImage = link.querySelector('img');
+          if (badgeImage) {
+            badgeImage.classList.add('publication-badge__image');
+          }
+          actions.appendChild(link);
+          appendedBadges.push(link);
+          hasActions = true;
+        };
+
+        pdfBadges.forEach(appendBadge);
+        videoBadges.forEach(appendBadge);
+        otherBadges.forEach(appendBadge);
+
+        if (hasActions) {
           bodyEl.appendChild(actions);
         }
 
         li.appendChild(indexEl);
         li.appendChild(bodyEl);
+
+        var yearEl = document.createElement('span');
+        yearEl.className = 'publication-year';
+        yearEl.textContent = pub.year ? String(pub.year) : '';
+        li.appendChild(yearEl);
+
         listEl.appendChild(li);
       });
     }
