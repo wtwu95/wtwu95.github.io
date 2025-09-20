@@ -318,52 +318,48 @@
     }
 
     function applySearchHighlight(container, term) {
-      var trimmed = term ? term.trim() : '';
-      if (!trimmed) {
+      var rawTerm = term ? term.trim() : '';
+      if (!rawTerm) {
         return;
       }
-      var normalized = trimmed.toLowerCase();
+      var normalized = rawTerm.toLowerCase();
       if (!normalized) {
         return;
       }
 
       var walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null, false);
       var nodes = [];
-      var current;
+      var node;
 
-      while ((current = walker.nextNode())) {
-        var value = current.nodeValue;
-        if (!value) {
-          continue;
+      while ((node = walker.nextNode())) {
+        var value = node.nodeValue;
+        if (value && value.trim() && value.toLowerCase().indexOf(normalized) !== -1) {
+          nodes.push(node);
         }
-        if (!value.trim()) {
-          continue;
-        }
-        if (value.toLowerCase().indexOf(normalized) === -1) {
-          continue;
-        }
-        nodes.push(current);
       }
 
-      nodes.forEach(function (node) {
-        if (!node.parentNode) {
+      var termLength = rawTerm.length;
+
+      nodes.forEach(function (textNode) {
+        if (!textNode.parentNode) {
           return;
         }
-        var text = node.nodeValue;
+        var text = textNode.nodeValue;
         var lower = text.toLowerCase();
         var fragment = document.createDocumentFragment();
         var index = 0;
-        var termLength = trimmed.length;
         var matchIndex;
 
         while ((matchIndex = lower.indexOf(normalized, index)) !== -1) {
           if (matchIndex > index) {
             fragment.appendChild(document.createTextNode(text.slice(index, matchIndex)));
           }
+
           var mark = document.createElement('mark');
           mark.className = 'publication-highlight';
           mark.textContent = text.slice(matchIndex, matchIndex + termLength);
           fragment.appendChild(mark);
+
           index = matchIndex + termLength;
         }
 
@@ -371,7 +367,7 @@
           fragment.appendChild(document.createTextNode(text.slice(index)));
         }
 
-        node.parentNode.replaceChild(fragment, node);
+        textNode.parentNode.replaceChild(fragment, textNode);
       });
     }
 
