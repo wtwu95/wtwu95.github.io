@@ -96,7 +96,7 @@
   <select id="publication-year-filter">
     <option value="all">Date</option>
   </select>
-  <button type="button" id="publication-year-sort" class="publication-sort">Year ⬇</button>
+  <button type="button" id="publication-year-sort" class="publication-sort">⬇</button>
 </div>
 
 <ol id="publication-list" class="publication-list"></ol>
