@@ -19,10 +19,10 @@
     }
 
     var typeLabels = {
-      journal: '期刊',
-      conference: '会议',
-      patent: '专利',
-      review: '综述'
+      journal: 'Journal article',
+      conference: 'Conference paper',
+      patent: 'Patent',
+      review: 'Review'
     };
 
     var publications = Array.prototype.slice.call(sourceList.querySelectorAll('li')).map(function (item) {
@@ -45,7 +45,7 @@
       return labelA.localeCompare(labelB, 'zh-Hans-CN');
     });
 
-    typeSelect.innerHTML = '<option value="all">全部类型</option>' + uniqueTypes.map(function (type) {
+    typeSelect.innerHTML = '<option value="all">Type</option>' + uniqueTypes.map(function (type) {
       var label = typeLabels[type] || type;
       return '<option value="' + type + '">' + label + '</option>';
     }).join('');
@@ -55,7 +55,7 @@
         return pub.year;
       }).filter(Boolean)));
       years.sort(function (a, b) { return b - a; });
-      yearSelect.innerHTML = '<option value="all">全部年份</option>' + years.map(function (year) {
+      yearSelect.innerHTML = '<option value="all">Date</option>' + years.map(function (year) {
         return '<option value="' + year + '">' + year + '</option>';
       }).join('');
     }
@@ -113,7 +113,7 @@
       if (filtered.length === 0) {
         var emptyItem = document.createElement('li');
         emptyItem.className = 'publication-empty';
-        emptyItem.textContent = '暂无符合条件的文献。';
+        emptyItem.textContent = 'No matching publication';
         listEl.appendChild(emptyItem);
         return;
       }
@@ -131,7 +131,7 @@
     yearSelect.addEventListener('change', render);
     sortButton.addEventListener('click', function () {
       sortOrder = sortOrder === 'desc' ? 'asc' : 'desc';
-      sortButton.textContent = sortOrder === 'desc' ? '按年份 ↓' : '按年份 ↑';
+      sortButton.textContent = sortOrder === 'desc' ? 'Year ↓' : 'Year ↑';
       render();
     });
 
