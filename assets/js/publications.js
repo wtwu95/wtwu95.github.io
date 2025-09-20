@@ -28,11 +28,10 @@
       journal: 'Journal Papers',
       conference: 'Conference Papers',
       review: 'Review Papers',
-      patent: 'patents',
       preprint: 'Preprints'
     };
 
-    var typeOrder = ['journal', 'conference', 'review', 'patent', 'preprint'];
+    var typeOrder = ['journal', 'conference', 'review', 'preprint'];
 
     var searchTerm = '';
     var activeCitationFormat = 'gbt';
