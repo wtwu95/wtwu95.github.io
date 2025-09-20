@@ -25,11 +25,11 @@
     }
 
     var typeLabels = {
-      journal: 'journal papers',
-      conference: 'conference papers',
-      review: 'review papers',
+      journal: 'Journal Papers',
+      conference: 'Conference Papers',
+      review: 'Review Papers',
       patent: 'patents',
-      preprint: 'preprints'
+      preprint: 'Preprints'
     };
 
     var typeOrder = ['journal', 'conference', 'review', 'patent', 'preprint'];
