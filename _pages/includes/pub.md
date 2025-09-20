@@ -268,6 +268,9 @@
 .publication-search {
   flex: 1 1 240px;
   min-width: 200px;
+  line-height: 2.5rem;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .publication-controls select:focus,
@@ -324,7 +327,7 @@ ol.publication-list > li {
 }
 
 .publication-actions {
-  margin-top: 0.75rem;
+  margin-top: 0.4rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -359,14 +362,24 @@ ol.publication-list > li {
 .publication-year {
   align-self: flex-start;
   justify-self: end;
-  padding: 0.25rem 0.65rem;
-  border-radius: 0.45rem;
-  border: 1px solid #d0d7de;
-  background: #f6f8fa;
+  padding: 0;
+  border: none;
+  background: transparent;
   font-weight: 600;
-  color: #24292f;
+  color: #57606a;
   font-variant-numeric: tabular-nums;
   line-height: 1.2;
+}
+
+.publication-body p a:first-of-type {
+  text-decoration: none;
+  color: #111;
+}
+
+.publication-body p a:first-of-type:hover,
+.publication-body p a:first-of-type:focus {
+  color: #111;
+  text-decoration: none;
 }
 
 .publication-empty {
