@@ -1,4 +1,6 @@
 # 💻 Academic Services:
+
+
 ### Journal Reviewer
 - *2024~:* IEEE Transactions on Vehicular Technology
 - *2024~:* IEEE Transactions on Transportation Electrification
@@ -11,5 +13,9 @@
 - *2022~:* Nonlinear Dynamics
 - *2021~:* Ocean Engineering
 
-### Conference Reviewers
-- CDC (2024), ACC (2022), CCC (2023), CCDC (2022,2023,2024)
+### Conference Reviewer
+- IEEE Conference on Decision and Control (CDC)
+- American Control Conference (ACC)
+- Annual Conference of the IEEE Industrial Electronics Society (IECON)
+- Chinese Control and Decision Conference (CCC)
+- Chinese Control and Decision Conference (CCDC)
