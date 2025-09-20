@@ -1,19 +1,19 @@
 <span class='anchor' id='-honors'></span>
 # 🎖 Honors & Awards
 
-- *2024.09* &nbsp; **<span style="color:red">National Scholarships for Doctoral Students (Top 1%)</span>** at Shanghai Jiao Tong University
-- *2023.12* &nbsp; 'Research Talent' at Sanya Yazhou Bay Science and Technology City
-- *2023.11* &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span> of 2023 7th（CCSICC）**
-- *2023.11* &nbsp; First-Class Scholarship for Ph.D. Students at SJTU Sanya Yazhou Bay Institute of DeepSea Science and Technology
-- *2023.10* &nbsp; 空军首届航空创意挑战赛三等奖
-- *2023.09* &nbsp; **<span style="color:red">National Scholarship for Ph.D. Candidates</span>** at Shanghai Jiao Tong University
-- *2023.08* &nbsp; 共创未来--中美青年创客大赛海口分赛区二等奖
-- *2022.12* &nbsp; 海南自贸港创业大赛院校学生专项赛一等奖
-- *2021.12* &nbsp; **<span style="color:red">Outstanding Master's Thesis</span>** in Liaoning Province
-- *2020.10* &nbsp; **<span style="color:red">National Scholarship for Master's Students</span>** at Dalian Maritime University
-- *2020.10* &nbsp; Outstanding Graduate of Dalian City
-- *2020.12* &nbsp; Outstanding Graduate Student at Dalian Maritime University
-- *2020.12* &nbsp; National Third Prize in Graduate Electronic Design Competition
-- *2020.12* &nbsp; 东北三省研究生电子设计竞赛一等奖（排名第一）
-- *2020.12* &nbsp; 辽宁省研究生电子设计竞赛一等奖（排名第一）
-- *2019.12* &nbsp; 东三省研究生电子设计竞赛一等奖（排名第三）
+- *2025* &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>** by the China Association for Science and Technology (CAST)
+- *2025* &nbsp; Outstanding Graduate of Shanghai
+- *2024 · 2023 · 2020* &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**
+- *2023* &nbsp; State-Sponsored Postgraduate Program for National Construction of High-Level Universities (China Scholarship Council)
+- *2023* &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span>** of the 7th Chinese Conference on Swarm Intelligence and Cooperative Control
+- *2023* &nbsp; First-Level Scholarship for Doctoral Students awarded by Hainan Research Institute, Shanghai Jiao Tong University
+- *2023* &nbsp; Scientific Research Talents Graduate Student Scholarship awarded by Sanya Yazhou Bay Science and Technology City
+- *2023* &nbsp; Third Award of the First Aviation Innovation Challenge of the PLA Air Force
+- *2022* &nbsp; **<span style="color:red">Excellent Master Dissertation Award</span>** of Liaoning Province
+- *2022* &nbsp; Top 10 High-Impact Papers of Chinese Journal of Ship Research — selected from articles published in 2019–2021
+- *2022* &nbsp; First Prize of Hainan Free Trade Port Innovation and Entrepreneurship Contest
+- *2021* &nbsp; Excellent Master Dissertation Award of Dalian Maritime University
+- *2020* &nbsp; Outstanding Graduate of Dalian
+- *2020* &nbsp; First Prize of Liaoning Provincial Graduate Electronic Design Contest
+- *2019 · 2020* &nbsp; First Prizes of National Graduate Electronic Design Contest in Northeast Division
+
