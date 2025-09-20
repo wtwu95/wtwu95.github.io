@@ -34,7 +34,7 @@
     var typeOrder = ['journal', 'conference', 'review', 'preprint'];
 
     var searchTerm = '';
-    var activeCitationFormat = 'gbt';
+    var activeCitationFormat = 'plain';
     var currentCitation = null;
 
     function sanitizeNode(node) {
@@ -60,6 +60,8 @@
 
     var publications = Array.prototype.slice.call(sourceList.querySelectorAll('li')).map(function (item) {
       var year = parseInt(item.getAttribute('data-year'), 10);
+      var plainCitation = item.getAttribute('data-citation-plain') || '';
+      var bibCitation = item.getAttribute('data-citation-bibtex') || '';
       var sanitized = sanitizeNode(item);
       var textContent = sanitized.textContent.replace(/\s+/g, ' ').trim();
       var normalizedText = normalizeQuotes(textContent);
@@ -69,7 +71,9 @@
         date: item.getAttribute('data-date') || '',
         content: item.innerHTML.trim(),
         rawText: normalizedText,
-        searchText: normalizedText.toLowerCase()
+        searchText: normalizedText.toLowerCase(),
+        plainCitation: plainCitation,
+        bibCitation: bibCitation
       };
     });
 
@@ -196,7 +200,8 @@
           var citeButton = document.createElement('button');
           citeButton.type = 'button';
           citeButton.className = 'publication-cite';
-          citeButton.textContent = 'Cite';
+          citeButton.innerHTML = '<img src="https://img.shields.io/badge/Link-Cite-0969da?labelColor=555" alt="Cite badge">';
+          citeButton.setAttribute('aria-label', 'Cite this publication');
           citeButton.addEventListener('click', function () {
             openCitation(number, pub.citations);
           });
@@ -214,7 +219,7 @@
     yearSelect.addEventListener('change', render);
     sortButton.addEventListener('click', function () {
       sortOrder = sortOrder === 'desc' ? 'asc' : 'desc';
-      sortButton.textContent = sortOrder === 'desc' ? 'Year ↓' : 'Year ↑';
+      sortButton.textContent = sortOrder === 'desc' ? 'date ↓' : 'date ↑';
       render();
     });
 
@@ -238,85 +243,183 @@
       });
     }
 
-    function generateCitations(pub) {
-      var text = pub.rawText || '';
-      var normalized = text.replace(/''/g, '"');
-      var titleMatch = normalized.match(/["“]([^"”]+)["”]/);
-      var authorsPart = '';
-      var restPart = normalized;
-      var title = '';
-
-      if (titleMatch) {
-        title = titleMatch[1].trim().replace(/[,\s]+$/, '');
-        authorsPart = normalized.slice(0, titleMatch.index).trim().replace(/[,;:\s]+$/, '');
-        restPart = normalized.slice(titleMatch.index + titleMatch[0].length).trim();
+    function parseBibtexEntry(text) {
+      if (!text) {
+        return null;
       }
-
-      restPart = restPart.replace(/^[,;:\s]+/, '').replace(/\s+/g, ' ');
-
-      if (pub.type === 'conference') {
-        var leadingChar = restPart.trim().charAt(0);
-        if (leadingChar && /[A-Za-z0-9]/.test(leadingChar) && !/^in\b/i.test(restPart)) {
-          restPart = 'in ' + restPart;
+      var headerMatch = text.match(/@\s*([^{\s]+)\s*\{\s*([^,]+),/i);
+      if (!headerMatch) {
+        return null;
+      }
+      var fieldRegex = /([a-zA-Z]+)\s*=\s*\{([^{}]*)\}/g;
+      var match;
+      var fields = {};
+      while ((match = fieldRegex.exec(text)) !== null) {
+        var fieldName = match[1].toLowerCase();
+        var fieldValue = match[2].trim();
+        if (fieldValue) {
+          fields[fieldName] = fieldValue;
         }
       }
+      return {
+        type: headerMatch[1].toLowerCase(),
+        key: headerMatch[2].trim(),
+        fields: fields
+      };
+    }
 
-      var authorTokens = authorsPart
-        .replace(/[\u3001\uFF0C;；]/g, ',')
-        .replace(/\band\b/gi, ',')
-        .split(/\s*,\s*/)
-        .map(function (name) {
-          return name.replace(/\*/g, '').trim();
+    function formatAuthorName(name) {
+      var trimmed = name.trim();
+      if (!trimmed) {
+        return '';
+      }
+      var surname;
+      var givenNames;
+      if (trimmed.indexOf(',') !== -1) {
+        var parts = trimmed.split(',');
+        surname = parts[0].trim();
+        givenNames = parts.slice(1).join(',').trim();
+      } else {
+        var tokens = trimmed.split(/\s+/);
+        surname = tokens.pop();
+        givenNames = tokens.join(' ');
+      }
+      if (!surname) {
+        return trimmed;
+      }
+      if (!givenNames) {
+        return surname;
+      }
+      var initials = givenNames
+        .split(/\s+/)
+        .filter(Boolean)
+        .map(function (token) {
+          var cleaned = token.replace(/[{}\.]/g, '');
+          if (!cleaned) {
+            return '';
+          }
+          var hyphenParts = cleaned.split('-').filter(Boolean).map(function (part) {
+            return part.charAt(0).toUpperCase() + '.';
+          });
+          return hyphenParts.join('-');
         })
         .filter(Boolean);
+      if (!initials.length) {
+        return surname;
+      }
+      return initials.join(' ') + ' ' + surname;
+    }
 
-      var gbtAuthors = '';
-      if (authorTokens.length > 1) {
-        gbtAuthors = authorTokens.slice(0, -1).join(', ') + ' and ' + authorTokens[authorTokens.length - 1];
+    function formatAuthorList(authorField) {
+      if (!authorField) {
+        return '';
+      }
+      var authors = authorField
+        .split(/\s+and\s+/i)
+        .map(formatAuthorName)
+        .filter(Boolean);
+      if (!authors.length) {
+        return '';
+      }
+      if (authors.length === 1) {
+        return authors[0];
+      }
+      return authors.slice(0, -1).join(', ') + ', and ' + authors[authors.length - 1];
+    }
+
+    function formatPages(pages) {
+      if (!pages) {
+        return '';
+      }
+      return pages.replace(/--+/g, '–');
+    }
+
+    function ensureSentenceEnding(text) {
+      if (!text) {
+        return '';
+      }
+      var trimmed = text.trim();
+      if (!trimmed) {
+        return '';
+      }
+      if (/[.!?。]$/.test(trimmed)) {
+        return trimmed;
+      }
+      return trimmed + '.';
+    }
+
+    function formatPlainCitationFromBib(entry) {
+      if (!entry) {
+        return '';
+      }
+      var fields = entry.fields || {};
+      var authors = formatAuthorList(fields.author);
+      var title = fields.title ? fields.title.replace(/[\s]+$/g, '').replace(/[\.]$/g, '') : '';
+      var parts = [];
+      if (authors) {
+        parts.push(authors);
+      }
+      if (title) {
+        parts.push('“' + title + ',”');
+      }
+      var type = entry.type;
+      if (type === 'inproceedings' || type === 'conference' || type === 'proceedings') {
+        if (fields.booktitle) {
+          parts.push('in ' + fields.booktitle);
+        }
+        if (fields.organization) {
+          parts.push(fields.organization);
+        } else if (fields.publisher) {
+          parts.push(fields.publisher);
+        }
+        if (fields.pages) {
+          parts.push('pp. ' + formatPages(fields.pages));
+        }
+        if (fields.year) {
+          parts.push(fields.year);
+        }
       } else {
-        gbtAuthors = authorTokens.join('');
+        if (fields.journal) {
+          parts.push(fields.journal);
+        } else if (fields.booktitle) {
+          parts.push(fields.booktitle);
+        }
+        if (fields.volume) {
+          parts.push('vol. ' + fields.volume);
+        }
+        if (fields.number) {
+          parts.push('no. ' + fields.number);
+        }
+        if (fields.pages) {
+          parts.push('pp. ' + formatPages(fields.pages));
+        }
+        if (fields.year) {
+          parts.push(fields.year);
+        }
       }
+      if (fields.note) {
+        parts.push(fields.note);
+      }
+      var citation = parts.join(', ');
+      return ensureSentenceEnding(citation);
+    }
 
-      var gbtParts = [];
-      if (gbtAuthors) {
-        gbtParts.push(gbtAuthors + '.');
+    function generateCitations(pub) {
+      var bibText = pub.bibCitation || '';
+      var plainText = '';
+      if (bibText) {
+        plainText = formatPlainCitationFromBib(parseBibtexEntry(bibText));
       }
-      if (title) {
-        gbtParts.push('“' + title.replace(/\.$/, '') + '.”');
+      if (!plainText && pub.plainCitation) {
+        plainText = ensureSentenceEnding(pub.plainCitation);
       }
-      if (restPart) {
-        gbtParts.push(restPart.replace(/\s*$/g, ''));
+      var bibOutput = bibText || '';
+      if (!plainText && !bibOutput) {
+        return null;
       }
-
-      var gbtText = gbtParts.join(' ');
-      if (gbtText && !/[。.!?]$/.test(gbtText)) {
-        gbtText += '.';
-      }
-
-      var bibAuthor = authorTokens.join(' and ');
-      var bibYear = pub.year || (pub.date ? pub.date.slice(0, 4) : '');
-      var keyBase = authorTokens.length ? authorTokens[0].split(/\s+/).pop() : 'publication';
-      keyBase = keyBase ? keyBase.toLowerCase().replace(/[^a-z0-9]+/g, '') : 'publication';
-      var bibKey = keyBase + (bibYear || '');
-
-      var bibLines = ['@misc{' + bibKey + ','];
-      if (bibAuthor) {
-        bibLines.push('  author = {' + bibAuthor + '},');
-      }
-      if (title) {
-        bibLines.push('  title = {' + title.replace(/[{}]/g, '') + '},');
-      }
-      if (restPart) {
-        bibLines.push('  howpublished = {' + restPart.replace(/[{}]/g, '') + '},');
-      }
-      if (bibYear) {
-        bibLines.push('  year = {' + bibYear + '},');
-      }
-      bibLines.push('}');
-
       return {
-        gbt: gbtText,
-        bib: bibLines.join('\n')
+        plain: plainText,
+        bib: bibOutput
       };
     }
 
@@ -326,10 +429,10 @@
       }
       currentCitation = {
         index: index,
-        gbt: citations.gbt,
+        plain: citations.plain,
         bib: citations.bib
       };
-      activeCitationFormat = 'gbt';
+      activeCitationFormat = 'plain';
       updateCitationContent();
       citationModal.removeAttribute('hidden');
       var focusTarget = citationModal.querySelector('.citation-modal__dialog');
@@ -355,10 +458,7 @@
         tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
       });
 
-      var citationText = activeCitationFormat === 'bib' ? currentCitation.bib : currentCitation.gbt;
-      if (activeCitationFormat === 'gbt' && currentCitation.index != null) {
-        citationText = '[' + currentCitation.index + '] ' + citationText;
-      }
+      var citationText = activeCitationFormat === 'bib' ? currentCitation.bib : currentCitation.plain;
       citationContent.textContent = citationText;
     }
 
@@ -394,10 +494,7 @@
           return;
         }
         var format = activeCitationFormat;
-        var citationText = format === 'bib' ? currentCitation.bib : currentCitation.gbt;
-        if (format === 'gbt' && currentCitation.index != null) {
-          citationText = '[' + currentCitation.index + '] ' + citationText;
-        }
+        var citationText = format === 'bib' ? currentCitation.bib : currentCitation.plain;
 
         if (actionButton.getAttribute('data-action') === 'copy') {
           if (navigator.clipboard && navigator.clipboard.writeText) {
