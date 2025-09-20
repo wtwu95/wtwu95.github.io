@@ -396,15 +396,18 @@ ol.publication-list > li {
 }
 
 .publication-body em {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+  text-decoration: none;
 }
 
 .publication-venue {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.publication-venue a {
+  font-weight: inherit;
+  text-decoration: none;
 }
 
 .publication-venue--ieee-journal,
@@ -435,7 +438,7 @@ ol.publication-list > li {
 .publication-body em:focus,
 .publication-body em a:hover,
 .publication-body em a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 mark.publication-highlight {
