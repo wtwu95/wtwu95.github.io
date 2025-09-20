@@ -134,11 +134,11 @@
     <p>Z. Li, H. Chen, <strong>W. Wu</strong>, Z. Jia, and W. Zhang, “<a href="https://onlinelibrary.wiley.com/journal/10991239">Decentralized Finite-Time Adaptive Neural Output-Feedback Quantized Control for Switched Nonlinear Large-Scale Delayed Systems</a>,” <em class="publication-venue publication-venue--english-journal"><a href="https://onlinelibrary.wiley.com/journal/10991239">International Journal of Robust and Nonlinear Control</a></em>, vol. 35, no. 6, pp. 1907–1920, 2025. <a href="/assets/papers/SCI/LiZhenhua-2025-IJRNC.pdf"><img alt="PDF badge" src="https://img.shields.io/badge/Link-PDF-gree"/></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:roLk4NBRz8UC'></span></strong>
   </li>
-  <li data-type="journal" data-year="2025" data-date="2025-08" data-citation-plain="X. Dong, T. Xie, W. Wu, H. Chen, C. Zhang, and W. Zhang, “A Nonsmooth Dynamic Output Feedback Strategy for Nonlinear Systems with Nonparametric Uncertainties: Application to Robot Manipulators,” IEEE Transactions on Industrial Electronics." data-citation-bibtex="@ARTICLE{Dong2025Anonsm,&#10;  author={Dong, X. and Xie, Tao and Wu, Wentao and Chen, Hongtian and Zhang, Chenming and Zhang, Weidong},&#10;  title={A Nonsmooth Dynamic Output Feedback Strategy for Nonlinear Systems with Nonparametric Uncertainties: Application to Robot Manipulators},&#10;  journal={IEEE Transactions on Industrial Electronics},&#10;  year={2025}&#10; doi={10.1109/TIE.2025.3600515}&#10;}">
+  <li data-type="journal" data-year="2025" data-date="2025-08" data-citation-plain="X. Dong, T. Xie, W. Wu, H. Chen, C. Zhang, and W. Zhang, “A Nonsmooth Dynamic Output Feedback Strategy for Nonlinear Systems with Nonparametric Uncertainties: Application to Robot Manipulators,” IEEE Transactions on Industrial Electronics2025. doi: 10.1109/TIE.2025.3600515." data-citation-bibtex="@ARTICLE{Dong2025Anonsm,&#10;  author={Dong, X. and Xie, Tao and Wu, Wentao and Chen, Hongtian and Zhang, Chenming and Zhang, Weidong},&#10;  title={A Nonsmooth Dynamic Output Feedback Strategy for Nonlinear Systems with Nonparametric Uncertainties: Application to Robot Manipulators},&#10;  journal={IEEE Transactions on Industrial Electronics},&#10;  year={2025}&#10; doi={10.1109/TIE.2025.3600515}&#10;}">
     <p>X. Dong, T. Xie, <strong>W. Wu</strong>, H. Chen, C. Zhang, and W. Zhang, “<a href="https://ieeexplore.ieee.org/document/10480594">A Nonsmooth Dynamic Output Feedback Strategy for Nonlinear Systems with Nonparametric Uncertainties: Application to Robot Manipulators</a>,” <em class="publication-venue publication-venue--ieee-journal"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=41">IEEE Transactions on Industrial Electronics</a></em>, 2025. doi: 10.1109/TIE.2025.3600515. <a href="/assets/papers/SCI/DongXiaoyu-2025-IEEE-TIE.pdf"><img alt="PDF badge" src="https://img.shields.io/badge/Link-PDF-gree"/></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:2KloaMYe4IUC'></span></strong>
   </li>
-  <li data-type="journal" data-year="2025" data-date="2025-08" data-citation-plain="L. Guo, W. Cao, W. Hu, W. Wu, and M. Wu, “Fuzzy Non-Uniform Sampling for Inverse Decision-Making Modeling to Tune Microwave Filters,” IEEE Transactions on Fuzzy Systems." data-citation-bibtex="@ARTICLE{Guo2025Fuzzyn,&#10;  author={Guo, L. and Cao, W. and Hu, W. and Wu, Wentao and Wu, M.},&#10;  title={Fuzzy Non-Uniform Sampling for Inverse Decision-Making Modeling to Tune Microwave Filters},&#10;  journal={IEEE Transactions on Fuzzy Systems},&#10;  year={2025}&#10; doi={10.1109/TFUZZ.2025.3604594}&#10;}">
+  <li data-type="journal" data-year="2025" data-date="2025-08" data-citation-plain="L. Guo, W. Cao, W. Hu, W. Wu, and M. Wu, “Fuzzy Non-Uniform Sampling for Inverse Decision-Making Modeling to Tune Microwave Filters,” IEEE Transactions on Fuzzy Systems, 2025. doi: 10.1109/TFUZZ.2025.3604594." data-citation-bibtex="@ARTICLE{Guo2025Fuzzyn,&#10;  author={Guo, L. and Cao, W. and Hu, W. and Wu, Wentao and Wu, M.},&#10;  title={Fuzzy Non-Uniform Sampling for Inverse Decision-Making Modeling to Tune Microwave Filters},&#10;  journal={IEEE Transactions on Fuzzy Systems},&#10;  year={2025}&#10; doi={10.1109/TFUZZ.2025.3604594}&#10;}">
     <p>L. Guo, W. Cao, W. Hu, <strong>W. Wu</strong>, and M. Wu, “<a href="https://ieeexplore.ieee.org/document/10484803">Fuzzy Non-Uniform Sampling for Inverse Decision-Making Modeling to Tune Microwave Filters</a>,” <em class="publication-venue publication-venue--ieee-journal"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91">IEEE Transactions on Fuzzy Systems</a></em>, 2025. doi: 10.1109/TFUZZ.2025.3604594. <a href="/assets/papers/SCI/GuoLingfei-2025-IEEE-TFS.pdf"><img alt="PDF badge" src="https://img.shields.io/badge/Link-PDF-gree"/></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ufrVoPGSRksC'></span></strong>
   </li>
@@ -318,9 +318,13 @@ ol.publication-list > li {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
   line-height: 1.65;
   align-items: flex-start;
+}
+
+ol.publication-list > li:last-child {
+  margin-bottom: 0;
 }
 
 .publication-index {
