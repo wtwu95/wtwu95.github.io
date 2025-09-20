@@ -1,13 +1,13 @@
 <span class='anchor' id='-honors'></span>
 # 🎖 Honors & Awards
 
-- *2025* &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>** by the China Association for Science and Technology (CAST)
+- *2025* &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>** by the CAST
 - *2025* &nbsp; Outstanding Graduate of Shanghai
 - *2024 · 2023 · 2020* &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**
-- *2023* &nbsp; State-Sponsored Postgraduate Program for National Construction of High-Level Universities (China Scholarship Council)
-- *2023* &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span>** of the 7th Chinese Conference on Swarm Intelligence and Cooperative Control
-- *2023* &nbsp; First-Level Scholarship for Doctoral Students awarded by Hainan Research Institute, Shanghai Jiao Tong University
-- *2023* &nbsp; Scientific Research Talents Graduate Student Scholarship awarded by Sanya Yazhou Bay Science and Technology City
+- *2023* &nbsp; State-Sponsored Postgraduate Program for National Construction of High-Level Universities
+- *2023* &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span>** of the 7th CCSICC
+- *2023* &nbsp; First-Level Scholarship for Doctoral Students
+- *2023* &nbsp; Scientific Research Talents Graduate Student Scholarship
 - *2023* &nbsp; Third Award of the First Aviation Innovation Challenge of the PLA Air Force
 - *2022* &nbsp; **<span style="color:red">Excellent Master Dissertation Award</span>** of Liaoning Province
 - *2022* &nbsp; Top 10 High-Impact Papers of Chinese Journal of Ship Research — selected from articles published in 2019–2021
