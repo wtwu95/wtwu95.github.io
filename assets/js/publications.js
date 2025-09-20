@@ -293,7 +293,7 @@
     yearSelect.addEventListener('change', render);
     sortButton.addEventListener('click', function () {
       sortOrder = sortOrder === 'desc' ? 'asc' : 'desc';
-      sortButton.textContent = sortOrder === 'desc' ? 'Year ⬇' : 'Year ⬆';
+      sortButton.textContent = sortOrder === 'desc' ? '⬇' : '⬆';
       render();
     });
 
