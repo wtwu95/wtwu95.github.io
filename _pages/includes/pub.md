@@ -243,6 +243,10 @@
 </div>
 
 <style>
+:root {
+  --publication-control-height: 2.5rem;
+}
+
 .publication-controls {
   display: flex;
   flex-wrap: wrap;
@@ -260,15 +264,15 @@
   background-color: #fff;
   font-size: 0.95rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  height: 2.5rem;
-  min-height: 2.5rem;
+  height: var(--publication-control-height);
+  min-height: var(--publication-control-height);
   box-sizing: border-box;
 }
 
 .publication-search {
   flex: 1 1 240px;
   min-width: 200px;
-  line-height: 2.5rem;
+  line-height: normal;
   -webkit-appearance: none;
   appearance: none;
 }
@@ -380,6 +384,19 @@ ol.publication-list > li {
 .publication-body p a:first-of-type:focus {
   color: #111;
   text-decoration: none;
+}
+
+.publication-body em a {
+  color: #0969da;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.publication-body em a:hover,
+.publication-body em a:focus {
+  color: #0550ae;
+  text-decoration: underline;
 }
 
 .publication-empty {
