@@ -330,6 +330,10 @@ ol.publication-list > li {
   font-variant-numeric: tabular-nums;
 }
 
+.publication-body {
+  color: #0969da;
+}
+
 .publication-body p {
   margin: 0;
 }
@@ -385,12 +389,12 @@ ol.publication-list > li {
 
 .publication-body p a:first-of-type {
   text-decoration: none;
-  color: #111;
+  color: inherit;
 }
 
 .publication-body p a:first-of-type:hover,
 .publication-body p a:first-of-type:focus {
-  color: #111;
+  color: inherit;
   text-decoration: none;
 }
 
