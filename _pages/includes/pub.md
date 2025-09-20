@@ -96,7 +96,7 @@
   <select id="publication-year-filter">
     <option value="all">Date</option>
   </select>
-  <button type="button" id="publication-year-sort" class="publication-sort">Year ↓</button>
+  <button type="button" id="publication-year-sort" class="publication-sort">Year ⬇</button>
 </div>
 
 <ol id="publication-list" class="publication-list"></ol>
@@ -392,6 +392,13 @@ ol.publication-list > li {
 .publication-empty {
   color: #57606a;
   font-style: italic;
+}
+
+mark.publication-highlight {
+  background: #e5e7eb;
+  color: inherit;
+  padding: 0 0.15em;
+  border-radius: 0.2em;
 }
 
 .publication-source[hidden] {

@@ -193,6 +193,7 @@
         bodyEl.innerHTML = pub.content;
 
         enhanceDisplay(bodyEl);
+        applySearchHighlight(bodyEl, normalizedSearch);
 
         var actions = document.createElement('div');
         actions.className = 'publication-actions';
@@ -291,7 +292,7 @@
     yearSelect.addEventListener('change', render);
     sortButton.addEventListener('click', function () {
       sortOrder = sortOrder === 'desc' ? 'asc' : 'desc';
-      sortButton.textContent = sortOrder === 'desc' ? 'Year ↓' : 'Year ↑';
+      sortButton.textContent = sortOrder === 'desc' ? 'Year ⬇' : 'Year ⬆';
       render();
     });
 
@@ -312,6 +313,49 @@
           }
           return '“' + trimmed + '.”';
         });
+      });
+    }
+
+    function applySearchHighlight(container, term) {
+      if (!term) {
+        return;
+      }
+      var walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null, false);
+      var nodes = [];
+      while (walker.nextNode()) {
+        nodes.push(walker.currentNode);
+      }
+      var termLength = term.length;
+      nodes.forEach(function (node) {
+        if (!node.parentNode) {
+          return;
+        }
+        var text = node.nodeValue;
+        if (!text) {
+          return;
+        }
+        var lower = text.toLowerCase();
+        var start = lower.indexOf(term);
+        if (start === -1) {
+          return;
+        }
+        var fragment = document.createDocumentFragment();
+        var index = 0;
+        while (start !== -1) {
+          if (start > index) {
+            fragment.appendChild(document.createTextNode(text.slice(index, start)));
+          }
+          var mark = document.createElement('mark');
+          mark.className = 'publication-highlight';
+          mark.textContent = text.slice(start, start + termLength);
+          fragment.appendChild(mark);
+          index = start + termLength;
+          start = lower.indexOf(term, index);
+        }
+        if (index < text.length) {
+          fragment.appendChild(document.createTextNode(text.slice(index)));
+        }
+        node.parentNode.replaceChild(fragment, node);
       });
     }
 
