@@ -260,7 +260,9 @@
   background-color: #fff;
   font-size: 0.95rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  height: 2.25rem;
+  height: 2.5rem;
+  min-height: 2.5rem;
+  box-sizing: border-box;
 }
 
 .publication-search {
@@ -298,10 +300,11 @@ ol.publication-list {
 
 ol.publication-list > li {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr auto;
   gap: 1rem;
   margin-bottom: 1.25rem;
   line-height: 1.65;
+  align-items: flex-start;
 }
 
 .publication-index {
@@ -325,6 +328,7 @@ ol.publication-list > li {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .publication-cite {
@@ -339,6 +343,30 @@ ol.publication-list > li {
 .publication-cite img {
   display: block;
   height: 20px;
+}
+
+.publication-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.publication-badge__image,
+.publication-actions img {
+  display: block;
+  height: 20px;
+}
+
+.publication-year {
+  align-self: flex-start;
+  justify-self: end;
+  padding: 0.25rem 0.65rem;
+  border-radius: 0.45rem;
+  border: 1px solid #d0d7de;
+  background: #f6f8fa;
+  font-weight: 600;
+  color: #24292f;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
 }
 
 .publication-empty {
@@ -457,10 +485,17 @@ ol.publication-list > li {
 
   ol.publication-list > li {
     gap: 0.65rem;
+    grid-template-columns: auto 1fr;
   }
 
   .publication-index {
     min-width: 2.5rem;
+  }
+
+  .publication-year {
+    grid-column: 2;
+    justify-self: flex-start;
+    margin-top: 0.25rem;
   }
 }
 </style>
