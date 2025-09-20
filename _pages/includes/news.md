@@ -1,6 +1,9 @@
 # 💬 News
 
 <div class="news-window" data-news-window data-visible-count="5" tabindex="0" aria-label="Latest news" markdown="1">
+
+- *08/2025* &nbsp;🎉 One co-author's paper was accepted by **IEEE T-FS** ([Link](https://ieeexplore.ieee.org/document/11164660))!
+- *08/2025* &nbsp;🎉 One co-author's paper was accepted by **IEEE T-IE** ([Link](10.1109/TIE.2025.3600515))!
 - *06/2025* &nbsp;👏 I was awarded the **Outstanding Graduates of Shanghai**!
 - *01/2025* &nbsp;👏🎉 I obtained **Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program** by CAST!
 - *09/2024* &nbsp;👏👏 I obtained the **National Scholarship** for doctoral students in Shanghai Jiao Tong University!
