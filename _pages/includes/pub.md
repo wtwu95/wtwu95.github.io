@@ -85,11 +85,16 @@
 ### Publications Explorer
 
 <div class="publication-controls">
-  <!-- <label for="publication-type-filter">Type</label> -->
+  <input
+    type="search"
+    id="publication-search"
+    class="publication-search"
+    placeholder="Search publications..."
+    aria-label="Search publications"
+  >
   <select id="publication-type-filter">
     <option value="all">Type</option>
   </select>
-  <!-- <label for="publication-year-filter">Date</label> -->
   <select id="publication-year-filter">
     <option value="all">Date</option>
   </select>
@@ -100,120 +105,136 @@
 
 <ul id="publication-source" class="publication-source" hidden>
   <li data-type="journal" data-year="2024" data-date="2024-08">
-    <p><code>2024/08</code> <strong>Wentao Wu</strong>, Yibo Zhang, Weidong Zhang, Ruihang Ji, and Hongtian Chen, ''Saturation-Tolerant Tunnel Prescribed Control for Vessel-Train Formation of Underactuated MSVs,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25">IEEE Trans. Veh. Tech.</a></em>, Aug. 2024, Accepted. [中科院 2区, JCR 1区, Top, IF: 6.8] <a href="/assets/papers/SCI/WuWentao-2024-IEEE-TVT.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Yibo Zhang, Weidong Zhang, Ruihang Ji, and Hongtian Chen, ''Saturation-Tolerant Tunnel Prescribed Control for Vessel-Train Formation of Underactuated MSVs,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25">IEEE Trans. Veh. Tech.</a></em>, Aug. 2024, Accepted. [中科院 2区, JCR 1区, Top, IF: 6.8] <a href="/assets/papers/SCI/WuWentao-2024-IEEE-TVT.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
   </li>
   <li data-type="journal" data-year="2024" data-date="2024-07">
-    <p><code>2024/07</code> Zhenhua Li, Hongtian Chen, Hak-Keung Lam, <strong>Wentao Wu</strong>, and Weidong Zhang*, ''<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91">Switched Command-Filtered-Based Adaptive Fuzzy Output-Feedback Funnel Control for Switched Nonlinear MIMO Delayed Systems</a>,'' <em>IEEE Trans. Fuzzy Syst.</em>, Jul. 2024, doi: 10.1109/TFUZZ.2024.3434711. [中科院 1区, JCR 1区, Top, IF: 11.9] <a href="/assets/papers/SCI/WuWentao-2024-IEEE-TFS.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Zhenhua Li, Hongtian Chen, Hak-Keung Lam, <strong>Wentao Wu</strong>, and Weidong Zhang*, ''<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91">Switched Command-Filtered-Based Adaptive Fuzzy Output-Feedback Funnel Control for Switched Nonlinear MIMO Delayed Systems</a>,'' <em>IEEE Trans. Fuzzy Syst.</em>, Jul. 2024, doi: 10.1109/TFUZZ.2024.3434711. [中科院 1区, JCR 1区, Top, IF: 11.9] <a href="/assets/papers/SCI/WuWentao-2024-IEEE-TFS.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
   </li>
   <li data-type="journal" data-year="2024" data-date="2024-03">
-    <p><code>2024/03</code> <strong>Wentao Wu</strong>, Yibo Zhang, Zehua Jia, Jun-Guo Lu, and Weidong Zhang*, ''<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91">Adaptive Fault-Tolerant Fuzzy Containment Control for Networked Autonomous Surface Vehicles: A Noncooperative Game Approach</a>,'' <em>IEEE Trans. Fuzzy Syst.</em>, Mar. 2024, doi: 10.1109/TFUZZ.2024.3386849. [中科院 1区, JCR 1区, Top, IF: 11.9] <a href="/assets/papers/SCI/WuWentao-2024-IEEE-TFS.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2024-IEEE-TFS.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Yibo Zhang, Zehua Jia, Jun-Guo Lu, and Weidong Zhang*, ''<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91">Adaptive Fault-Tolerant Fuzzy Containment Control for Networked Autonomous Surface Vehicles: A Noncooperative Game Approach</a>,'' <em>IEEE Trans. Fuzzy Syst.</em>, Mar. 2024, doi: 10.1109/TFUZZ.2024.3386849. [中科院 1区, JCR 1区, Top, IF: 11.9] <a href="/assets/papers/SCI/WuWentao-2024-IEEE-TFS.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2024-IEEE-TFS.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
   </li>
   <li data-type="journal" data-year="2024" data-date="2024-02">
-    <p><code>2024/02</code> Di Wu, Yibo Zhang, <strong>Wentao Wu</strong>, Edmond Q. Wu, and Weidong Zhang, ''<a href="https://ieeexplore.ieee.org/document/10462491">Tunnel Prescribed Performance Control for Distributed Path Maneuvering of Multi-UAV Swarms via Distributed Neural Predictor</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8920">IEEE Trans. Circuits Syst. II Express Briefs</a></em>, Feb. 2024, doi: 10.1109/TCSII.2024.3371981. [中科院 2区, JCR 2区, Top, IF: 4.4] <a href="/assets/papers/SCI/WuDi-2024-IEEE-TCSII.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Di Wu, Yibo Zhang, <strong>Wentao Wu</strong>, Edmond Q. Wu, and Weidong Zhang, ''<a href="https://ieeexplore.ieee.org/document/10462491">Tunnel Prescribed Performance Control for Distributed Path Maneuvering of Multi-UAV Swarms via Distributed Neural Predictor</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8920">IEEE Trans. Circuits Syst. II Express Briefs</a></em>, Feb. 2024, doi: 10.1109/TCSII.2024.3371981. [中科院 2区, JCR 2区, Top, IF: 4.4] <a href="/assets/papers/SCI/WuDi-2024-IEEE-TCSII.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
   </li>
   <li data-type="journal" data-year="2024" data-date="2024-02">
-    <p><code>2024/02</code> Zhenhua Li, Hongtian Chen, <strong>Wentao Wu</strong>, and Weidong Zhang, ''<a href="https://ieeexplore.ieee.org/document/10449447">Dynamic Output Feedback Fault-Tolerant Control for Switched Vehicle Active Suspension Delayed Systems</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25">IEEE Trans. Veh. Tech.</a></em>, Feb. 2024, doi: 10.1109/TVT.2024.3370094. [中科院 2区, JCR 1区, Top, IF: 6.8] <a href="/assets/papers/SCI/LiZhenhua-2024-IEEE-TVT.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Zhenhua Li, Hongtian Chen, <strong>Wentao Wu</strong>, and Weidong Zhang, ''<a href="https://ieeexplore.ieee.org/document/10449447">Dynamic Output Feedback Fault-Tolerant Control for Switched Vehicle Active Suspension Delayed Systems</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25">IEEE Trans. Veh. Tech.</a></em>, Feb. 2024, doi: 10.1109/TVT.2024.3370094. [中科院 2区, JCR 1区, Top, IF: 6.8] <a href="/assets/papers/SCI/LiZhenhua-2024-IEEE-TVT.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
   </li>
   <li data-type="journal" data-year="2023" data-date="2023-12">
-    <p><code>2023/12</code> Yibo Zhang, <strong>Wentao Wu</strong>, Weixing Chen, Haibo Lu, and Weidong Zhang*, ''<a href="https://ieeexplore.ieee.org/document/10416809">Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multiagent Systems Based on a High-Order Neural Observer</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036">IEEE Trans. Cybern.</a></em>, Dec. 2023, doi: 10.1109/TCYB.2024.3351476. [中科院 1区, JCR 1区, Top, IF: 11.8] <a href="/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Yibo Zhang, <strong>Wentao Wu</strong>, Weixing Chen, Haibo Lu, and Weidong Zhang*, ''<a href="https://ieeexplore.ieee.org/document/10416809">Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multiagent Systems Based on a High-Order Neural Observer</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036">IEEE Trans. Cybern.</a></em>, Dec. 2023, doi: 10.1109/TCYB.2024.3351476. [中科院 1区, JCR 1区, Top, IF: 11.8] <a href="/assets/papers/SCI/ZhangYibo-2023-IEEE-TCYB.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
   </li>
   <li data-type="journal" data-year="2023" data-date="2023-12">
-    <p><code>2023/12</code> <strong>Wentao Wu</strong>, Yibo Zhang, Zhenhua Li, Jun-Guo Lu, and Weidong Zhang*, ''<a href="https://ieeexplore.ieee.org/document/10414035">Constrained Safe Cooperative Maneuvering of Autonomous Surface Vehicles: A Control Barrier Function Approach</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021">IEEE Trans. Syst. Man, Cybern., Syst.</a></em>, Dec. 2023, doi: 10.1109/TSMC.2023.3345847. [中科院 1区, JCR 1区, Top, IF: 8.7] <a href="/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Yibo Zhang, Zhenhua Li, Jun-Guo Lu, and Weidong Zhang*, ''<a href="https://ieeexplore.ieee.org/document/10414035">Constrained Safe Cooperative Maneuvering of Autonomous Surface Vehicles: A Control Barrier Function Approach</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021">IEEE Trans. Syst. Man, Cybern., Syst.</a></em>, Dec. 2023, doi: 10.1109/TSMC.2023.3345847. [中科院 1区, JCR 1区, Top, IF: 8.7] <a href="/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
   </li>
   <li data-type="journal" data-year="2023" data-date="2023-12">
-    <p><code>2023/12</code> Yibo Zhang, Di Wu, Peng Cheng, <strong>Wentao Wu</strong>, and Weidong Zhang, ''<a href="https://www.sciencedirect.com/science/article/pii/S0029801823029256?dgcid=coauthor">Robust Adaptive Fault-tolerant Control for Path Maneuvering of Autonomous Surface Vehicles with Actuator Faults Based on the Noncooperative Game Strategy</a>,'' <em><a href="https://www.sciencedirect.com/journal/ocean-engineering">Ocean. Eng.</a></em>, Dec. 2023, doi: 10.1016/j.oceaneng.2023.116541. [中科院 2区, JCR 1区, Top, IF: 5.0] <a href="/assets/papers/SCI/ZhangYibo-2023-OE.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Yibo Zhang, Di Wu, Peng Cheng, <strong>Wentao Wu</strong>, and Weidong Zhang, ''<a href="https://www.sciencedirect.com/science/article/pii/S0029801823029256?dgcid=coauthor">Robust Adaptive Fault-tolerant Control for Path Maneuvering of Autonomous Surface Vehicles with Actuator Faults Based on the Noncooperative Game Strategy</a>,'' <em><a href="https://www.sciencedirect.com/journal/ocean-engineering">Ocean. Eng.</a></em>, Dec. 2023, doi: 10.1016/j.oceaneng.2023.116541. [中科院 2区, JCR 1区, Top, IF: 5.0] <a href="/assets/papers/SCI/ZhangYibo-2023-OE.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:YOwf2qJgpHMC'></span></strong>
   </li>
   <li data-type="journal" data-year="2023" data-date="2023-09">
-    <p><code>2023/09</code> <strong>Wentao Wu</strong>, Ruihang Ji, Weidong Zhang, and Yibo Zhang, ''<a href="https://ieeexplore.ieee.org/document/10292769">Transient-Reinforced Tunnel Coordinated Control of Underactuated Marine Surface Vehicles with Actuator Faults</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979">IEEE Trans. Intell. Transp. Syst.</a></em>, 2023, doi: 10.1109/TITS.2023.3324346. [中科院 1区, JCR 1区, Top, IF: 8.5] <a href="/assets/papers/SCI/WuWentao-2023-IEEE-TITS.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2023-IEEE-TITS.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Ruihang Ji, Weidong Zhang, and Yibo Zhang, ''<a href="https://ieeexplore.ieee.org/document/10292769">Transient-Reinforced Tunnel Coordinated Control of Underactuated Marine Surface Vehicles with Actuator Faults</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979">IEEE Trans. Intell. Transp. Syst.</a></em>, 2023, doi: 10.1109/TITS.2023.3324346. [中科院 1区, JCR 1区, Top, IF: 8.5] <a href="/assets/papers/SCI/WuWentao-2023-IEEE-TITS.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2023-IEEE-TITS.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
   </li>
   <li data-type="journal" data-year="2023" data-date="2023-08">
-    <p><code>2023/08</code> <strong>Wentao Wu</strong>, Di Wu, Yibo Zhang, Shukang Chen, and Weidong Zhang, ''<a href="/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf">Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570654">IEEE/CAA J. Autom. Sinica</a></em>, 2023, doi: 10.1109/JAS.2023.123864. [中科院 1区, JCR 1区, Top, IF: 11.8] <a href="/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a> <a href="/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video" alt="Video badge"></a> <a href="/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASb.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Expb--Demo-blue?label=Video" alt="Video badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Di Wu, Yibo Zhang, Shukang Chen, and Weidong Zhang, ''<a href="/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf">Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570654">IEEE/CAA J. Autom. Sinica</a></em>, 2023, doi: 10.1109/JAS.2023.123864. [中科院 1区, JCR 1区, Top, IF: 11.8] <a href="/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a> <a href="/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video" alt="Video badge"></a> <a href="/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASb.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Expb--Demo-blue?label=Video" alt="Video badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
   </li>
   <li data-type="journal" data-year="2023" data-date="2023-02">
-    <p><code>2023/02</code> Yibo Zhang, <strong>Wentao Wu</strong>, Jinhui Lu, and Weidong Zhang, ''<a href="https://ieeexplore.ieee.org/abstract/document/10059139">Neural Predictor-based Dynamic Surface Parallel Control for MIMO Uncertain Nonlinear Strict-feedback Systems</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8920">IEEE Trans. Circuits Syst. II Express Briefs</a></em>, Feb. 2023, doi: 10.1109/TCSII.2023.3252562. [中科院 2区, JCR 2区, Top, IF: 4.4] <a href="/assets/papers/SCI/ZhangYibo-2023-IEEE-TCASII.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Yibo Zhang, <strong>Wentao Wu</strong>, Jinhui Lu, and Weidong Zhang, ''<a href="https://ieeexplore.ieee.org/abstract/document/10059139">Neural Predictor-based Dynamic Surface Parallel Control for MIMO Uncertain Nonlinear Strict-feedback Systems</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8920">IEEE Trans. Circuits Syst. II Express Briefs</a></em>, Feb. 2023, doi: 10.1109/TCSII.2023.3252562. [中科院 2区, JCR 2区, Top, IF: 4.4] <a href="/assets/papers/SCI/ZhangYibo-2023-IEEE-TCASII.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:8k81kl-MbHgC'></span></strong>
   </li>
   <li data-type="journal" data-year="2022" data-date="2022-11">
-    <p><code>2022/11</code> Yibo Zhang, <strong>Wentao Wu</strong>, and Weidong Zhang, ''<a href="https://ieeexplore.ieee.org/abstract/document/9950329">Noncooperative Game-Based Cooperative Maneuvering of Intelligent Surface Vehicles Via Accelerated Learning-Based Neural Predictors</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857">IEEE Trans. Intell. Veh.</a></em>, vol. 8, no. 3, pp. 2212-2221, Mar. 2023. [中科院 1区, JCR 1区, IF: 8.2] <a href="/assets/papers/SCI/ZhangYibo-2022-IEEE-TIV.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Yibo Zhang, <strong>Wentao Wu</strong>, and Weidong Zhang, ''<a href="https://ieeexplore.ieee.org/abstract/document/9950329">Noncooperative Game-Based Cooperative Maneuvering of Intelligent Surface Vehicles Via Accelerated Learning-Based Neural Predictors</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857">IEEE Trans. Intell. Veh.</a></em>, vol. 8, no. 3, pp. 2212-2221, Mar. 2023. [中科院 1区, JCR 1区, IF: 8.2] <a href="/assets/papers/SCI/ZhangYibo-2022-IEEE-TIV.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:KlAtU1dfN6UC'></span></strong>
   </li>
   <li data-type="journal" data-year="2022" data-date="2022-10">
-    <p><code>2022/10</code> <strong>Wentao Wu</strong>, Yibo Zhang, Weidong Zhang, and Wei Xie, ''<a href="https://www.sciencedirect.com/science/article/abs/pii/S0029801822021497">Distributed Finite-Time Performance-Prescribed Time-Varying Formation Control of Autonomous Surface Vehicles with Saturated Inputs</a>,'' <em><a href="https://www.sciencedirect.com/journal/ocean-engineering">Ocean. Eng.</a></em>, vol. 266, 12866, Oct. 2022. [中科院 2区, JCR 1区, Top, IF: 5.0] <a href="/assets/papers/SCI/WuWentao-2022-OEb.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2022-OEb.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Yibo Zhang, Weidong Zhang, and Wei Xie, ''<a href="https://www.sciencedirect.com/science/article/abs/pii/S0029801822021497">Distributed Finite-Time Performance-Prescribed Time-Varying Formation Control of Autonomous Surface Vehicles with Saturated Inputs</a>,'' <em><a href="https://www.sciencedirect.com/journal/ocean-engineering">Ocean. Eng.</a></em>, vol. 266, 12866, Oct. 2022. [中科院 2区, JCR 1区, Top, IF: 5.0] <a href="/assets/papers/SCI/WuWentao-2022-OEb.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2022-OEb.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:LkGwnXOMwfcC'></span></strong>
   </li>
   <li data-type="journal" data-year="2022" data-date="2022-09">
-    <p><code>2022/09</code> <strong>Wentao Wu</strong>, Yibo Zhang, Weidong Zhang, and Wei Xie, ''<a href="https://ieeexplore.ieee.org/abstract/document/9900363">Output-Feedback Finite-Time Safety-Critical Coordinated Control of Path-Guided Marine Surface Vehicles Based on Neurodynamic Optimization</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021">IEEE Trans. Syst. Man, Cybern., Syst.</a></em>, vol. 53, no. 3, pp. 1788-1800, Sep. 2022. [中科院 1区, JCR 1区, Top, IF: 8.7] <a href="/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Yibo Zhang, Weidong Zhang, and Wei Xie, ''<a href="https://ieeexplore.ieee.org/abstract/document/9900363">Output-Feedback Finite-Time Safety-Critical Coordinated Control of Path-Guided Marine Surface Vehicles Based on Neurodynamic Optimization</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021">IEEE Trans. Syst. Man, Cybern., Syst.</a></em>, vol. 53, no. 3, pp. 1788-1800, Sep. 2022. [中科院 1区, JCR 1区, Top, IF: 8.7] <a href="/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ufrVoPGSRksC'></span></strong>
   </li>
   <li data-type="journal" data-year="2022" data-date="2022-08">
-    <p><code>2022/08</code> Xiangxuan Ren, Min Li, Zhi Liu, Zhenhua Li, <strong>Wentao Wu</strong>, Lin Bai, and Weidong Zhang, ''<a href="https://ieeexplore.ieee.org/abstract/document/9878245">Curiosity-Driven Attention for Anomaly Road Obstacles Segmentation in Autonomous Driving</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857">IEEE Trans. Intell. Veh.</a></em>, vol. 8, no. 3, pp. 2233-2243, Mar. 2023. [中科院 1区, JCR 1区, IF: 8.2] <a href="/assets/papers/SCI/RenXiangxuan-2022-IEEE-TIV.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Xiangxuan Ren, Min Li, Zhi Liu, Zhenhua Li, <strong>Wentao Wu</strong>, Lin Bai, and Weidong Zhang, ''<a href="https://ieeexplore.ieee.org/abstract/document/9878245">Curiosity-Driven Attention for Anomaly Road Obstacles Segmentation in Autonomous Driving</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857">IEEE Trans. Intell. Veh.</a></em>, vol. 8, no. 3, pp. 2233-2243, Mar. 2023. [中科院 1区, JCR 1区, IF: 8.2] <a href="/assets/papers/SCI/RenXiangxuan-2022-IEEE-TIV.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:Y0pCki6q_DkC'></span></strong>
   </li>
   <li data-type="journal" data-year="2022" data-date="2022-04">
-    <p><code>2022/04</code> <strong>Wentao Wu</strong>, Zhouhua Peng, Lu Liu, and Dan Wang, ''<a href="https://ieeexplore.ieee.org/abstract/document/9762043">A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857">IEEE Trans. Intell. Veh.</a></em>, vol. 7, no. 3, pp. 627-637, Sep. 2022. [中科院 1区, JCR 1区, IF: 8.2] <a href="/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Zhouhua Peng, Lu Liu, and Dan Wang, ''<a href="https://ieeexplore.ieee.org/abstract/document/9762043">A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857">IEEE Trans. Intell. Veh.</a></em>, vol. 7, no. 3, pp. 627-637, Sep. 2022. [中科院 1区, JCR 1区, IF: 8.2] <a href="/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <a href="/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video" alt="Video badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:UeHWp8X0CEIC'></span></strong>
   </li>
   <li data-type="journal" data-year="2022" data-date="2022-01">
-    <p><code>2022/01</code> <strong>Wentao Wu</strong>, Zhouhua Peng, Dan Wang, Lu Liu, and Gu Nan, ''<a href="https://www.sciencedirect.com/science/article/abs/pii/S0029801822001445">Anti-Disturbance Leader–Follower Synchronization Control of Marine Vessels for Underway Replenishment Based on Robust Exact Differentiators</a>,'' <em><a href="https://www.sciencedirect.com/journal/ocean-engineering">Ocean. Eng.</a></em>, vol. 248, 110686, 2022. [中科院 2区, JCR 1区, Top, IF: 5.0] <a href="/assets/papers/SCI/WuWentao-2022-OE.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Zhouhua Peng, Dan Wang, Lu Liu, and Gu Nan, ''<a href="https://www.sciencedirect.com/science/article/abs/pii/S0029801822001445">Anti-Disturbance Leader–Follower Synchronization Control of Marine Vessels for Underway Replenishment Based on Robust Exact Differentiators</a>,'' <em><a href="https://www.sciencedirect.com/journal/ocean-engineering">Ocean. Eng.</a></em>, vol. 248, 110686, 2022. [中科院 2区, JCR 1区, Top, IF: 5.0] <a href="/assets/papers/SCI/WuWentao-2022-OE.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:qjMakFHDy7sC'></span></strong>
   </li>
   <li data-type="journal" data-year="2021" data-date="2021-04">
-    <p><code>2021/04</code> <strong>Wentao Wu</strong>, Zhouhua Peng, Dan Wang, Lu Liu, and Qing-Long Han*, ''<a href="https://ieeexplore.ieee.org/abstract/document/9440777">Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036">IEEE Trans. Cybern.</a></em>, vol. 52, no. 10, pp. 10937-10947, Oct. 2022. [中科院 1区, JCR 1区, Top, IF: 11.8] <a href="/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Zhouhua Peng, Dan Wang, Lu Liu, and Qing-Long Han*, ''<a href="https://ieeexplore.ieee.org/abstract/document/9440777">Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results</a>,'' <em><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036">IEEE Trans. Cybern.</a></em>, vol. 52, no. 10, pp. 10937-10947, Oct. 2022. [中科院 1区, JCR 1区, Top, IF: 11.8] <a href="/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:W7OEmFMy1HYC'></span></strong>
   </li>
   <li data-type="review" data-year="2021" data-date="2021-01">
-    <p><code>2021/01</code> 彭周华，<strong>吴文涛</strong>，王丹，刘陆, "<a href="http://zgjcyj.xml-journal.net/cn/article/doi/10.19693/j.issn.1673-3185.01923">多无人艇集群协同控制研究进展与未来趋势</a>," <em><a href="http://zgjcyj.xml-journal.net/index.htm">中国舰船研究</a></em>, vol. 61, no. 1, pp. 51-64, 2021. <a href="/assets/papers/ZWHX/J-核心-2020-Pengzhouhua-中国舰船研究.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>彭周华，<strong>吴文涛</strong>，王丹，刘陆, "<a href="http://zgjcyj.xml-journal.net/cn/article/doi/10.19693/j.issn.1673-3185.01923">多无人艇集群协同控制研究进展与未来趋势</a>," <em><a href="http://zgjcyj.xml-journal.net/index.htm">中国舰船研究</a></em>, vol. 61, no. 1, pp. 51-64, 2021. <a href="/assets/papers/ZWHX/J-核心-2020-Pengzhouhua-中国舰船研究.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:0EnyYjriUFMC'></span></strong>
   </li>
   <li data-type="journal" data-year="2021" data-date="2021-01">
-    <p><code>2021/01</code> <strong>吴文涛</strong>, 彭周华*, 王丹, 刘陆, 姜继洲, 任帅, ''<a href="http://www.ship-research.com/cn/article/doi/10.19693/j.issn.1673-3185.01665?viewType=HTML">基于扩张状态观测器的双桨推进无人艇抗干扰目标跟踪控制</a>,'' <em><a href="http://zgjcyj.xml-journal.net/index.htm">中国舰船研究</a></em>, vol. 61, no. 1, pp. 128-135, 2021. <a href="/assets/papers/ZWHX/J-核心-2020-WuWentao-中国舰船研究a.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p><strong>吴文涛</strong>, 彭周华*, 王丹, 刘陆, 姜继洲, 任帅, ''<a href="http://www.ship-research.com/cn/article/doi/10.19693/j.issn.1673-3185.01665?viewType=HTML">基于扩张状态观测器的双桨推进无人艇抗干扰目标跟踪控制</a>,'' <em><a href="http://zgjcyj.xml-journal.net/index.htm">中国舰船研究</a></em>, vol. 61, no. 1, pp. 128-135, 2021. <a href="/assets/papers/ZWHX/J-核心-2020-WuWentao-中国舰船研究a.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:Tyk-4Ss8FVUC'></span></strong>
   </li>
   <li data-type="journal" data-year="2020" data-date="2020-09">
-    <p><code>2020/09</code> <strong>吴文涛</strong>，古楠，彭周华，刘陆，王丹, ''<a href="https://web.archive.org/web/20201126111532id_/http://html.rhhz.net/ZGJCYJ/html/2020-1-21.htm">多领航者导引无人船集群的分布式时变队形控制</a>,'' <em><a href="http://zgjcyj.xml-journal.net/index.htm">中国舰船研究</a></em>, vol. 15, no. 1, pp. 21-30, 2020. <a href="/assets/papers/ZWHX/J-核心-2020-WuWentao-中国舰船研究b.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p><strong>吴文涛</strong>，古楠，彭周华，刘陆，王丹, ''<a href="https://web.archive.org/web/20201126111532id_/http://html.rhhz.net/ZGJCYJ/html/2020-1-21.htm">多领航者导引无人船集群的分布式时变队形控制</a>,'' <em><a href="http://zgjcyj.xml-journal.net/index.htm">中国舰船研究</a></em>, vol. 15, no. 1, pp. 21-30, 2020. <a href="/assets/papers/ZWHX/J-核心-2020-WuWentao-中国舰船研究b.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
     <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:5nxA0vEk-isC'></span></strong>
   </li>
   <li data-type="conference" data-year="2024" data-date="2024-07">
-    <p><code>2024/07</code> Yibo Zhang*, <strong>Wentao Wu</strong>, Tao Xie, Peng Cheng, Di Wu, and Weidong Zhang, "<a href="https://review.cacpaper.com/914/paper">Maneuvering Control of Uncertain Nonlinear Systems: An Output Regulation Viewpoint</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/1000188/all-proceedings">2024 63rd IEEE Conference on Decision and Control (CDC)</a></em>, 2024. <a href=""><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Yibo Zhang*, <strong>Wentao Wu</strong>, Tao Xie, Peng Cheng, Di Wu, and Weidong Zhang, "<a href="https://review.cacpaper.com/914/paper">Maneuvering Control of Uncertain Nonlinear Systems: An Output Regulation Viewpoint</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/1000188/all-proceedings">2024 63rd IEEE Conference on Decision and Control (CDC)</a></em>, 2024. <a href=""><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
   </li>
   <li data-type="conference" data-year="2023" data-date="2023-09">
-    <p><code>2023/09</code> <strong>Wentao Wu</strong>, Chenming Zhang, Zhenhua Li, Weidong Zhang, and Yibo Zhang, "Finite-time Extended State Observer-Based Performance-Critical Control for Uncertain MIMO Nonlinear Systems," <em><a href="http://ccsicc.c2.org.cn/">2023 7th Chinese Conference on Swarm Intelligence and Cooperative Control (CCSICC)</a></em>, Sept. 2023. <a href="/assets/papers/EI/2023-CCSICC.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <img src="https://img.shields.io/badge/Best%20Student%20Paper%20Nomination%20Award-8A2BE2" alt="Best Student Paper Nomination Award"></p>
+    <p><strong>Wentao Wu</strong>, Chenming Zhang, Zhenhua Li, Weidong Zhang, and Yibo Zhang, "Finite-time Extended State Observer-Based Performance-Critical Control for Uncertain MIMO Nonlinear Systems," <em><a href="http://ccsicc.c2.org.cn/">2023 7th Chinese Conference on Swarm Intelligence and Cooperative Control (CCSICC)</a></em>, Sept. 2023. <a href="/assets/papers/EI/2023-CCSICC.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a> <img src="https://img.shields.io/badge/Best%20Student%20Paper%20Nomination%20Award-8A2BE2" alt="Best Student Paper Nomination Award"></p>
   </li>
   <li data-type="conference" data-year="2023" data-date="2023-09">
-    <p><code>2023/09</code> <strong>Wentao Wu</strong>, Zhenhua Li, Yibo Zhang, and Weidong Zhang, "<a href="https://review.cacpaper.com/914/paper">Noncooperative Containment Control for Multiple Unmanned Surface Vehicles With Improved Extended State Observer</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/10054511/proceeding">2023 China Automation Congress (CAC)</a></em>, 2023. <a href="/assets/papers/EI/2023-CAC.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Zhenhua Li, Yibo Zhang, and Weidong Zhang, "<a href="https://review.cacpaper.com/914/paper">Noncooperative Containment Control for Multiple Unmanned Surface Vehicles With Improved Extended State Observer</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/10054511/proceeding">2023 China Automation Congress (CAC)</a></em>, 2023. <a href="/assets/papers/EI/2023-CAC.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
   </li>
   <li data-type="conference" data-year="2022" data-date="2022-09">
-    <p><code>2022/09</code> Yibo Zhang, <strong>Wentao Wu</strong>, Di Wu, Yuanhui Wang, Weidong Zhang, "<a href="https://ieeexplore.ieee.org/abstract/document/10056005">DSC-based Parallel Control for Consensus Maneuvering of Multi-agent Systems subject to Unmatched Uncertainties based on Distributed Nash Equilibrium Seeking</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/10054511/proceeding">2022 China Automation Congress (CAC)</a></em>, IEEE, pp. 1125-1130, 2022. <a href="/assets/papers/EI/ZhangYibo-2022-CAC.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Yibo Zhang, <strong>Wentao Wu</strong>, Di Wu, Yuanhui Wang, Weidong Zhang, "<a href="https://ieeexplore.ieee.org/abstract/document/10056005">DSC-based Parallel Control for Consensus Maneuvering of Multi-agent Systems subject to Unmatched Uncertainties based on Distributed Nash Equilibrium Seeking</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/10054511/proceeding">2022 China Automation Congress (CAC)</a></em>, IEEE, pp. 1125-1130, 2022. <a href="/assets/papers/EI/ZhangYibo-2022-CAC.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
   </li>
   <li data-type="conference" data-year="2022" data-date="2022-04">
-    <p><code>2022/04</code> <strong>Wentao Wu</strong>, Yibo Zhang, Weidong Zhang, and Di Wu, "<a href="https://ieeexplore.ieee.org/abstract/document/9902172">Safety-Certified Consensus Control of Multi-Agent Systems Based on Finite-Time Control Barrier Function</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/9901509/proceeding">2022 41th Chinese Control Conference (CCC)</a></em>, IEEE, pp. 4661-4665, 2022. <a href="/assets/papers/EI/2022-CCC.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Yibo Zhang, Weidong Zhang, and Di Wu, "<a href="https://ieeexplore.ieee.org/abstract/document/9902172">Safety-Certified Consensus Control of Multi-Agent Systems Based on Finite-Time Control Barrier Function</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/9901509/proceeding">2022 41th Chinese Control Conference (CCC)</a></em>, IEEE, pp. 4661-4665, 2022. <a href="/assets/papers/EI/2022-CCC.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
   </li>
   <li data-type="conference" data-year="2020" data-date="2020-04">
-    <p><code>2020/04</code> <strong>Wentao Wu</strong>, Dan Wang, Mingao Lv, Jizhou Jiang, Lu Liu, and Zhouhua Peng, "<a href="https://ieeexplore.ieee.org/abstract/document/9189015">Event-triggered LOS Guidance for Path Following of an Unmanned Surface Vehicle over Wireless Network</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/9181388/proceeding">2020 39th Chinese Control Conference (CCC)</a></em>, IEEE, pp. 4475-4480, 2020. <a href="/assets/papers/EI/2020-CCC.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p><strong>Wentao Wu</strong>, Dan Wang, Mingao Lv, Jizhou Jiang, Lu Liu, and Zhouhua Peng, "<a href="https://ieeexplore.ieee.org/abstract/document/9189015">Event-triggered LOS Guidance for Path Following of an Unmanned Surface Vehicle over Wireless Network</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/9181388/proceeding">2020 39th Chinese Control Conference (CCC)</a></em>, IEEE, pp. 4475-4480, 2020. <a href="/assets/papers/EI/2020-CCC.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
   </li>
   <li data-type="conference" data-year="2020" data-date="2020-04">
-    <p><code>2020/04</code> Haoliang Wang, Jizhou Jiang, <strong>Wentao Wu</strong>, Lu Liu, Dan Wang, Zhouhua Peng, "<a href="https://ieeexplore.ieee.org/abstract/document/9230166">Robust distributed guidance and control of multiple autonomous surface vehicles based on extended state observers and finite-set model predictive control</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/9229471/proceeding">2020 5th International Conference on Automation, Control and Robotics Engineering (CACRE)</a></em>, IEEE, pp. 235-239, 2020. <a href="/assets/papers/EI/WangHaoliang-2020-CACRE.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
+    <p>Haoliang Wang, Jizhou Jiang, <strong>Wentao Wu</strong>, Lu Liu, Dan Wang, Zhouhua Peng, "<a href="https://ieeexplore.ieee.org/abstract/document/9230166">Robust distributed guidance and control of multiple autonomous surface vehicles based on extended state observers and finite-set model predictive control</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/9229471/proceeding">2020 5th International Conference on Automation, Control and Robotics Engineering (CACRE)</a></em>, IEEE, pp. 235-239, 2020. <a href="/assets/papers/EI/WangHaoliang-2020-CACRE.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
   </li>
   <li data-type="patent" data-year="2023" data-date="2023-12">
-    <p><code>2023/12 [已受理]</code> <strong>吴文涛</strong>，张卫东，张义博，李镇华，李兰. 一种无人船容饱和预设性能船舶列车编队控制系统及方法[P]. 上海市：202311691127.8, 2023-12-11.</p>
+    <p><strong>吴文涛</strong>，张卫东，张义博，李镇华，李兰. 一种无人船容饱和预设性能船舶列车编队控制系统及方法[P]. 上海市：202311691127.8, 2023-12-11.</p>
   </li>
   <li data-type="patent" data-year="2023" data-date="2023-12">
-    <p><code>2023/12 [已公开]</code> 张卫东，郑建文, <strong>吴文涛</strong>等. 一种基于领导者协同的多无人船编队的严格安全控制方法[P]. 上海市：CN115903800A, 2023-04-04.</p>
+    <p>张卫东，郑建文, <strong>吴文涛</strong>等. 一种基于领导者协同的多无人船编队的严格安全控制方法[P]. 上海市：CN115903800A, 2023-04-04.</p>
   </li>
   <li data-type="patent" data-year="2023" data-date="2023-12">
-    <p><code>2023/12 [已授权]</code> 王丹, 张宝, 孙邱越, 彭周华, 刘陆, 李铁山, <strong>吴文涛</strong>, 姜继州. 一种海洋机器人轨迹跟踪控制结构的设计方法[P]. 辽宁省：CN110262513B, 2022-01-28.</p>
+    <p>王丹, 张宝, 孙邱越, 彭周华, 刘陆, 李铁山, <strong>吴文涛</strong>, 姜继州. 一种海洋机器人轨迹跟踪控制结构的设计方法[P]. 辽宁省：CN110262513B, 2022-01-28.</p>
   </li>
 </ul>
+
+<div id="citation-modal" class="citation-modal" hidden>
+  <div class="citation-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="citation-modal-title" tabindex="-1">
+    <button type="button" class="citation-modal__close" aria-label="Close citation dialog">&times;</button>
+    <h4 id="citation-modal-title">Cite this publication</h4>
+    <div class="citation-modal__tabs" role="tablist">
+      <button type="button" class="citation-modal__tab is-active" data-format="gbt" role="tab" aria-selected="true">GB/T 7714</button>
+      <button type="button" class="citation-modal__tab" data-format="bib" role="tab" aria-selected="false">BibTeX</button>
+    </div>
+    <pre class="citation-modal__content" id="citation-modal-content"></pre>
+    <div class="citation-modal__actions">
+      <button type="button" class="citation-modal__action" data-action="copy">Copy</button>
+      <button type="button" class="citation-modal__action" data-action="download">Download</button>
+    </div>
+  </div>
+</div>
 
 <style>
 .publication-controls {
@@ -221,46 +242,222 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   align-items: center;
-  margin-bottom: 1rem;
-}
-.publication-controls label {
-  font-weight: 600;
-}
-.publication-controls select,
-.publication-controls button {
-  padding: 0.4rem 0.75rem;
-  border-radius: 0.4rem;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  border-radius: 0.6rem;
   border: 1px solid #d0d7de;
+  background: #f6f8fa;
+}
+
+.publication-controls select,
+.publication-controls button,
+.publication-search {
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.45rem;
+  border: 1px solid #c1c7d0;
   background-color: #fff;
   font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
+
+.publication-search {
+  flex: 1 1 240px;
+  min-width: 200px;
+}
+
+.publication-controls select:focus,
+.publication-controls button:focus,
+.publication-search:focus {
+  outline: none;
+  border-color: #0969da;
+  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.15);
+}
+
 .publication-controls button {
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  background-color: #0969da;
+  color: #fff;
+  border-color: #0969da;
 }
+
 .publication-controls button:hover {
-  background-color: #f6f8fa;
+  background-color: #0550ae;
 }
+
 ol.publication-list {
   list-style: none;
   padding-left: 0;
   counter-reset: publication-counter;
 }
+
 ol.publication-list > li {
-  margin-bottom: 1rem;
-  line-height: 1.6;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.65;
 }
+
 .publication-index {
   font-weight: 600;
-  margin-right: 0.5rem;
   color: #57606a;
+  min-width: 3rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
 }
+
+.publication-body p {
+  margin: 0;
+}
+
+.publication-body p + p {
+  margin-top: 0.5rem;
+}
+
+.publication-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.publication-cite {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #0969da;
+  background: #fff;
+  color: #0969da;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.publication-cite:hover {
+  background-color: #0969da;
+  color: #fff;
+}
+
 .publication-empty {
   color: #57606a;
   font-style: italic;
 }
+
 .publication-source[hidden] {
   display: none !important;
+}
+
+.citation-modal[hidden] {
+  display: none;
+}
+
+.citation-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1.5rem;
+}
+
+.citation-modal__dialog {
+  position: relative;
+  width: min(640px, 100%);
+  background: #fff;
+  border-radius: 0.85rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+}
+
+.citation-modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #57606a;
+}
+
+.citation-modal__tabs {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.citation-modal__tab {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #c1c7d0;
+  background: #f6f8fa;
+  color: #24292f;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.citation-modal__tab.is-active {
+  background: #0969da;
+  border-color: #0969da;
+  color: #fff;
+}
+
+.citation-modal__content {
+  background: #f6f8fa;
+  border-radius: 0.65rem;
+  padding: 1rem;
+  max-height: 320px;
+  overflow: auto;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.citation-modal__actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.citation-modal__action {
+  padding: 0.45rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #0969da;
+  background: #0969da;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.citation-modal__action[data-action="copy"] {
+  background: #fff;
+  color: #0969da;
+}
+
+.citation-modal__action[data-action="copy"]:hover {
+  background: rgba(9, 105, 218, 0.1);
+}
+
+.citation-modal__action[data-action="download"]:hover {
+  background: #0550ae;
+}
+
+@media (max-width: 600px) {
+  .publication-controls {
+    padding: 0.75rem 0.65rem;
+  }
+
+  ol.publication-list > li {
+    gap: 0.65rem;
+  }
+
+  .publication-index {
+    min-width: 2.5rem;
+  }
 }
 </style>
 
