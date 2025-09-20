@@ -209,15 +209,6 @@
   <li data-type="conference" data-year="2020" data-date="2020-04">
     <p>Haoliang Wang, Jizhou Jiang, <strong>Wentao Wu</strong>, Lu Liu, Dan Wang, Zhouhua Peng, "<a href="https://ieeexplore.ieee.org/abstract/document/9230166">Robust distributed guidance and control of multiple autonomous surface vehicles based on extended state observers and finite-set model predictive control</a>," <em><a href="https://ieeexplore.ieee.org/xpl/conhome/9229471/proceeding">2020 5th International Conference on Automation, Control and Robotics Engineering (CACRE)</a></em>, IEEE, pp. 235-239, 2020. <a href="/assets/papers/EI/WangHaoliang-2020-CACRE.pdf"><img src="https://img.shields.io/badge/Link-PDF-gree" alt="PDF badge"></a></p>
   </li>
-  <li data-type="patent" data-year="2023" data-date="2023-12">
-    <p><strong>吴文涛</strong>，张卫东，张义博，李镇华，李兰. 一种无人船容饱和预设性能船舶列车编队控制系统及方法[P]. 上海市：202311691127.8, 2023-12-11.</p>
-  </li>
-  <li data-type="patent" data-year="2023" data-date="2023-12">
-    <p>张卫东，郑建文, <strong>吴文涛</strong>等. 一种基于领导者协同的多无人船编队的严格安全控制方法[P]. 上海市：CN115903800A, 2023-04-04.</p>
-  </li>
-  <li data-type="patent" data-year="2023" data-date="2023-12">
-    <p>王丹, 张宝, 孙邱越, 彭周华, 刘陆, 李铁山, <strong>吴文涛</strong>, 姜继州. 一种海洋机器人轨迹跟踪控制结构的设计方法[P]. 辽宁省：CN110262513B, 2022-01-28.</p>
-  </li>
 </ul>
 
 <div id="citation-modal" class="citation-modal" hidden>
@@ -238,15 +229,11 @@
 
 <style>
 .publication-controls {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 0.75rem;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 1.5rem;
-  padding: 0.75rem;
-  border-radius: 0.6rem;
-  border: 1px solid #d0d7de;
-  background: #f6f8fa;
 }
 
 .publication-controls select,
@@ -258,11 +245,17 @@
   background-color: #fff;
   font-size: 0.95rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  min-height: 2.75rem;
+}
+
+.publication-controls select,
+.publication-controls button {
+  width: 100%;
 }
 
 .publication-search {
-  flex: 1 1 240px;
-  min-width: 200px;
+  width: 100%;
+  min-width: 0;
 }
 
 .publication-controls select:focus,
@@ -278,10 +271,24 @@
   background-color: #0969da;
   color: #fff;
   border-color: #0969da;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .publication-controls button:hover {
   background-color: #0550ae;
+}
+
+.publication-resources {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.publication-resources a {
+  display: inline-flex;
 }
 
 ol.publication-list {
@@ -448,7 +455,7 @@ ol.publication-list > li {
 
 @media (max-width: 600px) {
   .publication-controls {
-    padding: 0.75rem 0.65rem;
+    grid-template-columns: 1fr;
   }
 
   ol.publication-list > li {
