@@ -395,7 +395,7 @@ ol.publication-list > li {
 }
 
 .publication-body em {
-  color: #0969da;
+  color: #007ec6;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
