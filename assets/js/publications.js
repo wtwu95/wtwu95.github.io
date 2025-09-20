@@ -20,7 +20,7 @@
 
     var typeLabels = {
       journal: 'Journal',
-      conference: 'Conference paper',
+      conference: 'Conference',
       patent: 'Patent',
       review: 'Review'
     };
