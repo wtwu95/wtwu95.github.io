@@ -234,11 +234,11 @@
   gap: 0.75rem;
   align-items: stretch;
   margin-bottom: 1.75rem;
-  padding: 1rem 1.1rem;
-  background: linear-gradient(135deg, #f8fafc 0%, #eef2f6 100%);
-  border: 1px solid var(--publication-border);
-  border-radius: 1rem;
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .publication-controls select,
@@ -351,18 +351,16 @@ ol.publication-list > li {
   padding: 1.25rem 1.35rem;
   line-height: 1.65;
   align-items: flex-start;
-  border-radius: 1.1rem;
-  background: var(--publication-surface);
-  border: 1px solid var(--publication-border);
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  border-radius: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  transition: transform 0.2s ease;
 }
 
 ol.publication-list > li:hover,
 ol.publication-list > li:focus-within {
   transform: translateY(-2px);
-  border-color: rgba(148, 163, 184, 0.7);
-  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
 }
 
 .publication-item {
@@ -701,9 +699,9 @@ mark.publication-highlight {
   }
 
   .publication-controls {
-    background: rgba(15, 23, 42, 0.65);
-    box-shadow: 0 18px 36px rgba(2, 6, 23, 0.55);
-    border-color: var(--publication-border);
+    background: none;
+    box-shadow: none;
+    border-color: transparent;
   }
 
   .publication-controls select,
@@ -732,10 +730,6 @@ mark.publication-highlight {
   .publication-controls button:hover {
     background-color: #1d4ed8;
     border-color: #1d4ed8;
-  }
-
-  ol.publication-list > li {
-    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.6);
   }
 
   .publication-body p {
