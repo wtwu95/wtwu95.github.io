@@ -84,18 +84,16 @@
 
 ### Publications Explorer
 
-<p>使用下方筛选器按类型与年份快速浏览全部文献，默认按照发表时间从新到旧排序。</p>
-
 <div class="publication-controls">
-  <label for="publication-type-filter">类型筛选</label>
+  <label for="publication-type-filter">Type</label>
   <select id="publication-type-filter">
-    <option value="all">全部类型</option>
+    <option value="all">Type</option>
   </select>
-  <label for="publication-year-filter">年份筛选</label>
+  <label for="publication-year-filter">Date</label>
   <select id="publication-year-filter">
-    <option value="all">全部年份</option>
+    <option value="all">Date</option>
   </select>
-  <button type="button" id="publication-year-sort" class="publication-sort">按年份 ↓</button>
+  <button type="button" id="publication-year-sort" class="publication-sort">Year ↓</button>
 </div>
 
 <ol id="publication-list" class="publication-list"></ol>
