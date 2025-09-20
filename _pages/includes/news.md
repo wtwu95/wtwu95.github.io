@@ -1,7 +1,8 @@
 # 💬 News
 
 <div class="news-window" data-news-window data-visible-count="5" tabindex="0" aria-label="Latest news" markdown="1">
-
+- *06/2025* &nbsp;👏 I was awarded the **Outstanding Graduates of Shanghai**!
+- *01/2025* &nbsp;👏🎉 I obtained **Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program** by CAST!
 - *09/2024* &nbsp;👏👏 I obtained the **National Scholarship** for doctoral students in Shanghai Jiao Tong University!
 - *08/2024* &nbsp;🎉 One paper was accepted by **IEEE T-VT** ([Link](https://ieeexplore.ieee.org/document/))!
 - *07/2024* &nbsp;🎉  One co-author's paper was accepted by IEEE **CDC** ([Link]())!
