@@ -141,6 +141,7 @@
     function render() {
       var selectedType = typeSelect.value;
       var selectedYear = yearSelect.value;
+      var highlightTerm = searchInput ? searchInput.value.trim() : '';
       var normalizedSearch = searchTerm;
 
       var filtered = publications.filter(function (pub) {
@@ -193,6 +194,7 @@
         bodyEl.innerHTML = pub.content;
 
         enhanceDisplay(bodyEl);
+        applySearchHighlight(bodyEl, highlightTerm);
 
         var actions = document.createElement('div');
         actions.className = 'publication-actions';
@@ -291,7 +293,7 @@
     yearSelect.addEventListener('change', render);
     sortButton.addEventListener('click', function () {
       sortOrder = sortOrder === 'desc' ? 'asc' : 'desc';
-      sortButton.textContent = sortOrder === 'desc' ? 'Year ↓' : 'Year ↑';
+      sortButton.textContent = sortOrder === 'desc' ? 'Year ⬇' : 'Year ⬆';
       render();
     });
 
@@ -312,6 +314,64 @@
           }
           return '“' + trimmed + '.”';
         });
+      });
+    }
+
+    function applySearchHighlight(container, term) {
+      var trimmed = term ? term.trim() : '';
+      if (!trimmed) {
+        return;
+      }
+      var normalized = trimmed.toLowerCase();
+      if (!normalized) {
+        return;
+      }
+
+      var walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null, false);
+      var nodes = [];
+      var current;
+
+      while ((current = walker.nextNode())) {
+        var value = current.nodeValue;
+        if (!value) {
+          continue;
+        }
+        if (!value.trim()) {
+          continue;
+        }
+        if (value.toLowerCase().indexOf(normalized) === -1) {
+          continue;
+        }
+        nodes.push(current);
+      }
+
+      nodes.forEach(function (node) {
+        if (!node.parentNode) {
+          return;
+        }
+        var text = node.nodeValue;
+        var lower = text.toLowerCase();
+        var fragment = document.createDocumentFragment();
+        var index = 0;
+        var termLength = trimmed.length;
+        var matchIndex;
+
+        while ((matchIndex = lower.indexOf(normalized, index)) !== -1) {
+          if (matchIndex > index) {
+            fragment.appendChild(document.createTextNode(text.slice(index, matchIndex)));
+          }
+          var mark = document.createElement('mark');
+          mark.className = 'publication-highlight';
+          mark.textContent = text.slice(matchIndex, matchIndex + termLength);
+          fragment.appendChild(mark);
+          index = matchIndex + termLength;
+        }
+
+        if (index < text.length) {
+          fragment.appendChild(document.createTextNode(text.slice(index)));
+        }
+
+        node.parentNode.replaceChild(fragment, node);
       });
     }
 

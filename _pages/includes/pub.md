@@ -96,7 +96,7 @@
   <select id="publication-year-filter">
     <option value="all">Date</option>
   </select>
-  <button type="button" id="publication-year-sort" class="publication-sort">Year ↓</button>
+  <button type="button" id="publication-year-sort" class="publication-sort">Year ⬇</button>
 </div>
 
 <ol id="publication-list" class="publication-list"></ol>
@@ -221,6 +221,11 @@
 <style>
 :root {
   --publication-control-height: 2.5rem;
+  --publication-surface: #ffffff;
+  --publication-border: #d0d7de;
+  --publication-muted: #57606a;
+  --publication-accent: #0969da;
+  --publication-highlight: #e5e7eb;
 }
 
 .publication-controls {
@@ -228,32 +233,59 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   align-items: stretch;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2f6 100%);
+  border: 1px solid var(--publication-border);
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
 .publication-controls select,
 .publication-controls button,
 .publication-search {
-  padding: 0.35rem 0.75rem;
-  border-radius: 0.45rem;
-  border: 1px solid #c1c7d0;
+  padding: 0.45rem 0.85rem;
+  border-radius: 0.65rem;
+  border: 1px solid var(--publication-border);
   background-color: #fff;
   font-size: 0.95rem;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 500;
+  color: #1f2937;
+  line-height: 1.25;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   height: var(--publication-control-height);
   min-height: var(--publication-control-height);
   box-sizing: border-box;
 }
 
+.publication-controls select,
 .publication-search {
-  flex: 1 1 240px;
-  min-width: 200px;
-  padding: 0 0.75rem;
+  flex: 1 1 160px;
+}
+
+.publication-controls select {
+  padding-right: 2.2rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 12 12'%3E%3Cpath stroke='%2394a3b8' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M3 4.5 6 7.5 9 4.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  background-size: 0.65rem auto;
+}
+
+.publication-search {
+  min-width: 220px;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   line-height: 1.2;
   -webkit-appearance: none;
   appearance: none;
+  background-color: #fff;
+}
+
+.publication-search::placeholder {
+  color: #94a3b8;
 }
 
 .publication-search::-webkit-search-decoration,
@@ -262,60 +294,110 @@
 }
 
 .publication-controls select:focus,
+.publication-controls select:focus-visible,
 .publication-controls button:focus,
-.publication-search:focus {
+.publication-controls button:focus-visible,
+.publication-search:focus,
+.publication-search:focus-visible {
   outline: none;
-  border-color: #0969da;
-  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.15);
+  border-color: var(--publication-accent);
+  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.18);
+}
+
+.publication-controls select:hover,
+.publication-search:hover {
+  border-color: rgba(148, 163, 184, 0.85);
 }
 
 .publication-controls button {
   cursor: pointer;
-  background-color: #0969da;
+  background-color: var(--publication-accent);
   color: #fff;
-  border-color: #0969da;
+  border-color: var(--publication-accent);
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0 1.15rem;
+  box-shadow: 0 12px 22px rgba(9, 105, 218, 0.22);
 }
 
 .publication-controls button:hover {
   background-color: #0550ae;
+  border-color: #0550ae;
+  transform: translateY(-1px);
+  box-shadow: 0 16px 32px rgba(9, 105, 218, 0.28);
+}
+
+.publication-controls button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(9, 105, 218, 0.24);
 }
 
 ol.publication-list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.25rem;
   counter-reset: publication-counter;
 }
 
 ol.publication-list > li {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
+  gap: 1.25rem;
+  padding: 1.25rem 1.35rem;
   line-height: 1.65;
   align-items: flex-start;
+  border-radius: 1.1rem;
+  background: var(--publication-surface);
+  border: 1px solid var(--publication-border);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+ol.publication-list > li:hover,
+ol.publication-list > li:focus-within {
+  transform: translateY(-2px);
+  border-color: rgba(148, 163, 184, 0.7);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+}
+
+.publication-item {
+  position: relative;
+  isolation: isolate;
 }
 
 .publication-index {
   font-weight: 600;
-  color: #57606a;
+  color: var(--publication-muted);
   min-width: 3rem;
-  text-align: right;
   font-variant-numeric: tabular-nums;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.18);
+  letter-spacing: 0.02em;
+  align-self: flex-start;
+  font-size: 0.85rem;
+}
+
+.publication-body {
+  display: grid;
+  gap: 0.65rem;
 }
 
 .publication-body p {
   margin: 0;
-}
-
-.publication-body p + p {
-  margin-top: 0.5rem;
+  color: #0f172a;
 }
 
 .publication-actions {
-  margin-top: 0.4rem;
+  margin-top: 0.25rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -323,12 +405,23 @@ ol.publication-list > li {
 }
 
 .publication-cite {
-  padding: 0;
-  border: none;
-  background: transparent;
+  padding: 0.25rem 0.45rem;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
+  background: rgba(9, 105, 218, 0.08);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.publication-cite:hover,
+.publication-cite:focus,
+.publication-cite:focus-visible {
+  border-color: rgba(9, 105, 218, 0.45);
+  box-shadow: 0 8px 18px rgba(9, 105, 218, 0.2);
+  transform: translateY(-1px);
+  outline: none;
 }
 
 .publication-cite img {
@@ -339,6 +432,16 @@ ol.publication-list > li {
 .publication-badge {
   display: inline-flex;
   align-items: center;
+  padding: 0.2rem 0.35rem;
+  border-radius: 0.5rem;
+  background: rgba(15, 23, 42, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.publication-badge:hover,
+.publication-badge:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(15, 23, 42, 0.12);
 }
 
 .publication-badge__image,
@@ -350,28 +453,33 @@ ol.publication-list > li {
 .publication-year {
   align-self: flex-start;
   justify-self: end;
-  padding: 0;
-  border: none;
-  background: transparent;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.16);
   font-weight: 600;
-  color: #57606a;
+  color: var(--publication-muted);
   font-variant-numeric: tabular-nums;
   line-height: 1.2;
+  letter-spacing: 0.01em;
+  font-size: 0.9rem;
 }
 
 .publication-body p a:first-of-type {
   text-decoration: none;
-  color: #111;
+  color: #0f172a;
+  font-weight: 600;
 }
 
 .publication-body p a:first-of-type:hover,
 .publication-body p a:first-of-type:focus {
-  color: #111;
-  text-decoration: none;
+  color: #0550ae;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.18em;
 }
 
 .publication-body em {
-  color: #007ec6;
+  color: #0f4c81;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
@@ -390,12 +498,25 @@ ol.publication-list > li {
 }
 
 .publication-empty {
-  color: #57606a;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.85rem;
+  border: 1px dashed var(--publication-border);
+  background: rgba(248, 250, 252, 0.65);
+  color: var(--publication-muted);
   font-style: italic;
 }
 
 .publication-source[hidden] {
   display: none !important;
+}
+
+mark.publication-highlight {
+  background: var(--publication-highlight);
+  color: inherit;
+  padding: 0 0.15em;
+  border-radius: 0.25em;
+  box-shadow: inset 0 -0.18em 0 rgba(15, 23, 42, 0.08);
 }
 
 .citation-modal[hidden] {
@@ -498,24 +619,175 @@ ol.publication-list > li {
   background: #0550ae;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
   .publication-controls {
-    padding: 0.75rem 0.65rem;
-  }
-
-  ol.publication-list > li {
+    padding: 0.9rem;
     gap: 0.65rem;
-    grid-template-columns: auto 1fr;
   }
 
-  .publication-index {
-    min-width: 2.5rem;
+  .publication-controls select,
+  .publication-controls button,
+  .publication-search {
+    flex: 1 1 100%;
+  }
+
+  .publication-controls button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  ol.publication-list > li {
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
   }
 
   .publication-year {
     grid-column: 2;
     justify-self: flex-start;
-    margin-top: 0.25rem;
+    margin-top: 0.35rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .publication-controls {
+    padding: 0.75rem 0.7rem;
+  }
+
+  .publication-search {
+    min-width: 0;
+    width: 100%;
+  }
+
+  ol.publication-list > li {
+    padding: 1rem 1.05rem;
+  }
+}
+
+@media (max-width: 420px) {
+  ol.publication-list > li {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-index {
+    justify-content: flex-start;
+    margin-bottom: 0.4rem;
+  }
+
+  .publication-year {
+    justify-self: flex-start;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publication-controls *,
+  .publication-item,
+  .publication-badge,
+  .publication-cite,
+  .citation-modal__tab,
+  .citation-modal__action {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --publication-surface: rgba(15, 23, 42, 0.88);
+    --publication-border: rgba(148, 163, 184, 0.35);
+    --publication-muted: #cbd5f5;
+    --publication-highlight: rgba(148, 163, 184, 0.35);
+  }
+
+  .publication-controls {
+    background: rgba(15, 23, 42, 0.65);
+    box-shadow: 0 18px 36px rgba(2, 6, 23, 0.55);
+    border-color: var(--publication-border);
+  }
+
+  .publication-controls select,
+  .publication-controls button,
+  .publication-search {
+    background-color: rgba(15, 23, 42, 0.9);
+    color: #e2e8f0;
+    border-color: var(--publication-border);
+  }
+
+  .publication-controls select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 12 12'%3E%3Cpath stroke='%23cbd5f5' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M3 4.5 6 7.5 9 4.5'/%3E%3C/svg%3E");
+  }
+
+  .publication-controls select:hover,
+  .publication-search:hover {
+    border-color: rgba(148, 163, 184, 0.6);
+  }
+
+  .publication-controls button {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    box-shadow: 0 16px 28px rgba(37, 99, 235, 0.45);
+  }
+
+  .publication-controls button:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+  }
+
+  ol.publication-list > li {
+    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.6);
+  }
+
+  .publication-body p {
+    color: #e2e8f0;
+  }
+
+  .publication-body p a:first-of-type {
+    color: #f8fafc;
+  }
+
+  .publication-badge {
+    background: rgba(148, 163, 184, 0.2);
+  }
+
+  .publication-year {
+    background: rgba(59, 130, 246, 0.22);
+    color: #dbeafe;
+  }
+
+  .publication-empty {
+    background: rgba(15, 23, 42, 0.7);
+  }
+
+  mark.publication-highlight {
+    box-shadow: inset 0 -0.18em 0 rgba(148, 163, 184, 0.35);
+  }
+
+  .citation-modal__dialog {
+    background: rgba(15, 23, 42, 0.92);
+    color: #e2e8f0;
+  }
+
+  .citation-modal__content {
+    background: rgba(30, 41, 59, 0.75);
+    color: #e2e8f0;
+  }
+
+  .citation-modal__tab {
+    background: rgba(30, 41, 59, 0.7);
+    border-color: rgba(148, 163, 184, 0.4);
+    color: #e2e8f0;
+  }
+
+  .citation-modal__tab.is-active {
+    background: #2563eb;
+    border-color: #2563eb;
+  }
+
+  .citation-modal__action[data-action="copy"] {
+    background: transparent;
+    color: #dbeafe;
+    border-color: #2563eb;
   }
 }
 </style>
