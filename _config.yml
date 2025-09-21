@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Dr. Wentao Wu (吴文涛)"
+title                    : "Wentao Wu (吴文涛)"
 description              : ""
 repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
