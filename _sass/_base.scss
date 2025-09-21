@@ -132,6 +132,21 @@ a {
   }
 }
 
+.page__content a {
+  display: inline;
+  border-radius: 0.25em;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
+    background-color: rgba($link-color, 0.12);
+    box-shadow: 0 0 0 2px rgba($link-color, 0.25);
+    text-decoration: none;
+    outline: none;
+  }
+}
+
 /* code */
 
 tt, code, kbd, samp, pre {
