@@ -1,7 +1,7 @@
 <span class='anchor' id='-honors'></span>
 # 🎖 Honors & Awards
 
-- 2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>** by the CAST
+- 2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**
 - 2025 &nbsp; Outstanding Graduate of Shanghai
 - 2024 · 2023 · 2020 &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**
 - 2023 &nbsp; State-Sponsored Postgraduate Program for National Construction of High-Level Universities
