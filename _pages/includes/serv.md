@@ -1,10 +1,14 @@
-# 💻 Academic Services:
+# 💻 Professional Services:
 
 ### Journal Editorial Boards
 - **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
 
 ### Conference Program Committee and Editorial
 - **Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
+
+### Teaching 
+
+- **Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)
 
 ### Journal Reviewer
 - [IEEE Transactions on Automatic Control](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9)  
