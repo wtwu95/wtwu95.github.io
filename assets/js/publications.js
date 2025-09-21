@@ -19,6 +19,7 @@
     var citationTabs = citationModal ? Array.prototype.slice.call(citationModal.querySelectorAll('.citation-modal__tab')) : [];
     var citationClose = citationModal ? citationModal.querySelector('.citation-modal__close') : null;
     var citationActions = citationModal ? citationModal.querySelector('.citation-modal__actions') : null;
+    var citationFeedback = citationModal ? citationModal.querySelector('.citation-modal__feedback') : null;
 
     if (!sourceList || !listEl || !typeSelect || !yearSelect || !sortButton) {
       return;
@@ -36,6 +37,7 @@
     var searchTerm = '';
     var activeCitationFormat = 'plain';
     var currentCitation = null;
+    var copyFeedbackTimer = null;
 
     function sanitizeNode(node) {
       var clone = node.cloneNode(true);
@@ -561,6 +563,7 @@
         bib: citations.bib
       };
       activeCitationFormat = 'plain';
+      hideCopyFeedback();
       updateCitationContent();
       citationModal.removeAttribute('hidden');
       var focusTarget = citationModal.querySelector('.citation-modal__dialog');
@@ -574,6 +577,7 @@
         return;
       }
       citationModal.setAttribute('hidden', '');
+      hideCopyFeedback();
     }
 
     function updateCitationContent() {
@@ -626,13 +630,18 @@
 
         if (actionButton.getAttribute('data-action') === 'copy') {
           if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(citationText).catch(function () {
+            navigator.clipboard.writeText(citationText).then(function () {
+              showCopyFeedback('Citation copied to clipboard');
+            }).catch(function () {
               fallbackCopy(citationText);
+              showCopyFeedback('Citation copied to clipboard');
             });
           } else {
             fallbackCopy(citationText);
+            showCopyFeedback('Citation copied to clipboard');
           }
         } else if (actionButton.getAttribute('data-action') === 'download') {
+          hideCopyFeedback();
           var extension = format === 'bib' ? 'bib' : 'txt';
           var filename = 'citation-' + currentCitation.index + '.' + extension;
           var blob = new Blob([citationText], { type: 'text/plain;charset=utf-8' });
@@ -654,6 +663,32 @@
         closeCitation();
       }
     });
+
+    function showCopyFeedback(message) {
+      if (!citationFeedback) {
+        return;
+      }
+      citationFeedback.textContent = message;
+      citationFeedback.removeAttribute('hidden');
+      if (copyFeedbackTimer) {
+        clearTimeout(copyFeedbackTimer);
+      }
+      copyFeedbackTimer = window.setTimeout(function () {
+        hideCopyFeedback();
+      }, 2000);
+    }
+
+    function hideCopyFeedback() {
+      if (!citationFeedback) {
+        return;
+      }
+      citationFeedback.setAttribute('hidden', '');
+      citationFeedback.textContent = '';
+      if (copyFeedbackTimer) {
+        clearTimeout(copyFeedbackTimer);
+        copyFeedbackTimer = null;
+      }
+    }
 
     function fallbackCopy(text) {
       var textarea = document.createElement('textarea');

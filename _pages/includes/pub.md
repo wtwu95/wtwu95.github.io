@@ -236,6 +236,7 @@
     </div>
     <pre class="citation-modal__content" id="citation-modal-content"></pre>
     <div class="citation-modal__actions">
+      <div class="citation-modal__feedback" role="status" aria-live="polite" hidden></div>
       <button type="button" class="citation-modal__action" data-action="copy">Copy</button>
       <button type="button" class="citation-modal__action" data-action="download">Download</button>
     </div>
@@ -551,6 +552,18 @@ mark.publication-highlight {
   display: flex;
   gap: 0.75rem;
   justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.citation-modal__feedback {
+  margin-right: auto;
+  font-size: 0.85rem;
+  color: var(--publication-accent);
+}
+
+.citation-modal__feedback[hidden] {
+  display: none;
 }
 
 .citation-modal__action {
