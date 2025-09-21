@@ -10,7 +10,7 @@
       </div>
       <div class="cv-date">09/2021–03/2025</div>
     </div>
-    <div class="cv-sub">Supervisors: Chair Professor <a href="https://automation.sjtu.edu.cn/wdzhang"><b>Weidong Zhang (张卫东)</b></a>, Professor <a href="https://automation.sjtu.edu.cn/Jun-Guo"><b>Junguo Lu (卢俊国)</b></a></div>
+    <div class="cv-sub">Supervisors: Chair Professor <a href="https://automation.sjtu.edu.cn/wdzhang"><b>Weidong Zhang (张卫东)</b></a> and Professor <a href="https://automation.sjtu.edu.cn/Jun-Guo"><b>Junguo Lu (卢俊国)</b></a></div>
   </li>
 
   <li class="cv-item">
@@ -22,7 +22,7 @@
       </div>
       <div class="cv-date">09/2018–06/2021</div>
     </div>
-    <div class="cv-sub">Supervisors: Professor <a href="https://scholar.google.com/citations?user=kc8gnlMAAAAJ"><b>Dan Wang (王丹)</b></a>, Professor <a href="https://scholar.google.com/citations?user=hM_5JDYAAAAJ"><b>Zhouhua Peng (彭周华)</b></a></div>
+    <div class="cv-sub">Supervisors: Professor <a href="https://scholar.google.com/citations?user=kc8gnlMAAAAJ"><b>Dan Wang (王丹)</b></a> and Professor <a href="https://scholar.google.com/citations?user=hM_5JDYAAAAJ"><b>Zhouhua Peng (彭周华)</b></a></div>
   </li>
 
   <li class="cv-item">
