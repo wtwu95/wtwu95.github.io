@@ -10,7 +10,7 @@
       </div>
       <div class="cv-date">04/2025–Present</div>
     </div>
-    <div class="cv-sub">Supervisor: Chair Professor <a href="https://scholar.google.com/citations?user=UfIb9GkAAAAJ"><b>Wen-Hua Chen (陈文华)</b></a> (FIEEE, FIMechE, FIET, FHEA)</div>
+    <div class="cv-sub">Supervisor: Chair Professor <a href="https://scholar.google.com/citations?user=UfIb9GkAAAAJ"><b>Wen-Hua Chen (陈文华)</b></a> (Fellow of IEEE, IMechE, IET, HEA)</div>
   </li>
 
   <li class="cv-item">
@@ -22,6 +22,6 @@
       </div>
       <div class="cv-date">01/2024–11/2024</div>
     </div>
-    <div class="cv-sub">Supervisor: Professor <a href="https://scholar.google.com/citations?user=LVnHobEAAAAJ"><b>Yang Shi (施阳)</b></a> (FRSC, FCAE, FEIC, FIEEE, FASME, FCSME)</div>
+    <div class="cv-sub">Supervisor: Professor <a href="https://scholar.google.com/citations?user=LVnHobEAAAAJ"><b>Yang Shi (施阳)</b></a> (Fellow of RSC, CAE, EIC, IEEE, ASME, CSME)</div>
   </li>
 </ul>
