@@ -290,18 +290,13 @@
 }
 
 .publication-controls button {
-  flex: 0 1 190px;
-  min-width: 160px;
   cursor: pointer;
-  background-color: #e0e0e0;
-  color: #333;
-  border-color: #e0e0e0;
+  background-color: #0969da;
+  color: #fff;
+  border-color: #0969da;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  transition: background-color 0.2s ease, border-color 0.2s ease,
-    box-shadow 0.2s ease;
 }
 
 .publication-search::-webkit-search-decoration,
