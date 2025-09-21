@@ -96,7 +96,12 @@
   <select id="publication-year-filter">
     <option value="all">Date</option>
   </select>
-  <button type="button" id="publication-year-sort" class="publication-sort">⬇</button>
+  <button
+    type="button"
+    id="publication-year-sort"
+    class="publication-sort"
+    aria-label="Toggle publication sort order"
+  >⬇</button>
 </div>
 
 <ol id="publication-list" class="publication-list"></ol>
@@ -246,12 +251,15 @@
 :root {
   --publication-control-height: 2.5rem;
   --publication-highlight: #fff3b0;
+  --publication-accent: #224b8d;
+  --publication-accent-hover: #1a3a6d;
+  --publication-accent-soft: rgba(34, 75, 141, 0.18);
 }
 
 .publication-controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.85rem;
   align-items: stretch;
   margin-bottom: 1.5rem;
 }
@@ -259,26 +267,46 @@
 .publication-controls select,
 .publication-controls button,
 .publication-search {
-  padding: 0.35rem 0.75rem;
+  padding: 0 0.85rem;
   border-radius: 0.45rem;
   border: 1px solid #c1c7d0;
   background-color: #fff;
   font-size: 0.95rem;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease, color 0.2s ease;
   height: var(--publication-control-height);
   min-height: var(--publication-control-height);
   box-sizing: border-box;
 }
 
 .publication-search {
-  flex: 1 1 240px;
-  min-width: 200px;
-  padding: 0 0.75rem;
+  flex: 1 1 280px;
+  min-width: 220px;
   display: flex;
   align-items: center;
   line-height: 1.2;
   -webkit-appearance: none;
   appearance: none;
+}
+
+.publication-controls select {
+  flex: 0 1 190px;
+  min-width: 160px;
+}
+
+.publication-controls button {
+  flex: 0 1 150px;
+  min-width: 120px;
+  cursor: pointer;
+  background-color: var(--publication-accent);
+  color: #fff;
+  border-color: var(--publication-accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .publication-search::-webkit-search-decoration,
@@ -290,22 +318,23 @@
 .publication-controls button:focus,
 .publication-search:focus {
   outline: none;
-  border-color: #0969da;
-  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.15);
-}
-
-.publication-controls button {
-  cursor: pointer;
-  background-color: #0969da;
-  color: #fff;
-  border-color: #0969da;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  border-color: var(--publication-accent);
+  box-shadow: 0 0 0 3px var(--publication-accent-soft);
 }
 
 .publication-controls button:hover {
-  background-color: #0550ae;
+  background-color: var(--publication-accent-hover);
+  border-color: var(--publication-accent-hover);
+}
+
+.publication-controls button:focus-visible {
+  border-color: var(--publication-accent-hover);
+  box-shadow: 0 0 0 3px var(--publication-accent-soft);
+}
+
+.publication-controls button:active {
+  background-color: var(--publication-accent-hover);
+  border-color: var(--publication-accent-hover);
 }
 
 ol.publication-list {
@@ -513,8 +542,8 @@ mark.publication-highlight {
 }
 
 .citation-modal__tab.is-active {
-  background: #0969da;
-  border-color: #0969da;
+  background: var(--publication-accent);
+  border-color: var(--publication-accent);
   color: #fff;
 }
 
@@ -539,30 +568,44 @@ mark.publication-highlight {
 .citation-modal__action {
   padding: 0.45rem 1.1rem;
   border-radius: 0.6rem;
-  border: 1px solid #0969da;
-  background: #0969da;
+  border: 1px solid var(--publication-accent);
+  background: var(--publication-accent);
   color: #fff;
   cursor: pointer;
   font-size: 0.95rem;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .citation-modal__action[data-action="copy"] {
   background: #fff;
-  color: #0969da;
+  color: var(--publication-accent);
 }
 
 .citation-modal__action[data-action="copy"]:hover {
-  background: rgba(9, 105, 218, 0.1);
+  background: var(--publication-accent-soft);
 }
 
 .citation-modal__action[data-action="download"]:hover {
-  background: #0550ae;
+  background: var(--publication-accent-hover);
+}
+
+.citation-modal__action:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--publication-accent-soft);
 }
 
 @media (max-width: 600px) {
   .publication-controls {
     padding: 0.75rem 0.65rem;
+    gap: 0.65rem;
+  }
+
+  .publication-search,
+  .publication-controls select,
+  .publication-controls button {
+    flex: 1 1 100%;
+    min-width: 0;
   }
 
   ol.publication-list > li {
