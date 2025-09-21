@@ -4,7 +4,7 @@
 - **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
 
 ### Conference Program Committee and Editorial
-- **Origanizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
+- **Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
 
 ### Journal Reviewer
 - [IEEE Transactions on Automatic Control](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9)  
@@ -30,5 +30,5 @@
 - IEEE Conference on Decision and Control (CDC)
 - American Control Conference (ACC)
 - Annual Conference of the IEEE Industrial Electronics Society (IECON)
-- Chinese Control and Decision Conference (CCC)
+- Chinese Control Conference (CCC)
 - Chinese Control and Decision Conference (CCDC)
