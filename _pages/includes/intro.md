@@ -1,6 +1,6 @@
 # 👨🏻‍🎓 Biography
 
-Dr. Wu is currently a Postdoctoral Fellow in [Research Centre for Low Altitude Economy](https://www.polyu.edu.hk/rclae/), [Department of Aeronautical and Aviation Engineering](https://www.polyu.edu.hk/aae/), [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), under the supervision of Prof. [Wen-Hua Chen](https://www.engr.uvic.ca/~yshi/index.html).
+Dr. Wu is currently a Postdoctoral Fellow in [Research Centre for Low Altitude Economy](https://www.polyu.edu.hk/rclae/), [Department of Aeronautical and Aviation Engineering](https://www.polyu.edu.hk/aae/), [The Hong Kong Polytechnic University](https://www.polyu.edu.hk/), under the supervision of Prof. [Wen-Hua Chen](https://scholar.google.com/citations?user=UfIb9GkAAAAJ).
 
 He is a Youth Editorial Board Member of the [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS). He is also an origanizer for Special Session 2 of the 2025 10th ACIRS. He was selected for the inaugural **Doctoral Special Program of Young Elite Scientist Sponsorship Program** by China Association for Science and Technology (CAST) in 2025. I obtained **National Scholarships** for Graduate Students (Top 1%) in 2020, 2023, and 2024. My master thesis received the **Excellent Master Dissertation Award** of Liaoning Province!
 
