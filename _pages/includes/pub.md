@@ -290,12 +290,12 @@
 }
 
 .publication-controls button {
-  flex: 0 1 150px;
-  min-width: 120px;
+  flex: 0 1 190px;
+  min-width: 160px;
   cursor: pointer;
-  background-color: var(--publication-accent);
-  color: #fff;
-  border-color: var(--publication-accent);
+  background-color: #e0e0e0;
+  color: #333;
+  border-color: #e0e0e0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -318,18 +318,18 @@
 }
 
 .publication-controls button:hover {
-  background-color: var(--publication-accent-hover);
-  border-color: var(--publication-accent-hover);
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
 }
 
 .publication-controls button:focus-visible {
-  border-color: var(--publication-accent-hover);
-  box-shadow: 0 0 0 3px var(--publication-accent-soft);
+  border-color: #c1c7d0;
+  box-shadow: 0 0 0 3px rgba(224, 224, 224, 0.65);
 }
 
 .publication-controls button:active {
-  background-color: var(--publication-accent-hover);
-  border-color: var(--publication-accent-hover);
+  background-color: #cbcbcb;
+  border-color: #cbcbcb;
 }
 
 ol.publication-list {
