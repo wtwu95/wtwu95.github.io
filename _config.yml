@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Dr. Wentao Wu (吴文涛)"
-description              : "RCLAE & AAE, PolyU"
+description              : ""
 repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Dr. Wentao Wu (吴文涛)"
   avatar           : "images/avatar.jpg"
-  bio              : "Postdoctoral Fellow"
+  bio              : "Postdoctoral Fellow in RCLAE & AAE, PolyU"
   location         : "Hong Kong, China"
   employer         :
   pubmed           : 
