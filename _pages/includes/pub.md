@@ -248,22 +248,19 @@
   --publication-highlight: #fff3b0;
 }
 
-/* 控制区整体 */
 .publication-controls {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;                      /* 增大控件间距 */
-  align-items: center;
-  justify-content: center;        /* 居中 */
-  margin: 1.5rem auto;
+  gap: 0.75rem;
+  align-items: stretch;
+  margin-bottom: 1.5rem;
 }
 
-/* 控件统一基础样式 */
 .publication-controls select,
 .publication-controls button,
 .publication-search {
-  padding: 0.45rem 0.9rem;
-  border-radius: 0.6rem;          /* 圆角 */
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.45rem;
   border: 1px solid #c1c7d0;
   background-color: #fff;
   font-size: 0.95rem;
@@ -271,14 +268,12 @@
   height: var(--publication-control-height);
   min-height: var(--publication-control-height);
   box-sizing: border-box;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);  /* 阴影 */
 }
 
-/* 搜索框宽度控制 */
 .publication-search {
-  flex: 2;
-  min-width: 240px;
-  max-width: 400px;
+  flex: 1 1 240px;
+  min-width: 200px;
+  padding: 0 0.75rem;
   display: flex;
   align-items: center;
   line-height: 1.2;
@@ -291,32 +286,6 @@
   display: none;
 }
 
-/* 下拉框宽度更统一 */
-.publication-controls select {
-  flex: 1;
-  max-width: 160px;
-}
-
-/* 按钮美化 */
-.publication-controls button {
-  flex: 0 0 auto;
-  cursor: pointer;
-  background: linear-gradient(135deg, #1d72b8, #2894ff);
-  color: #fff;
-  border: none;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1.2rem;
-  transition: background 0.3s ease;
-}
-
-.publication-controls button:hover {
-  background: linear-gradient(135deg, #145a86, #1d72b8);
-}
-
-/* 保留原 focus 效果 */
 .publication-controls select:focus,
 .publication-controls button:focus,
 .publication-search:focus {
@@ -325,7 +294,20 @@
   box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.15);
 }
 
-/* 以下保持原有 publication list & modal 样式（未改动） */
+.publication-controls button {
+  cursor: pointer;
+  background-color: #0969da;
+  color: #fff;
+  border-color: #0969da;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.publication-controls button:hover {
+  background-color: #0550ae;
+}
+
 ol.publication-list {
   list-style: none;
   padding-left: 0;
@@ -578,11 +560,8 @@ mark.publication-highlight {
   background: #0550ae;
 }
 
-/* 移动端优化 */
 @media (max-width: 600px) {
   .publication-controls {
-    flex-direction: column;
-    align-items: stretch;
     padding: 0.75rem 0.65rem;
   }
 
