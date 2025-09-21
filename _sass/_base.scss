@@ -121,7 +121,7 @@ a {
   text-decoration: none;
 
   &:focus {
-    @extend %tab-focus;
+    outline: none;
     text-decoration: none;
   }
 
