@@ -141,7 +141,7 @@ a {
   &:focus {
     color: $link-color-hover;
     background-color: rgba($link-color, 0.12);
-    box-shadow: 0 0 0 2px rgba($link-color, 0.25);
+    box-shadow: 0 0 0 1px rgba($link-color, 0.15);
     text-decoration: none;
     outline: none;
   }
