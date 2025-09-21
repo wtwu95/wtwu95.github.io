@@ -272,6 +272,7 @@
   height: var(--publication-control-height);
   min-height: var(--publication-control-height);
   box-sizing: border-box;
+  outline: none;
 }
 
 .publication-search {
@@ -304,27 +305,24 @@
   display: none;
 }
 
-.publication-controls select:focus,
-.publication-controls button:focus,
-.publication-search:focus {
-  outline: none;
-  border-color: var(--publication-accent);
-  box-shadow: 0 0 0 3px var(--publication-accent-soft);
-}
-
 .publication-controls button:hover {
   background-color: #d5d5d5;
   border-color: #d5d5d5;
 }
 
-.publication-controls button:focus-visible {
-  border-color: #c1c7d0;
-  box-shadow: 0 0 0 3px rgba(224, 224, 224, 0.65);
-}
-
 .publication-controls button:active {
   background-color: #cbcbcb;
   border-color: #cbcbcb;
+}
+
+.publication-controls select:hover,
+.publication-controls button:hover,
+.publication-search:hover,
+.publication-controls select:focus-visible,
+.publication-controls button:focus-visible,
+.publication-search:focus-visible {
+  border-color: var(--publication-accent);
+  box-shadow: 0 0 0 3px var(--publication-accent-soft);
 }
 
 ol.publication-list {
