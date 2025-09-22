@@ -3,7 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from:
+redirect_from: 
   - /about/
   - /about.html
 ---
@@ -18,17 +18,8 @@ redirect_from:
 
 {% include_relative includes/news.md %}
 
-<span class='anchor' id='-publications'></span>
-## 📚 Publications
+{% include_relative includes/pub.md %}
 
-Explore the full list of publications on the [Publications page](/publications/).
+{% include_relative includes/award.md %}
 
-<span class='anchor' id='-awards'></span>
-## 🎖 Awards
-
-Find the complete award record on the [Awards page](/awards/).
-
-<span class='anchor' id='-professional-services'></span>
-## 💻 Professional Services
-
-View detailed service activities on the [Professional Services page](/services/).
+{% include_relative includes/serv.md %}
