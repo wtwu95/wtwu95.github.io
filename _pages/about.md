@@ -21,6 +21,8 @@ redirect_from:
 <span class='anchor' id='-publications'></span>
 # 📚 Selected Publications
 
+Explore the full list of publications on the [Publications](/publications/) page.
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE CAA/JAS 2024</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' | relative_url }}' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -88,8 +90,6 @@ redirect_from:
 </div>
 </div>
  -->
-
-Explore the full list of publications on the [Publications](/publications/) page.
 
 
 <!-- <span class='anchor' id='-awards'></span>
