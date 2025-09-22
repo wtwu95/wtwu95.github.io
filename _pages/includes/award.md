@@ -1,4 +1,3 @@
-<div class="editable-block" data-editable-key="awards" data-editable-type="richtext" data-editable-title="Awards" markdown="1">
 <span class='anchor' id='-awards'></span>
 # 🎖 Awards
 
@@ -17,5 +16,4 @@
 - 2020 &nbsp; Outstanding Graduate of Dalian
 - 2020 &nbsp; First Prize of Liaoning Provincial Graduate Electronic Design Contest
 - 2019 · 2020 &nbsp; First Prizes of National Graduate Electronic Design Contest in Northeast Division
-</div>
 
