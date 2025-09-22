@@ -294,7 +294,7 @@
 .publication-controls button {
   cursor: pointer;
   background-color: #e0e0e0;
-  color: #0969da;
+  color: #494e52;
   border-color: #e0e0e0;
   display: inline-flex;
   align-items: center;
