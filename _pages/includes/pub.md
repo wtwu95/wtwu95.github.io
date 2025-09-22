@@ -278,7 +278,7 @@
 
 .publication-search {
   flex: 1 1 280px;
-  min-width: 220px;
+  min-width: 180px;
   display: flex;
   align-items: center;
   line-height: 1.2;
@@ -288,7 +288,7 @@
 
 .publication-controls select {
   flex: 0 1 190px;
-  min-width: 160px;
+  min-width: 140px;
 }
 
 .publication-controls button {
