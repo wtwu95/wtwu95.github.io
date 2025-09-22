@@ -7,7 +7,7 @@
 
 [Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)
 
-**Wentao Wu**, Zhouhua Peng, Dan Wang, Lu Liu, Qing-Long Han
+**W. Wu**, Z. Peng, D. Wang, L. Liu, Q. Han
 
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:W7OEmFMy1HYC'></span></strong>
@@ -19,7 +19,7 @@
 <div class='paper-box-text' markdown="1">
 
 [A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train](https://ieeexplore.ieee.org/abstract/document/9762043) \\
-**Wentao Wu**, Zhouhua Peng, Lu Liu, Dan Wang
+**W. Wu**, Z. Peng, L. Liu, and D. Wang
 
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4)
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:UeHWp8X0CEIC'></span></strong>
@@ -65,7 +65,7 @@
 
 [Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)
 
-**Wentao Wu**, Di Wu, Yibo Zhang, Shukang Chen, Weidong Zhang
+**W. Wu**, D. Wu, Y. Zhang, S. Chen, and W. Zhang
 
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)   [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
