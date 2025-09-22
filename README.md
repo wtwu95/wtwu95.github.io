@@ -50,13 +50,6 @@ Some examples:
         > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
 1. Your page will be published at `https://USERNAME.github.io`.
 
-## Owner Editing Panel
-
-- Click the floating **Owner** button (bottom-right) to log in and open the editing toolbar. The default password is `changeme`.
-- Update the password by replacing `owner_tools.password_hash` in `_config.yml` with the SHA-256 hash of a new password.
-- After logging in you can edit each section in-place, save changes to the browser, export all edits as JSON, or clear local modifications.
-- Content edits are stored in your browser via `localStorage`. Export your edits before deploying them to keep an offline backup.
-
 ## Debug Locally
 
 1. Clone your REPO to local using `git clone`.

@@ -11,11 +11,6 @@ description              : ""
 repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
 
-owner_tools:
-  password_hash: "057ba03d6c44104863dc7361fe4578965d1887360f90a0895882e58a6248fc86" # SHA-256 for default password "changeme"
-  password_hint: "The default password is 'changeme'. Update owner_tools.password_hash in _config.yml to customize."
-  storage_prefix: "owner-edit"
-
 # google analytics
 google_analytics_id      : # "https://analytics.google.com/analytics/e2ban1wAAAAJ" 
 
