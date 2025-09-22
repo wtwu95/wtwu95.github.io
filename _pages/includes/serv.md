@@ -1,9 +1,9 @@
 # 💻 Professional Services:
 
-### Journal Editorial Boards
+## Journal Editorial Boards
 - **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
 
-### Conference Program Committee and Editorial
+## Conference Program Committee and Editorial
 - **Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
 
 ### Teaching 
