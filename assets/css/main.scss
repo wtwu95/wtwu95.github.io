@@ -130,10 +130,6 @@ h1:before, .anchor:before {
   font-size: 13.5px; line-height: 1.45; color: #6a6a6a;
 }
 
-/* 链接更轻一点 */
-.cv-list a { text-decoration: none; border-bottom: 1px dotted rgba(0,0,0,0.2); }
-.cv-list a:hover { border-bottom-style: solid; }
-
 /* 更紧凑的标题与段距 */
 h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 #experiences + h1, #educations + h1 { margin-top: 0; }
