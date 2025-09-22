@@ -60,55 +60,63 @@
       return replaced;
     }
 
-    var publications = Array.prototype.slice.call(sourceList.querySelectorAll('li')).map(function (item) {
-      var year = parseInt(item.getAttribute('data-year'), 10);
-      var plainCitation = item.getAttribute('data-citation-plain') || '';
-      var bibCitation = item.getAttribute('data-citation-bibtex') || '';
-      var sanitized = sanitizeNode(item);
-      var textContent = sanitized.textContent.replace(/\s+/g, ' ').trim();
-      var normalizedText = normalizeQuotes(textContent);
-      return {
-        type: item.getAttribute('data-type') || 'other',
-        year: isNaN(year) ? null : year,
-        date: item.getAttribute('data-date') || '',
-        content: item.innerHTML.trim(),
-        rawText: normalizedText,
-        searchText: normalizedText.toLowerCase(),
-        plainCitation: plainCitation,
-        bibCitation: bibCitation
-      };
-    });
+    var publications = [];
 
-    publications = publications.map(function (pub) {
-      pub.citations = generateCitations(pub);
-      return pub;
-    });
+    function readSourceItems() {
+      return Array.prototype.slice.call(sourceList.querySelectorAll('li')).map(function (item) {
+        var year = parseInt(item.getAttribute('data-year'), 10);
+        var plainCitation = item.getAttribute('data-citation-plain') || '';
+        var bibCitation = item.getAttribute('data-citation-bibtex') || '';
+        var sanitized = sanitizeNode(item);
+        var textContent = sanitized.textContent.replace(/\s+/g, ' ').trim();
+        var normalizedText = normalizeQuotes(textContent);
+        return {
+          type: item.getAttribute('data-type') || 'other',
+          year: isNaN(year) ? null : year,
+          date: item.getAttribute('data-date') || '',
+          content: item.innerHTML.trim(),
+          rawText: normalizedText,
+          searchText: normalizedText.toLowerCase(),
+          plainCitation: plainCitation,
+          bibCitation: bibCitation
+        };
+      }).map(function (pub) {
+        pub.citations = generateCitations(pub);
+        return pub;
+      });
+    }
 
-    var uniqueTypes = Array.from(new Set(publications.map(function (pub) {
-      return pub.type;
-    }).filter(Boolean)));
-
-    var orderedOptions = typeOrder.map(function (type) {
-      return {
-        value: type,
-        label: typeLabels[type] || type
-      };
-    });
-
-    uniqueTypes.forEach(function (type) {
-      if (typeOrder.indexOf(type) === -1) {
-        orderedOptions.push({
+    function updateTypeOptions() {
+      var previous = typeSelect.value;
+      var uniqueTypes = Array.from(new Set(publications.map(function (pub) {
+        return pub.type;
+      }).filter(Boolean)));
+      var orderedOptions = typeOrder.map(function (type) {
+        return {
           value: type,
           label: typeLabels[type] || type
-        });
+        };
+      });
+      uniqueTypes.forEach(function (type) {
+        if (typeOrder.indexOf(type) === -1) {
+          orderedOptions.push({
+            value: type,
+            label: typeLabels[type] || type
+          });
+        }
+      });
+      typeSelect.innerHTML = '<option value="all">Type</option>' + orderedOptions.map(function (type) {
+        return '<option value="' + type.value + '">' + type.label + '</option>';
+      }).join('');
+      if (typeSelect.querySelector('option[value="' + previous + '"]')) {
+        typeSelect.value = previous;
+      } else {
+        typeSelect.value = 'all';
       }
-    });
-
-    typeSelect.innerHTML = '<option value="all">Type</option>' + orderedOptions.map(function (type) {
-      return '<option value="' + type.value + '">' + type.label + '</option>';
-    }).join('');
+    }
 
     function updateYearOptions() {
+      var previous = yearSelect.value;
       var years = Array.from(new Set(publications.map(function (pub) {
         return pub.year;
       }).filter(Boolean)));
@@ -116,11 +124,21 @@
       yearSelect.innerHTML = '<option value="all">Date</option>' + years.map(function (year) {
         return '<option value="' + year + '">' + year + '</option>';
       }).join('');
+      if (yearSelect.querySelector('option[value="' + previous + '"]')) {
+        yearSelect.value = previous;
+      } else {
+        yearSelect.value = 'all';
+      }
     }
 
-    updateYearOptions();
-
     var sortOrder = 'desc';
+
+    function refreshData() {
+      publications = readSourceItems();
+      updateTypeOptions();
+      updateYearOptions();
+      render();
+    }
 
     function normalizeDate(dateStr, year) {
       if (!dateStr) {
@@ -706,6 +724,15 @@
       document.body.removeChild(textarea);
     }
 
-    render();
+    refreshData();
+
+    document.addEventListener('owner:section-updated', function (event) {
+      if (!event || !event.detail) {
+        return;
+      }
+      if (event.detail.key === 'publications') {
+        refreshData();
+      }
+    });
   });
 })();
