@@ -1,8 +1,10 @@
 # 📝 Publications
 
 ## Selected Publications
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE CAA/JAS 2024</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' alt="sym" width="100%"></div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE CAA/JAS 2024</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' | relative_url }}' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
+
 [Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)\\
 **W. Wu**, D. Wu, Y. Zhang, S. Chen, and W. Zhang\\
 [**IEEE/CAA Journal of Automatica Sinica**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570650) \\
@@ -14,6 +16,7 @@
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TIV 2022</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.gif' | relative_url }}' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
+
 [A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train](https://ieeexplore.ieee.org/abstract/document/9762043) \\
 **W. Wu**, Z. Peng, L. Liu, and D. Wang\\
 [**IEEE Transactions on Intelligent Vehicles**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857)\\
