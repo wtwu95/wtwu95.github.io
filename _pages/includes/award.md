@@ -1,5 +1,5 @@
-<span class='anchor' id='-honors'></span>
-# 🎖 Honors & Awards
+<span class='anchor' id='-awards'></span>
+# 🎖 Awards
 
 - 2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**
 - 2025 &nbsp; Outstanding Graduate of Shanghai
