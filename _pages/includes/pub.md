@@ -1,7 +1,5 @@
 # 📝 Publications
 
-### Full list of publications
-Full list of publications can be found in the **Publication** page.
 
 <div class="publication-controls">
   <input
@@ -209,7 +207,7 @@ Full list of publications can be found in the **Publication** page.
 
 .publication-controls select {
   flex: 0 1 190px;
-  min-width: 140px;
+  min-width: 100px;
 }
 
 .publication-controls button {
