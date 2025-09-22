@@ -73,8 +73,4 @@
   } else {
     init();
   }
-
-  document.addEventListener('news:data-updated', function () {
-    init();
-  });
 })();
