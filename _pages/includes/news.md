@@ -1,3 +1,4 @@
+<div class="editable-block" data-editable-key="news" data-editable-type="richtext" data-editable-title="News" markdown="1">
 # 💬 News
 
 <div class="news-window" data-news-window data-visible-count="5" tabindex="0" aria-label="Latest news" markdown="1">
@@ -36,3 +37,5 @@
 {: .news-list}
 
 </div>
+</div>
+
