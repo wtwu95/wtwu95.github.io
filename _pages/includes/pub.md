@@ -12,9 +12,6 @@
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:W7OEmFMy1HYC'></span></strong>
 
--
--
--
 </div>
 </div>
 
@@ -26,10 +23,6 @@
 
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4)
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:UeHWp8X0CEIC'></span></strong>
-
--
--
--
 </div>
 </div>
 
@@ -74,13 +67,9 @@
 
 **Wentao Wu**, Di Wu, Yibo Zhang, Shukang Chen, Weidong Zhang
 
-[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.mp4)  [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  [![Video-Expb](https://img.shields.io/badge/%F0%9F%A4%97%20Expb--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASb.mp4)
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)   [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
 
--
--
 </div>
 </div>
-
-<p class="publication-view-all">For a complete list of publications, please visit the <a href="/publications/">Publications page</a>.</p>
 
