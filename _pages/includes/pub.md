@@ -1,6 +1,6 @@
 # 📝 Publications
 
-<!-- ### Selected Papers
+### Selected Papers
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CYB 2021</div><img src='assets/Video/Video-Exp/WuWentao-2021-IEEE-TCYB.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -33,7 +33,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2022</div><img src='assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2022</div><img src='assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Output-Feedback Finite-Time Safety-Critical Coordinated Control of Path-Guided Marine Surface Vehicles Based on Neurodynamic Optimization](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)
@@ -65,7 +65,7 @@
 -
 </div>
 </div>
-
+ -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE CAA/JAS 2023</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -80,7 +80,7 @@
 -
 -
 </div>
-</div> -->
+</div>
 
 <div class="publication-controls">
   <input
