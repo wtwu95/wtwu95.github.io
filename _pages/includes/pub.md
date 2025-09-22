@@ -1,4 +1,3 @@
-<div class="editable-block" data-editable-key="publications" data-editable-type="publication-list" data-editable-title="Publications" data-editable-target="#publication-source" markdown="1">
 # 📝 Publications
 
 <!-- ### Selected Papers
@@ -633,6 +632,4 @@ mark.publication-highlight {
 }
 </style>
 
-</div>
 <script src="{{ '/assets/js/publications.js' | relative_url }}"></script>
-
