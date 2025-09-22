@@ -1,6 +1,6 @@
 # 📝 Publications
 
-## Selected Papers
+## Selected Publications
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE CAA/JAS 2024</div><img src='assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)\\
