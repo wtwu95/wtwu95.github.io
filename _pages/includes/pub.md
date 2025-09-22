@@ -346,7 +346,7 @@ ol.publication-list > li:last-child {
 }
 
 .publication-index {
-  font-weight: 600;
+  /*font-weight: 600;*/
   color: #57606a;
   min-width: 3rem;
   text-align: right;
@@ -400,7 +400,7 @@ ol.publication-list > li:last-child {
   padding: 0;
   border: none;
   background: transparent;
-  font-weight: 600;
+  /*font-weight: 600;*/
   color: #57606a;
   font-variant-numeric: tabular-nums;
   line-height: 1.2;
