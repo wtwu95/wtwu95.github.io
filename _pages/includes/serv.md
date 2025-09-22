@@ -6,11 +6,11 @@
 ## Conference Program Committee and Editorial
 - **Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
 
-### Teaching 
+## Teaching 
 
 - **Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)
 
-### Journal Reviewer
+## Journal Reviewer
 - [IEEE Transactions on Automatic Control](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9)  
 - [IEEE Control Systems Letters](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7782673) 
 - [IEEE Transactions on Cybernetics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036)  
@@ -29,8 +29,7 @@
 - [International Journal of Robust and Nonlinear Control](https://onlinelibrary.wiley.com/journal/10991239)  
 - [Nonlinear Dynamics](https://link.springer.com/journal/11071)  
 
-
-### Conference Reviewer
+## Conference Reviewer
 - IEEE Conference on Decision and Control (CDC)
 - American Control Conference (ACC)
 - Annual Conference of the IEEE Industrial Electronics Society (IECON)
