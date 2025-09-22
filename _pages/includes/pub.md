@@ -1,3 +1,5 @@
+<section class="editable-block" data-editable-id="publications" data-edit-title="论文成果" data-edit-refresh="publication:data-updated" markdown="1">
+
 # 📝 Publications
 
 <!-- ### Selected Papers
@@ -242,6 +244,8 @@
     </div>
   </div>
 </div>
+
+</section>
 
 <style>
 :root {

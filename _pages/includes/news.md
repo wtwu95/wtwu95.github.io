@@ -1,3 +1,5 @@
+<section class="editable-block" data-editable-id="news" data-edit-title="最新动态" data-edit-refresh="news:data-updated" markdown="1">
+
 # 💬 News
 
 <div class="news-window" data-news-window data-visible-count="5" tabindex="0" aria-label="Latest news" markdown="1">
@@ -36,3 +38,5 @@
 {: .news-list}
 
 </div>
+
+</section>

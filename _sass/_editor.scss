@@ -1,0 +1,339 @@
+.owner-toolbar {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  z-index: 1200;
+  font-family: inherit;
+}
+
+.owner-toolbar__group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.owner-toolbar__button {
+  appearance: none;
+  border: 1px solid rgba(0, 54, 159, 0.3);
+  background: rgba(255, 255, 255, 0.94);
+  color: #00369f;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+
+.owner-toolbar__button:hover,
+.owner-toolbar__button:focus {
+  background: #00369f;
+  color: #fff;
+  border-color: #00369f;
+  outline: none;
+}
+
+.owner-toolbar__hint {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  max-width: 260px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.owner-toolbar__hint strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.editable-block {
+  position: relative;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+body.owner-mode-active .editable-block {
+  outline: 1.5px dashed rgba(0, 54, 159, 0.35);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.editable-block__controls {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: flex;
+  gap: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 2;
+}
+
+body.owner-mode-active .editable-block:hover .editable-block__controls,
+body.owner-mode-active .editable-block:focus-within .editable-block__controls {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.editable-block__button {
+  appearance: none;
+  border: none;
+  background: rgba(0, 54, 159, 0.92);
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s ease;
+}
+
+.editable-block__button--ghost {
+  background: rgba(255, 255, 255, 0.92);
+  color: #00369f;
+  border: 1px solid rgba(0, 54, 159, 0.4);
+}
+
+.editable-block__button:hover,
+.editable-block__button:focus {
+  background: #00297a;
+  outline: none;
+}
+
+.editable-block__button--ghost:hover,
+.editable-block__button--ghost:focus {
+  background: rgba(0, 54, 159, 0.1);
+}
+
+.owner-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1300;
+}
+
+.owner-modal.is-visible {
+  display: flex;
+}
+
+.owner-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 12, 25, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.owner-modal__dialog {
+  position: relative;
+  width: min(900px, 92vw);
+  max-height: min(86vh, 900px);
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 25px 65px rgba(10, 16, 38, 0.35);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.owner-modal__header {
+  padding: 18px 24px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.owner-modal__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0c1d4a;
+  margin: 0;
+}
+
+.owner-modal__close {
+  background: none;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 4px;
+}
+
+.owner-modal__close:hover,
+.owner-modal__close:focus {
+  color: #111827;
+  outline: none;
+}
+
+.owner-modal__tabs {
+  display: flex;
+  gap: 4px;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.owner-modal__tab {
+  flex: 1;
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border 0.2s ease;
+}
+
+.owner-modal__tab.is-active {
+  color: #00369f;
+  border-color: #00369f;
+}
+
+.owner-modal__body {
+  padding: 16px 24px;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.owner-modal__editor,
+.owner-modal__source {
+  min-height: 320px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: #f9fafc;
+}
+
+.owner-modal__editor {
+  font-family: inherit;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.owner-modal__source {
+  resize: vertical;
+}
+
+.owner-modal__hint {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.owner-modal__footer {
+  padding: 14px 24px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.owner-modal__footer-spacer {
+  flex: 1;
+}
+
+.owner-modal__action {
+  appearance: none;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+
+.owner-modal__action--primary {
+  background: #00369f;
+  color: #fff;
+}
+
+.owner-modal__action--secondary {
+  background: rgba(0, 54, 159, 0.12);
+  color: #00369f;
+}
+
+.owner-modal__action--ghost {
+  background: transparent;
+  border-color: rgba(0, 54, 159, 0.2);
+  color: #00369f;
+}
+
+.owner-modal__action:hover,
+.owner-modal__action:focus {
+  outline: none;
+  filter: brightness(0.95);
+}
+
+.owner-modal__action--ghost:hover,
+.owner-modal__action--ghost:focus {
+  background: rgba(0, 54, 159, 0.08);
+}
+
+.owner-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  background: rgba(0, 23, 71, 0.95);
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  z-index: 1400;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.owner-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 640px) {
+  .owner-toolbar {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  body.owner-mode-active .editable-block {
+    padding: 10px;
+  }
+
+  .owner-modal__dialog {
+    width: 96vw;
+    max-height: 92vh;
+  }
+
+  .owner-modal__editor,
+  .owner-modal__source {
+    min-height: 240px;
+  }
+}
+
