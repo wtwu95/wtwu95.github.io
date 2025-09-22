@@ -1,5 +1,9 @@
 <script src="assets/js/main.min.js"></script>
 <script src="assets/js/news-window.js"></script>
+<script>
+  window.__OWNER_CONFIG__ = {% if site.owner_tools %}{{ site.owner_tools | jsonify }}{% else %}{}{% endif %};
+</script>
+<script src="{{ '/assets/js/admin-editor.js' | relative_url }}"></script>
 
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}
