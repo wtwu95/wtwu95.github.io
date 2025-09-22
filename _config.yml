@@ -11,6 +11,9 @@ description              : ""
 repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
 
+# Owner editing settings
+owner_edit_hash          : "" # Set to the SHA-256 hash of your private editing password
+
 # google analytics
 google_analytics_id      : # "https://analytics.google.com/analytics/e2ban1wAAAAJ" 
 
