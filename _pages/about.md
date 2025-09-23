@@ -29,7 +29,8 @@ Explore the full list of publications on the [Publications](/publications/) page
 [Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)\\
 **W. Wu**, D. Wu, Y. Zhang, S. Chen, and W. Zhang\\
 [**IEEE/CAA Journal of Automatica Sinica**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570650) \\
-[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)   [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  <button type="button" class="publication-cite" data-citation-modal-trigger="" data-citation-index="1" data-citation-plain="W. Wu, D. Wu, Y. Zhang, S. Chen, and W. Zhang, “Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance,” IEEE/CAA Journal of Automatica Sinica, vol. 11, no. 9, pp. 2033–2035, Sept. 2024." data-citation-bibtex="@ARTICLE{Wu2024Safety,&#10;  author={Wu, Wentao and Wu, Di and Zhang, Yibo and Chen, Shukang and Zhang, Weidong},&#10;  title={Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance},&#10;  journal={IEEE/CAA Journal of Automatica Sinica},&#10;  volume={11},&#10;  number={9},&#10;  pages={2033--2035},&#10;  year={2024}&#10;}"><img src="https://img.shields.io/badge/Link-Cite-0969da?labelColor=555" alt="Cite badge"></button>
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)   [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  
+<button type="button" class="publication-cite" data-citation-modal-trigger="" data-citation-index="1" data-citation-plain="W. Wu, D. Wu, Y. Zhang, S. Chen, and W. Zhang, “Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance,” IEEE/CAA Journal of Automatica Sinica, vol. 11, no. 9, pp. 2033–2035, Sept. 2024." data-citation-bibtex="@ARTICLE{Wu2024Safety,&#10;  author={Wu, Wentao and Wu, Di and Zhang, Yibo and Chen, Shukang and Zhang, Weidong},&#10;  title={Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance},&#10;  journal={IEEE/CAA Journal of Automatica Sinica},&#10;  volume={11},&#10;  number={9},&#10;  pages={2033--2035},&#10;  year={2024}&#10;}"><img src="https://img.shields.io/badge/Link-Cite-0969da?labelColor=555" alt="Cite badge"></button>
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
 </div>
 </div>
@@ -94,13 +95,17 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 {% include citation-modal.html %}
 
-<!-- <span class='anchor' id='-awards'></span>
-## 🎖 Awards
+<span class='anchor' id='-awards'></span>
+# 🎖 Awards
 
 Find the complete award record on the [Awards page](/awards/).
 
 <span class='anchor' id='-professional-services'></span>
-## 💻 Professional Services
+# 💻 Professional Services
 
 View detailed service activities on the [Professional Services page](/services/).
- -->
+
+# Miscellaneous
+
+- [CloudConvert](https://cloudconvert.com/)
+- [iLoveIMG](https://www.iloveimg.com/)
