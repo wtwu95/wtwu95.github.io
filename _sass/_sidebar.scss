@@ -73,9 +73,29 @@
     display: block;
   }
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  gap: 0.75em;
+}
+
+.profile_box > .author__avatar {
+  flex: 0 0 auto;
+  margin-right: 0.75em;
+
+  @include breakpoint($large) {
+    margin-right: 0;
+  }
+}
+
+.profile_box > .author__content {
+  flex: 1 1 12em;
+}
+
+.profile_box > .author__urls-wrapper {
+  flex: 1 0 100%;
+  margin-top: 0.5em;
 }
 
 .author__avatar {
@@ -271,6 +291,10 @@
 
 .author__map {
   margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   iframe {
     width: 100%;
@@ -279,6 +303,13 @@
 
 .author__map--location {
   margin-top: 0.75em;
+}
+
+.author__map--visitors,
+.author__map--location {
+  > * {
+    max-width: 100%;
+  }
 }
 
 .author-location-map {
