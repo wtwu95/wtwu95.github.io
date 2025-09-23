@@ -125,15 +125,28 @@
     {% if site.google_maps %}
       <div class="author__map author__map--location">
         {% if site.google_maps.api_key %}
+          {% assign map_lat = site.google_maps.location.lat | default: 0 %}
+          {% assign map_lng = site.google_maps.location.lng | default: 0 %}
+          {% assign map_zoom = site.google_maps.zoom | default: 14 %}
+          {% assign map_title = site.google_maps.location.title | default: author.location | default: 'Location' %}
           <div
             class="author-location-map"
             data-author-map
             data-api-key="{{ site.google_maps.api_key | strip | escape }}"
-            data-lat="{{ site.google_maps.location.lat | default: 0 }}"
-            data-lng="{{ site.google_maps.location.lng | default: 0 }}"
-            data-zoom="{{ site.google_maps.zoom | default: 14 }}"
-            data-marker-title="{{ site.google_maps.location.title | default: author.location | default: 'Location' | escape }}"
-            aria-label="{{ site.google_maps.location.title | default: author.location | default: 'Location map' | escape }}">
+            data-lat="{{ map_lat }}"
+            data-lng="{{ map_lng }}"
+            data-zoom="{{ map_zoom }}"
+            data-marker-title="{{ map_title | escape }}"
+            aria-label="{{ map_title | escape }}">
+            <iframe
+              class="author-location-map__fallback"
+              data-author-map-fallback
+              src="https://maps.google.com/maps?q={{ map_lat | escape }},{{ map_lng | escape }}&amp;z={{ map_zoom | escape }}&amp;output=embed"
+              title="{{ map_title | escape }}"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
           </div>
         {% else %}
           <p class="author-location-map__placeholder">{{ site.google_maps.placeholder | default: 'Set your Google Maps API key in _config.yml to display the location map.' }}</p>
