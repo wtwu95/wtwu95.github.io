@@ -102,15 +102,15 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 {% include citation-modal.html %}
 
-<span class='anchor' id='-awards'></span>
+<!-- <span class='anchor' id='-awards'></span>
 # 🎖 Awards
 
 Find the complete award record on the [Awards page](/awards/).
 
 <span class='anchor' id='-professional-services'></span>
-# 💻 Professional Services
+# 📝 Professional Services
 
-View detailed service activities on the [Professional Services page](/services/).
+View detailed service activities on the [Professional Services page](/services/). -->
 
 # 😀 Miscellaneous
 

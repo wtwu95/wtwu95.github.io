@@ -1,4 +1,4 @@
-# 📝 Publications
+# 📚 Publications
 
 
 <div class="publication-controls">
