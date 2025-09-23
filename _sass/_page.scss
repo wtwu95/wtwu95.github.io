@@ -114,7 +114,7 @@
   .news-window {
     --news-window-max-height: calc(5 * 3.5rem);
     position: relative;
-    max-height: var(--news-window-max-height);
+    max-height: none;
     overflow-y: auto;
     margin: 1rem 0;
     padding: 0.75rem 1.25rem 0.75rem 1.5rem;
@@ -131,6 +131,7 @@
     }
 
     &.news-window--scroll {
+      max-height: var(--news-window-max-height);
       padding-right: 1.75rem;
     }
 
@@ -205,6 +206,16 @@
       @include breakpoint($small) {
         font-size: $type-size-1;
       }
+    }
+  }
+
+  .news-window__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.75rem;
+
+    .btn {
+      margin-bottom: 0;
     }
   }
 }
