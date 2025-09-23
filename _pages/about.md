@@ -16,7 +16,7 @@ redirect_from:
 
 {% include_relative includes/edu.md %}
 
-{% include_relative includes/news.md limit=10 show_button=true %}
+{% include_relative includes/news.md limit=5 show_button=true %}
 
 <span class='anchor' id='-publications'></span>
 # 📚 Selected Publications
