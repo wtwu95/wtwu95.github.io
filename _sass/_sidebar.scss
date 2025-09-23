@@ -73,29 +73,9 @@
     display: block;
   }
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
   align-items: center;
-}
-
-@include breakpoint(max-width $medium-wide) {
-  .profile_box {
-    > .author__urls-wrapper {
-      display: block;
-      flex: 1 1 100%;
-      order: 3;
-      margin-left: 0;
-      margin-top: 1.5em;
-    }
-
-    > .author__urls_sm {
-      order: 4;
-      flex: 1 1 100%;
-      width: 100%;
-      margin-top: 1em;
-    }
-  }
 }
 
 .author__avatar {
@@ -192,28 +172,6 @@
     @include breakpoint($large) {
       display: none;
     }
-  }
-}
-
-@include breakpoint(max-width $medium) {
-  .author__urls-wrapper {
-    display: block;
-    width: 100%;
-    flex: 1 1 100%;
-    order: 3;
-    margin-left: 0;
-    margin-top: 1em;
-  }
-
-  .author__map {
-    width: 100%;
-  }
-
-  .author__urls_sm {
-    order: 4;
-    flex: 1 1 100%;
-    width: 100%;
-    margin-top: 1em;
   }
 }
 
