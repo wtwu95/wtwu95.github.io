@@ -119,6 +119,38 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
     </ul>
+    <div class="author__map author__map--visitors">
+      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=O8KnN2KN9LurEKfnDLzKFXnBIkbpznU5gMV5OwVKB98&cl=ffffff&w=a"></script>
+    </div>
+    {% if site.google_maps_api_key and author.latitude and author.longitude %}
+    <div id="author-google-map" class="author__map author__map--google"></div>
+    <script>
+      window.initAuthorMap = function initAuthorMap() {
+        var authorLocation = { lat: {{ author.latitude }}, lng: {{ author.longitude }} };
+        var mapElement = document.getElementById('author-google-map');
+
+        if (!mapElement) {
+          return;
+        }
+
+        var map = new google.maps.Map(mapElement, {
+          center: authorLocation,
+          zoom: 12,
+          mapTypeControl: false,
+          streetViewControl: false,
+          fullscreenControl: false,
+          zoomControl: true
+        });
+
+        new google.maps.Marker({
+          position: authorLocation,
+          map: map,
+          title: {{ author.location | jsonify }}
+        });
+      };
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_api_key }}&callback=initAuthorMap"></script>
+    {% endif %}
       <div class="author__urls_sm">
       {% if author.uri %}
         <a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i></a>
