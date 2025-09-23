@@ -130,7 +130,7 @@
           {% assign map_zoom = site.google_maps.zoom | default: 14 %}
           {% assign map_title = site.google_maps.location.title | default: author.location | default: 'Location' %}
           <div
-            class="author-location-map"
+            class="author-location-map author-location-map--showing-fallback"
             data-author-map
             data-api-key="{{ site.google_maps.api_key | strip | escape }}"
             data-lat="{{ map_lat }}"

@@ -1,6 +1,84 @@
 (function () {
   'use strict';
 
+  function getFallback(mapContainer) {
+    if (!mapContainer) {
+      return null;
+    }
+
+    return mapContainer.querySelector('[data-author-map-fallback]');
+  }
+
+  function showFallback(mapContainer) {
+    if (!mapContainer) {
+      return;
+    }
+
+    var fallback = getFallback(mapContainer);
+    if (!fallback) {
+      return;
+    }
+
+    fallback.style.display = '';
+    fallback.removeAttribute('aria-hidden');
+    mapContainer.classList.add('author-location-map--showing-fallback');
+  }
+
+  function hideFallback(mapContainer) {
+    if (!mapContainer) {
+      return;
+    }
+
+    var fallback = getFallback(mapContainer);
+    if (!fallback) {
+      return;
+    }
+
+    fallback.style.display = 'none';
+    fallback.setAttribute('aria-hidden', 'true');
+    mapContainer.classList.remove('author-location-map--showing-fallback');
+  }
+
+  function hasMapError(mapContainer) {
+    if (!mapContainer) {
+      return false;
+    }
+
+    return Boolean(mapContainer.querySelector('.gm-err-container, .gm-err-message'));
+  }
+
+  function registerAuthFailureHandler(mapContainer) {
+    window.__authorLocationAuthHandlers = window.__authorLocationAuthHandlers || [];
+    var handlers = window.__authorLocationAuthHandlers;
+
+    if (mapContainer && handlers.indexOf(mapContainer) === -1) {
+      handlers.push(mapContainer);
+    }
+
+    if (window.__authorLocationAuthFailureBound) {
+      return;
+    }
+
+    window.__authorLocationAuthFailureBound = true;
+
+    var previous = typeof window.gm_authFailure === 'function' ? window.gm_authFailure : null;
+
+    window.gm_authFailure = function gmAuthFailure() {
+      var containers = window.__authorLocationAuthHandlers || [];
+      for (var i = 0; i < containers.length; i += 1) {
+        showFallback(containers[i]);
+      }
+
+      if (previous) {
+        try {
+          previous.apply(this, arguments);
+        } catch (error) {
+          // Ignore errors from previously registered handlers
+        }
+      }
+    };
+  }
+
   function createInitializer(mapContainer, lat, lng, zoom, title) {
     return function initializeMap() {
       if (!window.google || !window.google.maps || !window.google.maps.Map) {
@@ -23,10 +101,25 @@
         title: title
       });
 
-      var fallback = mapContainer.querySelector('[data-author-map-fallback]');
-      if (fallback) {
-        fallback.style.display = 'none';
-        fallback.setAttribute('aria-hidden', 'true');
+      registerAuthFailureHandler(mapContainer);
+
+      var mapHasTiles = false;
+
+      window.google.maps.event.addListenerOnce(map, 'tilesloaded', function () {
+        mapHasTiles = true;
+
+        if (hasMapError(mapContainer)) {
+          showFallback(mapContainer);
+        } else {
+          hideFallback(mapContainer);
+        }
+      });
+
+      window.setTimeout(function () {
+        if (!mapHasTiles || hasMapError(mapContainer)) {
+          showFallback(mapContainer);
+        }
+      }, 4000);
       }
     };
   }
