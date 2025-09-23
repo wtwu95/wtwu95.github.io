@@ -112,6 +112,65 @@ Find the complete award record on the [Awards page](/awards/).
 
 View detailed service activities on the [Professional Services page](/services/). -->
 
+# 📍 Contact & Location
+
+<div class="contact-location">
+  <div class="contact-card" markdown="1">
+**Wentao Wu (吴文涛)**<br />
+Postdoctoral Fellow in RCLAE & AAE, PolyU<br />
+Hong Kong, China
+
+- ✉️ Email: [wtwu95@gmail.com](mailto:wtwu95@gmail.com)
+- 🔗 [ResearchGate](https://www.researchgate.net/profile/Wu-Wentao-5)
+- 🔍 [Google Scholar](https://scholar.google.com/citations?user=e2ban1wAAAAJ)
+- 🆔 [ORCID](https://orcid.org/0000-0002-3740-598X)
+  </div>
+  <div class="contact-map-container">
+    <div id="contact-map" role="region" aria-label="Map showing the Hong Kong Polytechnic University campus"></div>
+    <noscript class="map-noscript">Enable JavaScript to view the interactive map.</noscript>
+  </div>
+</div>
+
+{% assign maps_key = site.google_maps_api_key | default: '' %}
+<script>
+  window.initMap = function() {
+    const polyuCampus = { lat: 22.3045, lng: 114.1796 };
+    const mapElement = document.getElementById('contact-map');
+    if (!mapElement || typeof google === 'undefined' || !google.maps) {
+      return;
+    }
+
+    const map = new google.maps.Map(mapElement, {
+      center: polyuCampus,
+      zoom: 16,
+      mapTypeControl: false,
+      streetViewControl: false,
+      fullscreenControl: false
+    });
+
+    const marker = new google.maps.Marker({
+      position: polyuCampus,
+      map: map,
+      title: 'Wentao Wu (吴文涛)'
+    });
+
+    const infoWindow = new google.maps.InfoWindow({
+      content: '<div class="map-info-window"><strong>Wentao Wu (吴文涛)</strong><br/>Postdoctoral Fellow<br/>The Hong Kong Polytechnic University</div>'
+    });
+
+    marker.addListener('click', function() {
+      infoWindow.open(map, marker);
+    });
+
+    infoWindow.open(map, marker);
+  };
+</script>
+{% if maps_key != '' %}
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ maps_key }}&callback=initMap"></script>
+{% else %}
+<div class="map-api-warning">Set <code>google_maps_api_key</code> in <code>_config.yml</code> to enable the interactive map.</div>
+{% endif %}
+
 # 😀 Miscellaneous
 
 - [CloudConvert](https://cloudconvert.com/)
