@@ -105,15 +105,13 @@ Explore the full list of publications on the [Publications](/publications/) page
 </p>
 {% include citation-modal.html %}
 
-<!-- <span class='anchor' id='-awards'></span>
-# 🎖 Awards
+<span class='anchor' id='-awards'></span>
 
-Find the complete award record on the [Awards page](/awards/).
+{% include_relative includes/award.md limit=5 show_button=true %}
 
 <span class='anchor' id='-professional-services'></span>
-# 📝 Professional Services
 
-View detailed service activities on the [Professional Services page](/services/). -->
+{% include_relative includes/serv.md limit=5 show_button=true %}
 
 # 😀 Miscellaneous
 
