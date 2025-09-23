@@ -15,7 +15,7 @@ google_scholar_stats_use_cdn : true
 google_analytics_id      : # "https://analytics.google.com/analytics/e2ban1wAAAAJ"
 
 # Google Maps
-google_maps_api_key      : "AIzaSyAifVZM7XgfNimiR_YlTaTmweRs72RgCmA"
+google_maps_api_key      : # "AIzaSyAifVZM7XgfNimiR_YlTaTmweRs72RgCmA"
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
@@ -62,7 +62,7 @@ author:
   wikipedia        :
 
 google_maps:
-  api_key:
+  api_key: "AIzaSyAifVZM7XgfNimiR_YlTaTmweRs72RgCmA"
   location:
     lat: 22.3043
     lng: 114.1795
