@@ -124,14 +124,18 @@
     };
   }
 
-  function loadMapScript(apiKey) {
+  function loadMapScript(apiKey, language) {
     var existingScript = document.querySelector('script[data-google-maps-api]');
     if (existingScript) {
       return existingScript;
     }
 
     var script = document.createElement('script');
-    script.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(apiKey) + '&callback=initAuthorLocationMap';
+    var scriptSrc = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(apiKey) + '&callback=initAuthorLocationMap';
+    if (language) {
+      scriptSrc += '&language=' + encodeURIComponent(language);
+    }
+    script.src = scriptSrc;
     script.async = true;
     script.defer = true;
     script.setAttribute('data-google-maps-api', 'true');
@@ -160,6 +164,7 @@
 
     var title = dataset.markerTitle || '';
     var apiKey = dataset.apiKey;
+    var language = dataset.language;
     if (!apiKey) {
       return;
     }
@@ -186,7 +191,7 @@
       };
     }
 
-    loadMapScript(apiKey);
+    loadMapScript(apiKey, language);
   }
 
   if (document.readyState === 'loading') {

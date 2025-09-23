@@ -129,6 +129,7 @@
           {% assign map_lng = site.google_maps.location.lng | default: 0 %}
           {% assign map_zoom = site.google_maps.zoom | default: 14 %}
           {% assign map_title = site.google_maps.location.title | default: author.location | default: 'Location' %}
+          {% assign map_language = site.google_maps.language | default: page.lang | default: site.lang | default: site.locale %}
           <div
             class="author-location-map author-location-map--showing-fallback"
             data-author-map
@@ -137,11 +138,11 @@
             data-lng="{{ map_lng }}"
             data-zoom="{{ map_zoom }}"
             data-marker-title="{{ map_title | escape }}"
-            aria-label="{{ map_title | escape }}">
+            aria-label="{{ map_title | escape }}"{% if map_language %} data-language="{{ map_language | escape }}"{% endif %}>
             <iframe
               class="author-location-map__fallback"
               data-author-map-fallback
-              src="https://maps.google.com/maps?q={{ map_lat | escape }},{{ map_lng | escape }}&amp;z={{ map_zoom | escape }}&amp;output=embed"
+              src="https://maps.google.com/maps?q={{ map_lat | escape }},{{ map_lng | escape }}&amp;z={{ map_zoom | escape }}&amp;output=embed{% if map_language %}&amp;hl={{ map_language | escape }}{% endif %}"
               title="{{ map_title | escape }}"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"

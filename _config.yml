@@ -10,6 +10,7 @@ title                    : "Wentao Wu (吴文涛)"
 description              : ""
 repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
+lang                     : en
 
 # google analytics
 google_analytics_id      : # "https://analytics.google.com/analytics/e2ban1wAAAAJ"
@@ -68,6 +69,7 @@ google_maps:
     lng: 114.1795
     title: "The Hong Kong Polytechnic University"
   zoom: 16
+  language: en
   placeholder: "Set your Google Maps API key in _config.yml to display the location map."
 
 
