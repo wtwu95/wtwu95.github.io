@@ -99,7 +99,9 @@ Explore the full list of publications on the [Publications](/publications/) page
 </div>
  -->
 
-
+<p class="news-actions">
+  <a class="btn" href="{{ '/publications/' | relative_url }}">More News</a>
+</p>
 {% include citation-modal.html %}
 
 <!-- <span class='anchor' id='-awards'></span>
