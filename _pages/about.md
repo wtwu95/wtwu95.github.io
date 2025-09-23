@@ -29,7 +29,18 @@ Explore the full list of publications on the [Publications](/publications/) page
 [Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)\\
 **W. Wu**, D. Wu, Y. Zhang, S. Chen, and W. Zhang\\
 [**IEEE/CAA Journal of Automatica Sinica**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570650) \\
-[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)   [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)  
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)   [![Video-Expa](https://img.shields.io/badge/%F0%9F%A4%97%20Expa--Demo-blue?label=Video)](/assets/Video/Video-Exp/WuWentao-2023-IEEE-JASa.mp4)
+<button
+  type="button"
+  class="citation-badge-button"
+  data-citation-trigger="true"
+  data-citation-index="about-jas-2024"
+  data-citation-plain="W. Wu, D. Wu, Y. Zhang, S. Chen, and W. Zhang, “Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance,” IEEE/CAA Journal of Automatica Sinica, vol. 11, no. 9, pp. 2033–2035, Sept. 2024."
+  data-citation-bibtex="@ARTICLE{Wu2024Safety,&#10;  author={Wu, Wentao and Wu, Di and Zhang, Yibo and Chen, Shukang and Zhang, Weidong},&#10;  title={Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance},&#10;  journal={IEEE/CAA Journal of Automatica Sinica},&#10;  volume={11},&#10;  number={9},&#10;  pages={2033--2035},&#10;  year={2024}&#10;}"
+  aria-label="Cite this publication"
+>
+  <img src="https://img.shields.io/badge/Link-Cite-0969da?labelColor=555" alt="Cite badge">
+</button>
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ULOm3_A8WrAC'></span></strong>
 </div>
 </div>
@@ -42,6 +53,17 @@ Explore the full list of publications on the [Publications](/publications/) page
 **W. Wu**, Z. Peng, L. Liu, and D. Wang\\
 [**IEEE Transactions on Intelligent Vehicles**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857)\\
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TIV.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4)
+<button
+  type="button"
+  class="citation-badge-button"
+  data-citation-trigger="true"
+  data-citation-index="about-tiv-2022"
+  data-citation-plain="W. Wu, Z. Peng, L. Liu, and D. Wang, “A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train,” IEEE Transactions on Intelligent Vehicles, vol. 7, no. 3, pp. 627–637, Sept. 2022."
+  data-citation-bibtex="@ARTICLE{Wu2022Agener,&#10;  author={Wu, Wentao and Peng, Zhouhua and Liu, Lu and Wang, Dan},&#10;  title={A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train},&#10;  journal={IEEE Transactions on Intelligent Vehicles},&#10;  volume={7},&#10;  number={3},&#10;  pages={627--637},&#10;  year={2022}&#10;}"
+  aria-label="Cite this publication"
+>
+  <img src="https://img.shields.io/badge/Link-Cite-0969da?labelColor=555" alt="Cite badge">
+</button>
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:UeHWp8X0CEIC'></span></strong>
 </div>
 </div>
@@ -53,6 +75,17 @@ Explore the full list of publications on the [Publications](/publications/) page
 **W. Wu**, Z. Peng, D. Wang, L. Liu, Q.-L. Han\\
 [**IEEE Transactions on Cybernetics**](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036) \\
 [![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
+<button
+  type="button"
+  class="citation-badge-button"
+  data-citation-trigger="true"
+  data-citation-index="about-tcyb-2021"
+  data-citation-plain="W. Wu, Z. Peng, D. Wang, L. Liu, and Q.-L. Han, “Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results,” IEEE Transactions on Cybernetics, vol. 52, no. 10, pp. 10937–10947, Oct. 2022."
+  data-citation-bibtex="@ARTICLE{Wu2022Networ,&#10;  author={Wu, Wentao and Peng, Zhouhua and Wang, Dan and Liu, Lu and Han, Qing-Long},&#10;  title={Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results},&#10;  journal={IEEE Transactions on Cybernetics},&#10;  volume={52},&#10;  number={10},&#10;  pages={10937--10947},&#10;  year={2022}&#10;}"
+  aria-label="Cite this publication"
+>
+  <img src="https://img.shields.io/badge/Link-Cite-0969da?labelColor=555" alt="Cite badge">
+</button>
 <strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:W7OEmFMy1HYC'></span></strong>
 
 </div>
@@ -101,4 +134,8 @@ Find the complete award record on the [Awards page](/awards/).
 ## 💻 Professional Services
 
 View detailed service activities on the [Professional Services page](/services/).
- -->
+-->
+
+{% include citation-modal.html %}
+
+<script src="{{ '/assets/js/publications.js' | relative_url }}"></script>
