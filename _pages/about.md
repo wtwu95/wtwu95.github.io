@@ -97,10 +97,11 @@ redirect_from:
 </div>
  -->
 
+<!--
 Explore the full list of publications on the [Publications](/publications/) page.
-
+ -->
 <p class="news-actions">
-  <a class="btn" href="{{ '/publications/' | relative_url }}">More News</a>
+  <a class="btn" href="{{ '/publications/' | relative_url }}">Full List</a>
 </p>
 {% include citation-modal.html %}
 
