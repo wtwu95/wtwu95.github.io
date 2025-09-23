@@ -165,11 +165,7 @@ Hong Kong, China
     infoWindow.open(map, marker);
   };
 </script>
-{% if maps_key != '' %}
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ maps_key }}&callback=initMap"></script>
-{% else %}
-<div class="map-api-warning">Set <code>google_maps_api_key</code> in <code>_config.yml</code> to enable the interactive map.</div>
-{% endif %}
+
 
 # 😀 Miscellaneous
 
