@@ -120,6 +120,7 @@
           showFallback(mapContainer);
         }
       }, 4000);
+      }
     };
   }
 
