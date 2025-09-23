@@ -14,12 +14,6 @@
     var yearSelect = document.querySelector('#publication-year-filter');
     var sortButton = document.querySelector('#publication-year-sort');
     var searchInput = document.querySelector('#publication-search');
-    var citationModal = document.querySelector('#citation-modal');
-    var citationContent = citationModal ? citationModal.querySelector('#citation-modal-content') : null;
-    var citationTabs = citationModal ? Array.prototype.slice.call(citationModal.querySelectorAll('.citation-modal__tab')) : [];
-    var citationClose = citationModal ? citationModal.querySelector('.citation-modal__close') : null;
-    var citationActions = citationModal ? citationModal.querySelector('.citation-modal__actions') : null;
-    var citationFeedback = citationModal ? citationModal.querySelector('.citation-modal__feedback') : null;
 
     if (!sourceList || !listEl || !typeSelect || !yearSelect || !sortButton) {
       return;
@@ -35,9 +29,7 @@
     var typeOrder = ['journal', 'conference', 'review', 'preprint'];
 
     var searchTerm = '';
-    var activeCitationFormat = 'plain';
-    var currentCitation = null;
-    var copyFeedbackTimer = null;
+    var citationManager = window.CitationModal || null;
 
     function sanitizeNode(node) {
       var clone = node.cloneNode(true);
@@ -202,16 +194,25 @@
         actions.className = 'publication-actions';
         var hasActions = false;
 
-        if (citationModal && pub.citations) {
+        if (pub.citations) {
           var citeButton = document.createElement('button');
           citeButton.type = 'button';
           citeButton.className = 'publication-cite';
           citeButton.innerHTML = '<img src="https://img.shields.io/badge/Link-Cite-0969da?labelColor=555" alt="Cite badge">';
           citeButton.setAttribute('aria-label', 'Cite this publication');
-          citeButton.addEventListener('click', function () {
-            openCitation(number, pub.citations);
-          });
+          citeButton.setAttribute('data-citation-modal-trigger', '');
+          citeButton.setAttribute('data-citation-index', String(number));
+          if (pub.citations.plain) {
+            citeButton.setAttribute('data-citation-plain', pub.citations.plain);
+          }
+          if (pub.citations.bib) {
+            citeButton.setAttribute('data-citation-bibtex', pub.citations.bib);
+          }
           actions.appendChild(citeButton);
+          var manager = citationManager || window.CitationModal;
+          if (manager && typeof manager.refreshTriggers === 'function') {
+            manager.refreshTriggers(actions);
+          }
           hasActions = true;
         }
 
@@ -551,159 +552,6 @@
         plain: plainText,
         bib: bibOutput
       };
-    }
-
-    function openCitation(index, citations) {
-      if (!citationModal || !citations) {
-        return;
-      }
-      currentCitation = {
-        index: index,
-        plain: citations.plain,
-        bib: citations.bib
-      };
-      activeCitationFormat = 'plain';
-      hideCopyFeedback();
-      updateCitationContent();
-      citationModal.removeAttribute('hidden');
-      var focusTarget = citationModal.querySelector('.citation-modal__dialog');
-      if (focusTarget && typeof focusTarget.focus === 'function') {
-        focusTarget.focus({ preventScroll: true });
-      }
-    }
-
-    function closeCitation() {
-      if (!citationModal) {
-        return;
-      }
-      citationModal.setAttribute('hidden', '');
-      hideCopyFeedback();
-    }
-
-    function updateCitationContent() {
-      if (!citationModal || !currentCitation || !citationContent) {
-        return;
-      }
-      citationTabs.forEach(function (tab) {
-        var isActive = tab.getAttribute('data-format') === activeCitationFormat;
-        tab.classList.toggle('is-active', isActive);
-        tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
-      });
-
-      var citationText = activeCitationFormat === 'bib' ? currentCitation.bib : currentCitation.plain;
-      citationContent.textContent = citationText;
-    }
-
-    if (citationTabs.length) {
-      citationTabs.forEach(function (tab) {
-        tab.addEventListener('click', function () {
-          var format = tab.getAttribute('data-format');
-          if (!format || format === activeCitationFormat) {
-            return;
-          }
-          activeCitationFormat = format;
-          updateCitationContent();
-        });
-      });
-    }
-
-    if (citationClose) {
-      citationClose.addEventListener('click', closeCitation);
-    }
-
-    if (citationModal) {
-      citationModal.addEventListener('click', function (event) {
-        if (event.target === citationModal) {
-          closeCitation();
-        }
-      });
-    }
-
-    if (citationActions) {
-      citationActions.addEventListener('click', function (event) {
-        var actionButton = event.target.closest('button[data-action]');
-        if (!actionButton || !currentCitation) {
-          return;
-        }
-        var format = activeCitationFormat;
-        var citationText = format === 'bib' ? currentCitation.bib : currentCitation.plain;
-
-        if (actionButton.getAttribute('data-action') === 'copy') {
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(citationText).then(function () {
-              showCopyFeedback('Citation copied to clipboard');
-            }).catch(function () {
-              fallbackCopy(citationText);
-              showCopyFeedback('Citation copied to clipboard');
-            });
-          } else {
-            fallbackCopy(citationText);
-            showCopyFeedback('Citation copied to clipboard');
-          }
-        } else if (actionButton.getAttribute('data-action') === 'download') {
-          hideCopyFeedback();
-          var extension = format === 'bib' ? 'bib' : 'txt';
-          var filename = 'citation-' + currentCitation.index + '.' + extension;
-          var blob = new Blob([citationText], { type: 'text/plain;charset=utf-8' });
-          var link = document.createElement('a');
-          link.href = URL.createObjectURL(blob);
-          link.download = filename;
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-          setTimeout(function () {
-            URL.revokeObjectURL(link.href);
-          }, 0);
-        }
-      });
-    }
-
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && citationModal && !citationModal.hasAttribute('hidden')) {
-        closeCitation();
-      }
-    });
-
-    function showCopyFeedback(message) {
-      if (!citationFeedback) {
-        return;
-      }
-      citationFeedback.textContent = message;
-      citationFeedback.removeAttribute('hidden');
-      if (copyFeedbackTimer) {
-        clearTimeout(copyFeedbackTimer);
-      }
-      copyFeedbackTimer = window.setTimeout(function () {
-        hideCopyFeedback();
-      }, 2000);
-    }
-
-    function hideCopyFeedback() {
-      if (!citationFeedback) {
-        return;
-      }
-      citationFeedback.setAttribute('hidden', '');
-      citationFeedback.textContent = '';
-      if (copyFeedbackTimer) {
-        clearTimeout(copyFeedbackTimer);
-        copyFeedbackTimer = null;
-      }
-    }
-
-    function fallbackCopy(text) {
-      var textarea = document.createElement('textarea');
-      textarea.value = text;
-      textarea.setAttribute('readonly', '');
-      textarea.style.position = 'absolute';
-      textarea.style.left = '-9999px';
-      document.body.appendChild(textarea);
-      textarea.select();
-      try {
-        document.execCommand('copy');
-      } catch (e) {
-        console.warn('Copy not supported');
-      }
-      document.body.removeChild(textarea);
     }
 
     render();
