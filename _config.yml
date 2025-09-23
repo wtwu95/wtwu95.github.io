@@ -12,7 +12,10 @@ repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
-google_analytics_id      : # "https://analytics.google.com/analytics/e2ban1wAAAAJ" 
+google_analytics_id      : # "https://analytics.google.com/analytics/e2ban1wAAAAJ"
+
+# Google Maps
+google_maps_api_key      : # "YOUR_GOOGLE_MAPS_JAVASCRIPT_API_KEY"
 
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
