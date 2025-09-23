@@ -3,6 +3,9 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
+news_limit: 10
+news_enable_scroll: false
+news_more_link: /news/
 redirect_from:
   - /about/
   - /about.html
