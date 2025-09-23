@@ -58,15 +58,6 @@ author:
   youtube          :
   wikipedia        :
 
-google_maps:
-  api_key:
-  location:
-    lat: 22.3043
-    lng: 114.1795
-    title: "The Hong Kong Polytechnic University"
-  zoom: 16
-  placeholder: "Set your Google Maps API key in _config.yml to display the location map."
-
 
 # Reading Files
 include:

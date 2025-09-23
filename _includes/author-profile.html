@@ -119,28 +119,10 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
     </ul>
-    <div class="author__map author__map--visitors">
+    <div class="author__map">
       <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=O8KnN2KN9LurEKfnDLzKFXnBIkbpznU5gMV5OwVKB98&cl=ffffff&w=a"></script>
     </div>
-    {% if site.google_maps %}
-      <div class="author__map author__map--location">
-        {% if site.google_maps.api_key %}
-          <div
-            class="author-location-map"
-            data-author-map
-            data-api-key="{{ site.google_maps.api_key | strip | escape }}"
-            data-lat="{{ site.google_maps.location.lat | default: 0 }}"
-            data-lng="{{ site.google_maps.location.lng | default: 0 }}"
-            data-zoom="{{ site.google_maps.zoom | default: 14 }}"
-            data-marker-title="{{ site.google_maps.location.title | default: author.location | default: 'Location' | escape }}"
-            aria-label="{{ site.google_maps.location.title | default: author.location | default: 'Location map' | escape }}">
-          </div>
-        {% else %}
-          <p class="author-location-map__placeholder">{{ site.google_maps.placeholder | default: 'Set your Google Maps API key in _config.yml to display the location map.' }}</p>
-        {% endif %}
-      </div>
-    {% endif %}
-    <div class="author__urls_sm">
+      <div class="author__urls_sm">
       {% if author.uri %}
         <a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i></a>
       {% endif %}
