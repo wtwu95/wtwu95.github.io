@@ -14,29 +14,17 @@
   {% assign limit = news_count %}
 {% endif %}
 
-{% assign visible_count = include.visible_count %}
-{% if visible_count %}
-  {% assign visible_count = visible_count | plus: 0 %}
-{% else %}
-  {% assign visible_count = limit %}
-{% endif %}
-{% if visible_count < 1 %}
-  {% assign visible_count = 1 %}
-{% endif %}
-
 {% if limit > 0 %}
-<div class="news-window" data-news-window data-visible-count="{{ visible_count }}" tabindex="0" aria-label="Latest news" markdown="1">
 {% for item in news_items limit: limit %}
 - {{ item }}
 {% endfor %}
 {: .news-list}
-</div>
 {% else %}
 <p>No news items are available right now. Please check back later.</p>
 {% endif %}
 
 {% if include.show_button and limit < news_count %}
-<div class="news-window__actions">
+<p class="news-actions">
   <a class="btn" href="{{ '/news/' | relative_url }}">查看更多</a>
-</div>
+</p>
 {% endif %}
