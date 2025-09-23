@@ -1,0 +1,161 @@
+<div id="citation-modal" class="citation-modal" hidden>
+  <div class="citation-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="citation-modal-title" tabindex="-1">
+    <button type="button" class="citation-modal__close" aria-label="Close citation dialog">&times;</button>
+    <h4 id="citation-modal-title">Cite this publication</h4>
+    <div class="citation-modal__tabs" role="tablist">
+      <button type="button" class="citation-modal__tab is-active" data-format="plain" role="tab" aria-selected="true">Plain Text</button>
+      <button type="button" class="citation-modal__tab" data-format="bib" role="tab" aria-selected="false">BibTeX</button>
+    </div>
+    <pre class="citation-modal__content" id="citation-modal-content"></pre>
+    <div class="citation-modal__actions">
+      <div class="citation-modal__feedback" role="status" aria-live="polite" hidden></div>
+      <button type="button" class="citation-modal__action" data-action="copy">Copy</button>
+      <button type="button" class="citation-modal__action" data-action="download">Download</button>
+    </div>
+  </div>
+</div>
+
+<style>
+:root {
+  --citation-modal-accent: var(--publication-accent, #224b8d);
+  --citation-modal-accent-hover: var(--publication-accent-hover, #1a3a6d);
+  --citation-modal-accent-soft: var(--publication-accent-soft, rgba(34, 75, 141, 0.18));
+}
+
+.citation-modal[hidden] {
+  display: none;
+}
+
+.citation-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1.5rem;
+}
+
+.citation-modal__dialog {
+  position: relative;
+  width: min(640px, 100%);
+  background: #fff;
+  border-radius: 0.85rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+}
+
+.citation-modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #57606a;
+}
+
+.citation-modal__tabs {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.citation-modal__tab {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #c1c7d0;
+  background: #f6f8fa;
+  color: #24292f;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.citation-modal__tab.is-active {
+  background: var(--citation-modal-accent);
+  border-color: var(--citation-modal-accent);
+  color: #fff;
+}
+
+.citation-modal__content {
+  background: #f6f8fa;
+  border-radius: 0.65rem;
+  padding: 1rem;
+  max-height: 320px;
+  overflow: auto;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.citation-modal__actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.citation-modal__feedback {
+  margin-right: auto;
+  font-size: 0.85rem;
+  color: var(--citation-modal-accent);
+}
+
+.citation-modal__feedback[hidden] {
+  display: none;
+}
+
+.citation-modal__action {
+  padding: 0.45rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--citation-modal-accent);
+  background: var(--citation-modal-accent);
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.citation-modal__action[data-action="copy"] {
+  background: #fff;
+  color: var(--citation-modal-accent);
+}
+
+.citation-modal__action[data-action="copy"]:hover {
+  background: var(--citation-modal-accent-soft);
+}
+
+.citation-modal__action[data-action="download"]:hover {
+  background: var(--citation-modal-accent-hover);
+}
+
+.citation-modal__action:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--citation-modal-accent-soft);
+}
+
+.citation-badge-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.citation-badge-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--citation-modal-accent-soft);
+  border-radius: 0.35rem;
+}
+
+.citation-badge-button img {
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>
