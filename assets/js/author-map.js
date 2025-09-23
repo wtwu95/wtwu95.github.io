@@ -22,6 +22,12 @@
         map: map,
         title: title
       });
+
+      var fallback = mapContainer.querySelector('[data-author-map-fallback]');
+      if (fallback) {
+        fallback.style.display = 'none';
+        fallback.setAttribute('aria-hidden', 'true');
+      }
     };
   }
 
