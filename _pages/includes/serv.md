@@ -1,4 +1,4 @@
-# 💻 Professional Services
+# 📝 Professional Services
 
 ## Journal Editorial Boards
 - **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
