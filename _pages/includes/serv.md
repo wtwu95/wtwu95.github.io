@@ -1,37 +1,63 @@
 # 🧩  Professional Services
 
-## Journal Editorial Boards
-- **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
+{% assign services = site.data.services | default: [] %}
+{% assign total_items = 0 %}
+{% for section in services %}
+  {% assign section_items = section.items | default: [] %}
+  {% assign section_count = section_items | size %}
+  {% assign total_items = total_items | plus: section_count %}
+{% endfor %}
+{% assign limit = include.limit %}
+{% if limit %}
+  {% assign limit = limit | plus: 0 %}
+  {% if limit > total_items %}
+    {% assign limit = total_items %}
+  {% elsif limit < 0 %}
+    {% assign limit = 0 %}
+  {% endif %}
+{% else %}
+  {% assign limit = total_items %}
+{% endif %}
 
-## Conference Program Committee and Editorial
-- **Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
+{% if total_items == 0 or limit == 0 %}
+<p>No professional service activities are available at this time. Please check back later.</p>
+{% else %}
+  {% assign displayed = 0 %}
+  {% assign limited = false %}
+  {% if limit < total_items %}
+    {% assign limited = true %}
+  {% endif %}
+  {% for section in services %}
+    {% assign section_items = section.items | default: [] %}
+    {% assign section_count = section_items | size %}
+    {% if section_count == 0 %}
+      {% continue %}
+    {% endif %}
+    {% assign remaining = limit | minus: displayed %}
+    {% if remaining <= 0 %}
+      {% break %}
+    {% endif %}
+    {% assign items_to_show = section_count %}
+    {% if limited and remaining < items_to_show %}
+      {% assign items_to_show = remaining %}
+    {% endif %}
 
-## Teaching 
+## {{ section.title }}
 
-- **Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)
+{% for item in section_items limit: items_to_show %}
+- {{ item }}
+{% endfor %}
+{: .services-list}
 
-## Journal Reviewer
-- [IEEE Transactions on Automatic Control](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9)  
-- [IEEE Control Systems Letters](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7782673) 
-- [IEEE Transactions on Cybernetics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036)  
-- [IEEE Transactions on Industrial Cyber-Physical Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8254253)  
-- [IEEE Transactions on Vehicular Technology](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25)  
-- [IEEE Transactions on Transportation Electrification](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6687312)  
-- [IEEE Open Journal of the Industrial Electronics Society](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8782712)  
-- [IEEE/CAA Journal of Automatica Sinica](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570650)  
-- [IEEE Transactions on Industrial Electronics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=41)  
-- [IEEE Transactions on Intelligent Vehicles](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857)  
-- [IEEE Transactions on Systems, Man, and Cybernetics: Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021)  
-- [IEEE Internet of Things Journal](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907)  
-- [Ocean Engineering](https://www.sciencedirect.com/journal/ocean-engineering)  
-- [ISA Transactions](https://www.sciencedirect.com/journal/isa-transactions)  
-- [Circuits, Systems, and Signal Processing](https://link.springer.com/journal/34)  
-- [International Journal of Robust and Nonlinear Control](https://onlinelibrary.wiley.com/journal/10991239)  
-- [Nonlinear Dynamics](https://link.springer.com/journal/11071)  
+    {% assign displayed = displayed | plus: items_to_show %}
+    {% if displayed >= limit %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
-## Conference Reviewer
-- IEEE Conference on Decision and Control (CDC)
-- American Control Conference (ACC)
-- Annual Conference of the IEEE Industrial Electronics Society (IECON)
-- Chinese Control Conference (CCC)
-- Chinese Control and Decision Conference (CCDC)
+{% if include.show_button and limit < total_items %}
+<p class="news-actions">
+  <a class="btn" href="{{ '/services/' | relative_url }}">More Services</a>
+</p>
+{% endif %}
