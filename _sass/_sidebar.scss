@@ -268,3 +268,40 @@
     display: none;
   }
 }
+
+.author__map {
+  margin-top: 1em;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+.author__map--location {
+  margin-top: 0.75em;
+}
+
+.author-location-map {
+  width: 100%;
+  height: 200px;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: $code-background-color;
+  overflow: hidden;
+}
+
+@include breakpoint($large) {
+  .author-location-map {
+    height: 220px;
+  }
+}
+
+.author-location-map__placeholder {
+  margin: 0;
+  padding: 0.5em 0.75em;
+  font-size: $type-size-6;
+  color: $gray;
+  background-color: $code-background-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}
