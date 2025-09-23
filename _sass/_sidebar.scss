@@ -73,6 +73,7 @@
     display: block;
   }
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
   align-items: center;
@@ -172,6 +173,19 @@
     @include breakpoint($large) {
       display: none;
     }
+  }
+}
+
+@include breakpoint(max-width $medium) {
+  .author__urls-wrapper {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .author__map {
+    width: 100%;
   }
 }
 
