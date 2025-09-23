@@ -269,8 +269,16 @@
   }
 }
 
-.author__map {
+.author__maps {
   margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.75em;
+}
+
+.author__map {
+  flex: 1 1 0;
 
   iframe {
     width: 100%;
@@ -278,7 +286,7 @@
 }
 
 .author__map--location {
-  margin-top: 0.75em;
+  margin-top: 0;
 }
 
 .author-location-map {
@@ -309,6 +317,10 @@
 }
 
 @include breakpoint($large) {
+  .author__maps {
+    flex-direction: column;
+  }
+
   .author-location-map {
     height: 220px;
   }
