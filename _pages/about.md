@@ -146,10 +146,10 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 - IEEE Conference on Decision and Control (CDC)
 - American Control Conference (ACC)
-## Conference Reviewer
 
-- IEEE Conference on Decision and Control (CDC)
-- American Control Conference (ACC)
+<p class="news-actions">
+  <a class="btn" href="{{ '/services/' | relative_url }}">More List</a>
+</p>
 
 # 😀 Miscellaneous
 
