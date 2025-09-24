@@ -5,4 +5,6 @@ title: ""
 author_profile: true
 ---
 
-{% include_relative includes/award.md context='full' show_button=false %}
+<span class='anchor' id='-awards'></span>
+
+{% include_relative includes/award.md %}

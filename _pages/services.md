@@ -5,4 +5,6 @@ title: ""
 author_profile: true
 ---
 
-{% include_relative includes/serv.md context='full' show_button=false %}
+<span class='anchor' id='-professional-services'></span>
+
+{% include_relative includes/serv.md %}
