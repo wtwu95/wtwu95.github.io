@@ -13,12 +13,7 @@ body {
   padding-bottom: 0em;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.7;
-  font-weight: 400;
-  background-color: $body-color;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  line-height: 1.5;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -27,29 +22,28 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1.2em 0 0.6em;
-  line-height: 1.15;
+  margin: 1em 0 0.5em;
+  line-height: 1.2;
   font-family: $header-font-family;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  font-weight: bold;
 }
 
 h1 {
   // margin: 4em 0 0.5em;
-  margin-top: 0.75em;
-  font-size: $type-size-2;
-}
-
-h2 {
+  margin-top: 1em;
   font-size: $type-size-3;
 }
 
-h3 {
+h2 {
   font-size: $type-size-4;
 }
 
-h4 {
+h3 {
   font-size: $type-size-5;
+}
+
+h4 {
+  font-size: $type-size-6;
 }
 
 h5 {
@@ -65,13 +59,7 @@ small, .small {
 }
 
 p {
-  margin-bottom: 1em;
-}
-
-.page__content {
-  max-width: 74ch;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 0.5em;
 }
 
 u,
@@ -85,7 +73,7 @@ ins {
 
 ul {
   padding-inline-start: 2em;
-  margin-block-start: 0.8em;
+  margin-block-start: 0.5em;
 }
 
 del a {
@@ -115,9 +103,7 @@ blockquote {
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid rgba($primary-color, 0.6);
-  background: rgba($primary-color, 0.06);
-  border-radius: 0.5em;
+  border-left: 0.25em solid $primary-color;
 
   cite {
     font-style: italic;
@@ -155,7 +141,7 @@ a {
   &:focus {
     color: $link-color-hover;
     background-color: rgba($link-color, 0.12);
-    box-shadow: 0 6px 18px -12px rgba($link-color, 0.6);
+    box-shadow: 0 0 0 1px rgba($link-color, 0.15);
     text-decoration: none;
     outline: none;
   }
@@ -194,7 +180,7 @@ td > code {
 
 hr {
   display: block;
-  margin: 2em 0;
+  margin: 1em 0;
   border: 0;
   border-top: 1px solid $border-color;
 }
@@ -203,23 +189,12 @@ hr {
 
 ul li,
 ol li {
-  margin-bottom: 0.6em;
+  margin-bottom: 0.5em;
 }
 
 li ul,
 li ol {
-  margin-top: 0.6em;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+  margin-top: 0.5em;
 }
 
 /*
