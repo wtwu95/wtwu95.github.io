@@ -1,4 +1,4 @@
-# 🧩 Professional Services
+# ⚙️ Professional Services
 
 ## Journal Editorial Boards
 
