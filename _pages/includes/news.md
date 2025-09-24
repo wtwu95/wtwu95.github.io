@@ -25,6 +25,6 @@
 
 {% if include.show_button and limit < news_count %}
 <p class="news-actions">
-  <a class="btn" href="{{ '/news/' | relative_url }}">More News</a>
+  <a class="btn" href="{{ '/news/' | relative_url }}">Read More</a>
 </p>
 {% endif %}

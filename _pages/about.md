@@ -101,7 +101,7 @@ redirect_from:
 Explore the full list of publications on the [Publications](/publications/) page.
  -->
 <p class="news-actions">
-  <a class="btn" href="{{ '/publications/' | relative_url }}">Full List</a>
+  <a class="btn" href="{{ '/publications/' | relative_url }}">Explore Full List</a>
 </p>
 {% include citation-modal.html %}
 
@@ -110,11 +110,12 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 - 2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**
 - 2024 · 2023 · 2020 &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**
-- 2023 &nbsp; State-Sponsored Postgraduate Program for National Construction of High-Level Universities
 - 2023 &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span>** of the 7th CCSICC
+- 2022 &nbsp; **<span style="color:red">Excellent Master Dissertation Award</span>** of Liaoning Province
+
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/awards/' | relative_url }}">See More Awards</a>
+  <a class="btn" href="{{ '/awards/' | relative_url }}">View All</a>
 </p>
 
 <!-- <span class='anchor' id='-professional-services'></span> -->
@@ -130,7 +131,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 - Reviewer for international journals and conferences
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/services/' | relative_url }}">Explore More Services</a>
+  <a class="btn" href="{{ '/services/' | relative_url }}">View All</a>
 </p>
 
 # 😀 Miscellaneous
