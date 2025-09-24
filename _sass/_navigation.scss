@@ -175,17 +175,22 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: $background-color;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
   a {
     display: block;
-    margin: 0 1rem;
-    padding: 0.5rem 0;
+    margin: 0 0.75rem;
+    padding: 0.4rem 0.1rem;
     color: $masthead-link-color;
     text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
 
     &:hover {
       color: $masthead-link-color-hover;
+      background-color: rgba($masthead-link-color-hover, 0.08);
     }
   }
 
@@ -193,12 +198,23 @@
     position: absolute;
     height: 100%;
     right: 0;
-    padding: 0 0.5rem;
-    border: 0;
+    padding: 0 0.65rem;
+    border: 1px solid rgba($masthead-link-color, 0.08);
     outline: none;
-    background-color: $primary-color;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.65);
+    color: $masthead-link-color;
+    border-radius: 999px;
     cursor: pointer;
+    backdrop-filter: saturate(180%) blur(18px);
+    -webkit-backdrop-filter: saturate(180%) blur(18px);
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+      border-color: rgba($primary-color, 0.35);
+      background-color: rgba(255, 255, 255, 0.85);
+    }
   }
 
   .visible-links {
