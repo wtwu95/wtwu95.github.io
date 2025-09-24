@@ -105,7 +105,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 </p>
 {% include citation-modal.html %}
 
-<!-- <span class='anchor' id='-awards'></span> -->
+<span class='anchor' id='-awards'></span>
 # 🎖 Selected Awards
 
 - 2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**
@@ -118,7 +118,7 @@ Explore the full list of publications on the [Publications](/publications/) page
   <a class="btn" href="{{ '/awards/' | relative_url }}">View All Awards</a>
 </p>
 
-<!-- <span class='anchor' id='-professional-services'></span> -->
+<span class='anchor' id='-professional-services'></span>
 # ⚙️ Professional Services
 
 
