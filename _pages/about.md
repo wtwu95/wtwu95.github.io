@@ -101,7 +101,7 @@ redirect_from:
 Explore the full list of publications on the [Publications](/publications/) page.
  -->
 <p class="news-actions">
-  <a class="btn" href="{{ '/publications/' | relative_url }}">Explore Full List</a>
+  <a class="btn" href="{{ '/publications/' | relative_url }}">Show Full List</a>
 </p>
 {% include citation-modal.html %}
 
@@ -115,7 +115,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/awards/' | relative_url }}">View All</a>
+  <a class="btn" href="{{ '/awards/' | relative_url }}">View All Awards</a>
 </p>
 
 <!-- <span class='anchor' id='-professional-services'></span> -->
@@ -131,7 +131,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 - **Reviewer** for international journals and conferences
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/services/' | relative_url }}">View All</a>
+  <a class="btn" href="{{ '/services/' | relative_url }}">Explore All Services</a>
 </p>
 
 # 😀 Miscellaneous
