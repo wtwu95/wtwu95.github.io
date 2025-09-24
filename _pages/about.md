@@ -106,7 +106,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 {% include citation-modal.html %}
 
 <!-- <span class='anchor' id='-awards'></span> -->
-# 🎖 Awards
+# 🎖 Selected Awards
 
 - 2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**
 - 2024 · 2023 · 2020 &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**
@@ -128,7 +128,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 - **Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)
 
-- Reviewer for international journals and conferences
+- **Reviewer** for international journals and conferences
 
 <p class="news-actions">
   <a class="btn" href="{{ '/services/' | relative_url }}">View All</a>
