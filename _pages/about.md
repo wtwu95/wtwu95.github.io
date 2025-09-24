@@ -101,7 +101,7 @@ redirect_from:
 Explore the full list of publications on the [Publications](/publications/) page.
  -->
 <p class="news-actions">
-  <a class="btn" href="{{ '/publications/' | relative_url }}">浏览全部论文 →</a>
+  <a class="btn" href="{{ '/publications/' | relative_url }}">Show Full List</a>
 </p>
 {% include citation-modal.html %}
 
@@ -115,7 +115,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/awards/' | relative_url }}">查看全部奖项 →</a>
+  <a class="btn" href="{{ '/awards/' | relative_url }}">View All Awards</a>
 </p>
 
 <!-- <span class='anchor' id='-professional-services'></span> -->
@@ -131,7 +131,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 - **Reviewer** for international journals and conferences
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/services/' | relative_url }}">查看全部服务 →</a>
+  <a class="btn" href="{{ '/services/' | relative_url }}">Explore All Services</a>
 </p>
 
 # 😀 Miscellaneous
