@@ -119,7 +119,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 </p>
 
 <!-- <span class='anchor' id='-professional-services'></span> -->
-# 🧩 Professional Services
+# ⚙️ Professional Services
 
 
 - **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
