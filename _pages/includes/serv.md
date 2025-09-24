@@ -4,19 +4,13 @@
 
 - **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
 
-{: .services-list}
-
 ## Conference Program Committee and Editorial
 
 - **Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
 
-{: .services-list}
-
 ## Teaching
 
 - **Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)
-
-{: .services-list}
 
 ## Journal Reviewer
 
@@ -38,8 +32,6 @@
 - [International Journal of Robust and Nonlinear Control](https://onlinelibrary.wiley.com/journal/10991239)
 - [Nonlinear Dynamics](https://link.springer.com/journal/11071)
 
-{: .services-list}
-
 ## Conference Reviewer
 
 - IEEE Conference on Decision and Control (CDC)
@@ -47,5 +39,3 @@
 - Annual Conference of the IEEE Industrial Electronics Society (IECON)
 - Chinese Control Conference (CCC)
 - Chinese Control and Decision Conference (CCDC)
-
-{: .services-list}
