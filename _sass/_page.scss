@@ -132,6 +132,41 @@
 
     .btn {
       margin-bottom: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0.85rem;
+      height: var(--publication-control-height);
+      min-height: var(--publication-control-height);
+      border-radius: 0.45rem;
+      border: 1px solid #c1c7d0 !important;
+      background-color: #e0e0e0;
+      color: #494e52 !important;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.2;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease,
+        background-color 0.2s ease, color 0.2s ease;
+      text-decoration: none;
+      box-shadow: none;
+    }
+
+    .btn:hover {
+      background-color: #d5d5d5;
+      border-color: #d5d5d5 !important;
+      text-decoration: none;
+    }
+
+    .btn:active {
+      background-color: #cbcbcb;
+      border-color: #cbcbcb !important;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      border-color: var(--publication-accent) !important;
+      box-shadow: 0 0 0 3px var(--publication-accent-soft);
+      outline: none;
     }
   }
 
