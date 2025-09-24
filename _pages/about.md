@@ -107,11 +107,62 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 <span class='anchor' id='-awards'></span>
 
-{% include_relative includes/award.md limit=5 show_button=true %}
+# 🎖 Awards
+
+{% assign awards_page = site.pages | where: 'permalink', '/awards/' | first %}
+{% if awards_page %}
+  {% assign featured_awards = awards_page.awards | where: 'featured', true %}
+  {% assign featured_awards = featured_awards | default: [] %}
+  {% assign featured_awards_count = featured_awards | size %}
+  {% if featured_awards_count > 0 %}
+{% for award in featured_awards %}
+- {{ award.text }}
+{% endfor %}
+{: .awards-list}
+  {% else %}
+  <p>No awards are highlighted at this time. Please check back later.</p>
+  {% endif %}
+{% else %}
+<p>No awards are available at this time. Please check back later.</p>
+{% endif %}
+
+<p class="news-actions">
+  <a class="btn" href="{{ '/awards/' | relative_url }}">Full List</a>
+</p>
 
 <span class='anchor' id='-professional-services'></span>
 
-{% include_relative includes/serv.md limit=5 show_button=true %}
+# 🧩  Professional Services
+
+{% assign services_page = site.pages | where: 'permalink', '/services/' | first %}
+{% if services_page %}
+  {% assign service_sections = services_page.service_sections | default: [] %}
+  {% assign has_featured_services = false %}
+  {% for section in service_sections %}
+    {% assign featured_items = section.items | default: [] | where: 'featured', true %}
+    {% assign featured_items = featured_items | default: [] %}
+    {% assign featured_count = featured_items | size %}
+    {% if featured_count > 0 %}
+      {% assign has_featured_services = true %}
+## {{ section.title }}
+
+{% for item in featured_items %}
+- {{ item.text }}
+{% endfor %}
+{: .services-list}
+
+    {% endif %}
+  {% endfor %}
+  {% unless has_featured_services %}
+  <p>No professional service activities are highlighted at this time. Please check back later.</p>
+  {% endunless %}
+{% else %}
+<p>No professional service activities are available at this time. Please check back later.</p>
+{% endif %}
+
+<p class="news-actions">
+  <a class="btn" href="{{ '/services/' | relative_url }}">Full List</a>
+</p>
 
 # 😀 Miscellaneous
 
