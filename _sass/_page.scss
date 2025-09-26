@@ -131,7 +131,25 @@
     margin-top: 0.75rem;
 
     .btn {
-      margin-bottom: 0;
+      @include cta-button;
+    }
+
+    .btn:hover {
+      background-color: $cta-button-background-hover;
+      border-color: $cta-button-background-hover !important;
+      text-decoration: none;
+    }
+
+    .btn:active {
+      background-color: $cta-button-background-active;
+      border-color: $cta-button-background-active !important;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      border-color: var(--publication-accent) !important;
+      box-shadow: 0 0 0 3px var(--publication-accent-soft);
+      outline: none;
     }
   }
 
@@ -142,10 +160,6 @@
 
     li {
       margin-bottom: 0.5rem;
-    }
-
-    strong {
-      font-weight: 700;
     }
   }
 
