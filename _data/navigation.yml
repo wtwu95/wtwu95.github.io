@@ -1,6 +1,7 @@
 # main links links
 main:
   - title: "Biography"
+    title_zh: "个人简介"
     url: "/#about-me"
 
   # - title: "Experiences"
@@ -10,13 +11,17 @@ main:
   #   url: "/#-educations"
 
   - title: "News"
+    title_zh: "最新动态"
     url: "/#-news"
 
   - title: "Publications"
+    title_zh: "代表性论文"
     url: "/#-publications"
 
   - title: "Awards"
+    title_zh: "所获荣誉"
     url: "/#-awards"
 
   - title: "Services"
+    title_zh: "学术服务"
     url: "/#-professional-services"
