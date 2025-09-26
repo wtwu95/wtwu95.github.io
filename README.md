@@ -12,6 +12,41 @@ in top journals and international conferences such as IEEE T-CYB, IEEE/CAA JAS, 
 
 Welcome to contact me for academic collaboration! Please feel free to email me at [wtwu95@gmail.com](mailto:wtwu95@gmail.com) or [wen-tao.wu@polyu.edu.hk](mailto:wen-tao.wu@polyu.edu.hk).
 
+### 📎 Homepages
+- Personal Pages: https://wtwu95.github.io (updated recently🔥)
+- Google Scholar: https://scholar.google.com/citations?user=e2ban1wAAAAJ
+
+### 💬 News
+
+{% assign news_items = site.data.news | default: [] %}
+{% assign news_count = news_items | size %}
+{% assign limit = include.limit %}
+{% if limit %}
+  {% assign limit = limit | plus: 0 %}
+  {% if limit > news_count %}
+    {% assign limit = news_count %}
+  {% elsif limit < 0 %}
+    {% assign limit = 0 %}
+  {% endif %}
+{% else %}
+  {% assign limit = news_count %}
+{% endif %}
+
+{% if limit > 0 %}
+{% for item in news_items limit: limit %}
+- {{ item }}
+{% endfor %}
+{: .news-list}
+{% else %}
+<p>No news items are available right now. Please check back later.</p>
+{% endif %}
+
+{% if include.show_button and limit < news_count %}
+<p class="news-actions">
+  <a class="btn" href="{{ '/news/' | relative_url }}">Read More News</a>
+</p>
+{% endif %}
+
 ### 📚 Publications
 
 
@@ -153,3 +188,10 @@ Welcome to contact me for academic collaboration! Please feel free to email me a
     <p>H. Wang, J. Jiang, <strong>W. Wu</strong>, L. Liu, D. Wang, and Z. Peng, “<a href="https://ieeexplore.ieee.org/abstract/document/9230166">Robust distributed guidance and control of multiple autonomous surface vehicles based on extended state observers and finite-set model predictive control</a>,” in <em class="publication-venue publication-venue--conference"><a href="https://ieeexplore.ieee.org/xpl/conhome/9229471/proceeding">2020 5th International Conference on Automation, Control and Robotics Engineering (CACRE)</a></em>, IEEE, pp. 235–239, 2020. <a href="/assets/papers/EI/WangHaoliang-2020-CACRE.pdf"><img alt="PDF badge" src="https://img.shields.io/badge/Link-PDF-gree"/></a></p>
   </li>
 </ul>
+
+
+
+
+
+
+{% include citation-modal.html %}
