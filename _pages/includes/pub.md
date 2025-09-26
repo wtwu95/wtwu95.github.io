@@ -1,4 +1,4 @@
-# 📚 Publications
+# <span data-lang="en">📚 Publications</span><span data-lang="zh" hidden>📚 代表性成果</span>
 
 
 <div class="publication-controls">
@@ -8,14 +8,25 @@
     class="publication-search"
     placeholder="Search publications..."
     aria-label="Search publications"
+    data-placeholder-en="Search publications..."
+    data-placeholder-zh="搜索成果..."
+    data-aria-label-en="Search publications"
+    data-aria-label-zh="搜索成果"
   >
-  <select id="publication-type-filter">
+  <select id="publication-type-filter" data-label-en="Type" data-label-zh="类型">
     <option value="all">Type</option>
   </select>
-  <select id="publication-year-filter">
+  <select id="publication-year-filter" data-label-en="Date" data-label-zh="日期">
     <option value="all">Date</option>
   </select>
-  <button type="button" id="publication-year-sort" class="publication-sort">⬇</button>
+  <button
+    type="button"
+    id="publication-year-sort"
+    class="publication-sort"
+    aria-label="Sort by newest"
+    data-aria-label-en="Sort by newest"
+    data-aria-label-zh="按最新排序"
+  >⬇</button>
 </div>
 
 <ol id="publication-list" class="publication-list"></ol>

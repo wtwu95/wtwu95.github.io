@@ -1,22 +1,29 @@
 # main links links
 main:
-  - title: "Biography"
+  - title_en: "Biography"
+    title_zh: "个人简介"
     url: "/#about-me"
 
-  # - title: "Experiences"
+  # - title_en: "Experiences"
+  #   title_zh: "经历"
   #   url: "/#-experiences"
 
-  # - title: "Educations"
+  # - title_en: "Educations"
+  #   title_zh: "教育背景"
   #   url: "/#-educations"
 
-  - title: "News"
+  - title_en: "News"
+    title_zh: "动态"
     url: "/#-news"
 
-  - title: "Publications"
+  - title_en: "Publications"
+    title_zh: "出版物"
     url: "/#-publications"
 
-  - title: "Awards"
+  - title_en: "Awards"
+    title_zh: "荣誉奖励"
     url: "/#-awards"
 
-  - title: "Services"
+  - title_en: "Services"
+    title_zh: "学术服务"
     url: "/#-professional-services"
