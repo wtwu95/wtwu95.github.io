@@ -1,4 +1,5 @@
 # 💬 News
+{: data-i18n-key="heading-news" }
 
 {% assign news_items = site.data.news | default: [] %}
 {% assign news_count = news_items | size %}
@@ -20,11 +21,11 @@
 {% endfor %}
 {: .news-list}
 {% else %}
-<p>No news items are available right now. Please check back later.</p>
+<p data-i18n-key="news-empty">No news items are available right now. Please check back later.</p>
 {% endif %}
 
 {% if include.show_button and limit < news_count %}
 <p class="news-actions">
-  <a class="btn" href="{{ '/news/' | relative_url }}">Read More News</a>
+  <a class="btn" href="{{ '/news/' | relative_url }}" data-i18n-key="news-read-more">Read More News</a>
 </p>
 {% endif %}

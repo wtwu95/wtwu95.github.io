@@ -1,7 +1,8 @@
 # 🎓 Educations
+{: data-i18n-key="heading-educations" }
 
 <ul class="cv-list">
-  <li class="cv-item">
+  <li class="cv-item" data-i18n-key="education-phd">
     <div class="cv-row">
       <div class="cv-main">
         <span class="cv-degree">Ph.D.</span>, Electronic Information Engineering in
@@ -13,7 +14,7 @@
     <div class="cv-sub">Supervisors: Chair Professor <a href="https://automation.sjtu.edu.cn/wdzhang"><b>Weidong Zhang (张卫东)</b></a> and Professor <a href="https://automation.sjtu.edu.cn/Jun-Guo"><b>Junguo Lu (卢俊国)</b></a></div>
   </li>
 
-  <li class="cv-item">
+  <li class="cv-item" data-i18n-key="education-master">
     <div class="cv-row">
       <div class="cv-main">
         <span class="cv-degree">M.E.</span>, Electrical Engineering in
@@ -25,7 +26,7 @@
     <div class="cv-sub">Supervisors: Professor <a href="https://scholar.google.com/citations?user=kc8gnlMAAAAJ"><b>Dan Wang (王丹)</b></a> and Professor <a href="https://scholar.google.com/citations?user=hM_5JDYAAAAJ"><b>Zhouhua Peng (彭周华)</b></a></div>
   </li>
 
-  <li class="cv-item">
+  <li class="cv-item" data-i18n-key="education-bachelor">
     <div class="cv-row">
       <div class="cv-main">
         <span class="cv-degree">B.E.</span>, Electrical Engineering and Automation in
