@@ -20,7 +20,7 @@ redirect_from:
 {% include_relative includes/news.md limit=5 show_button=true %}
 
 <span class='anchor' id='-publications'></span>
-# 📚 Selected Publications
+# <span data-lang="en">📚 Selected Publications</span><span data-lang="zh" hidden>📚 代表性成果</span>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE/CAA JAS 2024</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' | relative_url }}' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -102,40 +102,49 @@ redirect_from:
 Explore the full list of publications on the [Publications](/publications/) page.
  -->
 <p class="news-actions">
-  <a class="btn" href="{{ '/publications/' | relative_url }}">Show Full List</a>
+  <a class="btn" href="{{ '/publications/' | relative_url }}">
+    <span data-lang="en">Show Full List</span>
+    <span data-lang="zh" hidden>查看全部成果</span>
+  </a>
 </p>
 {% include citation-modal.html %}
 
 <span class='anchor' id='-awards'></span>
-# 🎖 Selected Awards
+# <span data-lang="en">🎖 Selected Awards</span><span data-lang="zh" hidden>🎖 精选荣誉奖励</span>
 
-- 2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**
-- 2024 · 2023 · 2020 &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**
-- 2023 &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span>** of the 7th CCSICC
-- 2022 &nbsp; **<span style="color:red">Excellent Master Dissertation Award</span>** of Liaoning Province
+- <span data-lang="en">2025 &nbsp; <strong><span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span></strong></span><span data-lang="zh" hidden>2025 &nbsp; <strong><span style="color:red">中国科协青年人才托举工程博士专项计划（首批入选）</span></strong></span>
+- <span data-lang="en">2024 · 2023 · 2020 &nbsp; <strong><span style="color:red">National Scholarships for Graduate Students</span></strong></span><span data-lang="zh" hidden>2024 · 2023 · 2020 &nbsp; <strong><span style="color:red">研究生国家奖学金</span></strong></span>
+- <span data-lang="en">2023 &nbsp; <strong><span style="color:red">Best Student Paper Nomination Award</span></strong> of the 7th CCSICC</span><span data-lang="zh" hidden>2023 &nbsp; 第七届 CCSICC <strong><span style="color:red">最佳学生论文提名奖</span></strong></span>
+- <span data-lang="en">2022 &nbsp; <strong><span style="color:red">Excellent Master Dissertation Award</span></strong> of Liaoning Province</span><span data-lang="zh" hidden>2022 &nbsp; 辽宁省<strong><span style="color:red">优秀硕士学位论文</span></strong></span>
 
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/awards/' | relative_url }}">View All Awards</a>
+  <a class="btn" href="{{ '/awards/' | relative_url }}">
+    <span data-lang="en">View All Awards</span>
+    <span data-lang="zh" hidden>查看全部荣誉</span>
+  </a>
 </p>
 
 <span class='anchor' id='-professional-services'></span>
-# ⚙️ Professional Services
+# <span data-lang="en">⚙️ Professional Services</span><span data-lang="zh" hidden>⚙️ 学术服务</span>
 
 
-- **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
+- <span data-lang="en"><strong>Young Editorial Board Member</strong>: <a href="http://www.coscipress.com/journal/JAICS">Journal of Artificial Intelligence & Control Systems</a> (2025-present)</span><span data-lang="zh" hidden><strong>青年编委</strong>：<a href="http://www.coscipress.com/journal/JAICS">《人工智能与控制系统杂志》</a>（2025 年至今）</span>
 
-- **Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
+- <span data-lang="en"><strong>Organizer</strong> for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)</span><span data-lang="zh" hidden><strong>组织者</strong>：2025 第十届亚太智能机器人系统大会（ACIRS）专题二“机器人系统的分布式优化与控制”</span>
 
-- **Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)
+- <span data-lang="en"><strong>Teaching Assistant</strong> for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)</span><span data-lang="zh" hidden><strong>《动力系统与控制》助教</strong>，香港理工大学（2025 年 9 月至今）</span>
 
-- **Reviewer** for international journals and conferences
+- <span data-lang="en"><strong>Reviewer</strong> for international journals and conferences</span><span data-lang="zh" hidden><strong>审稿人</strong>，服务于多个国际期刊与学术会议</span>
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/services/' | relative_url }}">Explore All Services</a>
+  <a class="btn" href="{{ '/services/' | relative_url }}">
+    <span data-lang="en">Explore All Services</span>
+    <span data-lang="zh" hidden>查看更多学术服务</span>
+  </a>
 </p>
 
-# 😀 Miscellaneous
+# <span data-lang="en">😀 Miscellaneous</span><span data-lang="zh" hidden>😀 实用链接</span>
 
 - [CloudConvert](https://cloudconvert.com/)
 - [iLoveIMG](https://www.iloveimg.com/)
