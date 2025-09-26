@@ -16,6 +16,7 @@ redirect_from:
 
 {% include_relative includes/edu.md %}
 
+<span class='anchor' id='-news'></span>
 {% include_relative includes/news.md limit=5 show_button=true %}
 
 <span class='anchor' id='-publications'></span>

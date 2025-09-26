@@ -162,3 +162,51 @@ html.theme-dark .publication-badge img,
 html.theme-dark .publication-cite img {
   filter: brightness(0.95) saturate(1.1);
 }
+
+html.theme-dark .cv-item {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+html.theme-dark .cv-main {
+  color: rgba(226, 232, 240, 0.92);
+}
+
+html.theme-dark .cv-date {
+  color: rgba(226, 232, 240, 0.65);
+}
+
+html.theme-dark .cv-sub {
+  color: rgba(226, 232, 240, 0.7);
+}
+
+html.theme-dark .paper-box {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+html.theme-dark .paper-box-text {
+  color: inherit;
+}
+
+html.theme-dark .badge {
+  background-color: rgba(59, 130, 246, 0.85);
+  color: #0b1120;
+}
+
+html.theme-dark .publication-actions .btn {
+  box-shadow: none;
+}
+
+html.theme-dark .author__urls {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+html.theme-dark .author__urls:before,
+html.theme-dark .author__urls:after {
+  display: none;
+}
+
+html.theme-dark .author__urls li {
+  background: transparent;
+}
