@@ -21,29 +21,9 @@
   border: 0 !important;
   border-radius: $border-radius;
   cursor: pointer;
-  transform: translateY(0);
-  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-  box-shadow: 0 0.35em 0.7em rgba($primary-color, 0.2);
 
   &:hover {
-    background-color: mix(white, $primary-color, 15%);
-    box-shadow: 0 0.5em 1em rgba($primary-color, 0.3);
-    transform: translateY(-2px);
-  }
-
-  &:focus-visible {
-    outline: none;
-    background-color: mix(white, $primary-color, 10%);
-    box-shadow:
-      0 0 0 0.2em rgba($primary-color, 0.45),
-      0 0.5em 1em rgba($primary-color, 0.35);
-    transform: translateY(-2px);
-  }
-
-  &:active {
-    background-color: mix(#000, $primary-color, 15%);
-    box-shadow: 0 0.25em 0.5em rgba($primary-color, 0.3);
-    transform: translateY(0);
+    background-color: mix(white, #000, 20%);
   }
 
   .icon {
