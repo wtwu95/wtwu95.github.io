@@ -19,7 +19,7 @@ redirect_from:
 {% include_relative includes/news.md limit=5 show_button=true %}
 
 <span class='anchor' id='-publications'></span>
-# <span data-lang="en">📚 Selected Publications</span><span data-lang="zh" hidden>📚 代表性论文</span>
+# 📚 Selected Publications
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE/CAA JAS 2024</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' | relative_url }}' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -63,85 +63,85 @@ redirect_from:
 </div>
 </div>
 </div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2022</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.gif' | relative_url }}' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+[Output-Feedback Finite-Time Safety-Critical Coordinated Control of Path-Guided Marine Surface Vehicles Based on Neurodynamic Optimization](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)
+
+**Wentao Wu**, Yibo Zhang, Weidong Zhang, Wei Xie
+
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2022-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2022-IEEE-TSMCA.mp4)
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:ufrVoPGSRksC'></span></strong>
+
+-
+-
+-
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2024</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.gif' | relative_url }}' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Constrained Safe Cooperative Maneuvering of Autonomous Surface Vehicles: A Control Barrier Function Approach](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)
+
+**Wentao Wu**, Yibo Zhang, Zhenhua Li, Jun-Guo Lu, Weidong Zhang
+
+
+[![PDF](https://img.shields.io/badge/Link-PDF-gree)](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)  [![Video](https://img.shields.io/badge/%F0%9F%A4%97%20Sim--Demo-blue?label=Video)](/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.mp4)
+<strong><span class='show_paper_citations' data='WGp4lBIAAAAJ:_kc_bZDykSQC'></span></strong>
+
+-
+-
+-
+</div>
+</div>
+ -->
+
+<!--
+Explore the full list of publications on the [Publications](/publications/) page.
+ -->
 <p class="news-actions">
-  <a class="btn" href="{{ '/publications/' | relative_url }}">
-    <span data-lang="en">Show Full List</span>
-    <span data-lang="zh" hidden>查看全部论文</span>
-  </a>
+  <a class="btn" href="{{ '/publications/' | relative_url }}">Show Full List</a>
 </p>
 {% include citation-modal.html %}
 
 <span class='anchor' id='-awards'></span>
-# <span data-lang="en">🎖 Selected Awards</span><span data-lang="zh" hidden>🎖 所获荣誉</span>
+# 🎖 Selected Awards
 
-<ul class="awards-list" data-lang="en">
-  <li>2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**</li>
-  <li>2024 · 2023 · 2020 &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**</li>
-  <li>2023 &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span>** of the 7th CCSICC</li>
-  <li>2022 &nbsp; **<span style="color:red">Excellent Master Dissertation Award</span>** of Liaoning Province</li>
-</ul>
+- 2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**
+- 2024 · 2023 · 2020 &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**
+- 2023 &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span>** of the 7th CCSICC
+- 2022 &nbsp; **<span style="color:red">Excellent Master Dissertation Award</span>** of Liaoning Province
 
-<ul class="awards-list" data-lang="zh" hidden>
-  <li>2025 年：**<span style="color:red">青年人才托举工程博士专项计划（首批）</span>**</li>
-  <li>2024 · 2023 · 2020 年：**<span style="color:red">研究生国家奖学金</span>**</li>
-  <li>2023 年：第七届 CCSICC **<span style="color:red">最佳学生论文提名奖</span>**</li>
-  <li>2022 年：**<span style="color:red">辽宁省优秀硕士学位论文奖</span>**</li>
-</ul>
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/awards/' | relative_url }}">
-    <span data-lang="en">View All Awards</span>
-    <span data-lang="zh" hidden>查看全部奖项</span>
-  </a>
+  <a class="btn" href="{{ '/awards/' | relative_url }}">View All Awards</a>
 </p>
 
 <span class='anchor' id='-professional-services'></span>
-# <span data-lang="en">⚙️ Professional Services</span><span data-lang="zh" hidden>⚙️ 学术服务</span>
+# ⚙️ Professional Services
 
-<ul class="services-list" data-lang="en">
-  <li><strong>Young Editorial Board Member</strong>: <a href="http://www.coscipress.com/journal/JAICS">Journal of Artificial Intelligence &amp; Control Systems</a> (2025-present)</li>
-  <li><strong>Organizer</strong> for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)</li>
-  <li><strong>Teaching Assistant</strong> for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)</li>
-  <li><strong>Reviewer</strong> for international journals and conferences</li>
-</ul>
 
-<ul class="services-list" data-lang="zh" hidden>
-  <li><strong>青年编委</strong>：<a href="http://www.coscipress.com/journal/JAICS">Journal of Artificial Intelligence &amp; Control Systems</a>（2025 至今）</li>
-  <li><strong>会议组织者</strong>：2025 第十届 ACIRS “机器人系统的分布式优化与控制”专题</li>
-  <li><strong>课程助教</strong>：香港理工大学《动力系统与控制》（2025 年 9 月至今）</li>
-  <li><strong>审稿人</strong>：多家国际期刊与会议</li>
-</ul>
+- **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
+
+- **Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
+
+- **Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)
+
+- **Reviewer** for international journals and conferences
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/services/' | relative_url }}">
-    <span data-lang="en">Explore All Services</span>
-    <span data-lang="zh" hidden>查看全部服务</span>
-  </a>
+  <a class="btn" href="{{ '/services/' | relative_url }}">Explore All Services</a>
 </p>
 
-# <span data-lang="en">😀 Miscellaneous</span><span data-lang="zh" hidden>😀 其他资源</span>
+# 😀 Miscellaneous
 
-<ul class="misc-list" data-lang="en">
-  <li><a href="https://cloudconvert.com/">CloudConvert</a></li>
-  <li><a href="https://www.iloveimg.com/">iLoveIMG</a></li>
-  <li><a href="https://www.wordclouds.com/">WordClouds</a></li>
-  <li><a href="https://www.color-hex.com/color-palettes/">Color Hex</a></li>
-  <li><a href="https://unsplash.com/">Unsplash</a></li>
-  <li><a href="https://pngtree.com/">Pngtree</a></li>
-  <li><a href="https://deviparikh.medium.com/how-we-write-rebuttals-dc84742fece1/">How to write rebuttals</a></li>
-  <li><a href="http://www-net.cs.umass.edu/kurose/writing/intro-style.html">How to write introduction</a></li>
-  <li><a href="https://emojipedia.org/">Emojipedia</a></li>
-</ul>
-
-<ul class="misc-list" data-lang="zh" hidden>
-  <li><a href="https://cloudconvert.com/">CloudConvert 文件转换</a></li>
-  <li><a href="https://www.iloveimg.com/">iLoveIMG 图片工具</a></li>
-  <li><a href="https://www.wordclouds.com/">WordClouds 词云生成</a></li>
-  <li><a href="https://www.color-hex.com/color-palettes/">Color Hex 配色方案</a></li>
-  <li><a href="https://unsplash.com/">Unsplash 高清图片</a></li>
-  <li><a href="https://pngtree.com/">Pngtree 素材库</a></li>
-  <li><a href="https://deviparikh.medium.com/how-we-write-rebuttals-dc84742fece1/">如何撰写答辩意见</a></li>
-  <li><a href="http://www-net.cs.umass.edu/kurose/writing/intro-style.html">如何撰写论文引言</a></li>
-  <li><a href="https://emojipedia.org/">Emojipedia 表情百科</a></li>
-</ul>
+- [CloudConvert](https://cloudconvert.com/)
+- [iLoveIMG](https://www.iloveimg.com/)
+- [WordClouds](https://www.wordclouds.com/)
+- [Color Hex](https://www.color-hex.com/color-palettes/)
+- [Unsplash](https://unsplash.com/)
+- [Pngtree](https://pngtree.com/)
+- [How to write rebuttals](https://deviparikh.medium.com/how-we-write-rebuttals-dc84742fece1/)
+- [How to write introduction](http://www-net.cs.umass.edu/kurose/writing/intro-style.html)
+- [Emojipedia](https://emojipedia.org/)
