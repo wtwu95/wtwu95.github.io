@@ -9,8 +9,8 @@
 </p>
 <p data-lang="zh" hidden>
   我目前在<a href="https://www.polyu.edu.hk/rclae/">香港理工大学低空经济研究中心</a>、
-  <a href="https://www.polyu.edu.hk/aae/">航空及民航工程学系</a>担任博士后研究员，由
-  <a href="https://scholar.google.com/citations?user=UfIb9GkAAAAJ">陈文华教授</a>指导。
+  <a href="https://www.polyu.edu.hk/aae/">航空及民航工程学系</a>担任博士后研究员，合作导师为
+  <a href="https://scholar.google.com/citations?user=UfIb9GkAAAAJ">陈文华教授</a>。
 </p>
 
 <p data-lang="en">
@@ -23,7 +23,7 @@
 </p>
 <p data-lang="zh" hidden>
   我是<a href="http://www.coscipress.com/journal/JAICS">《人工智能与控制系统期刊》</a>青年编委，同时担任 2025 年第十届 ACIRS 第二分会
-  “机器人系统的分布式优化与控制”组织者。2025 年入选中国科协<strong>“青年人才托举工程博士专项计划”</strong>，并于 2020、2023、2024 年获得
+  “机器人系统的分布式优化与控制”组织者。2025 年入选<strong>首届中国科协青年人才托举工程博士专项计划</strong>，并于 2020、2023、2024 年获得
   <strong>研究生国家奖学金</strong>，硕士论文荣获<strong>辽宁省优秀硕士学位论文</strong>。
 </p>
 
@@ -36,7 +36,7 @@
   in top journals and international conferences such as IEEE T-CYB, IEEE/CAA JAS, IEEE T-ITS, IEEE T-FS, and IEEE CDC.
 </p>
 <p data-lang="zh" hidden>
-  我的研究兴趣包括分布式控制、安全关键控制、强化学习、博弈优化及其在自主车辆和多智能体系统中的应用。我已在 IEEE T-CYB、IEEE/CAA JAS、
+  我的研究兴趣包括分布式控制、安全关键控制、强化学习、博弈优化及其在自主车辆和多智能体系统中的应用。目前，已在 IEEE T-CYB、IEEE/CAA JAS、
   IEEE T-ITS、IEEE T-FS、IEEE CDC 等国际顶级期刊与会议发表 30 余篇论文
   <a href='https://scholar.google.com/citations?user=e2ban1wAAAAJ'>
     <img src="https://img.shields.io/endpoint?logo=Google%20Scholar&amp;url=https://raw.githubusercontent.com/wtwu95/wtwu95.github.io/google-scholar-stats/gs_data_shieldsio.json&amp;labelColor=f6f6f6&amp;color=9cf&amp;style=flat&amp;label=citations" alt="Google Scholar 引用数">
@@ -49,7 +49,7 @@
   <a href="mailto:wen-tao.wu@polyu.edu.hk">wen-tao.wu@polyu.edu.hk</a>.
 </p>
 <p data-lang="zh" hidden>
-  欢迎与我交流科研合作事宜，可通过邮箱
+  随时欢迎学术交流与合作，可通过邮箱
   <a href="mailto:wtwu95@gmail.com">wtwu95@gmail.com</a> 或
-  <a href="mailto:wen-tao.wu@polyu.edu.hk">wen-tao.wu@polyu.edu.hk</a> 与我联系。
+  <a href="mailto:wen-tao.wu@polyu.edu.hk">wen-tao.wu@polyu.edu.hk</a> 联系。
 </p>
