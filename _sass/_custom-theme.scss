@@ -126,21 +126,32 @@ html.theme-dark .page__footer a:hover {
 }
 
 html.theme-dark .btn {
-  color: #0f172a !important;
-  background-color: #bfdbfe;
+  color: #f9fafb !important;
+  background-color: rgba(#111827, 0.7);
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(#000, 0.35);
 }
 
-html.theme-dark .btn:hover {
-  background-color: #93c5fd;
+html.theme-dark .btn:hover,
+html.theme-dark .btn:focus-visible {
+  background-color: rgba(#1f2937, 0.92);
+  border-color: rgba(#60a5fa, 0.45);
+  color: #f9fafb !important;
+  box-shadow: 0 10px 24px rgba(#1e3a8a, 0.35);
+}
+
+html.theme-dark .btn:focus-visible {
+  outline: none;
+}
+
+html.theme-dark .btn:focus:not(:focus-visible) {
+  box-shadow: 0 6px 18px rgba(#000, 0.35);
+  border-color: transparent;
 }
 
 html.theme-dark table,
 html.theme-dark .page__content .news-list {
   border-color: rgba(255, 255, 255, 0.12);
-}
-
-html.theme-dark .news-actions .btn {
-  color: #0f172a !important;
 }
 
 html.theme-dark .publication-controls input,
