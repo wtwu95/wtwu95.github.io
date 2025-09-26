@@ -31,6 +31,7 @@
 - [Circuits, Systems, and Signal Processing](https://link.springer.com/journal/34)
 - [International Journal of Robust and Nonlinear Control](https://onlinelibrary.wiley.com/journal/10991239)
 - [Nonlinear Dynamics](https://link.springer.com/journal/11071)
+- [Unmanned Systems](https://www.editorialmanager.com/us/default2.aspx)
 
 ## Conference Reviewer
 
