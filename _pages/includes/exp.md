@@ -9,7 +9,7 @@
         <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University (PolyU)</a>, Hong Kong, China
       </div>
       <div class="cv-main" data-lang="zh" hidden>
-        <span class="cv-role">博士后研究员</span>，<a href="https://www.polyu.edu.hk/">香港理工大学（PolyU）</a>
+        <span class="cv-role">博士后研究员</span>，<a href="https://www.polyu.edu.hk/">香港理工大学（PolyU）</a>，
         <a href="https://www.polyu.edu.hk/aae/">航空及民航工程学系（AAE）</a>、
         <a href="https://www.polyu.edu.hk/rclae/">低空经济研究中心（RCLAE）</a>，中国香港
       </div>
@@ -31,7 +31,7 @@
         <a href="https://www.uvic.ca/">University of Victoria (UVic)</a>, Victoria, Canada
       </div>
       <div class="cv-main" data-lang="zh" hidden>
-        <span class="cv-role">访问学者</span>，维多利亚大学（<a href="https://www.uvic.ca/">UVic</a>）
+        <span class="cv-role">访问学者</span>，<a href="https://www.uvic.ca/">维多利亚大学（UVic）</a>，
         <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">机械工程系（ME）</a>，加拿大维多利亚
       </div>
       <div class="cv-date">01/2024–11/2024</div>
