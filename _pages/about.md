@@ -20,7 +20,6 @@ redirect_from:
 
 <span class='anchor' id='-publications'></span>
 # 📚 Selected Publications
-{: data-i18n-key="heading-publications" }
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE/CAA JAS 2024</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' | relative_url }}' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -102,43 +101,40 @@ redirect_from:
 Explore the full list of publications on the [Publications](/publications/) page.
  -->
 <p class="news-actions">
-  <a class="btn" href="{{ '/publications/' | relative_url }}" data-i18n-key="publications-show-all">Show Full List</a>
+  <a class="btn" href="{{ '/publications/' | relative_url }}">Show Full List</a>
 </p>
 {% include citation-modal.html %}
 
 <span class='anchor' id='-awards'></span>
 # 🎖 Selected Awards
-{: data-i18n-key="heading-awards" }
 
-<ul class="awards-list">
-  <li data-i18n-key="award-2025">2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**</li>
-  <li data-i18n-key="award-2024">2024 · 2023 · 2020 &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**</li>
-  <li data-i18n-key="award-2023-best-paper">2023 &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span>** of the 7th CCSICC</li>
-  <li data-i18n-key="award-2022">2022 &nbsp; **<span style="color:red">Excellent Master Dissertation Award</span>** of Liaoning Province</li>
-</ul>
+- 2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**
+- 2024 · 2023 · 2020 &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**
+- 2023 &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span>** of the 7th CCSICC
+- 2022 &nbsp; **<span style="color:red">Excellent Master Dissertation Award</span>** of Liaoning Province
 
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/awards/' | relative_url }}" data-i18n-key="awards-view-all">View All Awards</a>
+  <a class="btn" href="{{ '/awards/' | relative_url }}">View All Awards</a>
 </p>
 
 <span class='anchor' id='-professional-services'></span>
 # ⚙️ Professional Services
-{: data-i18n-key="heading-services" }
 
-<ul class="services-list">
-  <li data-i18n-key="service-editor">**Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)</li>
-  <li data-i18n-key="service-organizer">**Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)</li>
-  <li data-i18n-key="service-ta">**Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)</li>
-  <li data-i18n-key="service-reviewer">**Reviewer** for international journals and conferences</li>
-</ul>
+
+- **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
+
+- **Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
+
+- **Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)
+
+- **Reviewer** for international journals and conferences
 
 <p class="news-actions">
-  <a class="btn" href="{{ '/services/' | relative_url }}" data-i18n-key="services-view-all">Explore All Services</a>
+  <a class="btn" href="{{ '/services/' | relative_url }}">Explore All Services</a>
 </p>
 
 # 😀 Miscellaneous
-{: data-i18n-key="heading-misc" }
 
 - [CloudConvert](https://cloudconvert.com/)
 - [iLoveIMG](https://www.iloveimg.com/)

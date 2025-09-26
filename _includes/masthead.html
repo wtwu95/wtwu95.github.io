@@ -5,24 +5,14 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
-            <a href="{{ '/' | relative_url }}#about-me" target="_self" data-i18n-key="nav-home">Homepage</a>
+            <a href="{{ '/' | relative_url }}#about-me" target="_self">Homepage</a>
           </li>
           {% for link in site.data.navigation.main %}
-            {% assign translation_key = link.title | slugify: 'ascii' %}
             <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}" target="_self" data-i18n-key="nav-{{ translation_key }}">{{ link.title }}</a>
+              <a href="{{ link.url | relative_url }}" target="_self">{{ link.title }}</a>
             </li>
           {% endfor %}
         </ul>
-        <div class="masthead__toggles">
-          <button class="masthead__toggle" id="language-toggle" type="button" aria-label="Toggle language">
-            <span class="masthead__toggle-icon" aria-hidden="true">🌐</span>
-            <span class="masthead__toggle-label" id="language-toggle-label">中文</span>
-          </button>
-          <button class="masthead__toggle" id="theme-toggle" type="button" aria-label="Toggle color mode">
-            <span class="masthead__toggle-icon" aria-hidden="true">🌓</span>
-          </button>
-        </div>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
