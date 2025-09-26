@@ -1,7 +1,6 @@
 # 📖 Experiences
-{: data-i18n-key="heading-experiences" }
 <ul class="cv-list">
-  <li class="cv-item" data-i18n-key="experience-postdoc">
+  <li class="cv-item">
     <div class="cv-row">
       <div class="cv-main">
         <span class="cv-role">Postdoctoral Fellow</span> in
@@ -14,7 +13,7 @@
     <div class="cv-sub">Supervisor: Chair Professor <a href="https://scholar.google.com/citations?user=UfIb9GkAAAAJ"><b>Wen-Hua Chen (陈文华)</b></a> (Fellow of IEEE, IMechE, IET, HEA)</div>
   </li>
 
-  <li class="cv-item" data-i18n-key="experience-visiting">
+  <li class="cv-item">
     <div class="cv-row">
       <div class="cv-main">
         <span class="cv-role">Visiting Scholar</span> in
