@@ -9,9 +9,9 @@
         <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University (PolyU)</a>, Hong Kong, China
       </div>
       <div class="cv-main" data-lang="zh" hidden>
-        <span class="cv-role">博士后研究员</span>，
-        <a href="https://www.polyu.edu.hk/rclae/">香港理工大学低空经济研究中心（RCLAE）</a>、
-        <a href="https://www.polyu.edu.hk/aae/">航空及民航工程学系（AAE）</a>，<a href="https://www.polyu.edu.hk/">香港理工大学（PolyU）</a>，中国香港
+        <span class="cv-role">博士后研究员</span>，<a href="https://www.polyu.edu.hk/">香港理工大学（PolyU）</a>
+        <a href="https://www.polyu.edu.hk/aae/">航空及民航工程学系（AAE）</a>、
+        <a href="https://www.polyu.edu.hk/rclae/">低空经济研究中心（RCLAE）</a>，中国香港
       </div>
       <div class="cv-date">04/2025–Present</div>
     </div>
@@ -31,8 +31,8 @@
         <a href="https://www.uvic.ca/">University of Victoria (UVic)</a>, Victoria, Canada
       </div>
       <div class="cv-main" data-lang="zh" hidden>
-        <span class="cv-role">访问学者</span>，于加拿大维多利亚大学（<a href="https://www.uvic.ca/">UVic</a>）
-        <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">机械工程系（ME）</a>进行合作研究，地点位于加拿大维多利亚
+        <span class="cv-role">访问学者</span>，维多利亚大学（<a href="https://www.uvic.ca/">UVic</a>）
+        <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">机械工程系（ME）</a>，加拿大维多利亚
       </div>
       <div class="cv-date">01/2024–11/2024</div>
     </div>
