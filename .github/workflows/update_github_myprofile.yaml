@@ -6,19 +6,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Reqs
-      run: |
-        sudo apt-get install python3-setuptools
-    - name: Run
-      run: |
-        cd ./github_myprofile_updater
-        python3 update.py
-        git init
-        git config --local user.name "${GITHUB_ACTOR}"
-        git config --local user.email "wtwu95@gmail.com"
-        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GHRS_GITHUB_API_TOKEN }}@github.com/wtwu95/wtwu95.github.io.git"
-        git add README.md
-        git add images
-        git commit -m "update my description automatically"
-        git push "${remote_repo}" HEAD:main --force
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run updater
+        run: python github_myprofile_updater/update.py
+
+      - name: Commit and push if changes exist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GHRS_GITHUB_API_TOKEN }}
+        run: |
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "wtwu95@gmail.com"
+          git add README.md images
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "update my description automatically"
+          git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main

@@ -1,11 +1,18 @@
-if __name__ == '__main__':
+from pathlib import Path
+
+
+def main() -> None:
+    repo_root = Path(__file__).resolve().parent.parent
+    base_dir = repo_root / '_pages' / 'includes'
+
     _header = '## Hi there 👋'
-    base_dir = '../_pages/includes/'
-    _intro = open(f'{base_dir}/intro.md').read().strip()
-    _homepage = open(f'{base_dir}/homepage.md').read().strip()
-    _pub = open(f'{base_dir}/pub.md').read().strip()
-    _news = open(f'{base_dir}/news.md').read().strip()
-    with open('README.md', 'w') as f:
+    _intro = (base_dir / 'intro.md').read_text().strip()
+    _homepage = (base_dir / 'homepage.md').read_text().strip()
+    _pub = (base_dir / 'pub.md').read_text().strip()
+    _news = (base_dir / 'news.md').read_text().strip()
+
+    readme_path = repo_root / 'README.md'
+    with readme_path.open('w') as f:
         f.write(_header)
         f.write('\n\n')
         f.write(_intro)
@@ -15,3 +22,7 @@ if __name__ == '__main__':
         f.write(_news)
         f.write('\n\n##')
         f.write(_pub)
+
+
+if __name__ == '__main__':
+    main()
