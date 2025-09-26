@@ -84,40 +84,8 @@
 }
 
 .toggle-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.35rem 0.75rem;
-  font-family: $sans-serif;
-  font-size: $type-size-6;
-  font-weight: 600;
-  line-height: 1.2;
-  color: inherit;
-  background-color: rgba($background-color, 0.65);
-  border: 1px solid transparent;
-  border-radius: 999px;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(#000, 0.08);
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-
-  &:hover,
-  &:focus-visible {
-    background-color: mix($background-color, $primary-color, 88%);
-    border-color: rgba($primary-color, 0.35);
-    color: mix($text-color, $primary-color, 85%);
-    outline: none;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 14px rgba($primary-color, 0.18);
-  }
-
-  &:focus:not(:focus-visible) {
-    box-shadow: 0 2px 8px rgba(#000, 0.08);
-    border-color: transparent;
-  }
-
-  &:focus-visible {
-    box-shadow: 0 0 0 3px rgba($primary-color, 0.25);
-  }
+  @include pill-button-base;
+  margin-bottom: 0;
 
   &__icon {
     display: inline-flex;
@@ -136,36 +104,13 @@
   }
 }
 
-html.theme-dark {
-  .toggle-button {
-    background-color: rgba(#111827, 0.7);
-    border-color: transparent;
-    color: #f9fafb;
-    box-shadow: 0 6px 18px rgba(#000, 0.35);
-
-    &:hover,
-    &:focus-visible {
-      background-color: rgba(#1f2937, 0.92);
-      border-color: rgba(#60a5fa, 0.45);
-      color: #f9fafb;
-      transform: translateY(-1px);
-      box-shadow: 0 10px 24px rgba(#1e3a8a, 0.35);
-    }
-
-    &:focus:not(:focus-visible) {
-      box-shadow: 0 6px 18px rgba(#000, 0.35);
-      border-color: transparent;
-    }
+.toggle-button--theme {
+  .toggle-button__icon--sun {
+    display: none;
   }
 
-  .toggle-button--theme {
-    .toggle-button__icon--sun {
-      display: none;
-    }
-
-    .toggle-button__icon--moon {
-      display: inline-flex;
-    }
+  .toggle-button__icon--moon {
+    display: inline-flex;
   }
 }
 

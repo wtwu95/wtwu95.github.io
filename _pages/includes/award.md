@@ -2,24 +2,24 @@
 
 <ul class="award-list">
   <li>
-    <span data-lang="en">2025 &nbsp; **<span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span>**</span>
-    <span data-lang="zh" hidden>2025 &nbsp; **<span style="color:red">中国科协青年人才托举工程博士专项计划（首批入选）</span>**</span>
+    <span data-lang="en">2025 &nbsp; <strong><span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span></strong></span>
+    <span data-lang="zh" hidden>2025 &nbsp; <strong><span style="color:red">中国科协青年人才托举工程博士专项计划（首批入选）</span></strong></span>
   </li>
   <li>
     <span data-lang="en">2025 &nbsp; Outstanding Graduate of Shanghai</span>
     <span data-lang="zh" hidden>2025 &nbsp; 上海市优秀毕业生</span>
   </li>
   <li>
-    <span data-lang="en">2024 · 2023 · 2020 &nbsp; **<span style="color:red">National Scholarships for Graduate Students</span>**</span>
-    <span data-lang="zh" hidden>2024 · 2023 · 2020 &nbsp; **<span style="color:red">研究生国家奖学金</span>**</span>
+    <span data-lang="en">2024 · 2023 · 2020 &nbsp; <strong><span style="color:red">National Scholarships for Graduate Students</span></strong></span>
+    <span data-lang="zh" hidden>2024 · 2023 · 2020 &nbsp; <strong><span style="color:red">研究生国家奖学金</span></strong></span>
   </li>
   <li>
     <span data-lang="en">2023 &nbsp; State-Sponsored Postgraduate Program for National Construction of High-Level Universities</span>
     <span data-lang="zh" hidden>2023 &nbsp; 国家建设高水平大学公派研究生项目</span>
   </li>
   <li>
-    <span data-lang="en">2023 &nbsp; **<span style="color:red">Best Student Paper Nomination Award</span>** of the 7th CCSICC</span>
-    <span data-lang="zh" hidden>2023 &nbsp; 第七届 CCSICC **<span style="color:red">最佳学生论文提名奖</span>**</span>
+    <span data-lang="en">2023 &nbsp; <strong><span style="color:red">Best Student Paper Nomination Award</span></strong> of the 7th CCSICC</span>
+    <span data-lang="zh" hidden>2023 &nbsp; 第七届 CCSICC <strong><span style="color:red">最佳学生论文提名奖</span></strong></span>
   </li>
   <li>
     <span data-lang="en">2023 &nbsp; First-Level Scholarship for Doctoral Students</span>
@@ -34,8 +34,8 @@
     <span data-lang="zh" hidden>2023 &nbsp; 空军首届航空创新挑战赛全国三等奖</span>
   </li>
   <li>
-    <span data-lang="en">2022 &nbsp; **<span style="color:red">Excellent Master Dissertation Award</span>** of Liaoning Province</span>
-    <span data-lang="zh" hidden>2022 &nbsp; 辽宁省**<span style="color:red">优秀硕士学位论文</span>**</span>
+    <span data-lang="en">2022 &nbsp; <strong><span style="color:red">Excellent Master Dissertation Award</span></strong> of Liaoning Province</span>
+    <span data-lang="zh" hidden>2022 &nbsp; 辽宁省<strong><span style="color:red">优秀硕士学位论文</span></strong></span>
   </li>
   <li>
     <span data-lang="en">2022 &nbsp; Top 10 High-Impact Papers of Chinese Journal of Ship Research — selected from articles published in 2019–2021</span>
