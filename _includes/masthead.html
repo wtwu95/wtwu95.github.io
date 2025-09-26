@@ -5,14 +5,30 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
-            <a href="{{ '/' | relative_url }}#about-me" target="_self">Homepage</a>
+            <a href="{{ '/' | relative_url }}#about-me" target="_self">
+              <span data-lang="en">Homepage</span>
+              <span data-lang="zh" hidden>主页</span>
+            </a>
           </li>
           {% for link in site.data.navigation.main %}
+            {% assign zh_label = link.title_zh | default: link.title %}
             <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}" target="_self">{{ link.title }}</a>
+              <a href="{{ link.url | relative_url }}" target="_self">
+                <span data-lang="en">{{ link.title }}</span>
+                <span data-lang="zh" hidden>{{ zh_label }}</span>
+              </a>
             </li>
           {% endfor %}
         </ul>
+        <div class="masthead__toggles">
+          <button class="masthead__toggle" id="language-toggle" type="button" aria-label="Switch to Chinese" title="Switch to Chinese" aria-pressed="false">
+            <span class="masthead__toggle-icon" aria-hidden="true">🌐</span>
+            <span class="masthead__toggle-label" id="language-toggle-label">中文</span>
+          </button>
+          <button class="masthead__toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode / 切换到深色模式" title="Switch to dark mode / 切换到深色模式" aria-pressed="false">
+            <span class="masthead__toggle-icon" id="theme-toggle-icon" aria-hidden="true">🌙</span>
+          </button>
+        </div>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
