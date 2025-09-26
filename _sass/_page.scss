@@ -153,6 +153,16 @@
     }
   }
 
+  .award-list {
+    margin: 1rem 0;
+    padding-left: 1.25rem;
+    list-style-position: outside;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
   /* blockquote citations */
   blockquote + .small {
     margin-top: -1.5em;

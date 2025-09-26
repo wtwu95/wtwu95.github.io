@@ -5,16 +5,45 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
-            <a href="{{ '/' | relative_url }}#about-me" target="_self">Homepage</a>
+            <a href="{{ '/' | relative_url }}#about-me" target="_self">
+              <span data-lang="en">Homepage</span>
+              <span data-lang="zh" hidden>首页</span>
+            </a>
           </li>
           {% for link in site.data.navigation.main %}
             <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}" target="_self">{{ link.title }}</a>
+              <a href="{{ link.url | relative_url }}" target="_self">
+                <span data-lang="en">{{ link.title_en }}</span>
+                <span data-lang="zh" hidden>{{ link.title_zh }}</span>
+              </a>
             </li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+    </div>
+    <div class="masthead__actions" role="presentation">
+      <button
+        type="button"
+        class="toggle-button toggle-button--language"
+        data-language-toggle
+        aria-label="Switch to Chinese"
+        aria-pressed="false"
+      >
+        <span class="toggle-button__icon" aria-hidden="true">🌐</span>
+        <span class="toggle-button__label" data-language-label>EN</span>
+      </button>
+      <button
+        type="button"
+        class="toggle-button toggle-button--theme"
+        data-theme-toggle
+        aria-label="Switch to dark mode"
+        aria-pressed="false"
+      >
+        <span class="toggle-button__icon toggle-button__icon--sun" aria-hidden="true">☀️</span>
+        <span class="toggle-button__icon toggle-button__icon--moon" aria-hidden="true">🌙</span>
+        <span class="toggle-button__label" data-theme-label>Light</span>
+      </button>
     </div>
   </div>
 </div>

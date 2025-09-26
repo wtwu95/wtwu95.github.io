@@ -1,18 +1,18 @@
-# ⚙️ Professional Services
+# <span data-lang="en">⚙️ Professional Services</span><span data-lang="zh" hidden>⚙️ 学术服务</span>
 
-## Journal Editorial Boards
+## <span data-lang="en">Journal Editorial Boards</span><span data-lang="zh" hidden>期刊编委</span>
 
-- **Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)
+- <span data-lang="en">**Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)</span><span data-lang="zh" hidden>**青年编委**： [Journal of Artificial Intelligence &amp; Control Systems](http://www.coscipress.com/journal/JAICS)（2025 至今）</span>
 
-## Conference Program Committee and Editorial
+## <span data-lang="en">Conference Program Committee and Editorial</span><span data-lang="zh" hidden>会议组织与编委</span>
 
-- **Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)
+- <span data-lang="en">**Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)</span><span data-lang="zh" hidden>**组织者**：2025 第十届亚太智能机器人系统大会（ACIRS）专题二“机器人系统的分布式优化与控制”</span>
 
-## Teaching
+## <span data-lang="en">Teaching</span><span data-lang="zh" hidden>教学工作</span>
 
-- **Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)
+- <span data-lang="en">**Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)</span><span data-lang="zh" hidden>**《动力系统与控制》助教**，香港理工大学（2025 年 9 月至今）</span>
 
-## Journal Reviewer
+## <span data-lang="en">Journal Reviewer</span><span data-lang="zh" hidden>期刊审稿</span>
 
 - [IEEE Transactions on Automatic Control](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9)
 - [IEEE Control Systems Letters](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7782673)
@@ -33,7 +33,7 @@
 - [Nonlinear Dynamics](https://link.springer.com/journal/11071)
 - [Unmanned Systems](https://www.editorialmanager.com/us/default2.aspx)
 
-## Conference Reviewer
+## <span data-lang="en">Conference Reviewer</span><span data-lang="zh" hidden>会议审稿</span>
 
 - IEEE Conference on Decision and Control (CDC)
 - American Control Conference (ACC)

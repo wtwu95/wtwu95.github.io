@@ -16,6 +16,11 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
     padding: .5em;
     font-family: $sans-serif-narrow;
 
@@ -24,6 +29,7 @@
     }
 
     nav {
+      width: 100%;
       z-index: 10;
     }
 
@@ -34,12 +40,28 @@
 }
 
 .masthead__menu {
+  flex: 1 1 auto;
+  min-width: 0;
 
   ul {
     margin: 0;
     padding: 0;
     clear: both;
     list-style-type: none;
+  }
+}
+
+.masthead__actions {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .masthead__actions {
+    width: 100%;
+    justify-content: flex-end;
   }
 }
 
@@ -59,6 +81,86 @@
     padding-right: 2em;
     font-weight: 700;
   }
+}
+
+.toggle-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  font-weight: 600;
+  line-height: 1.2;
+  color: inherit;
+  background-color: rgba($background-color, 0.85);
+  border: 1px solid $border-color;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background-color: mix($background-color, $primary-color, 90%);
+    border-color: mix($border-color, $primary-color, 45%);
+    color: mix($text-color, $primary-color, 85%);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba($primary-color, 0.15);
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px rgba($primary-color, 0.2);
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  &__icon--moon {
+    display: none;
+  }
+
+  &__label {
+    letter-spacing: 0.02em;
+  }
+}
+
+html.theme-dark {
+  .toggle-button {
+    background-color: rgba(#111827, 0.85);
+    border-color: rgba(#ffffff, 0.12);
+    color: #f9fafb;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(#1f2937, 0.95);
+      border-color: rgba(#60a5fa, 0.5);
+      color: #f9fafb;
+      box-shadow: 0 0 0 2px rgba(#60a5fa, 0.35);
+    }
+  }
+
+  .toggle-button--theme {
+    .toggle-button__icon--sun {
+      display: none;
+    }
+
+    .toggle-button__icon--moon {
+      display: inline-flex;
+    }
+  }
+}
+
+html:not(.theme-dark) .toggle-button--theme .toggle-button__icon--moon {
+  display: none;
+}
+
+html.theme-dark .toggle-button--theme .toggle-button__icon--sun {
+  display: none;
 }
 
 
