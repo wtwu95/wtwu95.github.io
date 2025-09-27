@@ -147,92 +147,10 @@
     font-size: 1.25rem;
   }
 
-  &__icon--language {
-    width: auto;
-    height: auto;
-    min-width: 0;
-    padding: 0 0.25rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-  }
-
   &__icon--sun,
   &__icon--language-en {
     display: none;
   }
-}
-
-.toggle-button--language {
-  --language-toggle-main-bg: #2d2d2d;
-  --language-toggle-secondary-bg: #4a4a4a;
-  --language-toggle-text: #f9fafb;
-  --language-toggle-shadow: 0 10px 24px rgba(15, 23, 42, 0.28);
-  margin: 0;
-  padding: 0;
-  width: 3.5rem;
-  height: 2.15rem;
-  border-radius: 0.75rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  color: var(--language-toggle-text);
-  text-transform: none;
-  z-index: 0;
-
-  &::after {
-    content: none;
-  }
-
-  &::before,
-  &::after {
-    position: absolute;
-    inset: 0;
-    border-radius: 0.75rem;
-    transition: transform 0.25s ease, background-color 0.25s ease,
-      box-shadow 0.25s ease;
-  }
-
-  &::before {
-    content: "";
-    z-index: -1;
-    background-color: var(--language-toggle-main-bg);
-    box-shadow: var(--language-toggle-shadow);
-  }
-
-  &::after {
-    content: "";
-    z-index: -2;
-    background-color: var(--language-toggle-secondary-bg);
-    transform: translate(0.45rem, -0.45rem);
-    opacity: 0.95;
-  }
-
-  &:hover::before,
-  &:focus-visible::before {
-    box-shadow:
-      var(--language-toggle-shadow),
-      0 0 0 3px rgba(59, 130, 246, 0.35);
-  }
-
-  &:hover::after {
-    transform: translate(0.55rem, -0.55rem);
-  }
-
-  &:active::before {
-    transform: translateY(1px);
-  }
-
-  &:focus-visible {
-    outline: none;
-  }
-}
-
-html.theme-dark .toggle-button--language {
-  --language-toggle-main-bg: #1f2933;
-  --language-toggle-secondary-bg: #374151;
-  --language-toggle-text: #f8fafc;
-  --language-toggle-shadow: 0 12px 28px rgba(15, 23, 42, 0.5);
 }
 
 .masthead__actions .toggle-button {
@@ -272,20 +190,6 @@ html.theme-dark .toggle-button--theme .toggle-button__icon--sun {
 
 html.theme-dark .toggle-button--theme .toggle-button__icon--moon {
   display: none;
-}
-
-html[data-language='zh'] .toggle-button--language {
-  --language-toggle-main-bg: #f5f5f5;
-  --language-toggle-secondary-bg: #dcdcdc;
-  --language-toggle-text: #1f2933;
-  --language-toggle-shadow: 0 10px 22px rgba(15, 23, 42, 0.18);
-}
-
-html.theme-dark[data-language='zh'] .toggle-button--language {
-  --language-toggle-main-bg: #f9fafb;
-  --language-toggle-secondary-bg: #d1d5db;
-  --language-toggle-text: #111827;
-  --language-toggle-shadow: 0 12px 28px rgba(15, 23, 42, 0.35);
 }
 
 html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-zh {
