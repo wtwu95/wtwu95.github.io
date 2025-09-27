@@ -61,6 +61,16 @@
       z-index: 10;
     }
 
+    @media (min-width: 641px) {
+      flex-wrap: nowrap;
+
+      nav {
+        width: auto;
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+    }
+
     a {
       text-decoration: none;
     }
@@ -85,6 +95,13 @@
   align-items: center;
   gap: 1.25rem;
   color: $masthead-link-color;
+  margin-left: auto;
+  white-space: nowrap;
+
+  @media (min-width: 641px) {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
 }
 
 .masthead__menu-home-item {
@@ -296,6 +313,7 @@
 
 .masthead__actions .toggle-button {
   margin: 0;
+  flex-shrink: 0;
 }
 
 .toggle-icon {
