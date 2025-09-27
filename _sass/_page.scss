@@ -132,24 +132,43 @@
 
     .btn {
       @include cta-button;
+      background: var(--theme-toggle-sun-active-bg);
+      color: var(--theme-toggle-sun-icon-color) !important;
+      border-color: transparent !important;
+      box-shadow: var(--theme-toggle-shadow-strong);
+      transform: translateY(0);
+      transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+        box-shadow 0.35s ease, transform 0.2s ease;
     }
 
     .btn:hover {
-      background-color: $cta-button-background-hover;
-      border-color: $cta-button-background-hover !important;
+      background: var(--theme-toggle-inactive-bg);
+      color: var(--theme-toggle-icon-inactive) !important;
+      border-color: transparent !important;
+      box-shadow: var(--theme-toggle-shadow-soft);
+      transform: translateY(-1px);
       text-decoration: none;
     }
 
     .btn:active {
-      background-color: $cta-button-background-active;
-      border-color: $cta-button-background-active !important;
+      background: var(--theme-toggle-inactive-bg);
+      color: var(--theme-toggle-icon-inactive) !important;
+      border-color: transparent !important;
+      box-shadow: var(--theme-toggle-shadow-soft);
+      transform: translateY(0);
     }
 
     .btn:hover,
     .btn:focus-visible {
-      border-color: var(--publication-accent) !important;
-      box-shadow: 0 0 0 3px var(--publication-accent-soft);
       outline: none;
+    }
+
+    .btn:focus-visible {
+      box-shadow: 0 0 0 3px rgba($primary-color, 0.25);
+    }
+
+    .btn:focus:not(:focus-visible) {
+      box-shadow: var(--theme-toggle-shadow-soft);
     }
   }
 
