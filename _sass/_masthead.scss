@@ -142,78 +142,20 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.15rem;
+    font-weight: 600;
   }
 
-  &__icon svg {
-    width: 100%;
-    height: auto;
-  }
-
-  &__icon--moon,
-  &__icon--language-zh {
+  &__icon--sun,
+  &__icon--language-en {
     display: none;
   }
 }
 
 .masthead__actions .toggle-button {
   margin: 0;
-}
-
-.language-icon,
-.theme-icon {
-  width: 100%;
-  height: auto;
-}
-
-.language-icon__card--back,
-.theme-icon__card--back {
-  fill: var(--masthead-toggle-icon-primary);
-}
-
-.language-icon__card--front,
-.theme-icon__card--front {
-  fill: var(--masthead-toggle-icon-secondary);
-  stroke: var(--masthead-toggle-icon-primary);
-  stroke-width: 1.5;
-}
-
-.language-icon__card--front-zh,
-.theme-icon__card--front-dark {
-  fill: var(--masthead-toggle-icon-primary);
-  stroke: none;
-}
-
-.language-icon__glyph,
-.theme-icon__glyph {
-  font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
-  font-weight: 600;
-}
-
-.language-icon__glyph--primary {
-  fill: var(--masthead-toggle-icon-primary);
-  font-size: 11px;
-  letter-spacing: 0.02em;
-}
-
-.language-icon__glyph--inverted {
-  fill: var(--masthead-toggle-icon-secondary);
-  font-size: 15px;
-}
-
-.theme-icon__glyph--sun-core {
-  fill: var(--masthead-toggle-icon-primary);
-}
-
-.theme-icon__glyph--sun-rays line {
-  stroke: var(--masthead-toggle-icon-primary);
-  stroke-width: 1.6;
-  stroke-linecap: round;
-}
-
-.theme-icon__glyph--moon {
-  fill: var(--masthead-toggle-icon-secondary);
 }
 
 html.theme-dark {
@@ -238,14 +180,20 @@ html.theme-dark {
   }
 }
 
-html:not(.theme-dark) .toggle-button--theme .toggle-button__icon--moon,
-html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-en {
+html.theme-dark .toggle-button--theme .toggle-button__icon--sun {
+  display: inline-flex;
+}
+
+html.theme-dark .toggle-button--theme .toggle-button__icon--moon {
   display: none;
 }
 
-html.theme-dark .toggle-button--theme .toggle-button__icon--sun,
-html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-zh {
+html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-en {
   display: inline-flex;
+}
+
+html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-zh {
+  display: none;
 }
 
 @media (max-width: 640px) {
