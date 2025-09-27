@@ -202,7 +202,7 @@ html[data-language='zh'] .toggle-button--language .toggle-button__icon--language
 
 @media (max-width: 640px) {
   .masthead__inner-wrap {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .masthead__menu {
@@ -210,19 +210,20 @@ html[data-language='zh'] .toggle-button--language .toggle-button__icon--language
   }
 
   .masthead__actions {
-    display: flex;
-    flex: 1 1 100%;
-    justify-content: flex-end;
-    gap: 0.75rem;
-    padding-top: 0.25rem;
-  }
-
-  .masthead__actions .toggle-button {
-    margin: 0;
+    display: none;
   }
 
   .masthead__menu-item--toggle {
-    display: none;
+    display: table-cell;
+    text-align: right;
+  }
+
+  .masthead__menu-item--toggle .toggle-button {
+    margin: 0;
+  }
+
+  .masthead__menu-item--toggle + .masthead__menu-item--toggle {
+    padding-left: 0.25rem;
   }
 }
 
