@@ -52,21 +52,14 @@
               </a>
             </li>
           {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden">
-          <li
-            class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-language"
-            data-static
-          >
+          <li class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-language">
             {{ language_toggle | strip }}
           </li>
-          <li
-            class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-theme"
-            data-static
-          >
+          <li class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-theme">
             {{ theme_toggle | strip }}
           </li>
         </ul>
+        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
     <div class="masthead__actions" role="presentation">

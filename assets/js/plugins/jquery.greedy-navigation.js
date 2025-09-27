@@ -13,44 +13,49 @@ var $hlinks = $('#site-nav .hidden-links');
 var breaks = [];
 
 function updateNav() {
-  var isMobile = window.matchMedia ? window.matchMedia('(max-width: 640px)').matches : window.innerWidth <= 640;
+
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
-  var $movableItems = $vlinks.children(':not([data-static])');
-  var $hiddenMovableItems = $hlinks.children(':not([data-static])');
-  var hasStaticHiddenItems = $hlinks.children('[data-static]').length > 0;
 
-  while ($movableItems.length && $vlinks.width() > availableSpace) {
+  // The visible list is overflowing the nav
+  if($vlinks.width() > availableSpace) {
+
+    // Record the width of the list
     breaks.push($vlinks.width());
-    $movableItems.last().prependTo($hlinks);
-    $btn.removeClass('hidden');
-    availableSpace = $nav.width() - $btn.width() - 30;
-    $movableItems = $vlinks.children(':not([data-static])');
-  }
 
-  while (breaks.length && availableSpace > breaks[breaks.length - 1]) {
-    if ($hiddenMovableItems.length) {
-      $hiddenMovableItems.first().appendTo($vlinks);
-      breaks.pop();
-      availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
-      $hiddenMovableItems = $hlinks.children(':not([data-static])');
-      continue;
+    // Move item to the hidden list
+    $vlinks.children().last().prependTo($hlinks);
+
+    // Show the dropdown btn
+    if($btn.hasClass('hidden')) {
+      $btn.removeClass('hidden');
     }
 
-    breaks.pop();
-  }
-
-  if (!breaks.length && !(isMobile && hasStaticHiddenItems)) {
-    $btn.addClass('hidden');
-    $hlinks.addClass('hidden');
+  // The visible list is not overflowing
   } else {
-    $btn.removeClass('hidden');
+
+    // There is space for another item in the nav
+    if(availableSpace > breaks[breaks.length-1]) {
+
+      // Move the item to the visible list
+      $hlinks.children().first().appendTo($vlinks);
+      breaks.pop();
+    }
+
+    // Hide the dropdown btn if hidden list is empty
+    if(breaks.length < 1) {
+      $btn.addClass('hidden');
+      $hlinks.addClass('hidden');
+    }
   }
 
-  if (isMobile && hasStaticHiddenItems) {
-    $btn.removeClass('hidden');
+  // Keep counter updated
+  $btn.attr("count", breaks.length);
+
+  // Recur if the visible list is still overflowing the nav
+  if($vlinks.width() > availableSpace) {
+    updateNav();
   }
 
-  $btn.attr('count', breaks.length);
 }
 
 // Window listeners
