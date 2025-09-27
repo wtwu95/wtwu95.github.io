@@ -3,13 +3,9 @@
    ========================================================================== */
 
 :root {
-  --masthead-toggle-bg: #{mix(#fff, $primary-color, 88%)};
-  --masthead-toggle-hover-bg: #{mix(#fff, $primary-color, 82%)};
-  --masthead-toggle-fg: #{mix(#000, $primary-color, 45%)};
-  --masthead-toggle-border: rgba($primary-color, 0.35);
-  --masthead-toggle-hover-border: rgba($primary-color, 0.45);
-  --masthead-toggle-shadow: 0 4px 12px rgba($primary-color, 0.15);
-  --masthead-toggle-shadow-hover: 0 6px 16px rgba($primary-color, 0.22);
+  --masthead-toggle-icon-primary: #4d5258;
+  --masthead-toggle-icon-secondary: #ffffff;
+  --masthead-toggle-underline: #{mix(#fff, $primary-color, 50%)};
 }
 
 .masthead {
@@ -66,7 +62,7 @@
   flex: 0 0 auto;
   align-items: center;
   gap: 1.25rem;
-  color: var(--masthead-toggle-fg);
+  color: $masthead-link-color;
 }
 
 .masthead__menu-home-item {
@@ -93,8 +89,7 @@
   color: $masthead-link-color;
 
   .toggle-button {
-    width: 100%;
-    margin: 0.35rem auto;
+    margin: 0 1rem;
   }
 }
 
@@ -103,83 +98,61 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  min-width: 3.25rem;
-  min-height: 2.6rem;
-  padding: 0.35rem 0.9rem;
-  margin: 0;
-  background-color: var(--masthead-toggle-bg);
-  border: 1px solid var(--masthead-toggle-border);
-  border-radius: 999px;
-  box-shadow: var(--masthead-toggle-shadow);
-  color: var(--masthead-toggle-fg);
-  font-size: 0.95rem;
-  font-weight: 600;
-  line-height: 1;
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+  background: none;
+  border: 0;
+  color: inherit;
   cursor: pointer;
-  appearance: none;
-  transition: background-color 0.25s ease, border-color 0.25s ease,
-    box-shadow 0.25s ease, color 0.25s ease, transform 0.2s ease;
+  line-height: 1;
+  transition: color 0.2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    background: var(--masthead-toggle-underline);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.2s ease;
+  }
 
   &:hover,
   &:focus-visible {
-    background-color: var(--masthead-toggle-hover-bg);
-    border-color: var(--masthead-toggle-hover-border);
-    box-shadow: var(--masthead-toggle-shadow-hover);
+    color: $masthead-link-color-hover;
   }
 
-  &:active {
-    transform: translateY(1px);
+  &:hover::after,
+  &:focus-visible::after {
+    transform: scaleX(1);
   }
 
   &:focus-visible {
-    outline: 2px solid mix(#fff, $info-color, 70%);
-    outline-offset: 2px;
+    outline: none;
   }
 
   &:focus:not(:focus-visible) {
     outline: none;
   }
 
-  &__face {
-    pointer-events: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.45rem;
-  }
-
-  &__face--theme {
-    gap: 0;
-  }
-
   &__icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 2.4rem;
+    height: 2.4rem;
   }
 
-  &__symbol {
+  &__icon svg {
     width: 100%;
-    height: 100%;
-    display: block;
+    height: auto;
   }
 
-  &__label {
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    color: currentColor;
-  }
-
-  &__label--language {
-    font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
-  }
-
-  &__face--language-zh,
-  &__face--sun {
+  &__icon--moon,
+  &__icon--language-zh {
     display: none;
   }
 }
@@ -188,61 +161,90 @@
   margin: 0;
 }
 
-.language-symbol,
-.theme-symbol {
+.language-icon,
+.theme-icon {
   width: 100%;
-  height: 100%;
-  display: block;
+  height: auto;
 }
 
-.theme-symbol path,
-.language-symbol path {
-  transition: opacity 0.25s ease;
+.language-icon__card--back,
+.theme-icon__card--back {
+  fill: var(--masthead-toggle-icon-primary);
 }
 
-.theme-symbol--moon .theme-symbol__halo {
-  opacity: 0.35;
+.language-icon__card--front,
+.theme-icon__card--front {
+  fill: var(--masthead-toggle-icon-secondary);
+  stroke: var(--masthead-toggle-icon-primary);
+  stroke-width: 1.5;
 }
 
-.theme-symbol--moon .theme-symbol__ray {
-  display: none;
+.language-icon__card--front-zh,
+.theme-icon__card--front-dark {
+  fill: var(--masthead-toggle-icon-primary);
+  stroke: none;
 }
 
-.theme-symbol--sun .theme-symbol__crescent {
-  display: none;
+.language-icon__glyph,
+.theme-icon__glyph {
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-weight: 600;
+}
+
+.language-icon__glyph--primary {
+  fill: var(--masthead-toggle-icon-primary);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+.language-icon__glyph--inverted {
+  fill: var(--masthead-toggle-icon-secondary);
+  font-size: 15px;
+}
+
+.theme-icon__glyph--sun-core {
+  fill: var(--masthead-toggle-icon-primary);
+}
+
+.theme-icon__glyph--sun-rays line {
+  stroke: var(--masthead-toggle-icon-primary);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+.theme-icon__glyph--moon {
+  fill: var(--masthead-toggle-icon-secondary);
 }
 
 html.theme-dark {
-  --masthead-toggle-bg: #{mix(#000, $primary-color, 65%)};
-  --masthead-toggle-hover-bg: #{mix(#000, $primary-color, 55%)};
-  --masthead-toggle-fg: #{mix(#fff, $primary-color, 88%)};
-  --masthead-toggle-border: rgba(#dbeafe, 0.4);
-  --masthead-toggle-hover-border: rgba(#e2e8f0, 0.55);
-  --masthead-toggle-shadow: 0 6px 18px rgba(#0f172a, 0.35);
-  --masthead-toggle-shadow-hover: 0 10px 22px rgba(#0f172a, 0.45);
+  --masthead-toggle-underline: rgba(191, 219, 254, 0.85);
 
   .masthead__actions {
-    color: var(--masthead-toggle-fg);
+    color: #e2e8f0;
+  }
+
+  .masthead__actions .toggle-button:hover,
+  .masthead__actions .toggle-button:focus-visible {
+    color: #bfdbfe;
   }
 
   .masthead__menu-item--toggle {
-    color: mix(#fff, $primary-color, 85%);
+    color: #e2e8f0;
+  }
+
+  .masthead__menu-item--toggle .toggle-button:hover,
+  .masthead__menu-item--toggle .toggle-button:focus-visible {
+    color: #bfdbfe;
   }
 }
 
-html.theme-dark .toggle-button--theme .toggle-button__face--sun {
-  display: inline-flex;
-}
-
-html.theme-dark .toggle-button--theme .toggle-button__face--moon {
+html:not(.theme-dark) .toggle-button--theme .toggle-button__icon--moon,
+html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-en {
   display: none;
 }
 
-html[data-language='zh'] .toggle-button--language .toggle-button__face--language-en {
-  display: none;
-}
-
-html[data-language='zh'] .toggle-button--language .toggle-button__face--language-zh {
+html.theme-dark .toggle-button--theme .toggle-button__icon--sun,
+html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-zh {
   display: inline-flex;
 }
 
