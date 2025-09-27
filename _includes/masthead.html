@@ -9,60 +9,54 @@
       aria-pressed="false"
     >
       <span
-        class="toggle-button__icon toggle-button__icon--language toggle-button__icon--language-en"
+        class="toggle-button__face toggle-button__face--language toggle-button__face--language-en"
         aria-hidden="true"
       >
-        <svg
-          class="language-icon language-icon--en"
-          viewBox="0 0 48 32"
-          role="presentation"
-          focusable="false"
-        >
-          <rect class="language-icon__card language-icon__card--back" x="18" y="4" width="20" height="24" rx="3"></rect>
-          <text
-            class="language-icon__glyph language-icon__glyph--inverted"
-            x="28"
-            y="16"
-            text-anchor="middle"
-            dominant-baseline="middle"
-          >文</text>
-          <rect class="language-icon__card language-icon__card--front" x="10" y="4" width="20" height="24" rx="3"></rect>
-          <text
-            class="language-icon__glyph language-icon__glyph--primary"
-            x="20"
-            y="16"
-            text-anchor="middle"
-            dominant-baseline="middle"
-          >En</text>
-        </svg>
+        <span class="toggle-button__icon" role="presentation">
+          <svg
+            class="toggle-button__symbol toggle-button__symbol--language language-symbol"
+            viewBox="0 0 1024 1024"
+            role="presentation"
+            focusable="false"
+          >
+            <path
+              class="language-symbol__frame"
+              fill="currentColor"
+              d="M859.778 862.352c0 15.12-10.056 25.198-25.14 25.198H181.006c-15.084 0-25.14-10.08-25.14-25.2V474.296L0 625.486h80.446v262.064c0 40.318 35.196 75.596 75.42 75.596h703.912c40.222 0 75.418-35.28 75.418-75.596v-332.62l-75.42 70.556v236.866zM155.866 156.794c0-15.12 10.056-25.2 25.14-25.2h658.66c15.084 0 25.14 10.08 25.14 25.2v352.78l155.864-161.272h-85.474V131.596C935.196 91.276 900 56 859.776 56H155.868c-40.224 0-75.42 35.278-75.42 75.596v297.34l75.42-75.594V156.794z"
+            ></path>
+            <path
+              class="language-symbol__glyph"
+              fill="currentColor"
+              d="M472.178 266.19h84.65l187.734 487.306h-79.872l-45.74-125.58H409.374l-45.74 125.58h-79.188l187.734-487.306z m-40.278 300.3h164.524l-80.556-220.446h-2.73L431.9 566.49z"
+            ></path>
+          </svg>
+        </span>
+        <span class="toggle-button__label toggle-button__label--language">中</span>
       </span>
       <span
-        class="toggle-button__icon toggle-button__icon--language toggle-button__icon--language-zh"
+        class="toggle-button__face toggle-button__face--language toggle-button__face--language-zh"
         aria-hidden="true"
       >
-        <svg
-          class="language-icon language-icon--zh"
-          viewBox="0 0 48 32"
-          role="presentation"
-          focusable="false"
-        >
-          <rect class="language-icon__card language-icon__card--back" x="18" y="4" width="20" height="24" rx="3"></rect>
-          <text
-            class="language-icon__glyph language-icon__glyph--primary"
-            x="28"
-            y="16"
-            text-anchor="middle"
-            dominant-baseline="middle"
-          >En</text>
-          <rect class="language-icon__card language-icon__card--front language-icon__card--front-zh" x="10" y="4" width="20" height="24" rx="3"></rect>
-          <text
-            class="language-icon__glyph language-icon__glyph--inverted"
-            x="20"
-            y="16"
-            text-anchor="middle"
-            dominant-baseline="middle"
-          >文</text>
-        </svg>
+        <span class="toggle-button__icon" role="presentation">
+          <svg
+            class="toggle-button__symbol toggle-button__symbol--language language-symbol"
+            viewBox="0 0 1024 1024"
+            role="presentation"
+            focusable="false"
+          >
+            <path
+              class="language-symbol__frame"
+              fill="currentColor"
+              d="M859.778 862.352c0 15.12-10.056 25.198-25.14 25.198H181.006c-15.084 0-25.14-10.08-25.14-25.2V474.296L0 625.486h80.446v262.064c0 40.318 35.196 75.596 75.42 75.596h703.912c40.222 0 75.418-35.28 75.418-75.596v-332.62l-75.42 70.556v236.866zM155.866 156.794c0-15.12 10.056-25.2 25.14-25.2h658.66c15.084 0 25.14 10.08 25.14 25.2v352.78l155.864-161.272h-85.474V131.596C935.196 91.276 900 56 859.776 56H155.868c-40.224 0-75.42 35.278-75.42 75.596v297.34l75.42-75.594V156.794z"
+            ></path>
+            <path
+              class="language-symbol__glyph"
+              fill="currentColor"
+              d="M472.178 266.19h84.65l187.734 487.306h-79.872l-45.74-125.58H409.374l-45.74 125.58h-79.188l187.734-487.306z m-40.278 300.3h164.524l-80.556-220.446h-2.73L431.9 566.49z"
+            ></path>
+          </svg>
+        </span>
+        <span class="toggle-button__label toggle-button__label--language">En</span>
       </span>
     </button>
     {% endcapture %}
@@ -74,57 +68,133 @@
       aria-label="Switch to dark mode"
       aria-pressed="false"
     >
-      <span class="toggle-button__icon toggle-button__icon--sun" aria-hidden="true">
-        <svg
-          class="theme-icon theme-icon--sun"
-          viewBox="0 0 48 32"
-          role="presentation"
-          focusable="false"
-        >
-          <rect class="theme-icon__card theme-icon__card--back" x="18" y="4" width="20" height="24" rx="3"></rect>
-          <path
-            class="theme-icon__glyph theme-icon__glyph--moon"
-            d="M30.5 10.25a7.4 7.4 0 0 0 3.94 11.26 8.2 8.2 0 0 1-9.7-9.7 7.36 7.36 0 0 0 5.76-1.56z"
-          ></path>
-          <rect class="theme-icon__card theme-icon__card--front" x="10" y="4" width="20" height="24" rx="3"></rect>
-          <circle class="theme-icon__glyph theme-icon__glyph--sun-core" cx="20" cy="16" r="5"></circle>
-          <g class="theme-icon__glyph theme-icon__glyph--sun-rays">
-            <line x1="20" y1="6.5" x2="20" y2="9.5"></line>
-            <line x1="20" y1="22.5" x2="20" y2="25.5"></line>
-            <line x1="10.5" y1="16" x2="13.5" y2="16"></line>
-            <line x1="26.5" y1="16" x2="29.5" y2="16"></line>
-            <line x1="13.5" y1="9.5" x2="15.6" y2="11.6"></line>
-            <line x1="24.4" y1="20.4" x2="26.5" y2="22.5"></line>
-            <line x1="13.5" y1="22.5" x2="15.6" y2="20.4"></line>
-            <line x1="24.4" y1="11.6" x2="26.5" y2="9.5"></line>
-          </g>
-        </svg>
+      <span
+        class="toggle-button__face toggle-button__face--theme toggle-button__face--moon"
+        aria-hidden="true"
+      >
+        <span class="toggle-button__icon" role="presentation">
+          <svg
+            class="toggle-button__symbol toggle-button__symbol--theme theme-symbol theme-symbol--moon"
+            viewBox="0 0 1024 1024"
+            role="presentation"
+            focusable="false"
+          >
+            <path
+              class="theme-symbol__halo"
+              fill="currentColor"
+              d="M512.182844 785.059353a273.022784 273.022784 0 1 0 0-546.118706 273.022784 273.022784 0 0 0 0 546.118706z m341.260196-273.022784a341.333333 341.333333 0 1 1-682.593529 0 341.333333 341.333333 0 0 1 682.593529 0z"
+            ></path>
+            <path
+              class="theme-symbol__crescent"
+              fill="currentColor"
+              d="M582.321834 703.510892c13.164774 5.339047 14.627527 24.501107 0.877652 28.084851a246.327548 246.327548 0 0 1-187.012928-26.475823 231.700021 231.700021 0 0 1-81.914149-82.718663A220.583101 220.583101 0 0 1 284.651668 511.963431c0-38.689808 10.239269-76.648239 29.767016-110.437826a231.700021 231.700021 0 0 1 81.841012-82.718663 246.108135 246.108135 0 0 1 187.012927-26.54896c13.749875 3.656882 12.287122 22.818942-0.877651 28.157988a215.97543 215.97543 0 0 0-82.572388 59.02207A203.030069 203.030069 0 0 0 450.162131 511.963431c0 48.343975 17.553032 95.152061 49.587315 132.452254 22.306978 25.96386 50.68438 46.076709 82.572388 59.095207z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M477.661881 0m34.155275 0l-0.073138 0q34.155275 0 34.155275 34.155275l0 45.491607q0 34.155275-34.155275 34.155275l0.073138 0q-34.155275 0-34.155275-34.155275l0-45.491607q0-34.155275 34.155275-34.155275Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M477.661881 910.197843m34.155275 0l-0.073138 0q34.155275 0 34.155275 34.155275l0 45.491607q0 34.155275-34.155275 34.155275l0.073138 0q-34.155275 0-34.155275-34.155275l0-45.491607q0-34.155275 34.155275-34.155275Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M1023.926862 477.808157m0 34.155274l0-0.073137q0 34.155275-34.155274 34.155274l-45.491608 0q-34.155275 0-34.155275-34.155274l0 0.073137q0-34.155275 34.155275-34.155274l45.491608 0q34.155275 0 34.155274 34.155274Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M113.729019 477.808157m0 34.155274l0-0.073137q0 34.155275-34.155274 34.155274l-45.491608 0q-34.155275 0-34.155275-34.155274l0 0.073137q0-34.155275 34.155275-34.155274l45.491608 0q34.155275 0 34.155274 34.155274Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M849.588167 125.848445m24.151426 24.151426l-0.051716-0.051716q24.151426 24.151426 0 48.302853l-32.167424 32.167424q-24.151426 24.151426-48.302853 0l0.051716 0.051716q-24.151426-24.151426 0-48.302852l32.167424-32.167425q24.151426-24.151426 48.302853 0Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M206.248125 769.481037m24.151426 24.151426l-0.051716-0.051716q24.151426 24.151426 0 48.302853l-32.167424 32.167424q-24.151426 24.151426-48.302853 0l0.051717 0.051716q-24.151426-24.151426 0-48.302852l32.167424-32.167425q24.151426-24.151426 48.302852 0Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M898.203271 849.932433m-24.151426 24.151427l0.051716-0.051716q-24.151426 24.151426-48.302853 0l-32.167424-32.167425q-24.151426-24.151426 0-48.302852l-0.051716 0.051716q24.151426-24.151426 48.302853 0l32.167424 32.167424q24.151426 24.151426 0 48.302853Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M254.811513 206.248125m-24.151426 24.151426l0.051716-0.051716q-24.151426 24.151426-48.302852 0l-32.167425-32.167424q-24.151426-24.151426 0-48.302853l-0.051716 0.051717q24.151426-24.151426 48.302853 0l32.167424 32.167424q24.151426 24.151426 0 48.302852Z"
+            ></path>
+          </svg>
+        </span>
       </span>
-      <span class="toggle-button__icon toggle-button__icon--moon" aria-hidden="true">
-        <svg
-          class="theme-icon theme-icon--moon"
-          viewBox="0 0 48 32"
-          role="presentation"
-          focusable="false"
-        >
-          <rect class="theme-icon__card theme-icon__card--back" x="18" y="4" width="20" height="24" rx="3"></rect>
-          <circle class="theme-icon__glyph theme-icon__glyph--sun-core" cx="28" cy="16" r="5"></circle>
-          <g class="theme-icon__glyph theme-icon__glyph--sun-rays">
-            <line x1="28" y1="6.5" x2="28" y2="9.5"></line>
-            <line x1="28" y1="22.5" x2="28" y2="25.5"></line>
-            <line x1="18.5" y1="16" x2="21.5" y2="16"></line>
-            <line x1="34.5" y1="16" x2="37.5" y2="16"></line>
-            <line x1="21.5" y1="9.5" x2="23.6" y2="11.6"></line>
-            <line x1="32.4" y1="20.4" x2="34.5" y2="22.5"></line>
-            <line x1="21.5" y1="22.5" x2="23.6" y2="20.4"></line>
-            <line x1="32.4" y1="11.6" x2="34.5" y2="9.5"></line>
-          </g>
-          <rect class="theme-icon__card theme-icon__card--front theme-icon__card--front-dark" x="10" y="4" width="20" height="24" rx="3"></rect>
-          <path
-            class="theme-icon__glyph theme-icon__glyph--moon"
-            d="M22.5 10.25a7.4 7.4 0 0 0 3.94 11.26 8.2 8.2 0 0 1-9.7-9.7 7.36 7.36 0 0 0 5.76-1.56z"
-          ></path>
-        </svg>
+      <span
+        class="toggle-button__face toggle-button__face--theme toggle-button__face--sun"
+        aria-hidden="true"
+      >
+        <span class="toggle-button__icon" role="presentation">
+          <svg
+            class="toggle-button__symbol toggle-button__symbol--theme theme-symbol theme-symbol--sun"
+            viewBox="0 0 1024 1024"
+            role="presentation"
+            focusable="false"
+          >
+            <path
+              class="theme-symbol__halo"
+              fill="currentColor"
+              d="M512.182844 785.059353a273.022784 273.022784 0 1 0 0-546.118706 273.022784 273.022784 0 0 0 0 546.118706z m341.260196-273.022784a341.333333 341.333333 0 1 1-682.593529 0 341.333333 341.333333 0 0 1 682.593529 0z"
+            ></path>
+            <path
+              class="theme-symbol__crescent"
+              fill="currentColor"
+              d="M582.321834 703.510892c13.164774 5.339047 14.627527 24.501107 0.877652 28.084851a246.327548 246.327548 0 0 1-187.012928-26.475823 231.700021 231.700021 0 0 1-81.914149-82.718663A220.583101 220.583101 0 0 1 284.651668 511.963431c0-38.689808 10.239269-76.648239 29.767016-110.437826a231.700021 231.700021 0 0 1 81.841012-82.718663 246.108135 246.108135 0 0 1 187.012927-26.54896c13.749875 3.656882 12.287122 22.818942-0.877651 28.157988a215.97543 215.97543 0 0 0-82.572388 59.02207A203.030069 203.030069 0 0 0 450.162131 511.963431c0 48.343975 17.553032 95.152061 49.587315 132.452254 22.306978 25.96386 50.68438 46.076709 82.572388 59.095207z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M477.661881 0m34.155275 0l-0.073138 0q34.155275 0 34.155275 34.155275l0 45.491607q0 34.155275-34.155275 34.155275l0.073138 0q-34.155275 0-34.155275-34.155275l0-45.491607q0-34.155275 34.155275-34.155275Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M477.661881 910.197843m34.155275 0l-0.073138 0q34.155275 0 34.155275 34.155275l0 45.491607q0 34.155275-34.155275 34.155275l0.073138 0q-34.155275 0-34.155275-34.155275l0-45.491607q0-34.155275 34.155275-34.155275Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M1023.926862 477.808157m0 34.155274l0-0.073137q0 34.155275-34.155274 34.155274l-45.491608 0q-34.155275 0-34.155275-34.155274l0 0.073137q0-34.155275 34.155275-34.155274l45.491608 0q34.155275 0 34.155274 34.155274Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M113.729019 477.808157m0 34.155274l0-0.073137q0 34.155275-34.155274 34.155274l-45.491608 0q-34.155275 0-34.155275-34.155274l0 0.073137q0-34.155275 34.155275-34.155274l45.491608 0q34.155275 0 34.155274 34.155274Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M849.588167 125.848445m24.151426 24.151426l-0.051716-0.051716q24.151426 24.151426 0 48.302853l-32.167424 32.167424q-24.151426 24.151426-48.302853 0l0.051716 0.051716q-24.151426-24.151426 0-48.302852l32.167424-32.167425q24.151426-24.151426 48.302853 0Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M206.248125 769.481037m24.151426 24.151426l-0.051716-0.051716q24.151426 24.151426 0 48.302853l-32.167424 32.167424q-24.151426 24.151426-48.302853 0l0.051717 0.051716q-24.151426-24.151426 0-48.302852l32.167424-32.167425q24.151426-24.151426 48.302852 0Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M898.203271 849.932433m-24.151426 24.151427l0.051716-0.051716q-24.151426 24.151426-48.302853 0l-32.167424-32.167425q-24.151426-24.151426 0-48.302852l-0.051716 0.051716q24.151426-24.151426 48.302853 0l32.167424 32.167424q24.151426 24.151426 0 48.302853Z"
+            ></path>
+            <path
+              class="theme-symbol__ray"
+              fill="currentColor"
+              d="M254.811513 206.248125m-24.151426 24.151426l0.051716-0.051716q-24.151426 24.151426-48.302852 0l-32.167425-32.167424q-24.151426-24.151426 0-48.302853l-0.051716 0.051717q24.151426-24.151426 48.302853 0l32.167424 32.167424q24.151426 24.151426 0 48.302852Z"
+            ></path>
+          </svg>
+        </span>
       </span>
     </button>
     {% endcapture %}
