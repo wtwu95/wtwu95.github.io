@@ -9,8 +9,8 @@
   --theme-toggle-track-bg: rgba($primary-color, 0.16);
   --theme-toggle-inactive-bg: var(--language-toggle-inactive-bg);
   --theme-toggle-icon-inactive: var(--language-toggle-text-inactive);
-  --theme-toggle-sun-active-bg: var(--language-toggle-active-bg);
-  --theme-toggle-sun-icon-color: var(--language-toggle-text-active);
+  --theme-toggle-sun-active-bg: #f8fafc;
+  --theme-toggle-sun-icon-color: #{mix(#000, $primary-color, 70%)};
   --theme-toggle-moon-active-bg: var(--language-toggle-active-bg);
   --theme-toggle-moon-icon-color: var(--language-toggle-text-active);
   --theme-toggle-shadow-strong: 0 10px 22px rgba($primary-color, 0.28);
