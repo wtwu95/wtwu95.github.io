@@ -9,18 +9,24 @@
   --theme-toggle-track-bg: rgba($primary-color, 0.16);
   --theme-toggle-inactive-bg: var(--language-toggle-inactive-bg);
   --theme-toggle-icon-inactive: var(--language-toggle-text-inactive);
-  --theme-toggle-sun-active-bg: #f8fafc;
-  --theme-toggle-sun-icon-color: #{mix(#000, $primary-color, 70%)};
+  --theme-toggle-sun-active-bg: var(--language-toggle-active-bg);
+  --theme-toggle-sun-icon-color: var(--language-toggle-text-active);
   --theme-toggle-moon-active-bg: var(--language-toggle-active-bg);
   --theme-toggle-moon-icon-color: var(--language-toggle-text-active);
-  --theme-toggle-shadow-strong: 0 10px 22px rgba($primary-color, 0.28);
-  --theme-toggle-shadow-soft: 0 6px 14px rgba($primary-color, 0.16);
-  --language-toggle-active-bg: var(--theme-toggle-sun-active-bg);
-  --language-toggle-inactive-bg: var(--theme-toggle-sun-active-bg);
-  --language-toggle-text-active: var(--theme-toggle-sun-icon-color);
+  --theme-toggle-shadow-strong: var(--language-toggle-shadow-strong);
+  --theme-toggle-shadow-soft: var(--language-toggle-shadow-soft);
+  --language-toggle-active-bg: linear-gradient(
+    135deg,
+    #{mix(#fff, $primary-color, 96%)},
+    #{mix(#fff, $primary-color, 86%)}
+  );
+  --language-toggle-inactive-bg: #{mix(#fff, $primary-color, 94%)};
+  --language-toggle-text-active: #{mix(#000, $primary-color, 55%)};
   --language-toggle-text-inactive: #{mix(#000, $primary-color, 70%)};
-  --language-toggle-shadow-strong: var(--theme-toggle-shadow-strong);
-  --language-toggle-shadow-soft: var(--theme-toggle-shadow-soft);
+  --language-toggle-shadow-strong: 0 8px 18px rgba($primary-color, 0.22);
+  --language-toggle-shadow-soft: 0 4px 12px rgba($primary-color, 0.12);
+
+
 }
 
 .masthead {
