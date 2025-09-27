@@ -132,6 +132,21 @@
   }
 }
 
+#site-nav button:not(.hidden) ~ .hidden-links .masthead__menu-item--toggle {
+  display: block;
+  padding: 0;
+  text-align: center;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .toggle-button {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .toggle-button {
   position: relative;
   display: inline-flex;
@@ -424,16 +439,6 @@ html[data-language='zh'] .toggle-button--language .toggle-button__icon--language
 
     .hidden-links .masthead__menu-item--toggle {
       display: block;
-      padding: 0;
-      text-align: center;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      .toggle-button {
-        width: 100%;
-      }
     }
   }
 
