@@ -15,16 +15,12 @@
   --theme-toggle-moon-icon-color: var(--language-toggle-text-active);
   --theme-toggle-shadow-strong: 0 10px 22px rgba($primary-color, 0.28);
   --theme-toggle-shadow-soft: 0 6px 14px rgba($primary-color, 0.16);
-  --language-toggle-active-bg: linear-gradient(
-    135deg,
-    #{mix(#fff, $primary-color, 96%)},
-    #{mix(#fff, $primary-color, 86%)}
-  );
-  --language-toggle-inactive-bg: #{mix(#fff, $primary-color, 94%)};
-  --language-toggle-text-active: #{mix(#000, $primary-color, 55%)};
+  --language-toggle-active-bg: var(--theme-toggle-sun-active-bg);
+  --language-toggle-inactive-bg: var(--theme-toggle-sun-active-bg);
+  --language-toggle-text-active: var(--theme-toggle-sun-icon-color);
   --language-toggle-text-inactive: #{mix(#000, $primary-color, 70%)};
-  --language-toggle-shadow-strong: 0 8px 18px rgba($primary-color, 0.22);
-  --language-toggle-shadow-soft: 0 4px 12px rgba($primary-color, 0.12);
+  --language-toggle-shadow-strong: var(--theme-toggle-shadow-strong);
+  --language-toggle-shadow-soft: var(--theme-toggle-shadow-soft);
 }
 
 .masthead {
