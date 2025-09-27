@@ -309,6 +309,10 @@
 }
 
 html.theme-dark {
+  .toggle-button--theme::before {
+    transform: translate3d(-0.15rem, -0.15rem, 0);
+  }
+
   --masthead-toggle-underline: rgba(191, 219, 254, 0.85);
   --theme-toggle-track-bg: rgba(148, 163, 184, 0.28);
   --theme-toggle-inactive-bg: #{mix(#000, $primary-color, 65%)};
@@ -389,6 +393,8 @@ html[data-language='zh'] .toggle-button--language .toggle-button__icon--language
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .toggle-button--theme::before,
+  .toggle-button--theme .toggle-button__icon--theme,
   .toggle-button--language::before,
   .toggle-button--language .toggle-button__icon--language {
     transition: none;
