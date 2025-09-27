@@ -161,59 +161,9 @@
   margin: 0;
 }
 
-.language-icon,
-.theme-icon {
+.toggle-icon {
   width: 100%;
   height: auto;
-}
-
-.language-icon__card--back,
-.theme-icon__card--back {
-  fill: var(--masthead-toggle-icon-primary);
-}
-
-.language-icon__card--front,
-.theme-icon__card--front {
-  fill: var(--masthead-toggle-icon-secondary);
-  stroke: var(--masthead-toggle-icon-primary);
-  stroke-width: 1.5;
-}
-
-.language-icon__card--front-zh,
-.theme-icon__card--front-dark {
-  fill: var(--masthead-toggle-icon-primary);
-  stroke: none;
-}
-
-.language-icon__glyph,
-.theme-icon__glyph {
-  font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
-  font-weight: 600;
-}
-
-.language-icon__glyph--primary {
-  fill: var(--masthead-toggle-icon-primary);
-  font-size: 11px;
-  letter-spacing: 0.02em;
-}
-
-.language-icon__glyph--inverted {
-  fill: var(--masthead-toggle-icon-secondary);
-  font-size: 15px;
-}
-
-.theme-icon__glyph--sun-core {
-  fill: var(--masthead-toggle-icon-primary);
-}
-
-.theme-icon__glyph--sun-rays line {
-  stroke: var(--masthead-toggle-icon-primary);
-  stroke-width: 1.6;
-  stroke-linecap: round;
-}
-
-.theme-icon__glyph--moon {
-  fill: var(--masthead-toggle-icon-secondary);
 }
 
 html.theme-dark {
