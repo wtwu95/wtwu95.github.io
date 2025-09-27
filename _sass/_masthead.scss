@@ -217,8 +217,6 @@
 }
 
 html.theme-dark {
-  --masthead-toggle-icon-primary: #ffffff;
-  --masthead-toggle-icon-secondary: #4d5258;
   --masthead-toggle-underline: rgba(191, 219, 254, 0.85);
 
   .masthead__actions {
@@ -240,26 +238,12 @@ html.theme-dark {
   }
 }
 
-html:not(.theme-dark) .toggle-button--theme .toggle-button__icon--sun {
-  display: none;
-}
-
-html:not(.theme-dark) .toggle-button--theme .toggle-button__icon--moon {
-  display: inline-flex;
-}
-
-html.theme-dark .toggle-button--theme .toggle-button__icon--sun {
-  display: inline-flex;
-}
-
-html.theme-dark .toggle-button--theme .toggle-button__icon--moon {
-  display: none;
-}
-
+html:not(.theme-dark) .toggle-button--theme .toggle-button__icon--moon,
 html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-en {
   display: none;
 }
 
+html.theme-dark .toggle-button--theme .toggle-button__icon--sun,
 html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-zh {
   display: inline-flex;
 }
