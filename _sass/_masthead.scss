@@ -85,15 +85,11 @@
 
 
 .masthead__menu-item--toggle {
+  display: none;
   color: $masthead-link-color;
 
   .toggle-button {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin: 0 1rem;
   }
 }
 
@@ -210,9 +206,7 @@ html[data-language='zh'] .toggle-button--language .toggle-button__icon--language
   }
 
   .masthead__menu-item--toggle {
-    .toggle-button {
-      justify-content: flex-start;
-    }
+    display: table-cell;
   }
 }
 
