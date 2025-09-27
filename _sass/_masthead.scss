@@ -142,17 +142,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1.25rem;
   }
 
-  &__icon svg {
-    width: 100%;
-    height: auto;
-  }
-
-  &__icon--moon,
-  &__icon--language-zh {
+  &__icon--sun,
+  &__icon--language-en {
     display: none;
   }
 }
@@ -188,13 +184,19 @@ html.theme-dark {
   }
 }
 
-html:not(.theme-dark) .toggle-button--theme .toggle-button__icon--moon,
-html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-en {
+html.theme-dark .toggle-button--theme .toggle-button__icon--sun {
+  display: inline-flex;
+}
+
+html.theme-dark .toggle-button--theme .toggle-button__icon--moon {
   display: none;
 }
 
-html.theme-dark .toggle-button--theme .toggle-button__icon--sun,
 html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-zh {
+  display: none;
+}
+
+html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-en {
   display: inline-flex;
 }
 
