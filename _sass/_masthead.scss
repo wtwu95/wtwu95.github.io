@@ -6,15 +6,15 @@
   --masthead-toggle-icon-primary: #4d5258;
   --masthead-toggle-icon-secondary: #ffffff;
   --masthead-toggle-underline: #{mix(#fff, $primary-color, 50%)};
-  --theme-toggle-track-bg: rgba($primary-color, 0.16);
-  --theme-toggle-inactive-bg: var(--language-toggle-inactive-bg);
-  --theme-toggle-icon-inactive: var(--language-toggle-text-inactive);
-  --theme-toggle-sun-active-bg: var(--language-toggle-active-bg);
-  --theme-toggle-sun-icon-color: var(--language-toggle-text-active);
-  --theme-toggle-moon-active-bg: var(--language-toggle-active-bg);
-  --theme-toggle-moon-icon-color: var(--language-toggle-text-active);
-  --theme-toggle-shadow-strong: 0 10px 22px rgba($primary-color, 0.28);
-  --theme-toggle-shadow-soft: 0 6px 14px rgba($primary-color, 0.16);
+  --theme-toggle-track-bg: rgba(191, 219, 254, 0.35);
+  --theme-toggle-inactive-bg: #e2e8f0;
+  --theme-toggle-icon-inactive: #475569;
+  --theme-toggle-sun-active-bg: linear-gradient(135deg, #fef3c7, #f59e0b);
+  --theme-toggle-sun-icon-color: #92400e;
+  --theme-toggle-moon-active-bg: linear-gradient(135deg, #60a5fa, #2563eb);
+  --theme-toggle-moon-icon-color: #f8fafc;
+  --theme-toggle-shadow-strong: 0 10px 22px rgba(37, 99, 235, 0.28);
+  --theme-toggle-shadow-soft: 0 6px 14px rgba(37, 99, 235, 0.18);
   --language-toggle-active-bg: linear-gradient(
     135deg,
     #{mix(#fff, $primary-color, 22%)},
