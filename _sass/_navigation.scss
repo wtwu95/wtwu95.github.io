@@ -304,16 +304,6 @@
       &:last-child {
         border-bottom: none;
       }
-
-      &.masthead__menu-item--toggle {
-        padding: 0;
-
-        .toggle-button {
-          width: 100%;
-          margin: 0;
-          justify-content: center;
-        }
-      }
     }
   }
 }
