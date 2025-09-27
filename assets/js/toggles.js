@@ -12,10 +12,20 @@
   const html = document.documentElement;
   const metaTheme = document.querySelector('meta[name="theme-color"]#site-theme-color');
   const themeToggle = document.querySelector('[data-theme-toggle]');
+  const themeLabel = themeToggle ? themeToggle.querySelector('[data-theme-label]') : null;
   const languageToggle = document.querySelector('[data-language-toggle]');
+  const languageLabel = languageToggle ? languageToggle.querySelector('[data-language-label]') : null;
 
   function getActiveLanguage() {
     return html.getAttribute('data-language') === 'zh' ? 'zh' : 'en';
+  }
+
+  function getThemeLabel(isDark, language) {
+    if (language === 'zh') {
+      return isDark ? '深色' : '浅色';
+    }
+
+    return isDark ? 'Dark' : 'Light';
   }
 
   function getThemeAriaLabel(isDark, language) {
@@ -49,6 +59,9 @@
       themeToggle.setAttribute('aria-pressed', String(isDark));
       themeToggle.setAttribute('aria-label', getThemeAriaLabel(isDark, language));
 
+      if (themeLabel) {
+        themeLabel.textContent = getThemeLabel(isDark, language);
+      }
     }
 
     updateMetaThemeColor(normalized);
@@ -127,6 +140,10 @@
         'aria-label',
         isChinese ? '切换到英文' : 'Switch to Chinese'
       );
+
+      if (languageLabel) {
+        languageLabel.textContent = isChinese ? '中' : 'EN';
+      }
 
       languageToggle.dataset.nextLanguage = nextLanguage;
     }
