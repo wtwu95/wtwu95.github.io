@@ -2,6 +2,12 @@
    MASTHEAD
    ========================================================================== */
 
+:root {
+  --masthead-toggle-icon-primary: #4d5258;
+  --masthead-toggle-icon-secondary: #ffffff;
+  --masthead-toggle-underline: #{mix(#fff, $primary-color, 50%)};
+}
+
 .masthead {
   position: sticky;
   top: 0;
@@ -55,14 +61,8 @@
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 0.5rem;
-}
-
-@media (max-width: 480px) {
-  .masthead__actions {
-    width: 100%;
-    justify-content: flex-end;
-  }
+  gap: 1.25rem;
+  color: $masthead-link-color;
 }
 
 .masthead__menu-home-item {
@@ -83,99 +83,179 @@
   }
 }
 
+
+.masthead__menu-item--toggle {
+  display: none;
+  color: $masthead-link-color;
+
+  .toggle-button {
+    margin: 0 1rem;
+  }
+}
+
 .toggle-button {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.35rem;
-  padding: 0.45rem 1.15rem;
-  font-family: $sans-serif;
-  font-size: $type-size-6;
-  font-weight: 600;
-  line-height: 1.2;
-  color: $text-color;
-  background-color: rgba($background-color, 0.65);
-  border: 1px solid transparent;
-  border-radius: 999px;
+  padding: 0.5rem 0;
+  margin: 0 1rem;
+  background: none;
+  border: 0;
+  color: inherit;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(#000, 0.08);
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  line-height: 1;
+  transition: color 0.2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    background: var(--masthead-toggle-underline);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.2s ease;
+  }
 
   &:hover,
   &:focus-visible {
-    background-color: mix($background-color, $primary-color, 88%);
-    border-color: rgba($primary-color, 0.35);
-    color: mix($text-color, $primary-color, 85%);
-    outline: none;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 14px rgba($primary-color, 0.18);
+    color: $masthead-link-color-hover;
   }
 
-  &:focus:not(:focus-visible) {
-    box-shadow: 0 2px 8px rgba(#000, 0.08);
-    border-color: transparent;
+  &:hover::after,
+  &:focus-visible::after {
+    transform: scaleX(1);
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 3px rgba($primary-color, 0.25);
+    outline: none;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
   }
 
   &__icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
-    line-height: 1;
+    width: 2.4rem;
+    height: 2.4rem;
   }
 
-  &__icon--moon {
+  &__icon svg {
+    width: 100%;
+    height: auto;
+  }
+
+  &__icon--moon,
+  &__icon--language-zh {
     display: none;
   }
+}
 
-  &__label {
-    letter-spacing: 0.02em;
-  }
+.masthead__actions .toggle-button {
+  margin: 0;
+}
+
+.language-icon,
+.theme-icon {
+  width: 100%;
+  height: auto;
+}
+
+.language-icon__card--back,
+.theme-icon__card--back {
+  fill: var(--masthead-toggle-icon-primary);
+}
+
+.language-icon__card--front,
+.theme-icon__card--front {
+  fill: var(--masthead-toggle-icon-secondary);
+  stroke: var(--masthead-toggle-icon-primary);
+  stroke-width: 1.5;
+}
+
+.language-icon__card--front-zh,
+.theme-icon__card--front-dark {
+  fill: var(--masthead-toggle-icon-primary);
+  stroke: none;
+}
+
+.language-icon__glyph,
+.theme-icon__glyph {
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  font-weight: 600;
+}
+
+.language-icon__glyph--primary {
+  fill: var(--masthead-toggle-icon-primary);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+.language-icon__glyph--inverted {
+  fill: var(--masthead-toggle-icon-secondary);
+  font-size: 15px;
+}
+
+.theme-icon__glyph--sun-core {
+  fill: var(--masthead-toggle-icon-primary);
+}
+
+.theme-icon__glyph--sun-rays line {
+  stroke: var(--masthead-toggle-icon-primary);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+.theme-icon__glyph--moon {
+  fill: var(--masthead-toggle-icon-secondary);
 }
 
 html.theme-dark {
-  .toggle-button {
-    background-color: rgba(#111827, 0.7);
-    border-color: transparent;
-    color: #f9fafb;
-    box-shadow: 0 6px 18px rgba(#000, 0.35);
+  --masthead-toggle-underline: rgba(191, 219, 254, 0.85);
 
-    &:hover,
-    &:focus-visible {
-      background-color: rgba(#1f2937, 0.92);
-      border-color: rgba(#60a5fa, 0.45);
-      color: #f9fafb;
-      transform: translateY(-1px);
-      box-shadow: 0 10px 24px rgba(#1e3a8a, 0.35);
-    }
-
-    &:focus:not(:focus-visible) {
-      box-shadow: 0 6px 18px rgba(#000, 0.35);
-      border-color: transparent;
-    }
+  .masthead__actions {
+    color: #e2e8f0;
   }
 
-  .toggle-button--theme {
-    .toggle-button__icon--sun {
-      display: none;
-    }
+  .masthead__actions .toggle-button:hover,
+  .masthead__actions .toggle-button:focus-visible {
+    color: #bfdbfe;
+  }
 
-    .toggle-button__icon--moon {
-      display: inline-flex;
-    }
+  .masthead__menu-item--toggle {
+    color: #e2e8f0;
+  }
+
+  .masthead__menu-item--toggle .toggle-button:hover,
+  .masthead__menu-item--toggle .toggle-button:focus-visible {
+    color: #bfdbfe;
   }
 }
 
-html:not(.theme-dark) .toggle-button--theme .toggle-button__icon--moon {
+html:not(.theme-dark) .toggle-button--theme .toggle-button__icon--moon,
+html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-en {
   display: none;
 }
 
-html.theme-dark .toggle-button--theme .toggle-button__icon--sun {
-  display: none;
+html.theme-dark .toggle-button--theme .toggle-button__icon--sun,
+html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-zh {
+  display: inline-flex;
+}
+
+@media (max-width: 640px) {
+  .masthead__actions {
+    display: none;
+  }
+
+  .masthead__menu-item--toggle {
+    display: table-cell;
+  }
 }
 
 

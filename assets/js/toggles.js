@@ -11,21 +11,11 @@
 
   const html = document.documentElement;
   const metaTheme = document.querySelector('meta[name="theme-color"]#site-theme-color');
-  const themeToggle = document.querySelector('[data-theme-toggle]');
-  const themeLabel = themeToggle ? themeToggle.querySelector('[data-theme-label]') : null;
-  const languageToggle = document.querySelector('[data-language-toggle]');
-  const languageLabel = languageToggle ? languageToggle.querySelector('[data-language-label]') : null;
+  const themeToggles = Array.from(document.querySelectorAll('[data-theme-toggle]'));
+  const languageToggles = Array.from(document.querySelectorAll('[data-language-toggle]'));
 
   function getActiveLanguage() {
     return html.getAttribute('data-language') === 'zh' ? 'zh' : 'en';
-  }
-
-  function getThemeLabel(isDark, language) {
-    if (language === 'zh') {
-      return isDark ? '深色' : '浅色';
-    }
-
-    return isDark ? 'Dark' : 'Light';
   }
 
   function getThemeAriaLabel(isDark, language) {
@@ -53,16 +43,13 @@
     html.classList.toggle('theme-light', normalized !== 'dark');
     html.setAttribute('data-theme', normalized);
 
-    if (themeToggle) {
-      const isDark = normalized === 'dark';
-      const language = getActiveLanguage();
-      themeToggle.setAttribute('aria-pressed', String(isDark));
-      themeToggle.setAttribute('aria-label', getThemeAriaLabel(isDark, language));
+    const isDark = normalized === 'dark';
+    const language = getActiveLanguage();
 
-      if (themeLabel) {
-        themeLabel.textContent = getThemeLabel(isDark, language);
-      }
-    }
+    themeToggles.forEach(function (toggle) {
+      toggle.setAttribute('aria-pressed', String(isDark));
+      toggle.setAttribute('aria-label', getThemeAriaLabel(isDark, language));
+    });
 
     updateMetaThemeColor(normalized);
 
@@ -133,20 +120,17 @@
       }
     });
 
-    if (languageToggle) {
-      const isChinese = normalized === 'zh';
-      languageToggle.setAttribute('aria-pressed', String(isChinese));
-      languageToggle.setAttribute(
+    const isChinese = normalized === 'zh';
+
+    languageToggles.forEach(function (toggle) {
+      toggle.setAttribute('aria-pressed', String(isChinese));
+      toggle.setAttribute(
         'aria-label',
         isChinese ? '切换到英文' : 'Switch to Chinese'
       );
 
-      if (languageLabel) {
-        languageLabel.textContent = isChinese ? '中' : 'EN';
-      }
-
-      languageToggle.dataset.nextLanguage = nextLanguage;
-    }
+      toggle.dataset.nextLanguage = nextLanguage;
+    });
 
     applyTheme(html.getAttribute('data-theme') || 'light', { persist: false });
 
@@ -184,19 +168,19 @@
   const initialLanguage = storedLanguage || html.getAttribute('lang') || 'en';
   applyLanguage(initialLanguage, { persist: Boolean(storedLanguage) });
 
-  if (themeToggle) {
-    themeToggle.addEventListener('click', function () {
+  themeToggles.forEach(function (toggle) {
+    toggle.addEventListener('click', function () {
       const currentTheme = html.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
       const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
       applyTheme(nextTheme);
     });
-  }
+  });
 
-  if (languageToggle) {
-    languageToggle.addEventListener('click', function () {
+  languageToggles.forEach(function (toggle) {
+    toggle.addEventListener('click', function () {
       const currentLanguage = html.getAttribute('data-language') === 'zh' ? 'zh' : 'en';
       const nextLanguage = currentLanguage === 'zh' ? 'en' : 'zh';
       applyLanguage(nextLanguage);
     });
-  }
+  });
 })();
