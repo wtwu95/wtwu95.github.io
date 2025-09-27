@@ -6,7 +6,8 @@
   --masthead-toggle-icon-primary: #4d5258;
   --masthead-toggle-icon-secondary: #ffffff;
   --masthead-toggle-underline: #{mix(#fff, $primary-color, 50%)};
-  --theme-toggle-track-bg: rgba($primary-color, 0.16);
+  --toggle-base-panel-bg: rgba($primary-color, 0.16);
+  --theme-toggle-track-bg: var(--toggle-base-panel-bg);
   --theme-toggle-inactive-bg: var(--language-toggle-inactive-bg);
   --theme-toggle-icon-inactive: var(--language-toggle-text-inactive);
   --theme-toggle-sun-active-bg: var(--language-toggle-active-bg);
@@ -190,7 +191,7 @@
     position: absolute;
     inset: 0;
     border-radius: 0.65rem;
-    background: rgba($primary-color, 0.16);
+    background: var(--toggle-base-panel-bg);
     transform: translate3d(0.25rem, 0.25rem, 0);
     transition: transform 0.35s cubic-bezier(0.33, 1, 0.68, 1),
       background 0.35s ease;
@@ -249,7 +250,7 @@
     position: absolute;
     inset: 0;
     border-radius: 0.65rem;
-    background: var(--theme-toggle-track-bg);
+    background: var(--toggle-base-panel-bg);
     transform: translate3d(0.25rem, 0.25rem, 0);
     transition: transform 0.35s cubic-bezier(0.33, 1, 0.68, 1),
       background 0.35s ease;
@@ -308,7 +309,8 @@ html.theme-dark {
   }
 
   --masthead-toggle-underline: rgba(191, 219, 254, 0.85);
-  --theme-toggle-track-bg: rgba(148, 163, 184, 0.28);
+  --toggle-base-panel-bg: rgba(148, 163, 184, 0.28);
+  --theme-toggle-track-bg: var(--toggle-base-panel-bg);
   --theme-toggle-inactive-bg: var(--language-toggle-inactive-bg);
   --theme-toggle-icon-inactive: var(--language-toggle-text-inactive);
   --theme-toggle-sun-icon-color: var(--language-toggle-text-inactive);
@@ -343,10 +345,6 @@ html.theme-dark {
   .masthead__menu-item--toggle .toggle-button:hover,
   .masthead__menu-item--toggle .toggle-button:focus-visible {
     color: #bfdbfe;
-  }
-
-  .toggle-button--language::before {
-    background: rgba(148, 163, 184, 0.28);
   }
 
   .toggle-button--theme .toggle-button__icon--sun {
