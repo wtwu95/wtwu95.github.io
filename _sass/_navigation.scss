@@ -271,29 +271,6 @@
       }
     }
 
-    .masthead__menu-item--toggle {
-      display: block;
-      border-bottom: 1px solid $border-color;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      .toggle-button {
-        width: 100%;
-        margin: 0;
-        padding: 10px 20px;
-        justify-content: flex-start;
-        text-align: left;
-
-        &:hover,
-        &:focus-visible {
-          color: $masthead-link-color-hover;
-          background: mix(#fff, $primary-color, 75%);
-        }
-      }
-    }
-
     &:before {
       content: "";
       position: absolute;
