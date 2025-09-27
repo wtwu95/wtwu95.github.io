@@ -6,6 +6,16 @@
   --masthead-toggle-icon-primary: #4d5258;
   --masthead-toggle-icon-secondary: #ffffff;
   --masthead-toggle-underline: #{mix(#fff, $primary-color, 50%)};
+  --language-toggle-active-bg: linear-gradient(
+    135deg,
+    #{mix(#fff, $primary-color, 22%)},
+    #{mix(#000, $primary-color, 18%)}
+  );
+  --language-toggle-inactive-bg: #{mix(#fff, $primary-color, 88%)};
+  --language-toggle-text-active: #ffffff;
+  --language-toggle-text-inactive: #{mix(#000, $primary-color, 65%)};
+  --language-toggle-shadow-strong: 0 10px 22px rgba($primary-color, 0.28);
+  --language-toggle-shadow-soft: 0 6px 14px rgba($primary-color, 0.16);
 }
 
 .masthead {
@@ -147,9 +157,68 @@
     font-size: 1.25rem;
   }
 
-  &__icon--sun,
-  &__icon--language-en {
+  &__icon--sun {
     display: none;
+  }
+}
+
+.toggle-button--language {
+  width: 3.3rem;
+  height: 2.1rem;
+  padding: 0;
+  margin: 0 0.75rem;
+  overflow: visible;
+  font-size: 0.85rem;
+
+  &::after {
+    content: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0.85rem;
+    background: rgba($primary-color, 0.16);
+    transform: translate3d(0.4rem, 0.4rem, 0);
+    transition: transform 0.35s cubic-bezier(0.33, 1, 0.68, 1),
+      background 0.35s ease;
+    z-index: 0;
+  }
+
+  .toggle-button__icon--language {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $sans-serif-narrow;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: var(--language-toggle-inactive-bg);
+    color: var(--language-toggle-text-inactive);
+    box-shadow: var(--language-toggle-shadow-soft);
+    transform: translate3d(0.4rem, 0.4rem, -10px) scale(0.96);
+    transition: transform 0.35s cubic-bezier(0.33, 1, 0.68, 1),
+      background 0.3s ease,
+      color 0.3s ease,
+      box-shadow 0.35s ease;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .toggle-button__icon--language-en {
+    background: var(--language-toggle-active-bg);
+    color: var(--language-toggle-text-active);
+    box-shadow: var(--language-toggle-shadow-strong);
+    transform: translate3d(-0.25rem, -0.25rem, 0);
+    z-index: 2;
   }
 }
 
@@ -164,6 +233,16 @@
 
 html.theme-dark {
   --masthead-toggle-underline: rgba(191, 219, 254, 0.85);
+  --language-toggle-active-bg: linear-gradient(
+    135deg,
+    #{mix(#fff, $primary-color, 12%)},
+    #{mix(#000, $primary-color, 60%)}
+  );
+  --language-toggle-inactive-bg: #{mix(#000, $primary-color, 65%)};
+  --language-toggle-text-active: #f8fafc;
+  --language-toggle-text-inactive: #{mix(#fff, $primary-color, 75%)};
+  --language-toggle-shadow-strong: 0 12px 26px rgba(15, 23, 42, 0.48);
+  --language-toggle-shadow-soft: 0 8px 18px rgba(15, 23, 42, 0.3);
 
   .masthead__actions {
     color: #e2e8f0;
@@ -182,6 +261,10 @@ html.theme-dark {
   .masthead__menu-item--toggle .toggle-button:focus-visible {
     color: #bfdbfe;
   }
+
+  .toggle-button--language::before {
+    background: rgba(148, 163, 184, 0.28);
+  }
 }
 
 html.theme-dark .toggle-button--theme .toggle-button__icon--sun {
@@ -192,12 +275,27 @@ html.theme-dark .toggle-button--theme .toggle-button__icon--moon {
   display: none;
 }
 
-html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-zh {
-  display: none;
+html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-en {
+  background: var(--language-toggle-inactive-bg);
+  color: var(--language-toggle-text-inactive);
+  box-shadow: var(--language-toggle-shadow-soft);
+  transform: translate3d(0.4rem, 0.4rem, -10px) scale(0.96);
+  z-index: 1;
 }
 
-html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-en {
-  display: inline-flex;
+html[data-language='zh'] .toggle-button--language .toggle-button__icon--language-zh {
+  background: var(--language-toggle-active-bg);
+  color: var(--language-toggle-text-active);
+  box-shadow: var(--language-toggle-shadow-strong);
+  transform: translate3d(-0.25rem, -0.25rem, 0);
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle-button--language::before,
+  .toggle-button--language .toggle-button__icon--language {
+    transition: none;
+  }
 }
 
 @media (max-width: 640px) {
