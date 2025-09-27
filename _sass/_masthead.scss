@@ -17,14 +17,14 @@
   --theme-toggle-shadow-soft: 0 6px 14px rgba($primary-color, 0.16);
   --language-toggle-active-bg: linear-gradient(
     135deg,
-    #{mix(#fff, $primary-color, 22%)},
-    #{mix(#000, $primary-color, 18%)}
+    #{mix(#fff, $primary-color, 96%)},
+    #{mix(#fff, $primary-color, 86%)}
   );
-  --language-toggle-inactive-bg: #{mix(#fff, $primary-color, 88%)};
-  --language-toggle-text-active: #ffffff;
-  --language-toggle-text-inactive: #{mix(#000, $primary-color, 65%)};
-  --language-toggle-shadow-strong: 0 10px 22px rgba($primary-color, 0.28);
-  --language-toggle-shadow-soft: 0 6px 14px rgba($primary-color, 0.16);
+  --language-toggle-inactive-bg: #{mix(#fff, $primary-color, 94%)};
+  --language-toggle-text-active: #{mix(#000, $primary-color, 55%)};
+  --language-toggle-text-inactive: #{mix(#000, $primary-color, 70%)};
+  --language-toggle-shadow-strong: 0 8px 18px rgba($primary-color, 0.22);
+  --language-toggle-shadow-soft: 0 4px 12px rgba($primary-color, 0.12);
 }
 
 .masthead {
