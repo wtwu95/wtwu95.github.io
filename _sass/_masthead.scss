@@ -416,16 +416,32 @@ html[data-language='zh'] .toggle-button--language .toggle-button__icon--language
     display: none;
   }
 
-  .masthead__menu-item--toggle {
-    display: table-cell;
-    text-align: right;
+  .greedy-nav {
+    .visible-links .masthead__menu-item--toggle {
+      display: table-cell;
+      text-align: right;
+    }
+
+    .hidden-links .masthead__menu-item--toggle {
+      display: block;
+      padding: 0;
+      text-align: center;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .toggle-button {
+        width: 100%;
+      }
+    }
   }
 
   .masthead__menu-item--toggle .toggle-button {
     margin: 0;
   }
 
-  .masthead__menu-item--toggle + .masthead__menu-item--toggle {
+  .greedy-nav .visible-links .masthead__menu-item--toggle + .masthead__menu-item--toggle {
     padding-left: 0.25rem;
   }
 }
