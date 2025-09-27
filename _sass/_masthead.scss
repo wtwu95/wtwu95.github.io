@@ -212,9 +212,11 @@ html[data-language='zh'] .toggle-button--language .toggle-button__icon--language
   .masthead__actions {
     display: flex;
     flex: 1 1 100%;
+    order: -1;
     justify-content: flex-end;
     gap: 0.75rem;
     padding-top: 0.25rem;
+    padding-right: clamp(0rem, 6vw, 3rem);
   }
 
   .masthead__actions .toggle-button {
