@@ -3,19 +3,19 @@
 {% endif %}
 
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
+  <div class="profile_box__info">
+    <div class="author__avatar">
+      <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
+    </div>
 
-  <div class="author__avatar">
-    <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
-  </div>
+    <div class="author__content">
+      <h3 class="author__name">{{ author.name }}</h3>
+      {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    </div>
 
-  <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
-  </div>
-
-  <div class="author__urls-wrapper">
-    <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
-    <ul class="author__urls social-icons">
+    <div class="author__urls-wrapper">
+      <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
+      <ul class="author__urls social-icons">
       {% if site.description %}
         <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
       {% endif %}
@@ -117,45 +117,8 @@
       {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
-{% endif %}
-    </ul>
-    <div class="author__maps">
-      <div class="author__map author__map--visitors">
-        <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=O8KnN2KN9LurEKfnDLzKFXnBIkbpznU5gMV5OwVKB98&cl=ffffff&w=a"></script>
-      </div>
-      {% if site.google_maps %}
-        <div class="author__map author__map--location">
-          {% if site.google_maps.api_key %}
-            {% assign map_lat = site.google_maps.location.lat | default: 0 %}
-            {% assign map_lng = site.google_maps.location.lng | default: 0 %}
-            {% assign map_zoom = site.google_maps.zoom | default: 14 %}
-            {% assign map_title = site.google_maps.location.title | default: author.location | default: 'Location' %}
-            {% assign map_language = site.google_maps.language | default: page.lang | default: site.lang | default: site.locale %}
-            <div
-              class="author-location-map author-location-map--showing-fallback"
-              data-author-map
-              data-api-key="{{ site.google_maps.api_key | strip | escape }}"
-              data-lat="{{ map_lat }}"
-              data-lng="{{ map_lng }}"
-              data-zoom="{{ map_zoom }}"
-              data-marker-title="{{ map_title | escape }}"
-              aria-label="{{ map_title | escape }}"{% if map_language %} data-language="{{ map_language | escape }}"{% endif %}>
-              <iframe
-                class="author-location-map__fallback"
-                data-author-map-fallback
-                src="https://maps.google.com/maps?q={{ map_lat | escape }},{{ map_lng | escape }}&amp;z={{ map_zoom | escape }}&amp;output=embed{% if map_language %}&amp;hl={{ map_language | escape }}{% endif %}"
-                title="{{ map_title | escape }}"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                allowfullscreen>
-              </iframe>
-            </div>
-          {% else %}
-            <p class="author-location-map__placeholder">{{ site.google_maps.placeholder | default: 'Set your Google Maps API key in _config.yml to display the location map.' }}</p>
-          {% endif %}
-        </div>
       {% endif %}
-    </div>
+    </ul>
     <div class="author__urls_sm">
       {% if author.uri %}
         <a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i></a>
@@ -249,6 +212,46 @@
       {% endif %}
       {% if author.wikipedia %}
         <a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i></a>
+      {% endif %}
+    </div>
+    </div>
+  </div>
+  <div class="profile_box__maps">
+    <div class="author__maps">
+      <div class="author__map author__map--visitors">
+        <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=O8KnN2KN9LurEKfnDLzKFXnBIkbpznU5gMV5OwVKB98&cl=ffffff&w=a"></script>
+      </div>
+      {% if site.google_maps %}
+        <div class="author__map author__map--location">
+          {% if site.google_maps.api_key %}
+            {% assign map_lat = site.google_maps.location.lat | default: 0 %}
+            {% assign map_lng = site.google_maps.location.lng | default: 0 %}
+            {% assign map_zoom = site.google_maps.zoom | default: 14 %}
+            {% assign map_title = site.google_maps.location.title | default: author.location | default: 'Location' %}
+            {% assign map_language = site.google_maps.language | default: page.lang | default: site.lang | default: site.locale %}
+            <div
+              class="author-location-map author-location-map--showing-fallback"
+              data-author-map
+              data-api-key="{{ site.google_maps.api_key | strip | escape }}"
+              data-lat="{{ map_lat }}"
+              data-lng="{{ map_lng }}"
+              data-zoom="{{ map_zoom }}"
+              data-marker-title="{{ map_title | escape }}"
+              aria-label="{{ map_title | escape }}"{% if map_language %} data-language="{{ map_language | escape }}"{% endif %}>
+              <iframe
+                class="author-location-map__fallback"
+                data-author-map-fallback
+                src="https://maps.google.com/maps?q={{ map_lat | escape }},{{ map_lng | escape }}&amp;z={{ map_zoom | escape }}&amp;output=embed{% if map_language %}&amp;hl={{ map_language | escape }}{% endif %}"
+                title="{{ map_title | escape }}"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+            </div>
+          {% else %}
+            <p class="author-location-map__placeholder">{{ site.google_maps.placeholder | default: 'Set your Google Maps API key in _config.yml to display the location map.' }}</p>
+          {% endif %}
+        </div>
       {% endif %}
     </div>
   </div>
