@@ -1,6 +1,57 @@
 (function () {
   'use strict';
 
+  var MAP_BREAKPOINT = 925;
+  var MAP_WRAPPER_SELECTOR = '.profile_box__maps';
+  var PROFILE_BOX_SELECTOR = '.profile_box';
+  var HOMEPAGE_TARGET_SELECTOR = '.homepage-author-maps-target';
+  var MOBILE_WRAPPER_CLASS = 'profile_box__maps--mobile';
+  var HOMEPAGE_VISIBLE_CLASS = 'homepage-author-maps-target--visible';
+
+  function getMapWrapper() {
+    return document.querySelector(MAP_WRAPPER_SELECTOR);
+  }
+
+  function getSidebarContainer() {
+    return document.querySelector(PROFILE_BOX_SELECTOR);
+  }
+
+  function getHomepageTarget() {
+    return document.querySelector(HOMEPAGE_TARGET_SELECTOR);
+  }
+
+  function shouldUseHomepageTarget(homepageTarget) {
+    return Boolean(homepageTarget) && window.innerWidth < MAP_BREAKPOINT;
+  }
+
+  function relocateMaps() {
+    var wrapper = getMapWrapper();
+    if (!wrapper) {
+      return;
+    }
+
+    var homepageTarget = getHomepageTarget();
+    var useHomepage = shouldUseHomepageTarget(homepageTarget);
+
+    if (useHomepage) {
+      if (!homepageTarget.contains(wrapper)) {
+        homepageTarget.appendChild(wrapper);
+      }
+      wrapper.classList.add(MOBILE_WRAPPER_CLASS);
+      homepageTarget.classList.add(HOMEPAGE_VISIBLE_CLASS);
+      return;
+    }
+
+    var sidebarContainer = getSidebarContainer();
+    if (sidebarContainer && !sidebarContainer.contains(wrapper)) {
+      sidebarContainer.appendChild(wrapper);
+    }
+    wrapper.classList.remove(MOBILE_WRAPPER_CLASS);
+    if (homepageTarget) {
+      homepageTarget.classList.remove(HOMEPAGE_VISIBLE_CLASS);
+    }
+  }
+
   function getFallback(mapContainer) {
     if (!mapContainer) {
       return null;
@@ -144,6 +195,7 @@
   }
 
   function init() {
+    relocateMaps();
     var mapContainer = document.querySelector('[data-author-map]');
     if (!mapContainer) {
       return;
@@ -195,8 +247,14 @@
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', function () {
+      init();
+      window.addEventListener('resize', relocateMaps);
+      window.addEventListener('orientationchange', relocateMaps);
+    });
   } else {
     init();
+    window.addEventListener('resize', relocateMaps);
+    window.addEventListener('orientationchange', relocateMaps);
   }
 })();
