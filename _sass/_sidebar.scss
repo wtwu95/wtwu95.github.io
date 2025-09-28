@@ -273,10 +273,6 @@
   margin-top: 1.5em;
 }
 
-.author__map-sidebar--after-content {
-  margin-top: 2em;
-}
-
 .author__maps {
   display: flex;
   flex-direction: row;
@@ -347,11 +343,6 @@
   .author__map-sidebar {
     position: sticky;
     top: 1.5rem;
-  }
-
-  .author__map-sidebar.author__map-sidebar--after-content {
-    position: static;
-    top: auto;
   }
 
   .author__map {
