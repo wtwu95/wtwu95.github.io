@@ -273,6 +273,19 @@
   margin-top: 1.5em;
 }
 
+.author__map-sidebar--inline {
+  margin-top: 2em;
+
+  .author__maps {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .author__map {
+    width: 100%;
+  }
+}
+
 .author__maps {
   display: flex;
   flex-direction: row;
