@@ -16,7 +16,13 @@
 
 {% if limit > 0 %}
 {% for item in news_items limit: limit %}
+{% assign item_en = item.en | default: nil %}
+{% assign item_zh = item.zh | default: nil %}
+{% if item_en or item_zh %}
+- {% if item_en %}<span data-lang="en">{{ item_en }}</span>{% endif %}{% if item_zh %}<span data-lang="zh"{% if item_en %} hidden{% endif %}>{{ item_zh }}</span>{% endif %}
+{% else %}
 - {{ item }}
+{% endif %}
 {% endfor %}
 {: .news-list}
 {% else %}
