@@ -27,7 +27,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Wentao Wu (W. WU)"
-  name_zh          : "Wentao Wu (W. WU)"
+  name_zh          : "吴文涛"
   avatar           : "/images/avatar.jpg"
   bio              : "Postdoctoral Fellow in RCLAE & AAE"
   bio_zh           : "博士后研究员 (RCLAE & AAE)"
