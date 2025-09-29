@@ -1,6 +1,18 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+  {% if page.author_profile or layout.author_profile %}
+    {% assign hide_author_maps_on_mobile = false %}
+    {% if page.hide_author_maps_on_mobile %}
+      {% assign hide_author_maps_on_mobile = true %}
+    {% endif %}
+    {% if layout.hide_author_maps_on_mobile %}
+      {% assign hide_author_maps_on_mobile = true %}
+    {% endif %}
+    {% include author-profile.html %}
+    <div class="author__map-sidebar">
+      {% include author-maps.html variant="sidebar" mobile_hidden=hide_author_maps_on_mobile %}
+    </div>
+  {% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
