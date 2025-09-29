@@ -7,8 +7,8 @@
 
 # Site Settings
 title                    : "Wentao Wu"
-description              : "Postdoctoral Fellow"
-description_zh           : "博士后研究员"
+description              : 
+description_zh           : 
 repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
 lang                     : en
@@ -28,8 +28,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Wentao Wu (W. WU)"
   avatar           : "/images/avatar.jpg"
-  bio              : 
-  bio_zh           : 
+  bio              : "Postdoctoral Fellow"
+  bio_zh           : "博士后研究员"
   location         : "Hong Kong, China"
   location_zh      : "中国香港"
   employer         : "The Hong Kong Polytechnic University"
