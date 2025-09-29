@@ -5,11 +5,14 @@
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
   <div class="author__avatar">
-    <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
+    <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}{% if author.name_zh %} ({{ author.name_zh }}){% endif %}">
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name">
+      {% if author.name %}<span data-lang="en">{{ author.name }}</span>{% endif %}
+      {% if author.name_zh %}<span data-lang="zh"{% if author.name %} hidden{% endif %}>{{ author.name_zh }}</span>{% endif %}
+    </h3>
     {% if author.bio or author.bio_zh %}
       <p class="author__bio">
         {% if author.bio %}<span data-lang="en">{{ author.bio }}</span>{% endif %}
