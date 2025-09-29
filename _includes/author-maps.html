@@ -1,4 +1,9 @@
 {% assign variant = include.variant | default: 'sidebar' %}
+{% assign mobile_hidden = include.mobile_hidden | default: false %}
+{% assign author_map_classes = 'author__maps author__maps--' | append: variant %}
+{% if mobile_hidden %}
+  {% assign author_map_classes = author_map_classes | append: ' author__maps--mobile-hidden' %}
+{% endif %}
 {% if author %}
   {% assign map_author = author %}
 {% elsif page.author and site.data.authors[page.author] %}
@@ -6,7 +11,7 @@
 {% else %}
   {% assign map_author = site.author %}
 {% endif %}
-<div class="author__maps author__maps--{{ variant }}">
+<div class="{{ author_map_classes }}">
   <div class="author__map author__map--visitors">
     <script
       type="text/javascript"
