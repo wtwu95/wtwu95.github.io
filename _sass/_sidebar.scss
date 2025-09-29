@@ -312,10 +312,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: clamp(0.75em, 2vw, 1.5em);
+  gap: 1em;
   align-items: stretch;
   justify-content: center;
-  width: 100%;
 }
 
 .author__maps--mobile-hidden {
@@ -329,66 +328,30 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
+  height: clamp(220px, 45vw, 320px);
+
+  > * {
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .author__map--location {
   margin-top: 0;
 }
 
-.author__map-frame {
-  position: relative;
-  flex: 1 1 auto;
-  width: 100%;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  background-color: $code-background-color;
-  overflow: hidden;
-}
-
-.author__map--visitors {
-  .author__map-frame {
-    display: block;
-  }
-
-  .author__map-frame > script {
-    display: none;
-  }
-
-  .author__map-frame > div,
-  .author__map-frame > iframe,
-  .author__map-frame > a,
-  .author__map-frame > img,
-  .author__map-frame > object {
-    width: 100% !important;
-    max-width: none !important;
-  }
-}
-
-.author__map--location {
-  .author__map-frame {
-    height: var(--author-location-map-height, clamp(220px, 45vw, 320px));
-    display: flex;
-  }
-
-  .author__map-frame > div,
-  .author__map-frame > iframe,
-  .author__map-frame > a,
-  .author__map-frame > img,
-  .author__map-frame > object {
-    flex: 1 1 auto;
-    width: 100%;
-    height: 100%;
-    max-width: none;
-  }
-}
-
 .author-location-map {
   width: 100%;
   height: 100%;
-  min-height: 0;
-  border: 0;
-  border-radius: 0;
-  background-color: transparent;
+  min-height: clamp(200px, 45vw, 320px);
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: $code-background-color;
   overflow: hidden;
   position: relative;
 }
@@ -397,7 +360,17 @@
   width: 100%;
   height: 100%;
   border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   display: block;
+}
+
+.author-location-map__fallback {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @include breakpoint($large) {
@@ -405,7 +378,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    gap: clamp(1em, 1.75vw, 1.5em);
+    gap: 1.25em;
   }
 
   .author__map-sidebar {
@@ -415,6 +388,7 @@
 
   .author__map {
     width: 100%;
+    height: clamp(240px, 40vh, 360px);
   }
 }
 
