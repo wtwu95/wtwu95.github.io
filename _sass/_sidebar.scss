@@ -291,35 +291,48 @@
 
 .author__map-sidebar {
   margin-top: 1.5em;
+  display: none;
+
+  @include breakpoint($large) {
+    display: block;
+  }
 }
 
-.author__map-sidebar--inline {
+.page__author-maps {
   margin-top: 2em;
-  width: 100%;
+  display: block;
 
-  .author__maps {
-    width: 100%;
-    gap: 1em;
-  }
-
-  .author__map {
-    flex: 1 1 0;
-    min-width: 0;
+  @include breakpoint($large) {
+    display: none;
   }
 }
 
 .author__maps {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  width: 100%;
   gap: 1em;
   align-items: stretch;
   justify-content: center;
 }
 
-.author__maps--mobile-hidden {
-  @include breakpoint(max-width $medium) {
-    display: none;
+.author__maps--sidebar {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.author__maps--inline {
+  display: none;
+
+  @include breakpoint(max-width $large) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page__author-maps .author__map {
+  @include breakpoint(max-width $large) {
+    flex: 1 1 50%;
   }
 }
 
@@ -374,10 +387,8 @@
 }
 
 @include breakpoint($large) {
-  .author__maps {
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+  .author__maps--sidebar {
+    justify-content: flex-start;
     gap: 1.25em;
   }
 
