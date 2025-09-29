@@ -28,8 +28,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Wentao Wu (W. WU)"
   avatar           : "/images/avatar.jpg"
-  bio              : "Postdoctoral Fellow"
-  bio_zh           : "博士后研究员"
+  bio              : "Postdoctoral Fellow in RCLAE & AAE"
+  bio_zh           : "博士后研究员 (RCLAE & AAE)"
   location         : "Hong Kong, China"
   location_zh      : "中国香港"
   employer         : "The Hong Kong Polytechnic University"
