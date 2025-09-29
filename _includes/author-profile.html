@@ -31,7 +31,7 @@
       {% endif %}
       {% if author.location or author.location_zh %}
         <li class="author__item author__item--location">
-          <i class="fa fa-fw fa-location-dot" aria-hidden="true"></i>
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
           <div class="author__item-text">
             {% if author.location %}<span data-lang="en">{{ author.location }}</span>{% endif %}
             {% if author.location_zh %}<span data-lang="zh"{% if author.location %} hidden{% endif %}>{{ author.location_zh }}</span>{% endif %}
