@@ -38,10 +38,13 @@
           </div>
         </li>
       {% endif %}
-      {% if author.employer %}
+      {% if author.employer or author.employer_zh %}
         <li class="author__item author__item--employer">
           <i class="fas fa-fw fa-university" aria-hidden="true"></i>
-          <div class="author__item-text">{{ author.employer }}</div>
+          <div class="author__item-text">
+            {% if author.employer %}<span data-lang="en">{{ author.employer }}</span>{% endif %}
+            {% if author.employer_zh %}<span data-lang="zh"{% if author.employer %} hidden{% endif %}>{{ author.employer_zh }}</span>{% endif %}
+          </div>
         </li>
       {% endif %}
       {% if author.uri %}
