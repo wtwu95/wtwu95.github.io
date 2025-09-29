@@ -290,31 +290,15 @@
 }
 
 .author__map-sidebar {
-  margin-top: 1.5em;
-}
-
-.author__map-sidebar--inline {
-  margin-top: 2em;
-  width: 100%;
-
-  .author__maps {
-    width: 100%;
-    gap: 1em;
-  }
-
-  .author__map {
-    flex: 1 1 0;
-    min-width: 0;
-  }
+  margin-top: 1.25em;
 }
 
 .author__maps {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1em;
+  flex-direction: column;
   align-items: stretch;
-  justify-content: center;
+  width: 100%;
+  gap: 0.75em;
 }
 
 .author__maps--mobile-hidden {
@@ -324,31 +308,30 @@
 }
 
 .author__map {
-  flex: 1 1 280px;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  display: block;
+  width: 100%;
   min-width: 0;
-  height: clamp(220px, 45vw, 320px);
-
-  > * {
-    flex: 1 1 auto;
-    min-height: 0;
-  }
-
-  iframe {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .author__map--location {
   margin-top: 0;
 }
 
+.author__map > * {
+  width: 100%;
+  height: 100%;
+}
+
+.author__map--visitors > * {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .author-location-map {
   width: 100%;
   height: 100%;
-  min-height: clamp(200px, 45vw, 320px);
+  min-height: 0;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background-color: $code-background-color;
@@ -374,21 +357,27 @@
 }
 
 @include breakpoint($large) {
-  .author__maps {
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1.25em;
-  }
-
   .author__map-sidebar {
     position: sticky;
     top: 1.5rem;
   }
+}
+
+.author__map-sidebar--inline {
+  margin-top: 2em;
+  width: 100%;
+
+  .author__maps {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
 
   .author__map {
-    width: 100%;
-    height: clamp(240px, 40vh, 360px);
+    flex: 1 1 calc(50% - 0.75em);
+    max-width: calc(50% - 0.75em);
+    min-width: 240px;
   }
 }
 
