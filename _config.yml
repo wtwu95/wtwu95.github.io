@@ -26,13 +26,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Wentao Wu"
+  name             : "Wentao Wu (W. WU)"
   avatar           : "/images/avatar.jpg"
   bio              : 
   bio_zh           : 
   location         : "Hong Kong, China"
   location_zh      : "中国香港"
-  employer         : “The Hong Kong Polytechnic University”
+  employer         : "The Hong Kong Polytechnic University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=e2ban1wAAAAJ"
   email            : "wtwu95@gmail.com"
