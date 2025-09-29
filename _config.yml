@@ -7,8 +7,8 @@
 
 # Site Settings
 title                    : "Wentao Wu"
-description              : 
-description_zh           : 
+description              : ""
+description_zh           : ""
 repository               : "wtwu95/wtwu95.github.io"
 google_scholar_stats_use_cdn : true
 lang                     : en
@@ -30,7 +30,7 @@ author:
   avatar           : "/images/avatar.jpg"
   bio              : "Postdoctoral Fellow in RCLAE & AAE"
   bio_zh           : "博士后研究员 (RCLAE & AAE)"
-  location         : "Hong Kong, China"
+  location         : "Hong Kong"
   location_zh      : "中国香港"
   employer         : "The Hong Kong Polytechnic University"
   pubmed           : 
