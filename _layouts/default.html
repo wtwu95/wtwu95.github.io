@@ -24,6 +24,13 @@ layout: compress
           <section class="page__content" itemprop="text">
             {{ content }}
           </section>
+          {% if page.author_profile or layout.author_profile %}
+            {% unless page.hide_author_maps_on_mobile or layout.hide_author_maps_on_mobile %}
+              <aside class="page__author-maps">
+                {% include author-maps.html variant="inline" %}
+              </aside>
+            {% endunless %}
+          {% endif %}
         </div>
       </article>
     </div>
