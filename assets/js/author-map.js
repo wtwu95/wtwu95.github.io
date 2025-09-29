@@ -22,7 +22,6 @@
     fallback.style.display = '';
     fallback.removeAttribute('aria-hidden');
     mapContainer.classList.add('author-location-map--showing-fallback');
-    ensureLocationMapSize(5);
   }
 
   function hideFallback(mapContainer) {
@@ -38,7 +37,6 @@
     fallback.style.display = 'none';
     fallback.setAttribute('aria-hidden', 'true');
     mapContainer.classList.remove('author-location-map--showing-fallback');
-    ensureLocationMapSize(5);
   }
 
   function hasMapError(mapContainer) {
@@ -79,102 +77,6 @@
         }
       }
     };
-  }
-
-  function resetLocationMapSize() {
-    var locationWrapper = document.querySelector('.author__map--location');
-    if (!locationWrapper) {
-      return;
-    }
-
-    locationWrapper.style.removeProperty('--author-map-width');
-    locationWrapper.style.removeProperty('--author-map-height');
-
-    var locationMap = locationWrapper.querySelector('.author-location-map');
-    if (locationMap) {
-      locationMap.style.removeProperty('--author-location-map-min-height');
-    }
-  }
-
-  function applyLocationMapSize(width, height) {
-    var locationWrapper = document.querySelector('.author__map--location');
-    if (!locationWrapper) {
-      return false;
-    }
-
-    if (width) {
-      locationWrapper.style.setProperty('--author-map-width', width + 'px');
-    }
-
-    if (height) {
-      locationWrapper.style.setProperty('--author-map-height', height + 'px');
-    }
-
-    var locationMap = locationWrapper.querySelector('.author-location-map');
-    if (locationMap && height) {
-      locationMap.style.setProperty('--author-location-map-min-height', height + 'px');
-    }
-
-    return Boolean(width && height);
-  }
-
-  function syncLocationMapSize() {
-    var visitorsWrapper = document.querySelector('.author__map--visitors');
-    var locationWrapper = document.querySelector('.author__map--location');
-
-    if (!locationWrapper) {
-      return false;
-    }
-
-    if (!visitorsWrapper) {
-      resetLocationMapSize();
-      return false;
-    }
-
-    var referenceElement = visitorsWrapper.firstElementChild;
-    while (referenceElement && referenceElement.tagName === 'SCRIPT') {
-      referenceElement = referenceElement.nextElementSibling;
-    }
-
-    if (!referenceElement) {
-      referenceElement = visitorsWrapper;
-    }
-
-    var rect = referenceElement.getBoundingClientRect();
-    if (!rect.width || !rect.height) {
-      return false;
-    }
-
-    var width = Math.round(rect.width);
-    var height = Math.round(rect.height);
-
-    return applyLocationMapSize(width, height);
-  }
-
-  function ensureLocationMapSize(attempts) {
-    if (syncLocationMapSize()) {
-      return;
-    }
-
-    if (!attempts) {
-      return;
-    }
-
-    window.setTimeout(function () {
-      ensureLocationMapSize(attempts - 1);
-    }, 200);
-  }
-
-  function initializeLocationMapSizeSync() {
-    ensureLocationMapSize(10);
-
-    window.addEventListener('load', function () {
-      ensureLocationMapSize(10);
-    });
-
-    window.addEventListener('resize', function () {
-      ensureLocationMapSize(2);
-    });
   }
 
   function createInitializer(mapContainer, lat, lng, zoom, title) {
@@ -218,7 +120,7 @@
           showFallback(mapContainer);
         }
       }, 4000);
-      ensureLocationMapSize(5);
+      }
     };
   }
 
@@ -290,17 +192,11 @@
     }
 
     loadMapScript(apiKey, language);
-    ensureLocationMapSize(5);
-  }
-
-  function startAuthorMaps() {
-    init();
-    initializeLocationMapSizeSync();
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', startAuthorMaps);
+    document.addEventListener('DOMContentLoaded', init);
   } else {
-    startAuthorMaps();
+    init();
   }
 })();

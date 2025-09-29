@@ -328,9 +328,7 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  width: var(--author-map-width, auto);
-  max-width: 100%;
-  height: var(--author-map-height, clamp(220px, 45vw, 320px));
+  height: clamp(220px, 45vw, 320px);
 
   > * {
     flex: 1 1 auto;
@@ -350,10 +348,7 @@
 .author-location-map {
   width: 100%;
   height: 100%;
-  min-height: var(
-    --author-location-map-min-height,
-    clamp(200px, 45vw, 320px)
-  );
+  min-height: clamp(200px, 45vw, 320px);
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background-color: $code-background-color;
@@ -392,8 +387,8 @@
   }
 
   .author__map {
-    width: var(--author-map-width, 100%);
-    height: var(--author-map-height, clamp(240px, 40vh, 360px));
+    width: 100%;
+    height: clamp(240px, 40vh, 360px);
   }
 }
 
