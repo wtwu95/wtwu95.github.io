@@ -143,7 +143,7 @@
     return script;
   }
 
-  function initLocationMap() {
+  function init() {
     var mapContainer = document.querySelector('[data-author-map]');
     if (!mapContainer) {
       return;
@@ -192,99 +192,6 @@
     }
 
     loadMapScript(apiKey, language);
-  }
-
-  function initMapHeightSync() {
-    if (typeof window === 'undefined' || !window.document) {
-      return;
-    }
-
-    var mapGroups = document.querySelectorAll('.author__maps');
-    if (!mapGroups || !mapGroups.length) {
-      return;
-    }
-
-    var raf = window.requestAnimationFrame || function (callback) {
-      return window.setTimeout(callback, 16);
-    };
-
-    for (var i = 0; i < mapGroups.length; i += 1) {
-      (function (group) {
-        var visitorsFrame = group.querySelector('.author__map--visitors .author__map-frame');
-        var locationFrame = group.querySelector('.author__map--location .author__map-frame');
-
-        if (!visitorsFrame || !locationFrame) {
-          return;
-        }
-
-        var updateScheduled = false;
-
-        function applyHeight(height) {
-          if (!height || !isFinite(height)) {
-            return;
-          }
-
-          locationFrame.style.setProperty('--author-location-map-height', height + 'px');
-        }
-
-        function measureHeight() {
-          updateScheduled = false;
-
-          var height = visitorsFrame.getBoundingClientRect().height;
-
-          if (!height) {
-            var content = visitorsFrame.querySelector('div, iframe, object, img, embed');
-
-            if (content) {
-              height = content.getBoundingClientRect().height;
-            }
-          }
-
-          if (height) {
-            applyHeight(height);
-          }
-        }
-
-        function scheduleMeasure() {
-          if (updateScheduled) {
-            return;
-          }
-
-          updateScheduled = true;
-          raf(measureHeight);
-        }
-
-        if ('ResizeObserver' in window) {
-          var resizeObserver = new window.ResizeObserver(function () {
-            scheduleMeasure();
-          });
-
-          resizeObserver.observe(visitorsFrame);
-        }
-
-        if ('MutationObserver' in window) {
-          var mutationObserver = new window.MutationObserver(function () {
-            scheduleMeasure();
-          });
-
-          mutationObserver.observe(visitorsFrame, {
-            childList: true,
-            subtree: true,
-            attributes: true
-          });
-        }
-
-        window.addEventListener('resize', scheduleMeasure, { passive: true });
-        window.addEventListener('load', scheduleMeasure, { passive: true });
-
-        scheduleMeasure();
-      })(mapGroups[i]);
-    }
-  }
-
-  function init() {
-    initLocationMap();
-    initMapHeightSync();
   }
 
   if (document.readyState === 'loading') {
