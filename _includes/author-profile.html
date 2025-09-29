@@ -30,14 +30,19 @@
         </li>
       {% endif %}
       {% if author.location or author.location_zh %}
-        <li>
+        <li class="author__item author__item--location">
           <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
-          {% if author.location %}<span data-lang="en">{{ author.location }}</span>{% endif %}
-          {% if author.location_zh %}<span data-lang="zh"{% if author.location %} hidden{% endif %}>{{ author.location_zh }}</span>{% endif %}
+          <div class="author__item-text">
+            {% if author.location %}<span data-lang="en">{{ author.location }}</span>{% endif %}
+            {% if author.location_zh %}<span data-lang="zh"{% if author.location %} hidden{% endif %}>{{ author.location_zh }}</span>{% endif %}
+          </div>
         </li>
       {% endif %}
       {% if author.employer %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
+        <li class="author__item author__item--employer">
+          <i class="fas fa-fw fa-briefcase" aria-hidden="true"></i>
+          <div class="author__item-text">{{ author.employer }}</div>
+        </li>
       {% endif %}
       {% if author.uri %}
         <li>
