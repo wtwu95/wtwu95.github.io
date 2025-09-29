@@ -89,14 +89,14 @@
 {: .news-list}
 {% else %}
 <p data-lang="en">No news items are available right now. Please check back later.</p>
-<p data-lang="zh" hidden>暂无新闻更新，欢迎稍后再来查看。</p>
+<p data-lang="zh" hidden>暂无消息更新，欢迎稍后再来查看。</p>
 {% endif %}
 
 {% if include.show_button and limit < news_count %}
 <p class="news-actions">
   <a class="btn" href="{{ '/news/' | relative_url }}">
     <span data-lang="en">Read More News</span>
-    <span data-lang="zh" hidden>查看更多新闻</span>
+    <span data-lang="zh" hidden>查看更多消息</span>
   </a>
 </p>
 {% endif %}
