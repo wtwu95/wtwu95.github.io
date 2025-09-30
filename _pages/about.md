@@ -133,9 +133,9 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 - <span data-lang="en"><strong>Organizer</strong> for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)</span><span data-lang="zh" hidden><strong>组织者</strong>：2025 第十届亚太智能机器人系统大会（ACIRS）专题二“机器人系统的分布式优化与控制”</span>
 
-- <span data-lang="en"><strong>Teaching Assistant</strong> for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)</span><span data-lang="zh" hidden><strong>《动力系统与控制》助教</strong>，香港理工大学（2025 年 9 月至今）</span>
+- <span data-lang="en"><strong>Teaching Assistant</strong> for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)</span><span data-lang="zh" hidden><strong>助教</strong>：香港理工大学 《Dynamical Systems and Control》（2025 年 9 月至今）</span>
 
-- <span data-lang="en"><strong>Reviewer</strong> for international journals and conferences</span><span data-lang="zh" hidden><strong>审稿人</strong>，服务于多个国际期刊与学术会议</span>
+- <span data-lang="en"><strong>Reviewer</strong> for IEEE TAC, IEEE TCYB, IEEE TIE, IEEE TITS, IEEE CDC, etc.</span><span data-lang="zh" hidden><strong>审稿人</strong>：IEEE TAC, IEEE TCYB, IEEE TIE, IEEE TITS, IEEE CDC 等</span>
 
 <p class="news-actions">
   <a class="btn" href="{{ '/services/' | relative_url }}">
