@@ -1,4 +1,4 @@
-# <span data-lang="en">🎖 Awards</span><span data-lang="zh" hidden>🎖 荣誉奖励</span>
+# <span data-lang="en">🎖 Honors and Awards</span><span data-lang="zh" hidden>🎖 荣誉奖励</span>
 
 <ul class="award-list">
   <li>
