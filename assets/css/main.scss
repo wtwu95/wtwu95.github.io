@@ -497,47 +497,6 @@ mark.publication-highlight {
   box-shadow: 0 0 0 3px var(--publication-accent-soft);
 }
 
-@media (prefers-color-scheme: dark) {
-  .citation-modal {
-    background: rgba(2, 6, 23, 0.75);
-  }
-
-  .citation-modal__dialog {
-    background: #0f172a;
-    color: #e2e8f0;
-    box-shadow: 0 32px 65px rgba(2, 6, 23, 0.75);
-  }
-
-  .citation-modal__close {
-    color: #94a3b8;
-  }
-
-  .citation-modal__tab {
-    background: rgba(148, 163, 184, 0.1);
-    border-color: #334155;
-    color: #e2e8f0;
-  }
-
-  .citation-modal__content {
-    background: rgba(15, 23, 42, 0.75);
-    color: #f1f5f9;
-    border: 1px solid #1e293b;
-  }
-
-  .citation-modal__feedback {
-    color: #bfdbfe;
-  }
-
-  .citation-modal__action[data-action="copy"] {
-    background: rgba(148, 163, 184, 0.15);
-    color: #e2e8f0;
-  }
-
-  .citation-modal__action[data-action="copy"]:hover {
-    background: rgba(148, 163, 184, 0.25);
-  }
-}
-
 @media (max-width: 600px) {
   .publication-controls {
     padding: 0.75rem 0.65rem;
