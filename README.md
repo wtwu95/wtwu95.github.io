@@ -101,7 +101,7 @@
 </p>
 {% endif %}
 
-### <span data-lang="en">📚 Publications</span><span data-lang="zh" hidden>📚 代表性成果</span>
+### <span data-lang="en">📚 Publications</span><span data-lang="zh" hidden>📚 论文列表</span>
 
 
 <div class="publication-controls">
