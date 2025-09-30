@@ -170,6 +170,11 @@ html.theme-dark .publication-controls select option {
   color: #0f172a;
 }
 
+html.theme-dark .publication-index,
+html.theme-dark .publication-year {
+  color: #f8fafc;
+}
+
 html.theme-dark .publication-badge img,
 html.theme-dark .publication-cite img {
   filter: brightness(0.95) saturate(1.1);
