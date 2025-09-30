@@ -110,7 +110,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 {% include citation-modal.html %}
 
 <span class='anchor' id='-awards'></span>
-# <span data-lang="en">🎖 Selected Awards</span><span data-lang="zh" hidden>🎖 荣誉奖励</span>
+# <span data-lang="en">🎖 Honors and Awards</span><span data-lang="zh" hidden>🎖 荣誉奖励</span>
 
 - <span data-lang="en">2025 &nbsp; <strong><span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span></strong></span><span data-lang="zh" hidden>2025 &nbsp; <strong><span style="color:red">中国科协青年人才托举工程博士专项计划（首批入选）</span></strong></span>
 - <span data-lang="en">2024 · 2023 · 2020 &nbsp; <strong><span style="color:red">National Scholarships for Graduate Students</span></strong></span><span data-lang="zh" hidden>2024 · 2023 · 2020 &nbsp; <strong><span style="color:red">研究生国家奖学金</span></strong></span>
