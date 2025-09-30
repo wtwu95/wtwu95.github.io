@@ -26,6 +26,13 @@
   --language-toggle-text-inactive: #{mix(#000, $primary-color, 70%)};
   --language-toggle-shadow-strong: 0 8px 18px rgba($primary-color, 0.22);
   --language-toggle-shadow-soft: 0 4px 12px rgba($primary-color, 0.12);
+  --cta-button-bg: var(--theme-toggle-sun-active-bg);
+  --cta-button-text: var(--theme-toggle-sun-icon-color);
+  --cta-button-hover-bg: var(--theme-toggle-inactive-bg);
+  --cta-button-hover-text: var(--theme-toggle-icon-inactive);
+  --cta-button-shadow: var(--theme-toggle-shadow-strong);
+  --cta-button-shadow-hover: var(--theme-toggle-shadow-soft);
+  --cta-button-focus-ring: rgba($primary-color, 0.25);
 
 
 }
@@ -322,26 +329,29 @@
 }
 
 html.theme-dark {
-  --masthead-toggle-underline: rgba(191, 219, 254, 0.85);
-  --toggle-base-panel-bg: rgba(148, 163, 184, 0.28);
+  --masthead-toggle-underline: rgba(191, 219, 254, 0.9);
+  --toggle-base-panel-bg: rgba(#1f2937, 0.62);
   --theme-toggle-track-bg: var(--toggle-base-panel-bg);
-  --theme-toggle-inactive-bg: var(--language-toggle-inactive-bg);
-  --theme-toggle-icon-inactive: var(--language-toggle-text-inactive);
-  --theme-toggle-sun-icon-color: var(--language-toggle-text-inactive);
-  --theme-toggle-moon-active-bg: var(--language-toggle-active-bg);
-  --theme-toggle-moon-icon-color: var(--language-toggle-text-active);
-  --theme-toggle-shadow-strong: 0 12px 26px rgba(15, 23, 42, 0.48);
-  --theme-toggle-shadow-soft: 0 8px 18px rgba(15, 23, 42, 0.3);
-  --language-toggle-active-bg: linear-gradient(
-    135deg,
-    #{mix(#fff, $primary-color, 12%)},
-    #{mix(#000, $primary-color, 60%)}
-  );
-  --language-toggle-inactive-bg: #{mix(#000, $primary-color, 65%)};
+  --language-toggle-active-bg: linear-gradient(135deg, #60a5fa, #2563eb);
+  --language-toggle-inactive-bg: rgba(#111827, 0.78);
   --language-toggle-text-active: #f8fafc;
-  --language-toggle-text-inactive: #{mix(#fff, $primary-color, 75%)};
-  --language-toggle-shadow-strong: 0 12px 26px rgba(15, 23, 42, 0.48);
-  --language-toggle-shadow-soft: 0 8px 18px rgba(15, 23, 42, 0.3);
+  --language-toggle-text-inactive: rgba(#dbeafe, 0.85);
+  --language-toggle-shadow-strong: 0 14px 32px rgba(#1e3a8a, 0.5);
+  --language-toggle-shadow-soft: 0 10px 24px rgba(#1e3a8a, 0.32);
+  --theme-toggle-inactive-bg: rgba(#111827, 0.82);
+  --theme-toggle-icon-inactive: rgba(#bfdbfe, 0.75);
+  --theme-toggle-sun-icon-color: rgba(#bfdbfe, 0.7);
+  --theme-toggle-moon-active-bg: linear-gradient(135deg, #60a5fa, #1d4ed8);
+  --theme-toggle-moon-icon-color: #f8fafc;
+  --theme-toggle-shadow-strong: 0 14px 32px rgba(#1e3a8a, 0.5);
+  --theme-toggle-shadow-soft: 0 10px 24px rgba(#1e3a8a, 0.32);
+  --cta-button-bg: linear-gradient(135deg, #60a5fa, #2563eb);
+  --cta-button-text: #f8fafc;
+  --cta-button-hover-bg: rgba(#2563eb, 0.88);
+  --cta-button-hover-text: #f8fafc;
+  --cta-button-shadow: 0 14px 32px rgba(#1e3a8a, 0.5);
+  --cta-button-shadow-hover: 0 12px 28px rgba(#1e3a8a, 0.35);
+  --cta-button-focus-ring: rgba(#60a5fa, 0.45);
 
   .masthead__actions {
     color: #e2e8f0;
