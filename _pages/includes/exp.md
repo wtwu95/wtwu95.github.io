@@ -1,4 +1,4 @@
-# <span data-lang="en">📖 Experiences</span><span data-lang="zh" hidden>📖 经历</span>
+# <span data-lang="en">📖 Experiences</span><span data-lang="zh" hidden>📖 工作经历</span>
 <ul class="cv-list">
   <li class="cv-item">
     <div class="cv-row">
