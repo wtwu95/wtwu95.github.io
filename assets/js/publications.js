@@ -20,13 +20,59 @@
     }
 
     var typeLabels = {
-      journal: 'Journal Papers',
-      conference: 'Conference Papers',
-      review: 'Review Papers',
-      preprint: 'Preprints'
+      journal: { en: 'Journal Papers', zh: '期刊论文' },
+      conference: { en: 'Conference Papers', zh: '会议论文' },
+      review: { en: 'Review Papers', zh: '综述论文' },
+      preprint: { en: 'Preprints', zh: '预印本' },
+      other: { en: 'Other', zh: '其他' }
     };
 
     var typeOrder = ['journal', 'conference', 'review', 'preprint'];
+    var orderedTypes = [];
+
+    function getCurrentLanguage() {
+      var html = document.documentElement;
+      var language = (html.getAttribute('data-language') || html.getAttribute('lang') || 'en').toLowerCase();
+      return language === 'zh' ? 'zh' : 'en';
+    }
+
+    function getTypeLabel(type, language) {
+      var labels = typeLabels[type];
+      if (!labels) {
+        return type;
+      }
+      if (typeof labels === 'string') {
+        return labels;
+      }
+      return labels[language] || labels.en || type;
+    }
+
+    function getSelectLabel(select, language) {
+      if (!select) {
+        return language === 'zh' ? '类型' : 'Type';
+      }
+      var attrName = language === 'zh' ? 'data-label-zh' : 'data-label-en';
+      var label = select.getAttribute(attrName);
+      if (!label) {
+        label = language === 'zh' ? '类型' : 'Type';
+      }
+      return label;
+    }
+
+    function buildTypeOptions() {
+      var language = getCurrentLanguage();
+      var currentValue = typeSelect.value;
+      var optionsHtml = orderedTypes.map(function (type) {
+        return '<option value="' + type + '">' + getTypeLabel(type, language) + '</option>';
+      }).join('');
+      var defaultLabel = getSelectLabel(typeSelect, language);
+      typeSelect.innerHTML = '<option value="all">' + defaultLabel + '</option>' + optionsHtml;
+      if (currentValue && (currentValue === 'all' || orderedTypes.indexOf(currentValue) !== -1)) {
+        typeSelect.value = currentValue;
+      } else {
+        typeSelect.value = 'all';
+      }
+    }
 
     var searchTerm = '';
     var citationManager = window.CitationModal || null;
@@ -80,25 +126,17 @@
       return pub.type;
     }).filter(Boolean)));
 
-    var orderedOptions = typeOrder.map(function (type) {
-      return {
-        value: type,
-        label: typeLabels[type] || type
-      };
+    orderedTypes = typeOrder.filter(function (type) {
+      return uniqueTypes.indexOf(type) !== -1;
     });
 
     uniqueTypes.forEach(function (type) {
       if (typeOrder.indexOf(type) === -1) {
-        orderedOptions.push({
-          value: type,
-          label: typeLabels[type] || type
-        });
+        orderedTypes.push(type);
       }
     });
 
-    typeSelect.innerHTML = '<option value="all">Type</option>' + orderedOptions.map(function (type) {
-      return '<option value="' + type.value + '">' + type.label + '</option>';
-    }).join('');
+    buildTypeOptions();
 
     function updateYearOptions() {
       var years = Array.from(new Set(publications.map(function (pub) {
@@ -304,6 +342,23 @@
       searchInput.addEventListener('input', function () {
         searchTerm = this.value.trim().toLowerCase();
         render();
+      });
+    }
+
+    if (window.MutationObserver) {
+      var languageObserver = new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+          var mutation = mutations[i];
+          if (mutation.type === 'attributes' && mutation.attributeName === 'data-language') {
+            buildTypeOptions();
+            render();
+            break;
+          }
+        }
+      });
+      languageObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-language']
       });
     }
 
