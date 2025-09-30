@@ -624,3 +624,34 @@ mark.publication-highlight {
     border-left-color: #f87171;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .citation-modal__dialog {
+    color: #111827;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+  }
+
+  .citation-modal__close {
+    color: #334155;
+  }
+
+  .citation-modal__tabs {
+    background: transparent;
+  }
+
+  .citation-modal__tab {
+    background: rgba(241, 245, 249, 0.85);
+    border-color: rgba(148, 163, 184, 0.65);
+    color: #0f172a;
+  }
+
+  .citation-modal__content {
+    background: rgba(241, 245, 249, 0.92);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    color: #0f172a;
+  }
+
+  .citation-modal__action[data-action="copy"] {
+    border-color: rgba(15, 23, 42, 0.18);
+  }
+}
