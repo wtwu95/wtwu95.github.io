@@ -394,6 +394,10 @@
     &::before {
       display: block;
       padding-bottom: 63.33%;
+
+      @supports (aspect-ratio: 1) {
+        display: none;
+      }
     }
   }
 
