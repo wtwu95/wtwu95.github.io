@@ -55,7 +55,7 @@
       <div class="cv-main" data-lang="zh" hidden>
         <span class="cv-degree">学士</span>（电气工程及其自动化），
         <a href="http://www.hrbust.edu.cn/">哈尔滨理工大学（HUST）</a>，
-        <a href="https://www.seiee.sjtu.edu.cn/">电气与电子工程学院</a>，中国哈尔滨
+        <a href="https://ee.hrbust.edu.cn/main.htm">电气与电子工程学院</a>，中国哈尔滨
       </div>
       <div class="cv-date">09/2014–06/2018</div>
     </div>
