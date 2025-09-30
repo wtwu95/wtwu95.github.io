@@ -7,21 +7,21 @@ html.theme-dark {
 }
 
 html.theme-dark body {
-  background-color: #0f172a;
-  color: #e2e8f0;
+  background-color: rgba(#132843, 0.92);
+  color: #D0DEEB;
 }
 
 html.theme-dark .masthead {
-  background-color: #111827;
-  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(#132843, 0.95);
+  border-bottom-color: rgba(#3966A2, 0.35);
 }
 
 html.theme-dark .masthead__menu a {
-  color: #e2e8f0;
+  color: #D0DEEB;
 }
 
 html.theme-dark .masthead__menu a:hover {
-  color: #bfdbfe;
+  color: #F8F6F6;
 }
 
 html.theme-dark .greedy-nav {
@@ -29,23 +29,23 @@ html.theme-dark .greedy-nav {
 }
 
 html.theme-dark .greedy-nav button {
-  background-color: #2563eb;
-  color: #f8fafc;
+  background-color: rgba(#3966A2, 0.8);
+  color: #F8F6F6;
 }
 
 html.theme-dark .greedy-nav .hidden-links {
-  background: #1f2937;
-  border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.45);
+  background: rgba(#132843, 0.9);
+  border-color: rgba(#3966A2, 0.4);
+  box-shadow: 0 12px 30px rgba(#132843, 0.65);
 }
 
 html.theme-dark .greedy-nav .hidden-links a {
-  color: #e2e8f0;
+  color: #D0DEEB;
 }
 
 html.theme-dark .greedy-nav .hidden-links a:hover {
-  color: #bfdbfe;
-  background: rgba(59, 130, 246, 0.2);
+  color: #F8F6F6;
+  background: rgba(#3966A2, 0.32);
 }
 
 html.theme-dark .page__content {
@@ -54,30 +54,30 @@ html.theme-dark .page__content {
 
 html.theme-dark .page__content h1,
 html.theme-dark .page__content hr {
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(#3966A2, 0.35);
 }
 
 html.theme-dark .page__content a {
-  color: #93c5fd;
+  color: #D0DEEB;
 }
 
 html.theme-dark .page__content a:hover,
 html.theme-dark .page__content a:focus {
-  color: #bfdbfe;
-  background-color: rgba(59, 130, 246, 0.12);
-  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.25);
+  color: #F8F6F6;
+  background-color: rgba(#3966A2, 0.28);
+  box-shadow: 0 0 0 1px rgba(#6191D3, 0.6);
 }
 
 html.theme-dark .page__content code {
-  background: rgba(148, 163, 184, 0.18);
-  border-color: rgba(148, 163, 184, 0.35);
+  background: rgba(#3966A2, 0.22);
+  border-color: rgba(#6191D3, 0.45);
   box-shadow: none;
-  color: #e2e8f0;
+  color: #F8F6F6;
 }
 
 html.theme-dark blockquote {
-  border-left-color: rgba(59, 130, 246, 0.7);
-  background: rgba(30, 41, 59, 0.6);
+  border-left-color: rgba(#6191D3, 0.65);
+  background: rgba(#3966A2, 0.2);
 }
 
 html.theme-dark .sidebar {
@@ -85,60 +85,60 @@ html.theme-dark .sidebar {
 }
 
 html.theme-dark .sidebar a {
-  color: #93c5fd;
+  color: #D0DEEB;
 }
 
 html.theme-dark .sidebar a:hover {
-  color: #bfdbfe;
+  color: #F8F6F6;
 }
 
 html.theme-dark .author__avatar img {
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(#D0DEEB, 0.45);
 }
 
 html.theme-dark .author__urls {
-  background: #1f2937;
-  border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
-  color: #e2e8f0;
+  background: rgba(#132843, 0.82);
+  border-color: rgba(#3966A2, 0.45);
+  box-shadow: 0 10px 25px rgba(#132843, 0.6);
+  color: #D0DEEB;
 }
 
 html.theme-dark .author__urls a {
-  color: #e2e8f0;
+  color: #D0DEEB;
 }
 
 html.theme-dark .author__urls a:hover {
-  color: #bfdbfe;
-  background: rgba(59, 130, 246, 0.25);
+  color: #F8F6F6;
+  background: rgba(#3966A2, 0.28);
 }
 
 html.theme-dark .page__footer {
-  background-color: #111827;
-  border-top-color: rgba(255, 255, 255, 0.08);
-  color: rgba(226, 232, 240, 0.85);
+  background-color: rgba(#132843, 0.97);
+  border-top-color: rgba(#3966A2, 0.35);
+  color: rgba(#D0DEEB, 0.9);
 }
 
 html.theme-dark .page__footer a {
-  color: #e2e8f0;
+  color: #D0DEEB;
 }
 
 html.theme-dark .page__footer a:hover {
-  color: #bfdbfe;
+  color: #F8F6F6;
 }
 
 html.theme-dark .btn {
-  color: #f9fafb !important;
-  background-color: rgba(#111827, 0.7);
-  border-color: transparent;
-  box-shadow: 0 6px 18px rgba(#000, 0.35);
+  color: #F8F6F6 !important;
+  background-color: rgba(#3966A2, 0.82);
+  border-color: rgba(#6191D3, 0.65);
+  box-shadow: 0 6px 18px rgba(#132843, 0.6);
 }
 
 html.theme-dark .btn:hover,
 html.theme-dark .btn:focus-visible {
-  background-color: rgba(#1f2937, 0.92);
-  border-color: rgba(#60a5fa, 0.45);
-  color: #f9fafb !important;
-  box-shadow: 0 10px 24px rgba(#1e3a8a, 0.35);
+  background-color: rgba(#6191D3, 0.88);
+  border-color: rgba(#D0DEEB, 0.7);
+  color: #F8F6F6 !important;
+  box-shadow: 0 10px 24px rgba(#132843, 0.72);
 }
 
 html.theme-dark .btn:focus-visible {
@@ -146,28 +146,28 @@ html.theme-dark .btn:focus-visible {
 }
 
 html.theme-dark .btn:focus:not(:focus-visible) {
-  box-shadow: 0 6px 18px rgba(#000, 0.35);
-  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(#132843, 0.5);
+  border-color: rgba(#3966A2, 0.4);
 }
 
 html.theme-dark table,
 html.theme-dark .page__content .news-list {
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(#3966A2, 0.35);
 }
 
 html.theme-dark .publication-controls input,
 html.theme-dark .publication-controls select {
-  background-color: #1f2937;
-  border-color: rgba(255, 255, 255, 0.12);
-  color: #e2e8f0;
+  background-color: rgba(#132843, 0.85);
+  border-color: rgba(#3966A2, 0.45);
+  color: #D0DEEB;
 }
 
 html.theme-dark .publication-controls input::placeholder {
-  color: rgba(226, 232, 240, 0.6);
+  color: rgba(#D0DEEB, 0.7);
 }
 
 html.theme-dark .publication-controls select option {
-  color: #0f172a;
+  color: #132843;
 }
 
 html.theme-dark .publication-badge img,
@@ -176,23 +176,23 @@ html.theme-dark .publication-cite img {
 }
 
 html.theme-dark .cv-item {
-  border-bottom-color: rgba(255, 255, 255, 0.12);
+  border-bottom-color: rgba(#3966A2, 0.35);
 }
 
 html.theme-dark .cv-main {
-  color: rgba(226, 232, 240, 0.92);
+  color: rgba(#D0DEEB, 0.92);
 }
 
 html.theme-dark .cv-date {
-  color: rgba(226, 232, 240, 0.65);
+  color: rgba(#D0DEEB, 0.65);
 }
 
 html.theme-dark .cv-sub {
-  color: rgba(226, 232, 240, 0.7);
+  color: rgba(#D0DEEB, 0.78);
 }
 
 html.theme-dark .paper-box {
-  border-bottom-color: rgba(255, 255, 255, 0.12);
+  border-bottom-color: rgba(#3966A2, 0.35);
 }
 
 html.theme-dark .paper-box-text {
@@ -200,17 +200,11 @@ html.theme-dark .paper-box-text {
 }
 
 html.theme-dark .badge {
-  background-color: rgba(59, 130, 246, 0.85);
-  color: #0b1120;
+  background-color: rgba(#D0DEEB, 0.9);
+  color: #132843;
 }
 
 html.theme-dark .publication-actions .btn {
-  box-shadow: none;
-}
-
-html.theme-dark .author__urls {
-  background: transparent;
-  border-color: rgba(255, 255, 255, 0.12);
   box-shadow: none;
 }
 
