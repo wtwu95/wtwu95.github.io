@@ -497,6 +497,55 @@ mark.publication-highlight {
   box-shadow: 0 0 0 3px var(--publication-accent-soft);
 }
 
+@media (prefers-color-scheme: dark) {
+  .citation-modal {
+    background: rgba(15, 23, 42, 0.75);
+  }
+
+  .citation-modal__dialog {
+    background: #0f172a;
+    color: #e2e8f0;
+    box-shadow: 0 24px 60px rgba(2, 6, 23, 0.6);
+  }
+
+  .citation-modal__close {
+    color: #cbd5f5;
+  }
+
+  .citation-modal__tab {
+    background: rgba(30, 41, 59, 0.85);
+    border-color: rgba(148, 163, 184, 0.45);
+    color: #e2e8f0;
+  }
+
+  .citation-modal__tab.is-active {
+    color: #0f172a;
+  }
+
+  .citation-modal__content {
+    background: rgba(15, 23, 42, 0.85);
+    color: #e2e8f0;
+  }
+
+  .citation-modal__feedback {
+    color: #bfdbfe;
+  }
+
+  .citation-modal__action {
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.45);
+  }
+
+  .citation-modal__action[data-action="copy"] {
+    background: rgba(148, 163, 184, 0.2);
+    border-color: rgba(148, 163, 184, 0.5);
+    color: #e2e8f0;
+  }
+
+  .citation-modal__action[data-action="copy"]:hover {
+    background: rgba(148, 163, 184, 0.32);
+  }
+}
+
 @media (max-width: 600px) {
   .publication-controls {
     padding: 0.75rem 0.65rem;
@@ -529,6 +578,9 @@ mark.publication-highlight {
 @media (prefers-color-scheme: dark) {
   :root {
     --publication-highlight: rgba(148, 163, 184, 0.35);
+    --publication-accent: #60a5fa;
+    --publication-accent-hover: #3b82f6;
+    --publication-accent-soft: rgba(96, 165, 250, 0.25);
   }
 }
 
