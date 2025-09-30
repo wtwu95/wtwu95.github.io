@@ -23,7 +23,7 @@
 </p>
 <p data-lang="zh" hidden>
   2025 年入选<strong>首届中国科协青年人才托举工程博士专项计划</strong>，于 2020、2023、2024 年获得
-  <strong>研究生国家奖学金</strong>，硕士论文荣获<strong>辽宁省优秀硕士学位论文奖</strong>。自2025年起，担任<a href="http://www.coscipress.com/journal/JAICS">《Journal of Artificial Intelligence &amp; Control Systems》</a>青年编委，负责组织 2025 年第十届 ACIRS 专题二****
+  <strong>研究生国家奖学金</strong>，硕士论文荣获<strong>辽宁省优秀硕士学位论文奖</strong>。自2025年起，担任<a href="http://www.coscipress.com/journal/JAICS">《Journal of Artificial Intelligence &amp; Control Systems》</a>青年编委，负责组织 2025 年第十届 ACIRS 专题二
   “Distributed Optimization and Control for Robot Systems”。
 </p>
 
