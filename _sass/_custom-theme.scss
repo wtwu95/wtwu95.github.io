@@ -35,18 +35,17 @@ html.theme-dark .greedy-nav button {
   padding: 0 0.85rem;
   background: var(--cta-button-bg);
   color: var(--cta-button-text);
-  border: 1px solid rgba(147, 197, 253, 0.35);
+  border: 1px solid transparent;
   border-radius: 0.75rem;
   box-shadow: var(--cta-button-shadow);
   transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
-    transform 0.2s ease, border-color 0.3s ease;
+    transform 0.2s ease;
 }
 
 html.theme-dark .greedy-nav button:hover,
 html.theme-dark .greedy-nav button:focus-visible {
   background: var(--cta-button-hover-bg);
   color: var(--cta-button-hover-text);
-  border-color: rgba(191, 219, 254, 0.55);
   box-shadow: var(--cta-button-shadow-hover);
 }
 
@@ -155,9 +154,8 @@ html.theme-dark .page__footer a:hover {
 html.theme-dark .btn {
   color: var(--dark-btn-color, #f9fafb) !important;
   background: var(--dark-btn-bg, rgba(#111827, 0.7));
-  border-color: rgba(147, 197, 253, 0.35);
+  border-color: transparent;
   box-shadow: var(--dark-btn-shadow, 0 6px 18px rgba(#000, 0.35));
-  --dark-btn-border-hover: rgba(191, 219, 254, 0.6);
 }
 
 html.theme-dark .btn:hover,
@@ -198,7 +196,7 @@ html.theme-dark .page__content .news-actions .btn {
   --dark-btn-bg-hover: var(--cta-button-hover-bg);
   --dark-btn-color-hover: var(--cta-button-hover-text);
   --dark-btn-shadow-hover: var(--cta-button-shadow-hover);
-  --dark-btn-border-hover: rgba(191, 219, 254, 0.6);
+  --dark-btn-border-hover: transparent;
 }
 
 html.theme-dark table,
