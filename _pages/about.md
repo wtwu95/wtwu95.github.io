@@ -103,8 +103,8 @@ Explore the full list of publications on the [Publications](/publications/) page
  -->
 <p class="news-actions">
   <a class="btn" href="{{ '/publications/' | relative_url }}">
-    <span data-lang="en">Show Full List</span>
-    <span data-lang="zh" hidden>查看全部成果</span>
+    <span data-lang="en">-- Show Full List --</span>
+    <span data-lang="zh" hidden>-- 查看全部成果 --</span>
   </a>
 </p>
 {% include citation-modal.html %}
@@ -120,8 +120,8 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 <p class="news-actions">
   <a class="btn" href="{{ '/awards/' | relative_url }}">
-    <span data-lang="en">View All Awards</span>
-    <span data-lang="zh" hidden>查看全部奖励</span>
+    <span data-lang="en">-- View All Awards --</span>
+    <span data-lang="zh" hidden>-- 查看全部奖励 --</span>
   </a>
 </p>
 
@@ -139,8 +139,8 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 <p class="news-actions">
   <a class="btn" href="{{ '/services/' | relative_url }}">
-    <span data-lang="en">Explore All Services</span>
-    <span data-lang="zh" hidden>查看更多学术服务</span>
+    <span data-lang="en">-- Explore All Services --</span>
+    <span data-lang="zh" hidden>-- 查看更多学术服务 --</span>
   </a>
 </p>
 
