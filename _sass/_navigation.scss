@@ -246,17 +246,6 @@
             -ms-transform: scaleX(1);
                 transform: scaleX(1); /* reveal*/
       }
-
-      &:focus-visible {
-        color: $masthead-link-color-hover;
-        outline: none;
-      }
-
-      &:focus-visible:before {
-        -webkit-transform: scaleX(1);
-            -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
-      }
     }
   }
 
