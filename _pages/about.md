@@ -19,6 +19,13 @@ redirect_from:
 <span class='anchor' id='-news'></span>
 {% include_relative includes/news.md limit=5 show_button=true %}
 
+<p class="news-actions">
+  <a class="btn" href="{{ '/news/' | relative_url }}">
+    <span data-lang="en">-- Read More News --</span>
+    <span data-lang="zh" hidden>-- 查看更多消息 --</span>
+  </a>
+</p>
+
 <span class='anchor' id='-publications'></span>
 # <span data-lang="en">📚 Selected Publications</span><span data-lang="zh" hidden>📚 代表性成果</span>
 
