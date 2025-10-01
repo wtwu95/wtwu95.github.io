@@ -33,8 +33,8 @@
 {% if include.show_button and limit < news_count %}
 <p class="news-actions">
   <a class="btn" href="{{ '/news/' | relative_url }}">
-    <span data-lang="en">Read More News</span>
-    <span data-lang="zh" hidden>查看更多消息</span>
+    <span data-lang="en">-- Read More News --</span>
+    <span data-lang="zh" hidden>-- 查看更多消息 --</span>
   </a>
 </p>
 {% endif %}
