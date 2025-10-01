@@ -48,6 +48,22 @@ html.theme-dark .greedy-nav .hidden-links a:hover {
   background: rgba(59, 130, 246, 0.2);
 }
 
+html.theme-dark .greedy-nav .visible-links a {
+  color: inherit;
+}
+
+html.theme-dark .greedy-nav .visible-links a:focus-visible {
+  color: #bfdbfe;
+}
+
+html.theme-dark .greedy-nav .visible-links a:hover {
+  color: #bfdbfe;
+}
+
+html.theme-dark .greedy-nav .visible-links a::before {
+  background: #bfdbfe;
+}
+
 html.theme-dark .page__content {
   color: inherit;
 }
