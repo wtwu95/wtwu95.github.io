@@ -203,6 +203,11 @@ html.theme-dark {
   .masthead__actions .toggle-button,
   .masthead__menu-item--toggle .toggle-button {
     color: #e2e8f0;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--masthead-toggle-hover-color);
+    }
   }
 
   .toggle-button--theme {
