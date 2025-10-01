@@ -1,4 +1,4 @@
-# <span data-lang="en">⚙️ Professional Services</span><span data-lang="zh" hidden>⚙️ 学术服务</span>
+# <span data-lang="en">🧑🏻‍💻 Professional Services</span><span data-lang="zh" hidden>🧑🏻‍💻 学术服务</span>
 
 ## <span data-lang="en">Journal Editorial Boards</span><span data-lang="zh" hidden>期刊编委</span>
 
