@@ -127,51 +127,27 @@ html.theme-dark .page__footer a:hover {
 }
 
 html.theme-dark .btn {
-  color: var(--dark-btn-color, #f9fafb) !important;
-  background: var(--dark-btn-bg, rgba(#111827, 0.7));
+  color: #f9fafb !important;
+  background-color: rgba(#111827, 0.7);
   border-color: transparent;
-  box-shadow: var(--dark-btn-shadow, 0 6px 18px rgba(#000, 0.35));
+  box-shadow: 0 6px 18px rgba(#000, 0.35);
 }
 
 html.theme-dark .btn:hover,
 html.theme-dark .btn:focus-visible {
-  background: var(--dark-btn-bg-hover, rgba(#1f2937, 0.92));
-  border-color: var(
-    --dark-btn-border-hover,
-    rgba(#60a5fa, 0.45)
-  );
-  color: var(
-      --dark-btn-color-hover,
-      var(--dark-btn-color, #f9fafb)
-    )
-    !important;
-  box-shadow: var(
-    --dark-btn-shadow-hover,
-    0 10px 24px rgba(#1e3a8a, 0.35)
-  );
+  background-color: rgba(#1f2937, 0.92);
+  border-color: rgba(#60a5fa, 0.45);
+  color: #f9fafb !important;
+  box-shadow: 0 10px 24px rgba(#1e3a8a, 0.35);
 }
 
 html.theme-dark .btn:focus-visible {
   outline: none;
-  box-shadow: var(
-    --dark-btn-focus-shadow,
-    var(--dark-btn-shadow-hover, 0 10px 24px rgba(#1e3a8a, 0.35))
-  );
 }
 
 html.theme-dark .btn:focus:not(:focus-visible) {
-  box-shadow: var(--dark-btn-shadow, 0 6px 18px rgba(#000, 0.35));
+  box-shadow: 0 6px 18px rgba(#000, 0.35);
   border-color: transparent;
-}
-
-html.theme-dark .page__content .news-actions .btn {
-  --dark-btn-bg: var(--cta-button-bg);
-  --dark-btn-color: var(--cta-button-text);
-  --dark-btn-shadow: var(--cta-button-shadow);
-  --dark-btn-bg-hover: var(--cta-button-hover-bg);
-  --dark-btn-color-hover: var(--cta-button-hover-text);
-  --dark-btn-shadow-hover: var(--cta-button-shadow-hover);
-  --dark-btn-border-hover: transparent;
 }
 
 html.theme-dark table,
