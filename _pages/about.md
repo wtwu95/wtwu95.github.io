@@ -126,7 +126,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 </p>
 
 <span class='anchor' id='-professional-services'></span>
-# <span data-lang="en">⚙️ Professional Services</span><span data-lang="zh" hidden>⚙️ 学术服务</span>
+# <span data-lang="en">🧑🏻‍💻 Professional Services</span><span data-lang="zh" hidden>🧑🏻‍💻 学术服务</span>
 
 
 - <span data-lang="en"><strong>Young Editorial Board Member</strong>: <a href="http://www.coscipress.com/journal/JAICS">Journal of Artificial Intelligence & Control Systems</a> (2025-present)</span><span data-lang="zh" hidden><strong>青年编委</strong>：<a href="http://www.coscipress.com/journal/JAICS">《人工智能与控制系统杂志》</a>（2025 年至今）</span>
