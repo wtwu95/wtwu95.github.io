@@ -258,4 +258,51 @@
 
 
 
+
+
+## <span data-lang="en">📄 License &amp; Credits</span><span data-lang="zh" hidden>📄 许可与致谢</span>
+
+<p data-lang="en">
+  Unless stated otherwise, all personal content on this website (including text, research summaries, and images) is licensed under
+  <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.
+</p>
+<p data-lang="zh" hidden>
+  除特别说明外，本网站的个人内容（包括文字、科研摘要与图片）均采用
+  <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC 4.0</a>
+  协议授权使用。
+</p>
+
+<p data-lang="en">
+  The site is built upon the open-source template by
+  <a href="https://github.com/RayeRen/acad-homepage.github.io" target="_blank" rel="noopener">Raye Ren</a>,
+  which draws inspiration from
+  <a href="https://github.com/mmistakes/minimal-mistakes" target="_blank" rel="noopener">mmistakes/minimal-mistakes</a>
+  and
+  <a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener">academicpages/academicpages.github.io</a>,
+  as well as icon assets from
+  <a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a>.
+</p>
+<p data-lang="zh" hidden>
+  本站基于
+  <a href="https://github.com/RayeRen/acad-homepage.github.io" target="_blank" rel="noopener">Raye Ren</a>
+  的开源模板构建，模板参考了
+  <a href="https://github.com/mmistakes/minimal-mistakes" target="_blank" rel="noopener">mmistakes/minimal-mistakes</a>
+  与
+  <a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener">academicpages/academicpages.github.io</a>
+  等项目，并使用了
+  <a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a>
+  提供的图标素材。
+</p>
+
+<p data-lang="en">
+  The original source code is distributed under the
+  <a href="./LICENSE" target="_blank" rel="noopener">MIT License</a>.
+</p>
+<p data-lang="zh" hidden>
+  原始源码遵循
+  <a href="./LICENSE" target="_blank" rel="noopener">MIT 许可证</a>
+  发布。
+</p>
+
+
 {% include citation-modal.html %}
