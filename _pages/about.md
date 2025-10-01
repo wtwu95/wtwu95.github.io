@@ -96,17 +96,18 @@ redirect_from:
 -
 </div>
 </div>
- -->
-
-<!--
+<!-- 
 Explore the full list of publications on the [Publications](/publications/) page.
- -->
-<p class="news-actions">
+-->
+<span data-lang="en">Explore the full list of publications on the [Publications](/publications/) page.</span>
+<span data-lang="zh" hidden>点击 [出版物](/publications/) 查看完整出版物列表。</span>
+    
+<!-- <p class="news-actions">
   <a class="btn" href="{{ '/publications/' | relative_url }}">
     <span data-lang="en">-- Show Full List --</span>
     <span data-lang="zh" hidden>-- 查看全部成果 --</span>
   </a>
-</p>
+</p> -->
 {% include citation-modal.html %}
 
 <span class='anchor' id='-awards'></span>
