@@ -693,3 +693,50 @@ html[data-theme="dark"] {
     border-left-color: #f87171;
   }
 }
+
+.custom-license-footer {
+  margin-top: 4rem;
+  background: #1f2937;
+  color: rgba(226, 232, 240, 0.85);
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+.custom-license-footer__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.custom-license-footer a {
+  color: #60a5fa;
+}
+
+.custom-license-footer a:hover,
+.custom-license-footer a:focus {
+  color: #bfdbfe;
+}
+
+.custom-license-footer__list {
+  margin: 0.75rem auto;
+  padding-left: 1.25rem;
+  max-width: 28rem;
+  text-align: left;
+}
+
+@media (prefers-color-scheme: dark) {
+  .custom-license-footer {
+    background: rgba(15, 23, 42, 0.95);
+    color: rgba(226, 232, 240, 0.9);
+  }
+
+  .custom-license-footer a {
+    color: #93c5fd;
+  }
+
+  .custom-license-footer a:hover,
+  .custom-license-footer a:focus {
+    color: #bfdbfe;
+  }
+}
