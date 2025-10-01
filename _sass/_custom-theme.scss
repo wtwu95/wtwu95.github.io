@@ -153,7 +153,7 @@ html.theme-dark .news-actions .btn {
   background: none !important;
   border-color: transparent !important;
   box-shadow: none !important;
-  color: #e2e8f0 !important;
+  color: var(--masthead-toggle-hover-color) !important;
 }
 
 html.theme-dark .btn:hover,
