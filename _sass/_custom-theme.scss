@@ -29,33 +29,8 @@ html.theme-dark .greedy-nav {
 }
 
 html.theme-dark .greedy-nav button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 0.85rem;
-  background: var(--cta-button-bg);
-  color: var(--cta-button-text);
-  border: 1px solid transparent;
-  border-radius: 0.75rem;
-  box-shadow: var(--cta-button-shadow);
-  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
-    transform 0.2s ease;
-}
-
-html.theme-dark .greedy-nav button:hover,
-html.theme-dark .greedy-nav button:focus-visible {
-  background: var(--cta-button-hover-bg);
-  color: var(--cta-button-hover-text);
-  box-shadow: var(--cta-button-shadow-hover);
-}
-
-html.theme-dark .greedy-nav button:focus-visible {
-  outline: 2px solid var(--cta-button-focus-ring);
-  outline-offset: 2px;
-}
-
-html.theme-dark .greedy-nav button:active {
-  transform: translateY(1px);
+  background-color: #2563eb;
+  color: #f8fafc;
 }
 
 html.theme-dark .greedy-nav .hidden-links {
