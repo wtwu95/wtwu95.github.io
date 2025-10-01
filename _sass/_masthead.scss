@@ -339,19 +339,19 @@ html.theme-dark {
   --language-toggle-shadow-strong: 0 18px 38px rgba(#0f172a, 0.45);
   --language-toggle-shadow-soft: 0 12px 28px rgba(#0f172a, 0.35);
   --theme-toggle-inactive-bg: rgba(#0f172a, 0.82);
-  --theme-toggle-icon-inactive: rgba(#bfdbfe, 0.78);
-  --theme-toggle-sun-icon-color: rgba(#bfdbfe, 0.78);
-  --theme-toggle-moon-active-bg: linear-gradient(135deg, #3b82f6, #1d4ed8);
-  --theme-toggle-moon-icon-color: #f8fafc;
+  --theme-toggle-icon-inactive: rgba(#93c5fd, 0.7);
+  --theme-toggle-sun-icon-color: rgba(#93c5fd, 0.7);
+  --theme-toggle-moon-active-bg: rgba(#93c5fd, 0.22);
+  --theme-toggle-moon-icon-color: #93c5fd;
   --theme-toggle-shadow-strong: 0 18px 38px rgba(#0f172a, 0.45);
-  --theme-toggle-shadow-soft: 0 12px 28px rgba(#0f172a, 0.35);
-  --cta-button-bg: linear-gradient(135deg, #3b82f6, #2563eb);
-  --cta-button-text: #f8fafc;
-  --cta-button-hover-bg: linear-gradient(135deg, #2563eb, #1d4ed8);
-  --cta-button-hover-text: #f8fafc;
-  --cta-button-shadow: 0 18px 38px rgba(#0f172a, 0.45);
-  --cta-button-shadow-hover: 0 14px 32px rgba(#0f172a, 0.4);
-  --cta-button-focus-ring: rgba(#3b82f6, 0.55);
+  --theme-toggle-shadow-soft: 0 12px 28px rgba(#0f172a, 0.32);
+  --cta-button-bg: rgba(#93c5fd, 0.14);
+  --cta-button-text: #93c5fd;
+  --cta-button-hover-bg: rgba(#bfdbfe, 0.22);
+  --cta-button-hover-text: #bfdbfe;
+  --cta-button-shadow: 0 16px 32px rgba(#0f172a, 0.35);
+  --cta-button-shadow-hover: 0 18px 36px rgba(#0f172a, 0.4);
+  --cta-button-focus-ring: rgba(#93c5fd, 0.5);
 
   .masthead__actions {
     color: #e2e8f0;
