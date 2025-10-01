@@ -138,10 +138,10 @@ Explore the full list of publications on the [Publications](/publications/) page
 - <span data-lang="en"><strong>Reviewer</strong> for IEEE TAC, IEEE TCYB, IEEE TIE, IEEE TITS, IEEE CDC, etc.</span><span data-lang="zh" hidden><strong>审稿人</strong>：IEEE TAC, IEEE TCYB, IEEE TIE, IEEE TITS, IEEE CDC 等</span>
 
 <p class="news-actions">
-  -- <a class="btn" href="{{ '/services/' | relative_url }}">
-    <span data-lang="en">Explore All Services</span>
+  <a class="btn" href="{{ '/services/' | relative_url }}">
+    -- <span data-lang="en">Explore All Services</span> --
     <span data-lang="zh" hidden>-- 查看更多学术服务 --</span>
-  </a> --
+  </a>
 </p>
 
 # <span data-lang="en">😀 Miscellaneous</span><span data-lang="zh" hidden>😀 实用链接</span>
