@@ -69,17 +69,12 @@
 
 .masthead__actions {
   display: inline-flex;
-  flex: 0 0 auto;
   align-items: center;
-  gap: 1.25rem;
+  gap: 0.75rem;
   color: $masthead-link-color;
   margin-left: auto;
   white-space: nowrap;
-
-  @media (min-width: 641px) {
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-  }
+  flex: 0 0 auto;
 }
 
 .masthead__menu-home-item {
@@ -101,23 +96,13 @@
 }
 
 
-.masthead__menu-item--toggle {
-  display: none;
-  color: $masthead-link-color;
-
-  .toggle-button {
-    margin: 0 1rem;
-  }
-}
-
-
 .toggle-button {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   border: none;
   border-radius: 999px;
   background-color: transparent;
@@ -231,20 +216,10 @@ html.theme-dark {
     flex: 1 1 100%;
   }
 
-  .masthead__actions {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    padding-top: 0.5rem;
-  }
-
   .greedy-nav {
-    padding-bottom: 0.25rem;
-
-    .visible-links .masthead__menu-item--toggle,
-    .hidden-links .masthead__menu-item--toggle {
-      display: none !important;
-    }
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
   }
 }
 
