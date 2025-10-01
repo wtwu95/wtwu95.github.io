@@ -3,9 +3,9 @@
    ========================================================================== */
 
 :root {
-  --masthead-toggle-hover-bg: rgba(59, 130, 246, 0.12);
-  --masthead-toggle-hover-border: rgba(59, 130, 246, 0.35);
-  --masthead-toggle-hover-color: #{mix(#000, $primary-color, 45%)};
+  --masthead-toggle-hover-color: #{$masthead-link-color-hover};
+  --masthead-toggle-underline-bg: #{mix(#fff, $primary-color, 50%)};
+  --masthead-toggle-focus-shadow: rgba(59, 130, 246, 0.3);
 }
 
 .masthead {
@@ -118,7 +118,7 @@
   justify-content: center;
   padding: 0.5rem;
   margin: 0 1rem;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 999px;
   background-color: transparent;
   color: inherit;
@@ -126,19 +126,35 @@
   line-height: 1;
   white-space: nowrap;
   font-size: 1rem;
-  transition: color 0.2s ease, background-color 0.2s ease,
-    border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: color 0.2s ease, box-shadow 0.2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--masthead-toggle-underline-bg);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+    pointer-events: none;
+  }
 
   &:hover,
   &:focus-visible {
-    background-color: var(--masthead-toggle-hover-bg);
-    border-color: var(--masthead-toggle-hover-border);
     color: var(--masthead-toggle-hover-color);
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    transform: scaleX(1);
   }
 
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 0 2px var(--masthead-toggle-focus-shadow);
   }
 
   &:focus:not(:focus-visible) {
@@ -176,9 +192,9 @@
 }
 
 html.theme-dark {
-  --masthead-toggle-hover-bg: rgba(96, 165, 250, 0.22);
-  --masthead-toggle-hover-border: rgba(148, 197, 255, 0.5);
-  --masthead-toggle-hover-color: #f8fafc;
+  --masthead-toggle-hover-color: #bfdbfe;
+  --masthead-toggle-underline-bg: rgba(148, 197, 255, 0.8);
+  --masthead-toggle-focus-shadow: rgba(96, 165, 250, 0.45);
 
   .masthead__actions {
     color: #e2e8f0;
@@ -187,20 +203,6 @@ html.theme-dark {
   .masthead__actions .toggle-button,
   .masthead__menu-item--toggle .toggle-button {
     color: #e2e8f0;
-  }
-
-  .masthead__actions .toggle-button:hover,
-  .masthead__actions .toggle-button:focus-visible,
-  .masthead__menu-item--toggle .toggle-button:hover,
-  .masthead__menu-item--toggle .toggle-button:focus-visible {
-    color: #f8fafc;
-  }
-
-  .toggle-button {
-    &:hover,
-    &:focus-visible {
-      box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.35);
-    }
   }
 
   .toggle-button--theme {
