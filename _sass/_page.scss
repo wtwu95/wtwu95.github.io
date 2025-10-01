@@ -132,49 +132,26 @@
 
     .btn {
       @include cta-button;
-      position: relative;
-      height: auto;
-      min-height: 0;
-      padding: 0.6rem 1.4rem;
-      border: none !important;
-      border-radius: 999px;
-      background: transparent;
-      color: var(--masthead-toggle-hover-color) !important;
-      box-shadow: none;
-      gap: 0.35rem;
-      opacity: 0.85;
+      background: var(--theme-toggle-sun-active-bg);
+      color: var(--theme-toggle-sun-icon-color) !important;
+      border-color: transparent !important;
       transform: translateY(0);
-      transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease,
-        box-shadow 0.2s ease;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0.9rem;
-        right: 0.9rem;
-        bottom: 0.35rem;
-        height: 0.25rem;
-        border-radius: 999px;
-        background: var(--masthead-toggle-underline-bg);
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.2s ease;
-        pointer-events: none;
-      }
+      transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+        transform 0.2s ease;
     }
 
     .btn:hover {
-      color: var(--masthead-toggle-hover-color) !important;
-      opacity: 1;
+      background: var(--theme-toggle-inactive-bg);
+      color: var(--theme-toggle-icon-inactive) !important;
+      border-color: transparent !important;
       transform: translateY(-1px);
       text-decoration: none;
     }
 
-    .btn:hover::after {
-      transform: scaleX(1);
-    }
-
     .btn:active {
+      background: var(--theme-toggle-inactive-bg);
+      color: var(--theme-toggle-icon-inactive) !important;
+      border-color: transparent !important;
       transform: translateY(0);
     }
 
@@ -184,16 +161,11 @@
     }
 
     .btn:focus-visible {
-      opacity: 1;
-      box-shadow: 0 0 0 2px var(--masthead-toggle-focus-shadow);
-    }
-
-    .btn:focus-visible::after {
-      transform: scaleX(1);
+      box-shadow: 0 0 0 3px rgba($primary-color, 0.25);
     }
 
     .btn:focus:not(:focus-visible) {
-      box-shadow: none;
+      box-shadow: var(--theme-toggle-shadow-soft);
     }
   }
 
