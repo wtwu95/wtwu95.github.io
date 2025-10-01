@@ -138,14 +138,13 @@
       padding: 0.6rem 1.4rem;
       border: none !important;
       border-radius: 999px;
-      background: none;
+      background: none !important;
       color: var(--masthead-toggle-hover-color) !important;
-      box-shadow: none;
+      box-shadow: none !important;
       gap: 0.35rem;
       opacity: 0.85;
       transform: translateY(0);
-      transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease,
-        box-shadow 0.2s ease;
+      transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 
       &::after {
         content: "";
@@ -164,6 +163,9 @@
     }
 
     .btn:hover {
+      background: none !important;
+      border-color: transparent !important;
+      box-shadow: none !important;
       color: var(--masthead-toggle-hover-color) !important;
       opacity: 1;
       transform: translateY(-1px);
@@ -184,8 +186,10 @@
     }
 
     .btn:focus-visible {
+      background: none !important;
+      border-color: transparent !important;
+      box-shadow: none !important;
       opacity: 1;
-      box-shadow: 0 0 0 2px var(--masthead-toggle-focus-shadow);
     }
 
     .btn:focus-visible::after {
@@ -193,7 +197,7 @@
     }
 
     .btn:focus:not(:focus-visible) {
-      box-shadow: none;
+      box-shadow: none !important;
     }
   }
 

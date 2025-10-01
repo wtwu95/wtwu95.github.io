@@ -149,12 +149,27 @@ html.theme-dark .btn {
   box-shadow: 0 6px 18px rgba(#000, 0.35);
 }
 
+html.theme-dark .news-actions .btn {
+  background: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  color: var(--masthead-toggle-hover-color) !important;
+}
+
 html.theme-dark .btn:hover,
 html.theme-dark .btn:focus-visible {
   background-color: rgba(#1f2937, 0.92);
   border-color: rgba(#60a5fa, 0.45);
   color: #f9fafb !important;
   box-shadow: 0 10px 24px rgba(#1e3a8a, 0.35);
+}
+
+html.theme-dark .news-actions .btn:hover,
+html.theme-dark .news-actions .btn:focus-visible {
+  background: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  color: var(--masthead-toggle-hover-color) !important;
 }
 
 html.theme-dark .btn:focus-visible {
