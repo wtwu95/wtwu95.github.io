@@ -142,7 +142,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 <p class="news-actions">
   <a class="btn" href="{{ '/services/' | relative_url }}">
-    -- <span data-lang="en">Explore All Services</span> --
+    <span data-lang="en">-- Explore All Services --</span>
     <span data-lang="zh" hidden>-- 查看更多学术服务 --</span>
   </a>
 </p>
