@@ -47,13 +47,32 @@
               </a>
             </li>
           {% endfor %}
+          <li class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-language">
+            {{ language_toggle | strip }}
+          </li>
+          <li class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-theme">
+            {{ theme_toggle | strip }}
+          </li>
         </ul>
-        <div class="masthead__actions" role="presentation">
-          {{ language_toggle | strip }}
-          {{ theme_toggle | strip }}
-        </div>
-        <ul class="hidden-links hidden"></ul>
+        <ul class="hidden-links hidden">
+          <li
+            class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-language masthead__menu-item--toggle-clone"
+            hidden
+          >
+            {{ language_toggle | strip }}
+          </li>
+          <li
+            class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-theme masthead__menu-item--toggle-clone"
+            hidden
+          >
+            {{ theme_toggle | strip }}
+          </li>
+        </ul>
       </nav>
+    </div>
+    <div class="masthead__actions" role="presentation">
+      {{ language_toggle | strip }}
+      {{ theme_toggle | strip }}
     </div>
   </div>
 </div>
