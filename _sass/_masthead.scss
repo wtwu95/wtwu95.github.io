@@ -323,24 +323,20 @@
 
 html.theme-dark {
   --masthead-toggle-underline: rgba(191, 219, 254, 0.85);
-  --toggle-base-panel-bg: rgba(148, 163, 184, 0.28);
+  --toggle-base-panel-bg: rgba(148, 163, 184, 0.24);
   --theme-toggle-track-bg: var(--toggle-base-panel-bg);
-  --theme-toggle-inactive-bg: var(--language-toggle-inactive-bg);
-  --theme-toggle-icon-inactive: var(--language-toggle-text-inactive);
-  --theme-toggle-sun-icon-color: var(--language-toggle-text-inactive);
-  --theme-toggle-moon-active-bg: var(--language-toggle-active-bg);
-  --theme-toggle-moon-icon-color: var(--language-toggle-text-active);
-  --theme-toggle-shadow-strong: 0 12px 26px rgba(15, 23, 42, 0.48);
-  --theme-toggle-shadow-soft: 0 8px 18px rgba(15, 23, 42, 0.3);
-  --language-toggle-active-bg: linear-gradient(
-    135deg,
-    #{mix(#fff, $primary-color, 12%)},
-    #{mix(#000, $primary-color, 60%)}
-  );
-  --language-toggle-inactive-bg: #{mix(#000, $primary-color, 65%)};
-  --language-toggle-text-active: #f8fafc;
-  --language-toggle-text-inactive: #{mix(#fff, $primary-color, 75%)};
-  --language-toggle-shadow-strong: 0 12px 26px rgba(15, 23, 42, 0.48);
+  --theme-toggle-inactive-bg: rgba(148, 163, 184, 0.22);
+  --theme-toggle-icon-inactive: rgba(226, 232, 240, 0.82);
+  --theme-toggle-sun-icon-color: var(--theme-toggle-icon-inactive);
+  --theme-toggle-moon-active-bg: var(--dark-link-color);
+  --theme-toggle-moon-icon-color: var(--dark-button-text);
+  --theme-toggle-shadow-strong: 0 12px 26px var(--dark-button-shadow-strong);
+  --theme-toggle-shadow-soft: 0 8px 18px var(--dark-button-shadow-soft);
+  --language-toggle-active-bg: var(--dark-link-color);
+  --language-toggle-inactive-bg: rgba(15, 23, 42, 0.6);
+  --language-toggle-text-active: var(--dark-button-text);
+  --language-toggle-text-inactive: rgba(226, 232, 240, 0.78);
+  --language-toggle-shadow-strong: 0 12px 26px var(--dark-button-shadow-strong);
   --language-toggle-shadow-soft: 0 8px 18px rgba(15, 23, 42, 0.3);
 
   .masthead__actions {
