@@ -12,17 +12,13 @@
         class="toggle-button__icon toggle-button__icon--language toggle-button__icon--language-en"
         aria-hidden="true"
       >
-        <i class="fas fa-globe toggle-button__symbol" aria-hidden="true"></i>
-        <span class="toggle-button__label toggle-button__label--language">EN</span>
+        EN
       </span>
       <span
         class="toggle-button__icon toggle-button__icon--language toggle-button__icon--language-zh"
         aria-hidden="true"
       >
-        <i class="fas fa-globe toggle-button__symbol" aria-hidden="true"></i>
-        <span class="toggle-button__label toggle-button__label--language toggle-button__label--zh"
-          >中文</span
-        >
+        中
       </span>
     </button>
     {% endcapture %}
@@ -38,13 +34,43 @@
         class="toggle-button__icon toggle-button__icon--theme toggle-button__icon--sun"
         aria-hidden="true"
       >
-        <i class="fas fa-sun toggle-button__symbol" aria-hidden="true"></i>
+        <svg
+          class="toggle-icon"
+          viewBox="0 0 24 24"
+          role="presentation"
+          focusable="false"
+          aria-hidden="true"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3.25v1.5m0 14.5v1.5m8.25-8.25h-1.5m-14.5 0h-1.5m15.157-7.093-1.06 1.06M7.031 16.657l-1.06 1.06m12.726 0-1.06-1.06M7.031 7.03l-1.06-1.06M12 8.75a3.25 3.25 0 1 1 0 6.5 3.25 3.25 0 0 1 0-6.5Z"
+          />
+        </svg>
       </span>
       <span
         class="toggle-button__icon toggle-button__icon--theme toggle-button__icon--moon"
         aria-hidden="true"
       >
-        <i class="fas fa-moon toggle-button__symbol" aria-hidden="true"></i>
+        <svg
+          class="toggle-icon"
+          viewBox="0 0 24 24"
+          role="presentation"
+          focusable="false"
+          aria-hidden="true"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 12.79A9 9 0 0 1 11.21 3 7.25 7.25 0 1 0 21 12.79Z"
+          />
+        </svg>
       </span>
     </button>
     {% endcapture %}

@@ -184,38 +184,10 @@
     width: 1.8rem;
     height: 1.8rem;
     font-size: 1.25rem;
-    gap: 0.35rem;
-    line-height: 1;
   }
 
   &__icon--sun {
     display: none;
-  }
-
-  &__symbol {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.05rem;
-    line-height: 1;
-  }
-
-  &__label {
-    display: inline-block;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  &__label--language {
-    font-family: $sans-serif-narrow;
-  }
-
-  &__label--zh {
-    font-size: 0.7rem;
-    letter-spacing: 0;
-    text-transform: none;
   }
 }
 
@@ -252,8 +224,12 @@
     border-radius: 0.65rem;
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 0.55rem;
+    justify-content: center;
+    font-family: $sans-serif-narrow;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     background: var(--language-toggle-inactive-bg);
     color: var(--language-toggle-text-inactive);
     box-shadow: var(--language-toggle-shadow-soft);
@@ -264,14 +240,6 @@
       box-shadow 0.35s ease;
     pointer-events: none;
     z-index: 1;
-  }
-
-  .toggle-button__icon--language .toggle-button__symbol {
-    font-size: 0.9rem;
-  }
-
-  .toggle-button__icon--language .toggle-button__label {
-    font-size: 0.7rem;
   }
 
   .toggle-button__icon--language-en {
@@ -316,8 +284,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    gap: 0;
     background: var(--theme-toggle-inactive-bg);
     color: var(--theme-toggle-icon-inactive);
     box-shadow: var(--theme-toggle-shadow-soft);
@@ -328,10 +294,11 @@
       box-shadow 0.35s ease;
     pointer-events: none;
     z-index: 1;
-  }
 
-  .toggle-button__icon--theme .toggle-button__symbol {
-    font-size: 1.15rem;
+    svg {
+      width: 1.15rem;
+      height: 1.15rem;
+    }
   }
 
   .toggle-button__icon--sun {
