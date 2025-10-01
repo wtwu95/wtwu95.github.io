@@ -22,6 +22,10 @@ redirect_from:
 <span class='anchor' id='-publications'></span>
 # <span data-lang="en">📚 Selected Publications</span><span data-lang="zh" hidden>📚 代表性成果</span>
 
+<span data-lang="en">Explore the full list of publications on the **[Publications](/publications/)** page.</span>
+<span data-lang="zh" hidden>点击 **[出版物](/publications/)** 查看完整列表。</span>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE/CAA JAS 2024</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' | relative_url }}' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -99,9 +103,7 @@ redirect_from:
 <!-- 
 Explore the full list of publications on the [Publications](/publications/) page.
 -->
-<span data-lang="en">Explore the full list of publications on the [Publications](/publications/) page.</span>
-<span data-lang="zh" hidden>点击 [出版物](/publications/) 查看完整出版物列表。</span>
-    
+
 <!-- <p class="news-actions">
   <a class="btn" href="{{ '/publications/' | relative_url }}">
     <span data-lang="en">-- Show Full List --</span>
