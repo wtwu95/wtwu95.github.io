@@ -227,36 +227,19 @@ html.theme-dark {
   }
 
   .masthead__actions {
-    display: none;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
   }
 
   .greedy-nav {
-    .visible-links .masthead__menu-item--toggle {
-      display: table-cell;
-      text-align: right;
-    }
+    padding-bottom: 0.25rem;
 
+    .visible-links .masthead__menu-item--toggle,
     .hidden-links .masthead__menu-item--toggle {
-      display: block;
-      padding: 0;
-      text-align: center;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      .toggle-button {
-        width: 100%;
-      }
+      display: none !important;
     }
-  }
-
-  .masthead__menu-item--toggle .toggle-button {
-    margin: 0;
-  }
-
-  .greedy-nav .visible-links .masthead__menu-item--toggle + .masthead__menu-item--toggle {
-    padding-left: 0.25rem;
   }
 }
 
