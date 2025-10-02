@@ -67,6 +67,21 @@
   }
 }
 
+.masthead__actions {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 1.25rem;
+  color: $masthead-link-color;
+  margin-left: auto;
+  white-space: nowrap;
+
+  @media (min-width: 641px) {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+}
+
 .masthead__menu-home-item {
   @include breakpoint($medium) {
     display: block !important;
@@ -75,9 +90,7 @@
 }
 
 .masthead__menu-item {
-  display: flex;
-  align-items: center;
-  flex: 0 0 auto;
+  display: block;
   list-style-type: none;
   white-space: nowrap;
 
@@ -89,22 +102,11 @@
 
 
 .masthead__menu-item--toggle {
-  display: flex;
-  align-items: center;
+  display: none;
   color: $masthead-link-color;
 
   .toggle-button {
-    margin: 0 0.5rem;
-  }
-}
-
-.masthead__menu-item--toggle-language {
-  margin-left: auto;
-}
-
-.masthead__menu-item--toggle-theme {
-  .toggle-button {
-    margin-right: 0;
+    margin: 0 1rem;
   }
 }
 
@@ -184,11 +186,21 @@
   }
 }
 
+.masthead__actions .toggle-button {
+  margin: 0;
+  flex-shrink: 0;
+}
+
 html.theme-dark {
   --masthead-toggle-hover-color: #bfdbfe;
   --masthead-toggle-underline-bg: #bfdbfe;
   --masthead-toggle-focus-shadow: rgba(96, 165, 250, 0.45);
 
+  .masthead__actions {
+    color: #e2e8f0;
+  }
+
+  .masthead__actions .toggle-button,
   .masthead__menu-item--toggle .toggle-button {
     color: #e2e8f0;
 
@@ -219,12 +231,20 @@ html.theme-dark {
     flex: 1 1 100%;
   }
 
-  .greedy-nav {
-    padding-bottom: 0.25rem;
+  .masthead__actions {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
   }
 
-  .masthead__menu-item--toggle .toggle-button {
-    margin: 0 0.5rem;
+  .greedy-nav {
+    padding-bottom: 0.25rem;
+
+    .visible-links .masthead__menu-item--toggle,
+    .hidden-links .masthead__menu-item--toggle {
+      display: none !important;
+    }
   }
 }
 
