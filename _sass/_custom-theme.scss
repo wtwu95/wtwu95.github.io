@@ -222,6 +222,18 @@ html.theme-dark .publication-controls select option {
   color: #0f172a;
 }
 
+html.theme-dark .publication-controls button,
+html[data-theme="dark"] .publication-controls button {
+  color: #0f172a;
+}
+
+html.theme-dark .publication-controls button:hover,
+html.theme-dark .publication-controls button:focus-visible,
+html[data-theme="dark"] .publication-controls button:hover,
+html[data-theme="dark"] .publication-controls button:focus-visible {
+  color: #0f172a;
+}
+
 html.theme-dark .publication-index,
 html.theme-dark .publication-year {
   color: #f8fafc;
