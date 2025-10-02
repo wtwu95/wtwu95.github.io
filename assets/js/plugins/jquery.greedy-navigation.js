@@ -12,11 +12,17 @@ var $hlinks = $('#site-nav .hidden-links');
 var $toggleClones = $hlinks.find('.masthead__menu-item--toggle-clone');
 
 function getVisibleItems() {
-  return $vlinks.children().not('.masthead__menu-item--toggle-clone');
+  return $vlinks
+    .children()
+    .not('.masthead__menu-item--toggle')
+    .not('.masthead__menu-item--toggle-clone');
 }
 
 function getHiddenItems() {
-  return $hlinks.children().not('.masthead__menu-item--toggle-clone');
+  return $hlinks
+    .children()
+    .not('.masthead__menu-item--toggle')
+    .not('.masthead__menu-item--toggle-clone');
 }
 
 function syncToggleClones() {
@@ -30,11 +36,13 @@ function syncToggleClones() {
       ? '.masthead__menu-item--toggle-language'
       : '.masthead__menu-item--toggle-theme';
 
-    var hasOriginal = $hlinks
-      .children(selector)
-      .not($clone)
-      .filter(':not(.masthead__menu-item--toggle-clone)')
-      .length > 0;
+    var hasOriginal =
+      $vlinks.children(selector).filter(':not(.masthead__menu-item--toggle-clone)').length > 0 ||
+      $hlinks
+        .children(selector)
+        .not($clone)
+        .filter(':not(.masthead__menu-item--toggle-clone)')
+        .length > 0;
 
     if (hasOriginal) {
       $clone.attr('hidden', true);
