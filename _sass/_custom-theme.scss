@@ -1,3 +1,17 @@
+html {
+  --inline-map-divider-color: #{mix(#fff, $primary-color, 70%)};
+}
+
+html.theme-light,
+html[data-theme="light"] {
+  --inline-map-divider-color: #{mix(#fff, $primary-color, 70%)};
+}
+
+html.theme-dark,
+html[data-theme="dark"] {
+  --inline-map-divider-color: rgba(#bfdbfe, 0.6);
+}
+
 html.theme-light {
   color-scheme: light;
   --selection-bg: #2563eb;
