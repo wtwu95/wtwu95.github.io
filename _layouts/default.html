@@ -30,31 +30,9 @@ layout: compress
 
     <footer class="site-footer custom-license-footer">
       <div class="custom-license-footer__inner">
-        <p>
-          <span data-lang="en">© {{ site.time | date: '%Y' }} Wen-Tao Wu. Personal content (text, research, images) is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</span>
-          <span data-lang="zh" hidden>© {{ site.time | date: '%Y' }} 吴文涛。个人内容（文字、研究成果、图片等）采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC 4.0</a> 授权。</span>
-        </p>
-
-        <p>
-          <span data-lang="en">This website builds upon the open-source template by <a href="https://github.com/RayeRen/acad-homepage.github.io" target="_blank" rel="noopener">Raye Ren</a> and acknowledges the following upstream projects:</span>
-          <span data-lang="zh" hidden>本网站基于 <a href="https://github.com/RayeRen/acad-homepage.github.io" target="_blank" rel="noopener">Raye Ren</a> 的开源模板构建，特此致谢以下上游项目：</span>
-        </p>
-
-        <ul class="custom-license-footer__list" data-lang="en">
-          <li><a href="https://github.com/mmistakes/minimal-mistakes" target="_blank" rel="noopener">mmistakes/minimal-mistakes</a> (MIT License)</li>
-          <li><a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener">academicpages/academicpages.github.io</a> (MIT License)</li>
-          <li><a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a> (SIL OFL 1.1 &amp; MIT License)</li>
-        </ul>
-        <ul class="custom-license-footer__list" data-lang="zh" hidden>
-          <li><a href="https://github.com/mmistakes/minimal-mistakes" target="_blank" rel="noopener">mmistakes/minimal-mistakes</a>（MIT 许可）</li>
-          <li><a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener">academicpages/academicpages.github.io</a>（MIT 许可）</li>
-          <li><a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a>（SIL OFL 1.1 与 MIT 许可）</li>
-        </ul>
-
-        <p>
-          <span data-lang="en">Original source code is distributed under the <a href="{{ '/LICENSE' | relative_url }}" target="_blank" rel="noopener">MIT License</a>.</span>
-          <span data-lang="zh" hidden>原始源码遵循 <a href="{{ '/LICENSE' | relative_url }}" target="_blank" rel="noopener">MIT 许可证</a> 发布。</span>
-        </p>
+        <p class="custom-license-footer__follow">Follow: <a href="{{ '/feed.xml' | relative_url }}">GitHub Feed</a></p>
+        <p>© 2025 Wen-Tao Wu, Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> &amp; <a href="https://academicpages.github.io" target="_blank" rel="noopener">AcademicPages</a>, a fork of <a href="https://github.com/mmistakes/minimal-mistakes" target="_blank" rel="noopener">Minimal Mistakes</a>.</p>
+        <p>Site last updated {{ site.time | date: '%Y-%m-%d' }}</p>
       </div>
     </footer>
 
