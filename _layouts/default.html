@@ -50,23 +50,29 @@ layout: compress
     {% endif %}
     {% assign last_updated = last_updated_source | date: '%Y-%m-%d' %}
 
-    <footer class="site-footer custom-license-footer">
+    <footer class="site-footer custom-license-footer" role="contentinfo">
       <div class="custom-license-footer__inner">
-        <p class="custom-license-footer__follow">
+        <p class="custom-license-footer__follow" aria-label="Follow this site">
           <span class="custom-license-footer__follow-label">Follow:</span>
           {% if github_url != '' %}
-            <a class="custom-license-footer__follow-link" href="{{ github_url }}" target="_blank" rel="noopener">
+            <a class="custom-license-footer__follow-link" href="{{ github_url }}" target="_blank" rel="noopener" aria-label="Open GitHub profile in a new tab">
               <svg class="custom-license-footer__icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
                 <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.37-3.88-1.37-.52-1.32-1.26-1.67-1.26-1.67-1.03-.71.08-.7.08-.7 1.14.08 1.75 1.17 1.75 1.17 1.01 1.73 2.66 1.23 3.31.94.1-.73.39-1.23.71-1.51-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.17-3.1-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.18a10.96 10.96 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.57.23 2.73.11 3.02.72.81 1.17 1.84 1.17 3.1 0 4.44-2.69 5.41-5.25 5.7.4.35.76 1.04.76 2.11 0 1.52-.01 2.74-.01 3.11 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
               </svg>
               <span>GitHub</span>
             </a>
           {% else %}
-            <span class="custom-license-footer__follow-link">GitHub</span>
+            <span class="custom-license-footer__follow-link custom-license-footer__follow-link--disabled">GitHub</span>
           {% endif %}
+          <a class="custom-license-footer__follow-link custom-license-footer__follow-link--feed" href="{{ '/feed.xml' | relative_url }}" target="_blank" rel="noopener" aria-label="Open site RSS feed in a new tab">
+            <svg class="custom-license-footer__icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+              <path d="M5 16.5A2.5 2.5 0 1 0 7.5 19 2.5 2.5 0 0 0 5 16.5Zm-.75-5a1.25 1.25 0 0 0 1.25 1.25 7 7 0 0 1 7 7 1.25 1.25 0 0 0 2.5 0 9.5 9.5 0 0 0-9.5-9.5A1.25 1.25 0 0 0 4.25 11.5Zm0-5a1.25 1.25 0 0 0 1.25 1.25 12 12 0 0 1 12 12 1.25 1.25 0 0 0 2.5 0 14.5 14.5 0 0 0-14.5-14.5A1.25 1.25 0 0 0 4.25 6.5Z" />
+            </svg>
+            <span>Feed</span>
+          </a>
         </p>
-        <p>© {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}, Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> &amp; <a href="https://academicpages.github.io" target="_blank" rel="noopener">AcademicPages</a>.</p>
-        <p>Site last updated {{ last_updated }}</p>
+        <p class="custom-license-footer__meta">© {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}, Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> &amp; <a href="https://academicpages.github.io" target="_blank" rel="noopener">AcademicPages</a>.</p>
+        <p class="custom-license-footer__meta custom-license-footer__meta--muted">Site last updated {{ last_updated }}</p>
       </div>
     </footer>
 
