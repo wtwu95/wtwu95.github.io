@@ -28,33 +28,45 @@ layout: compress
       </article>
     </div>
 
+    {% assign repository_nwo = site.repository %}
+    {% if site.github and site.github.repository_nwo %}
+      {% assign repository_nwo = site.github.repository_nwo %}
+    {% endif %}
+    {% assign repository_owner = site.github.owner_name %}
+    {% if repository_owner == nil or repository_owner == '' %}
+      {% if repository_nwo %}
+        {% assign repository_owner = repository_nwo | split: '/' | first %}
+      {% endif %}
+    {% endif %}
+    {% assign github_url = '' %}
+    {% if repository_nwo %}
+      {% assign github_url = 'https://github.com/' | append: repository_nwo %}
+    {% elsif repository_owner %}
+      {% assign github_url = 'https://github.com/' | append: repository_owner %}
+    {% endif %}
+    {% assign last_updated_source = site.time %}
+    {% if site.github and site.github.repository and site.github.repository.updated_at %}
+      {% assign last_updated_source = site.github.repository.updated_at %}
+    {% endif %}
+    {% assign last_updated = last_updated_source | date: '%Y-%m-%d' %}
+
     <footer class="site-footer custom-license-footer">
       <div class="custom-license-footer__inner">
-        <p>
-          <span data-lang="en">© {{ site.time | date: '%Y' }} Wen-Tao Wu. Personal content (text, research, images) is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.</span>
-          <span data-lang="zh" hidden>© {{ site.time | date: '%Y' }} 吴文涛。个人内容（文字、研究成果、图片等）采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC 4.0</a> 授权。</span>
+        <p class="custom-license-footer__follow">
+          <span class="custom-license-footer__follow-label">Follow:</span>
+          {% if github_url != '' %}
+            <a class="custom-license-footer__follow-link" href="{{ github_url }}" target="_blank" rel="noopener">
+              <svg class="custom-license-footer__icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.37-3.88-1.37-.52-1.32-1.26-1.67-1.26-1.67-1.03-.71.08-.7.08-.7 1.14.08 1.75 1.17 1.75 1.17 1.01 1.73 2.66 1.23 3.31.94.1-.73.39-1.23.71-1.51-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.29 1.17-3.1-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.18a10.96 10.96 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.57.23 2.73.11 3.02.72.81 1.17 1.84 1.17 3.1 0 4.44-2.69 5.41-5.25 5.7.4.35.76 1.04.76 2.11 0 1.52-.01 2.74-.01 3.11 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+          {% else %}
+            <span class="custom-license-footer__follow-link">GitHub</span>
+          {% endif %}
         </p>
-
-        <p>
-          <span data-lang="en">This website builds upon the open-source template by <a href="https://github.com/RayeRen/acad-homepage.github.io" target="_blank" rel="noopener">Raye Ren</a> and acknowledges the following upstream projects:</span>
-          <span data-lang="zh" hidden>本网站基于 <a href="https://github.com/RayeRen/acad-homepage.github.io" target="_blank" rel="noopener">Raye Ren</a> 的开源模板构建，特此致谢以下上游项目：</span>
-        </p>
-
-        <ul class="custom-license-footer__list" data-lang="en">
-          <li><a href="https://github.com/mmistakes/minimal-mistakes" target="_blank" rel="noopener">mmistakes/minimal-mistakes</a> (MIT License)</li>
-          <li><a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener">academicpages/academicpages.github.io</a> (MIT License)</li>
-          <li><a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a> (SIL OFL 1.1 &amp; MIT License)</li>
-        </ul>
-        <ul class="custom-license-footer__list" data-lang="zh" hidden>
-          <li><a href="https://github.com/mmistakes/minimal-mistakes" target="_blank" rel="noopener">mmistakes/minimal-mistakes</a>（MIT 许可）</li>
-          <li><a href="https://github.com/academicpages/academicpages.github.io" target="_blank" rel="noopener">academicpages/academicpages.github.io</a>（MIT 许可）</li>
-          <li><a href="https://fontawesome.com" target="_blank" rel="noopener">Font Awesome</a>（SIL OFL 1.1 与 MIT 许可）</li>
-        </ul>
-
-        <p>
-          <span data-lang="en">Original source code is distributed under the <a href="{{ '/LICENSE' | relative_url }}" target="_blank" rel="noopener">MIT License</a>.</span>
-          <span data-lang="zh" hidden>原始源码遵循 <a href="{{ '/LICENSE' | relative_url }}" target="_blank" rel="noopener">MIT 许可证</a> 发布。</span>
-        </p>
+        <p>© {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}, Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> &amp; <a href="https://academicpages.github.io" target="_blank" rel="noopener">AcademicPages</a>.</p>
+        <p>Site last updated {{ last_updated }}</p>
       </div>
     </footer>
 
