@@ -192,6 +192,19 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
   outline: none;
 }
 
+@media (max-width: 900px) {
+  .publication-controls {
+    flex-wrap: wrap;
+  }
+
+  .publication-search,
+  .publication-controls select,
+  .publication-controls button {
+    flex: 1 1 220px;
+    min-width: 0;
+  }
+}
+
 .publication-search {
   flex: 1 1 280px;
   min-width: 160px;
@@ -210,9 +223,9 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 
 .publication-controls button {
   cursor: pointer;
-  background-color: var(--publication-accent);
-  color: #fff;
-  border-color: var(--publication-accent);
+  background-color: #fff;
+  color: #4b5563;
+  border-color: #c1c7d0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -224,13 +237,13 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 }
 
 .publication-controls button:hover {
-  background-color: var(--publication-accent-hover);
-  border-color: var(--publication-accent-hover);
+  background-color: inherit;
+  color: var(--publication-accent);
 }
 
 .publication-controls button:active {
-  background-color: var(--publication-accent);
-  border-color: var(--publication-accent);
+  background-color: inherit;
+  color: var(--publication-accent);
 }
 
 .publication-controls select:hover,
@@ -549,7 +562,16 @@ mark.publication-highlight {
   }
 
   .publication-controls button {
-    color: #0f172a;
+    background-color: #1f2937;
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #e2e8f0;
+  }
+
+  .publication-controls button:hover,
+  .publication-controls button:focus-visible,
+  .publication-controls button:active {
+    background-color: #1f2937;
+    color: #bfdbfe;
   }
 }
 
