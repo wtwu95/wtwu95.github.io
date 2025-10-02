@@ -709,6 +709,34 @@ html[data-theme="dark"] {
   text-align: center;
 }
 
+.custom-license-footer__follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.custom-license-footer__follow-label {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.custom-license-footer__follow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+.custom-license-footer__icon {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  fill: currentColor;
+}
+
 .custom-license-footer a {
   color: #60a5fa;
 }
