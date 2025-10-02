@@ -709,7 +709,7 @@ html[data-theme="dark"] {
 .custom-license-footer__inner {
   width: min(960px, 100%);
   margin-inline: auto;
-  padding: clamp(1.5rem, 3vw, 2.25rem) clamp(1rem, 4vw, 2.25rem);
+  padding: clamp(1rem, 2vw, 1.75rem) clamp(0.5rem, 2vw, 1.75rem);
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -799,15 +799,15 @@ html[data-theme="dark"] {
 
 @media (prefers-color-scheme: dark) {
   .custom-license-footer {
-    --footer-border: rgba(148, 163, 184, 0.28);
-    --footer-text: rgba(226, 232, 240, 0.88);
-    --footer-muted: rgba(148, 163, 184, 0.78);
+    --footer-border: rgba(71, 85, 105, 0.32);       
+    --footer-text: rgba(219, 230, 254, 0.92);       
+    --footer-muted: rgba(100, 116, 139, 0.72);     
   }
 }
 
 html.theme-dark .custom-license-footer,
 html[data-theme="dark"] .custom-license-footer {
-  --footer-border: rgba(148, 163, 184, 0.28);
-  --footer-text: rgba(226, 232, 240, 0.88);
-  --footer-muted: rgba(148, 163, 184, 0.78);
+  --footer-border: rgba(71, 85, 105, 0.32);
+  --footer-text: rgba(219, 230, 254, 0.92);
+  --footer-muted: rgba(100, 116, 139, 0.72);
 }
