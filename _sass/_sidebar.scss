@@ -300,20 +300,9 @@
 }
 
 .author__map-sidebar--inline {
-  $inline-map-divider-color: mix(#fff, $primary-color, 70%);
-
   display: block;
   margin: 2em 0 0;
-  padding-top: 1.75em;
-  border-top: 2px solid $inline-map-divider-color;
-  border-top-color: var(--inline-map-divider-color, $inline-map-divider-color);
   width: 100%;
-
-  @include breakpoint($large) {
-    margin-top: 1.5em;
-    padding-top: 0;
-    border-top: 0;
-  }
 }
 
 .author__maps {
