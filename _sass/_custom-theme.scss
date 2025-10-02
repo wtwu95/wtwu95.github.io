@@ -224,19 +224,14 @@ html.theme-dark .publication-controls select option {
 
 html.theme-dark .publication-controls button,
 html[data-theme="dark"] .publication-controls button {
-  background-color: #1f2937;
-  border-color: rgba(255, 255, 255, 0.12);
-  color: #e2e8f0;
+  color: #0f172a;
 }
 
 html.theme-dark .publication-controls button:hover,
 html.theme-dark .publication-controls button:focus-visible,
-html.theme-dark .publication-controls button:active,
 html[data-theme="dark"] .publication-controls button:hover,
-html[data-theme="dark"] .publication-controls button:focus-visible,
-html[data-theme="dark"] .publication-controls button:active {
-  background-color: #1f2937;
-  color: #bfdbfe;
+html[data-theme="dark"] .publication-controls button:focus-visible {
+  color: #0f172a;
 }
 
 html.theme-dark .publication-index,
