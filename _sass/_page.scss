@@ -145,6 +145,7 @@
       opacity: 0.85;
       transform: translateY(0);
       transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+      font-weight: 400;
 
       &::after {
         content: "";
@@ -170,6 +171,7 @@
       opacity: 1;
       transform: translateY(-1px);
       text-decoration: none;
+      font-weight: 700;
     }
 
     .btn:hover::after {
@@ -190,6 +192,7 @@
       border-color: transparent !important;
       box-shadow: none !important;
       opacity: 1;
+      font-weight: 700;
     }
 
     .btn:focus-visible::after {
