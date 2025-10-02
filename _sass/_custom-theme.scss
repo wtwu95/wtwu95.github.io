@@ -1,9 +1,13 @@
 html.theme-light {
   color-scheme: light;
+  --selection-bg: #2563eb;
+  --selection-color: #f8fafc;
 }
 
 html.theme-dark {
   color-scheme: dark;
+  --selection-bg: rgba(191, 219, 254, 0.7);
+  --selection-color: #0f172a;
 }
 
 html.theme-dark body {

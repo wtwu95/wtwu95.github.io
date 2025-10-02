@@ -9,6 +9,8 @@ html {
   box-sizing: border-box;
   background-color: $background-color;
   font-size: 15px;
+  --selection-bg: #2563eb;
+  --selection-color: #f8fafc;
 
   // @include breakpoint($medium) {
   //   font-size: 18px;
@@ -26,12 +28,16 @@ body { margin: 0; }
 
 ::-moz-selection {
   color: #fff;
-  background: #000;
+  color: var(--selection-color);
+  background: #2563eb;
+  background: var(--selection-bg);
 }
 
 ::selection {
   color: #fff;
-  background: #000;
+  color: var(--selection-color);
+  background: #2563eb;
+  background: var(--selection-bg);
 }
 
 /* Display HTML5 elements in IE6-9 and FF3 */
