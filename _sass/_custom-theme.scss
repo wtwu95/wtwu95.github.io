@@ -77,15 +77,57 @@ html.theme-dark .page__content hr {
   border-color: rgba(255, 255, 255, 0.12);
 }
 
-html.theme-dark .page__content a {
+@media (prefers-color-scheme: dark) {
+  .page__content a {
+    color: #93c5fd;
+  }
+
+  .page__content a:hover,
+  .page__content a:focus {
+    color: #bfdbfe;
+    background-color: rgba(147, 197, 253, 0.2);
+    box-shadow: 0 0 0 1px rgba(191, 219, 254, 0.6);
+    outline: none;
+  }
+
+  .page__content a:focus-visible {
+    color: #bfdbfe;
+    background-color: rgba(147, 197, 253, 0.2);
+    box-shadow: 0 0 0 2px rgba(191, 219, 254, 0.6);
+    outline: none;
+  }
+
+  .page__content a:focus:not(:focus-visible) {
+    box-shadow: none;
+  }
+}
+
+html.theme-dark .page__content a,
+html[data-theme="dark"] .page__content a {
   color: #93c5fd;
 }
 
 html.theme-dark .page__content a:hover,
-html.theme-dark .page__content a:focus {
+html.theme-dark .page__content a:focus,
+html[data-theme="dark"] .page__content a:hover,
+html[data-theme="dark"] .page__content a:focus {
   color: #bfdbfe;
-  background-color: rgba(59, 130, 246, 0.12);
-  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.25);
+  background-color: rgba(147, 197, 253, 0.2);
+  box-shadow: 0 0 0 1px rgba(191, 219, 254, 0.6);
+  outline: none;
+}
+
+html.theme-dark .page__content a:focus-visible,
+html[data-theme="dark"] .page__content a:focus-visible {
+  color: #bfdbfe;
+  background-color: rgba(147, 197, 253, 0.2);
+  box-shadow: 0 0 0 2px rgba(191, 219, 254, 0.6);
+  outline: none;
+}
+
+html.theme-dark .page__content a:focus:not(:focus-visible),
+html[data-theme="dark"] .page__content a:focus:not(:focus-visible) {
+  box-shadow: none;
 }
 
 html.theme-dark .page__content code {
