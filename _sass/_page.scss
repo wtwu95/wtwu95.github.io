@@ -146,21 +146,7 @@
       transform: translateY(0);
       transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
       font-weight: 400;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: 0.2rem;
-        width: calc(100% - 1.8rem);
-        height: 0.16rem;
-        border-radius: 999px;
-        background: var(--masthead-toggle-underline-bg);
-        transform: translateX(-50%) scaleX(0);
-        transform-origin: center;
-        transition: transform 0.2s ease;
-        pointer-events: none;
-      }
+      text-decoration: none;
     }
 
     .btn:hover {
@@ -172,10 +158,6 @@
       transform: translateY(-1px);
       text-decoration: none;
       font-weight: 700;
-    }
-
-    .btn:hover::after {
-      transform: translateX(-50%) scaleX(1);
     }
 
     .btn:active {
@@ -193,10 +175,6 @@
       box-shadow: none !important;
       opacity: 1;
       font-weight: 700;
-    }
-
-    .btn:focus-visible::after {
-      transform: translateX(-50%) scaleX(1);
     }
 
     .btn:focus:not(:focus-visible) {
