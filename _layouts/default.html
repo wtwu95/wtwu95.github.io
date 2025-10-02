@@ -71,7 +71,7 @@ layout: compress
             <span>Feed</span>
           </a>
         </p>
-        <p class="custom-license-footer__meta">© {{ site.time | date: '%Y' }} {{Wentao Wu}}, Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> &amp; <a href="https://academicpages.github.io" target="_blank" rel="noopener">AcademicPages</a>.</p>
+        <p class="custom-license-footer__meta">© {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}, Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> &amp; <a href="https://academicpages.github.io" target="_blank" rel="noopener">AcademicPages</a>.</p>
         <p class="custom-license-footer__meta custom-license-footer__meta--muted">Site last updated {{ last_updated }}</p>
       </div>
     </footer>
