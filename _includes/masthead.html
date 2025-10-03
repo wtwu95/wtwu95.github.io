@@ -30,8 +30,7 @@
     </button>
     {% endcapture %}
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
             <a href="{{ '/' | relative_url }}#about-me" target="_self">
@@ -48,25 +47,23 @@
             </li>
           {% endfor %}
         </ul>
-        <ul class="hidden-links hidden">
-          <li
-            class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-language masthead__menu-item--toggle-clone"
-            hidden
-          >
-            {{ language_toggle | strip }}
-          </li>
-          <li
-            class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-theme masthead__menu-item--toggle-clone"
-            hidden
-          >
-            {{ theme_toggle | strip }}
-          </li>
-        </ul>
       </nav>
     </div>
     <div class="masthead__actions" role="presentation">
       {{ language_toggle | strip }}
       {{ theme_toggle | strip }}
+      <div class="greedy-nav__dropdown" data-greedy-nav-dropdown>
+        <button
+          type="button"
+          class="greedy-nav__toggle hidden"
+          aria-expanded="false"
+          aria-controls="site-nav-hidden-links"
+          aria-label="Toggle navigation menu"
+        >
+          <div class="navicon" aria-hidden="true"></div>
+        </button>
+        <ul class="hidden-links greedy-nav__hidden-links hidden" id="site-nav-hidden-links"></ul>
+      </div>
     </div>
   </div>
 </div>
