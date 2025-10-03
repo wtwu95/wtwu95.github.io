@@ -130,13 +130,14 @@
   white-space: nowrap;
   font-size: 1rem;
   transition: color 0.2s ease, box-shadow 0.2s ease;
+  --toggle-icon-size: 1.5rem;
 
   &::after {
     content: "";
     position: absolute;
     left: 50%;
     bottom: 0;
-    width: 100%;
+    width: var(--toggle-icon-size);
     height: 4px;
     background: var(--masthead-toggle-underline-bg);
     transform: translateX(-50%) scaleX(0);
@@ -169,8 +170,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: var(--toggle-icon-size);
+    height: var(--toggle-icon-size);
     font-size: 1.1rem;
 
     i {
