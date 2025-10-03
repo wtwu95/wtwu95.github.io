@@ -37,6 +37,7 @@ function updateNav() {
     // Show the dropdown btn
     if($btn.hasClass('hidden')) {
       $btn.removeClass('hidden');
+      $btn.removeClass('close');
       $btn.attr('aria-expanded', 'false');
     }
 
@@ -61,6 +62,7 @@ function updateNav() {
       $btn.addClass('hidden');
       $hlinks.addClass('hidden');
       breaks = [];
+      $btn.removeClass('close');
       $btn.attr('aria-expanded', 'false');
     }
   }
