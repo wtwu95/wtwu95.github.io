@@ -10,6 +10,7 @@ var $btn = $('#site-nav button');
 var $vlinks = $('#site-nav .visible-links');
 var $hlinks = $('#site-nav .hidden-links');
 var $toggleClones = $hlinks.find('.masthead__menu-item--toggle-clone');
+var $mastheadWrap = $('.masthead__inner-wrap');
 
 function getVisibleItems() {
   return $vlinks.children().not('.masthead__menu-item--toggle-clone');
@@ -98,6 +99,10 @@ function updateNav() {
   }
 
   syncToggleClones();
+
+  if ($mastheadWrap.length) {
+    $mastheadWrap.toggleClass('masthead__inner-wrap--has-dropdown', !$btn.hasClass('hidden'));
+  }
 }
 
 // Window listeners
