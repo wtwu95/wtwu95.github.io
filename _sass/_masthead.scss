@@ -6,10 +6,6 @@
   --masthead-toggle-hover-color: #{$masthead-link-color-hover};
   --masthead-toggle-underline-bg: #{mix(#fff, $primary-color, 50%)};
   --masthead-toggle-focus-shadow: rgba(59, 130, 246, 0.3);
-  --masthead-menu-toggle-bg: #{$primary-color};
-  --masthead-menu-toggle-hover-bg: #{mix(#000, $primary-color, 15%)};
-  --masthead-menu-toggle-color: #fff;
-  --masthead-menu-toggle-focus-shadow: rgba($primary-color, 0.35);
 }
 
 .masthead {
@@ -178,20 +174,20 @@
   padding: 0.35rem 0.75rem;
   border: 0;
   border-radius: $border-radius;
-  background-color: var(--masthead-menu-toggle-bg);
-  color: var(--masthead-menu-toggle-color);
+  background-color: $primary-color;
+  color: #fff;
   cursor: pointer;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
   min-height: 2.25rem;
 
   &:hover,
   &:focus-visible {
-    background-color: var(--masthead-menu-toggle-hover-bg);
+    background-color: mix(#000, $primary-color, 15%);
   }
 
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 2px var(--masthead-menu-toggle-focus-shadow);
+    box-shadow: 0 0 0 2px rgba($primary-color, 0.35);
   }
 
   &:focus:not(:focus-visible) {
@@ -206,7 +202,7 @@
   .navicon,
   .navicon::before,
   .navicon::after {
-    background: currentColor;
+    background: #fff;
   }
 }
 
