@@ -9,6 +9,17 @@ var $nav = $('#site-nav');
 var $btn = $('[data-nav-toggle]');
 var $vlinks = $('#site-nav .visible-links');
 var $hlinks = $('.greedy-nav__more .hidden-links');
+var $moreContainer = $('.greedy-nav__more');
+
+function isDesktopPointer() {
+  return window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+}
+
+function closeHiddenMenu() {
+  $hlinks.addClass('hidden');
+  $btn.removeClass('close');
+  $btn.attr('aria-expanded', 'false');
+}
 
 function getVisibleItems() {
   return $vlinks.children();
@@ -88,6 +99,21 @@ $btn.on('click', function() {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
   $(this).attr('aria-expanded', isHidden ? 'true' : 'false');
+});
+
+$moreContainer.on('mouseleave', function(event) {
+  if(!isDesktopPointer()) {
+    return;
+  }
+
+  var related = event.relatedTarget;
+  if(related && (this === related || $.contains(this, related))) {
+    return;
+  }
+
+  if(!$hlinks.hasClass('hidden')) {
+    closeHiddenMenu();
+  }
 });
 
 updateNav();
