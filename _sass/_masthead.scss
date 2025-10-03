@@ -77,6 +77,12 @@
   .toggle-button {
     margin: 0;
   }
+
+  .greedy-nav__more {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
 }
 
 .masthead__menu-home-item {

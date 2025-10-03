@@ -8,7 +8,7 @@
 var $nav = $('#site-nav');
 var $btn = $('[data-nav-toggle]');
 var $vlinks = $('#site-nav .visible-links');
-var $hlinks = $('#site-nav .hidden-links');
+var $hlinks = $('.greedy-nav__more .hidden-links');
 
 function getVisibleItems() {
   return $vlinks.children();

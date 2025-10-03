@@ -47,22 +47,24 @@
             </li>
           {% endfor %}
         </ul>
-        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
     <div class="masthead__actions" role="presentation">
       {{ language_toggle | strip }}
       {{ theme_toggle | strip }}
-      <button
-        type="button"
-        class="greedy-nav__toggle hidden"
-        data-nav-toggle
-        aria-label="Toggle navigation menu"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Toggle navigation</span>
-        <div class="navicon" aria-hidden="true"></div>
-      </button>
+      <div class="greedy-nav__more">
+        <button
+          type="button"
+          class="greedy-nav__toggle hidden"
+          data-nav-toggle
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <div class="navicon" aria-hidden="true"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </div>
     </div>
   </div>
 </div>
