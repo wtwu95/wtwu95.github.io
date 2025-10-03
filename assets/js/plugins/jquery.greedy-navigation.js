@@ -6,50 +6,23 @@
 */
 
 var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
+var $btn = $('[data-nav-toggle]');
 var $vlinks = $('#site-nav .visible-links');
 var $hlinks = $('#site-nav .hidden-links');
-var $toggleClones = $hlinks.find('.masthead__menu-item--toggle-clone');
-var $mastheadWrap = $('.masthead__inner-wrap');
 
 function getVisibleItems() {
-  return $vlinks.children().not('.masthead__menu-item--toggle-clone');
+  return $vlinks.children();
 }
 
 function getHiddenItems() {
-  return $hlinks.children().not('.masthead__menu-item--toggle-clone');
-}
-
-function syncToggleClones() {
-  if (!$toggleClones.length) {
-    return;
-  }
-
-  $toggleClones.each(function () {
-    var $clone = $(this);
-    var selector = $clone.hasClass('masthead__menu-item--toggle-language')
-      ? '.masthead__menu-item--toggle-language'
-      : '.masthead__menu-item--toggle-theme';
-
-    var hasOriginal = $hlinks
-      .children(selector)
-      .not($clone)
-      .filter(':not(.masthead__menu-item--toggle-clone)')
-      .length > 0;
-
-    if (hasOriginal) {
-      $clone.attr('hidden', true);
-    } else {
-      $clone.attr('hidden', false);
-    }
-  });
+  return $hlinks.children();
 }
 
 var breaks = [];
 
 function updateNav() {
 
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
+  var availableSpace = $nav.width();
   var $visibleItems = getVisibleItems();
 
   // The visible list is overflowing the nav
@@ -64,6 +37,7 @@ function updateNav() {
     // Show the dropdown btn
     if($btn.hasClass('hidden')) {
       $btn.removeClass('hidden');
+      $btn.attr('aria-expanded', 'false');
     }
 
   // The visible list is not overflowing
@@ -87,6 +61,7 @@ function updateNav() {
       $btn.addClass('hidden');
       $hlinks.addClass('hidden');
       breaks = [];
+      $btn.attr('aria-expanded', 'false');
     }
   }
 
@@ -98,11 +73,6 @@ function updateNav() {
     updateNav();
   }
 
-  syncToggleClones();
-
-  if ($mastheadWrap.length) {
-    $mastheadWrap.toggleClass('masthead__inner-wrap--has-dropdown', !$btn.hasClass('hidden'));
-  }
 }
 
 // Window listeners
@@ -112,9 +82,10 @@ $(window).resize(function() {
 });
 
 $btn.on('click', function() {
+  var isHidden = $hlinks.hasClass('hidden');
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
+  $(this).attr('aria-expanded', isHidden ? 'true' : 'false');
 });
 
-syncToggleClones();
 updateNav();
