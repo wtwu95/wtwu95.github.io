@@ -11,6 +11,7 @@
   --masthead-toggle-hover-bg: #{mix(#000, $primary-color, 15%)};
   --masthead-hidden-links-bg: #fff;
   --masthead-hidden-links-border: #{$border-color};
+  --masthead-hidden-links-divider: #{$border-color};
   --masthead-hidden-links-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   --masthead-hidden-link-color: #{$masthead-link-color};
   --masthead-hidden-link-hover-color: #{$masthead-link-color-hover};
