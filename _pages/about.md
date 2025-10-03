@@ -154,6 +154,7 @@ Explore the full list of publications on the [Publications](/publications/) page
   </a>
 </p>
 
+<span class='anchor' id='-miscellaneous'></span>
 # <span data-lang="en">😀 Miscellaneous</span><span data-lang="zh" hidden>😀 实用链接</span>
 
 - [CloudConvert](https://cloudconvert.com/)
