@@ -6,43 +6,73 @@
 */
 
 var $nav = $('#site-nav');
-var $btn = $('.greedy-nav__toggle');
+var $btn = $('#site-nav button');
 var $vlinks = $('#site-nav .visible-links');
-var $hlinks = $('.greedy-nav__hidden-links');
+var $hlinks = $('#site-nav .hidden-links');
+var $toggleClones = $hlinks.find('.masthead__menu-item--toggle-clone');
+var $mastheadWrap = $('.masthead__inner-wrap');
 
 function getVisibleItems() {
-  return $vlinks.children();
+  return $vlinks.children().not('.masthead__menu-item--toggle-clone');
 }
 
 function getHiddenItems() {
-  return $hlinks.children();
+  return $hlinks.children().not('.masthead__menu-item--toggle-clone');
 }
 
-function hideDropdown() {
-  if ($hlinks.hasClass('hidden')) {
+function syncToggleClones() {
+  if (!$toggleClones.length) {
     return;
   }
 
-  $hlinks.addClass('hidden');
-  $btn.removeClass('close');
-  $btn.attr('aria-expanded', 'false');
+  $toggleClones.each(function () {
+    var $clone = $(this);
+    var selector = $clone.hasClass('masthead__menu-item--toggle-language')
+      ? '.masthead__menu-item--toggle-language'
+      : '.masthead__menu-item--toggle-theme';
+
+    var hasOriginal = $hlinks
+      .children(selector)
+      .not($clone)
+      .filter(':not(.masthead__menu-item--toggle-clone)')
+      .length > 0;
+
+    if (hasOriginal) {
+      $clone.attr('hidden', true);
+    } else {
+      $clone.attr('hidden', false);
+    }
+  });
 }
 
 var breaks = [];
 
 function updateNav() {
-  var availableSpace = $nav.width();
+
+  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
   var $visibleItems = getVisibleItems();
 
-  if ($vlinks.width() > availableSpace && $visibleItems.length) {
+  // The visible list is overflowing the nav
+  if($vlinks.width() > availableSpace && $visibleItems.length) {
+
+    // Record the width of the list
     breaks.push($vlinks.width());
+
+    // Move item to the hidden list
     $visibleItems.last().prependTo($hlinks);
 
-    if ($btn.hasClass('hidden')) {
+    // Show the dropdown btn
+    if($btn.hasClass('hidden')) {
       $btn.removeClass('hidden');
     }
+
+  // The visible list is not overflowing
   } else {
-    if (breaks.length && availableSpace > breaks[breaks.length - 1]) {
+
+    // There is space for another item in the nav
+    if(breaks.length && availableSpace > breaks[breaks.length-1]) {
+
+      // Move the item to the visible list
       var $hiddenItems = getHiddenItems();
       if ($hiddenItems.length) {
         $hiddenItems.first().appendTo($vlinks);
@@ -52,40 +82,39 @@ function updateNav() {
       }
     }
 
-    if (getHiddenItems().length < 1) {
-      if (!$btn.hasClass('hidden')) {
-        $btn.addClass('hidden');
-      }
-      hideDropdown();
+    // Hide the dropdown btn if hidden list is empty
+    if(getHiddenItems().length < 1) {
+      $btn.addClass('hidden');
+      $hlinks.addClass('hidden');
       breaks = [];
     }
   }
 
-  var hiddenCount = getHiddenItems().length;
-  $btn.attr('count', hiddenCount);
+  // Keep counter updated
+  $btn.attr("count", getHiddenItems().length);
 
-  if ($vlinks.width() > availableSpace && getVisibleItems().length) {
+  // Recur if the visible list is still overflowing the nav
+  if($vlinks.width() > availableSpace && getVisibleItems().length) {
     updateNav();
+  }
+
+  syncToggleClones();
+
+  if ($mastheadWrap.length) {
+    $mastheadWrap.toggleClass('masthead__inner-wrap--has-dropdown', !$btn.hasClass('hidden'));
   }
 }
 
-$(window).on('resize orientationchange', function () {
-  hideDropdown();
+// Window listeners
+
+$(window).resize(function() {
   updateNav();
 });
 
-$btn.on('click', function () {
-  if (getHiddenItems().length < 1) {
-    return;
-  }
-
-  var isHidden = $hlinks.hasClass('hidden');
+$btn.on('click', function() {
   $hlinks.toggleClass('hidden');
-
-  var isExpanded = isHidden && !$hlinks.hasClass('hidden');
-  $(this).toggleClass('close', isExpanded);
-  $(this).attr('aria-expanded', isExpanded);
+  $(this).toggleClass('close');
 });
 
-hideDropdown();
+syncToggleClones();
 updateNav();
