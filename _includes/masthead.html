@@ -31,7 +31,6 @@
     {% endcapture %}
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
             <a href="{{ '/' | relative_url }}#about-me" target="_self">
@@ -48,25 +47,22 @@
             </li>
           {% endfor %}
         </ul>
-        <ul class="hidden-links hidden">
-          <li
-            class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-language masthead__menu-item--toggle-clone"
-            hidden
-          >
-            {{ language_toggle | strip }}
-          </li>
-          <li
-            class="masthead__menu-item masthead__menu-item--toggle masthead__menu-item--toggle-theme masthead__menu-item--toggle-clone"
-            hidden
-          >
-            {{ theme_toggle | strip }}
-          </li>
-        </ul>
+        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
     <div class="masthead__actions" role="presentation">
       {{ language_toggle | strip }}
       {{ theme_toggle | strip }}
+      <button
+        type="button"
+        class="greedy-nav__toggle hidden"
+        data-nav-toggle
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <div class="navicon" aria-hidden="true"></div>
+      </button>
     </div>
   </div>
 </div>
