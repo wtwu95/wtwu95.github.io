@@ -27,3 +27,7 @@ main:
   - title_en: "Services"
     title_zh: "学术服务"
     url: "/#-professional-services"
+
+  - title_en: "miscellaneous"
+    title_zh: "实用链接"
+    url: "/#-miscellaneous"
