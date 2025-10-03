@@ -248,12 +248,15 @@
     }
   }
 
+}
+
+.greedy-nav__more {
   .hidden-links {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 0.5rem);
     right: 0;
-    margin-top: 15px;
-    padding: 5px;
+    margin-top: 0;
+    padding: 0.5rem;
     border: 1px solid $border-color;
     border-radius: $border-radius;
     background: #fff;
@@ -261,7 +264,7 @@
 
     a {
       margin: 0;
-      padding: 10px 20px;
+      padding: 0.625rem 1.25rem;
       font-size: $type-size-5;
 
       &:hover {
@@ -273,11 +276,11 @@
     &:before {
       content: "";
       position: absolute;
-      top: -11px;
-      right: 10px;
+      top: -0.75rem;
+      right: 1rem;
       width: 0;
       border-style: solid;
-      border-width: 0 10px 10px;
+      border-width: 0 0.5rem 0.5rem;
       border-color: $border-color transparent;
       display: block;
       z-index: 0;
@@ -286,11 +289,11 @@
     &:after {
       content: "";
       position: absolute;
-      top: -10px;
-      right: 10px;
+      top: calc(-0.75rem + 1px);
+      right: 1rem;
       width: 0;
       border-style: solid;
-      border-width: 0 10px 10px;
+      border-width: 0 0.5rem 0.5rem;
       border-color: #fff transparent;
       display: block;
       z-index: 1;
