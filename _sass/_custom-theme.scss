@@ -8,6 +8,15 @@ html.theme-dark {
   color-scheme: dark;
   --selection-bg: rgba(191, 219, 254, 0.7);
   --selection-color: #0f172a;
+  --masthead-toggle-bg: #2563eb;
+  --masthead-toggle-color: #f8fafc;
+  --masthead-toggle-hover-bg: #1d4ed8;
+  --masthead-hidden-links-bg: #1f2937;
+  --masthead-hidden-links-border: rgba(255, 255, 255, 0.12);
+  --masthead-hidden-links-shadow: 0 12px 30px rgba(15, 23, 42, 0.45);
+  --masthead-hidden-link-color: #e2e8f0;
+  --masthead-hidden-link-hover-color: #bfdbfe;
+  --masthead-hidden-link-hover-bg: rgba(59, 130, 246, 0.2);
 }
 
 html.theme-dark body {
@@ -30,26 +39,6 @@ html.theme-dark .masthead__menu a:hover {
 
 html.theme-dark .greedy-nav {
   background: transparent;
-}
-
-html.theme-dark .greedy-nav__toggle {
-  background-color: #2563eb;
-  color: #f8fafc;
-}
-
-html.theme-dark .greedy-nav__more .hidden-links {
-  background: #1f2937;
-  border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.45);
-}
-
-html.theme-dark .greedy-nav__more .hidden-links a {
-  color: #e2e8f0;
-}
-
-html.theme-dark .greedy-nav__more .hidden-links a:hover {
-  color: #bfdbfe;
-  background: rgba(59, 130, 246, 0.2);
 }
 
 html.theme-dark .greedy-nav .visible-links a {

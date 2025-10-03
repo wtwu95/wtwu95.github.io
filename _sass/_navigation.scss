@@ -257,19 +257,21 @@
     right: 0;
     margin-top: 0;
     padding: 0.5rem;
-    border: 1px solid $border-color;
+    border: 1px solid var(--masthead-hidden-links-border, #{$border-color});
     border-radius: $border-radius;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    background: var(--masthead-hidden-links-bg, #fff);
+    box-shadow: var(--masthead-hidden-links-shadow, 0 0 10px rgba(0, 0, 0, 0.25));
 
     a {
       margin: 0;
       padding: 0.625rem 1.25rem;
       font-size: $type-size-5;
+      color: var(--masthead-hidden-link-color, #{$masthead-link-color});
+      transition: background-color 0.2s ease, color 0.2s ease;
 
       &:hover {
-        color: $masthead-link-color-hover;
-        background: mix(#fff, $primary-color, 75%);
+        color: var(--masthead-hidden-link-hover-color, #{$masthead-link-color-hover});
+        background: var(--masthead-hidden-link-hover-bg, #{mix(#fff, $primary-color, 75%)});
       }
     }
 
