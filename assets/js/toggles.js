@@ -134,6 +134,26 @@
 
     applyTheme(html.getAttribute('data-theme') || 'light', { persist: false });
 
+    if (typeof window !== 'undefined') {
+      const triggerNavUpdate = function () {
+        if (typeof window.updateNav === 'function') {
+          window.updateNav();
+        } else {
+          try {
+            window.dispatchEvent(new Event('resize'));
+          } catch (error) {
+            /* ignore */
+          }
+        }
+      };
+
+      if (typeof window.requestAnimationFrame === 'function') {
+        window.requestAnimationFrame(triggerNavUpdate);
+      } else {
+        triggerNavUpdate();
+      }
+    }
+
     if (settings.persist) {
       try {
         window.localStorage.setItem(STORAGE_KEYS.language, normalized);
