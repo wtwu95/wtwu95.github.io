@@ -20,6 +20,10 @@ main:
     title_zh: "出版物"
     url: "/#-publications"
 
+  - title_en: "Teaching"
+    title_zh: "教学"
+    url: "/#-teaching"
+
   - title_en: "Awards"
     title_zh: "荣誉奖励"
     url: "/#-awards"
