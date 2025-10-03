@@ -7,7 +7,7 @@
   --masthead-toggle-underline-bg: #{mix(#fff, $primary-color, 50%)};
   --masthead-toggle-focus-shadow: rgba($primary-color, 0.35);
   --masthead-toggle-bg: #{$primary-color};
-  --masthead-toggle-color: #fff;
+  --masthead-toggle-color: #{$masthead-link-color};
   --masthead-toggle-hover-bg: #{mix(#000, $primary-color, 15%)};
   --masthead-hidden-links-bg: #fff;
   --masthead-hidden-links-border: #{$border-color};
