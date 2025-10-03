@@ -188,19 +188,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.35rem 0.75rem;
+  padding: 0.35rem;
   border: 0;
-  border-radius: $border-radius;
-  background-color: var(--masthead-toggle-bg);
+  border-radius: 999px;
+  background-color: transparent;
   color: var(--masthead-toggle-color);
   cursor: pointer;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+  transition: color 0.2s ease, box-shadow 0.2s ease;
   min-height: 2.25rem;
 
   &:hover,
   &:focus-visible {
-    background-color: var(--masthead-toggle-hover-bg);
-    color: var(--masthead-toggle-color);
+    color: var(--masthead-toggle-hover-color);
   }
 
   &:focus-visible {
