@@ -261,7 +261,9 @@
     border-radius: $border-radius;
     background: var(--masthead-hidden-links-bg, #fff);
     box-shadow: var(--masthead-hidden-links-shadow, 0 0 10px rgba(0, 0, 0, 0.25));
-    min-width: 12rem;
+    min-width: 10rem;
+    width: max-content;
+    max-width: min(20rem, calc(100vw - 2rem));
 
     a {
       display: block;
