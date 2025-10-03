@@ -8,10 +8,6 @@
 
 - <span data-lang="en">**Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)</span><span data-lang="zh" hidden>**组织者**：2025 第十届亚太智能机器人系统大会（ACIRS）专题二“机器人系统的分布式优化与控制”</span>
 
-## <span data-lang="en">Teaching</span><span data-lang="zh" hidden>教学工作</span>
-
-- <span data-lang="en">**Teaching Assistant** for Dynamical Systems and Control at The Hong Kong Polytechnic University (09/2025 - present)</span><span data-lang="zh" hidden>**《动力系统与控制》助教**，香港理工大学（2025 年 9 月至今）</span>
-
 ## <span data-lang="en">Journal Reviewer</span><span data-lang="zh" hidden>期刊审稿</span>
 
 - [IEEE Transactions on Automatic Control](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9)
