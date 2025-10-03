@@ -122,10 +122,10 @@ Explore the full list of publications on the [Publications](/publications/) page
 <span class='anchor' id='-awards'></span>
 # <span data-lang="en">🎖 Honors and Awards</span><span data-lang="zh" hidden>🎖 荣誉奖励</span>
 
-- <span data-lang="en">2025 &nbsp; <strong><span style="color:red">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span></strong></span><span data-lang="zh" hidden>2025 &nbsp; <strong><span style="color:red">中国科协青年人才托举工程博士专项计划（首批入选）</span></strong></span>
-- <span data-lang="en">2024 · 2023 · 2020 &nbsp; <strong><span style="color:red">National Scholarships for Graduate Students</span></strong></span><span data-lang="zh" hidden>2024 · 2023 · 2020 &nbsp; <strong><span style="color:red">研究生国家奖学金</span></strong></span>
-- <span data-lang="en">2023 &nbsp; <strong><span style="color:red">Best Student Paper Nomination Award</span></strong> of the 7th CCSICC</span><span data-lang="zh" hidden>2023 &nbsp; 第七届 CCSICC <strong><span style="color:red">最佳学生论文提名奖</span></strong></span>
-- <span data-lang="en">2022 &nbsp; <strong><span style="color:red">Excellent Master Dissertation Award</span></strong> of Liaoning Province</span><span data-lang="zh" hidden>2022 &nbsp; 辽宁省<strong><span style="color:red">优秀硕士学位论文</span></strong></span>
+- <span data-lang="en">2025 &nbsp; <strong><span style="color:#f2a900">Inaugural Doctoral Special Program of Young Elite Scientist Sponsorship Program</span></strong></span><span data-lang="zh" hidden>2025 &nbsp; <strong><span style="color:#f2a900">中国科协青年人才托举工程博士专项计划（首批入选）</span></strong></span>
+- <span data-lang="en">2024 · 2023 · 2020 &nbsp; <strong><span style="color:#f2a900">National Scholarships for Graduate Students</span></strong></span><span data-lang="zh" hidden>2024 · 2023 · 2020 &nbsp; <strong><span style="color:#f2a900">研究生国家奖学金</span></strong></span>
+- <span data-lang="en">2023 &nbsp; <strong><span style="color:#f2a900">Best Student Paper Nomination Award</span></strong> of the 7th CCSICC</span><span data-lang="zh" hidden>2023 &nbsp; 第七届 CCSICC <strong><span style="color:#f2a900">最佳学生论文提名奖</span></strong></span>
+- <span data-lang="en">2022 &nbsp; <strong><span style="color:#f2a900">Excellent Master Dissertation Award</span></strong> of Liaoning Province</span><span data-lang="zh" hidden>2022 &nbsp; 辽宁省<strong><span style="color:#f2a900">优秀硕士学位论文</span></strong></span>
 
 
 <p class="news-actions">
