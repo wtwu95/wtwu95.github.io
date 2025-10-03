@@ -154,7 +154,8 @@ Explore the full list of publications on the [Publications](/publications/) page
   </a>
 </p>
 
-<span class='anchor' id='-miscellaneous'></span>
+{% include_relative includes/misc.md %}
+<!-- <span class='anchor' id='-miscellaneous'></span>
 # <span data-lang="en">😀 Miscellaneous</span><span data-lang="zh" hidden>😀 实用链接</span>
 
 - [CloudConvert](https://cloudconvert.com/)
@@ -166,4 +167,4 @@ Explore the full list of publications on the [Publications](/publications/) page
 - [How to write rebuttals](https://deviparikh.medium.com/how-we-write-rebuttals-dc84742fece1/)
 - [How to write introduction](http://www-net.cs.umass.edu/kurose/writing/intro-style.html)
 - [Emojipedia](https://emojipedia.org/)
-- [PhotoKit](https://photokit.com/)
+- [PhotoKit](https://photokit.com/) -->
