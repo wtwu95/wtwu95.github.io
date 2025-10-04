@@ -7,7 +7,7 @@ html.theme-light {
 html.theme-dark {
   color-scheme: dark;
   --selection-bg: rgba(191, 219, 254, 0.7);
-  --selection-color: #0f172a;
+  --selection-color: #0c1117;
   --masthead-toggle-bg: transparent;
   --masthead-toggle-color: #f8fafc;
   --masthead-toggle-hover-bg: rgba(37, 99, 235, 0.35);
@@ -21,12 +21,12 @@ html.theme-dark {
 }
 
 html.theme-dark body {
-  background-color: #0f172a;
+  background-color: #0c1117;
   color: #e2e8f0;
 }
 
 html.theme-dark .masthead {
-  background-color: #0f172a;
+  background-color: #0c1117;
   border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -140,7 +140,7 @@ html.theme-dark .author__urls a:hover {
 }
 
 html.theme-dark .page__footer {
-  background-color: #0f172a;
+  background-color: #0c1117;
   border-top-color: rgba(255, 255, 255, 0.08);
   color: rgba(226, 232, 240, 0.85);
 }
@@ -155,7 +155,7 @@ html.theme-dark .page__footer a:hover {
 
 html.theme-dark .btn {
   color: #f9fafb !important;
-  background-color: rgba(#0f172a, 0.7);
+  background-color: rgba(#0c1117, 0.7);
   border-color: transparent;
   box-shadow: 0 6px 18px rgba(#000, 0.35);
 }
@@ -209,7 +209,7 @@ html.theme-dark .publication-controls input::placeholder {
 }
 
 html.theme-dark .publication-controls select option {
-  color: #0f172a;
+  color: #0c1117;
 }
 
 html.theme-dark .publication-controls button,
