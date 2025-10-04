@@ -217,16 +217,30 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
   justify-content: center;
 }
 
+@media (min-width: 40rem) {
+  .publication-controls {
+    grid-template-columns: repeat(2, minmax(11rem, 1fr));
+  }
+
+  .publication-search {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (min-width: 48rem) {
   .publication-controls {
-    grid-template-columns: minmax(16rem, 1fr) repeat(3, max-content);
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   }
 
   .publication-controls select,
   .publication-controls button {
-    width: auto;
+    width: 100%;
     min-width: 0;
-    justify-self: start;
+    justify-self: stretch;
+  }
+
+  .publication-search {
+    grid-column: 1 / -1;
   }
 }
 
