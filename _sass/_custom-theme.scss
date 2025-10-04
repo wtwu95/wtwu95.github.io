@@ -20,6 +20,33 @@ html.theme-dark {
   --masthead-hidden-link-hover-bg: rgba(59, 130, 246, 0.2);
 }
 
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --selection-bg: rgba(191, 219, 254, 0.7);
+  --selection-color: #0f172a;
+  --masthead-toggle-bg: transparent;
+  --masthead-toggle-color: #f8fafc;
+  --masthead-toggle-hover-bg: rgba(37, 99, 235, 0.35);
+  --masthead-hidden-links-bg: rgba(31, 41, 55, 0.95);
+  --masthead-hidden-links-border: rgba(255, 255, 255, 0.12);
+  --masthead-hidden-links-divider: rgba(255, 255, 255, 0.12);
+  --masthead-hidden-links-shadow: 0 12px 30px rgba(15, 23, 42, 0.45);
+  --masthead-hidden-link-color: #e2e8f0;
+  --masthead-hidden-link-hover-color: #bfdbfe;
+  --masthead-hidden-link-hover-bg: rgba(59, 130, 246, 0.2);
+}
+
+html.theme-dark,
+html[data-theme="dark"] {
+  --publication-control-bg: #1f2937;
+  --publication-control-color: #e2e8f0;
+  --publication-control-border: rgba(255, 255, 255, 0.12);
+  --publication-control-hover-bg: rgba(59, 130, 246, 0.16);
+  --publication-control-hover-color: #bfdbfe;
+  --publication-control-placeholder: rgba(226, 232, 240, 0.6);
+  --publication-control-option-color: #0f172a;
+}
+
 html.theme-dark body {
   background-color: #0f172a;
   color: #e2e8f0;
@@ -195,38 +222,6 @@ html.theme-dark .btn:focus:not(:focus-visible) {
 html.theme-dark table,
 html.theme-dark .page__content .news-list {
   border-color: rgba(255, 255, 255, 0.12);
-}
-
-html.theme-dark .publication-controls input,
-html.theme-dark .publication-controls select {
-  background-color: #1f2937;
-  border-color: rgba(255, 255, 255, 0.12);
-  color: #e2e8f0;
-}
-
-html.theme-dark .publication-controls input::placeholder {
-  color: rgba(226, 232, 240, 0.6);
-}
-
-html.theme-dark .publication-controls select option {
-  color: #0f172a;
-}
-
-html.theme-dark .publication-controls button,
-html[data-theme="dark"] .publication-controls button {
-  background-color: #1f2937;
-  border-color: rgba(255, 255, 255, 0.12);
-  color: #e2e8f0;
-}
-
-html.theme-dark .publication-controls button:hover,
-html.theme-dark .publication-controls button:focus-visible,
-html.theme-dark .publication-controls button:active,
-html[data-theme="dark"] .publication-controls button:hover,
-html[data-theme="dark"] .publication-controls button:focus-visible,
-html[data-theme="dark"] .publication-controls button:active {
-  background-color: #1f2937;
-  color: #bfdbfe;
 }
 
 html.theme-dark .publication-index,

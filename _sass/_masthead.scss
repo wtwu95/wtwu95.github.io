@@ -6,7 +6,7 @@
   --masthead-toggle-hover-color: #{$masthead-link-color-hover};
   --masthead-toggle-underline-bg: #{mix(#fff, $primary-color, 50%)};
   --masthead-toggle-focus-shadow: rgba($primary-color, 0.35);
-  --masthead-toggle-bg: #{$primary-color};
+  --masthead-toggle-bg: transparent;
   --masthead-toggle-color: #{$masthead-link-color};
   --masthead-toggle-hover-bg: #{mix(#000, $primary-color, 15%)};
   --masthead-hidden-links-bg: #fff;
@@ -191,15 +191,17 @@
   padding: 0.35rem;
   border: 0;
   border-radius: 999px;
-  background-color: transparent;
+  background-color: var(--masthead-toggle-bg, transparent);
   color: var(--masthead-toggle-color);
   cursor: pointer;
-  transition: color 0.2s ease, box-shadow 0.2s ease;
+  transition: color 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease;
   min-height: 2.25rem;
 
   &:hover,
   &:focus-visible {
     color: var(--masthead-toggle-hover-color);
+    background-color: var(--masthead-toggle-hover-bg, transparent);
   }
 
   &:focus-visible {
@@ -210,6 +212,7 @@
   &:focus:not(:focus-visible) {
     outline: none;
     box-shadow: none;
+    background-color: var(--masthead-toggle-bg, transparent);
   }
 
   &.hidden {
