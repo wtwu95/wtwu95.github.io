@@ -272,6 +272,11 @@
       background: none;
     }
   }
+
+  .fa-linkedin,
+  .fa-linkedin-square {
+    color: inherit;
+  }
 }
 
 .author__urls_sm{
@@ -284,6 +289,10 @@
     &:hover {
       text-decoration: none;
     }
+  }
+  .fa-linkedin,
+  .fa-linkedin-square {
+    color: inherit;
   }
   @include breakpoint($large) {
     display: none;
