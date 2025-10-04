@@ -2,22 +2,52 @@ html.theme-light {
   color-scheme: light;
   --selection-bg: #2563eb;
   --selection-color: #f8fafc;
+  --masthead-surface: rgba(255, 255, 255, 0.94);
+  --masthead-border-color: rgba(148, 163, 184, 0.22);
+  --masthead-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  --masthead-backdrop: blur(22px);
+  --masthead-link-color: #1f2937;
+  --masthead-link-hover-color: #1d4ed8;
+  --masthead-link-hover-bg: rgba(37, 99, 235, 0.12);
+  --masthead-link-focus-ring: rgba(37, 99, 235, 0.35);
+  --masthead-link-underline-color: rgba(37, 99, 235, 0.75);
+  --masthead-toggle-bg: rgba(37, 99, 235, 0.05);
+  --masthead-toggle-color: #1f2937;
+  --masthead-toggle-hover-bg: rgba(37, 99, 235, 0.12);
+  --masthead-toggle-hover-color: #1d4ed8;
+  --masthead-hidden-links-bg: rgba(255, 255, 255, 0.95);
+  --masthead-hidden-links-border: rgba(148, 163, 184, 0.22);
+  --masthead-hidden-links-divider: rgba(148, 163, 184, 0.28);
+  --masthead-hidden-links-shadow: 0 24px 40px rgba(15, 23, 42, 0.12);
+  --masthead-hidden-link-color: #1f2937;
+  --masthead-hidden-link-hover-color: #1d4ed8;
+  --masthead-hidden-link-hover-bg: rgba(37, 99, 235, 0.12);
 }
 
 html.theme-dark {
   color-scheme: dark;
   --selection-bg: rgba(191, 219, 254, 0.7);
   --selection-color: #0c1117;
-  --masthead-toggle-bg: transparent;
+  --masthead-surface: rgba(12, 17, 23, 0.9);
+  --masthead-border-color: rgba(148, 163, 184, 0.18);
+  --masthead-shadow: 0 18px 45px rgba(2, 6, 23, 0.65);
+  --masthead-backdrop: blur(24px);
+  --masthead-link-color: #e2e8f0;
+  --masthead-link-hover-color: #bfdbfe;
+  --masthead-link-hover-bg: rgba(59, 130, 246, 0.2);
+  --masthead-link-focus-ring: rgba(96, 165, 250, 0.45);
+  --masthead-link-underline-color: rgba(191, 219, 254, 0.9);
+  --masthead-toggle-bg: rgba(37, 99, 235, 0.12);
   --masthead-toggle-color: #f8fafc;
-  --masthead-toggle-hover-bg: rgba(37, 99, 235, 0.35);
+  --masthead-toggle-hover-bg: rgba(37, 99, 235, 0.2);
+  --masthead-toggle-hover-color: #bfdbfe;
   --masthead-hidden-links-bg: rgba(31, 41, 55, 0.95);
   --masthead-hidden-links-border: rgba(255, 255, 255, 0.12);
   --masthead-hidden-links-divider: rgba(255, 255, 255, 0.12);
-  --masthead-hidden-links-shadow: 0 12px 30px rgba(15, 23, 42, 0.45);
+  --masthead-hidden-links-shadow: 0 20px 45px rgba(2, 6, 23, 0.55);
   --masthead-hidden-link-color: #e2e8f0;
   --masthead-hidden-link-hover-color: #bfdbfe;
-  --masthead-hidden-link-hover-bg: rgba(59, 130, 246, 0.2);
+  --masthead-hidden-link-hover-bg: rgba(59, 130, 246, 0.24);
 }
 
 html.theme-dark body {
@@ -26,16 +56,16 @@ html.theme-dark body {
 }
 
 html.theme-dark .masthead {
-  background-color: #0c1117;
-  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background-color: var(--masthead-surface, #0c1117);
+  border-bottom-color: var(--masthead-border-color, rgba(255, 255, 255, 0.08));
 }
 
 html.theme-dark .masthead__menu a {
-  color: #e2e8f0;
+  color: var(--masthead-link-color, #e2e8f0);
 }
 
 html.theme-dark .masthead__menu a:hover {
-  color: #bfdbfe;
+  color: var(--masthead-link-hover-color, #bfdbfe);
 }
 
 html.theme-dark .greedy-nav {
@@ -43,19 +73,19 @@ html.theme-dark .greedy-nav {
 }
 
 html.theme-dark .greedy-nav .visible-links a {
-  color: inherit;
+  color: var(--masthead-link-color, inherit);
 }
 
 html.theme-dark .greedy-nav .visible-links a:focus-visible {
-  color: #bfdbfe;
+  color: var(--masthead-link-hover-color, #bfdbfe);
 }
 
 html.theme-dark .greedy-nav .visible-links a:hover {
-  color: #bfdbfe;
+  color: var(--masthead-link-hover-color, #bfdbfe);
 }
 
 html.theme-dark .greedy-nav .visible-links a::before {
-  background: #bfdbfe;
+  background: var(--masthead-link-underline-color, #bfdbfe);
 }
 
 html.theme-dark .page__content {

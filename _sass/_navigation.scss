@@ -175,17 +175,20 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: $background-color;
+  background: transparent;
 
   a {
     display: block;
     margin: 0 1rem;
-    padding: 0.5rem 0;
-    color: $masthead-link-color;
+    padding: 0.625rem 0.25rem;
+    color: var(--masthead-link-color, #{$masthead-link-color});
     text-decoration: none;
+    border-radius: 0.75rem;
+    transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
-      color: $masthead-link-color-hover;
+      color: var(--masthead-link-hover-color, #{$masthead-link-color-hover});
+      background-color: var(--masthead-link-hover-bg, #{mix(#fff, $primary-color, 75%)});
     }
   }
 
@@ -213,6 +216,13 @@
 
     a {
       position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      min-height: 2.5rem;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
 
       &:before {
         content: "";
@@ -220,7 +230,7 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: mix(#fff, $primary-color, 50%);
+        background: var(--masthead-link-underline-color, #{mix(#fff, $primary-color, 50%)});
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;
@@ -236,14 +246,20 @@
       }
 
       &:focus-visible {
-        color: $masthead-link-color-hover;
+        color: var(--masthead-link-hover-color, #{$masthead-link-color-hover});
         outline: none;
+        background-color: var(--masthead-link-hover-bg, #{mix(#fff, $primary-color, 75%)});
+        box-shadow: 0 0 0 3px var(--masthead-link-focus-ring, rgba($primary-color, 0.35));
       }
 
       &:focus-visible:before {
         -webkit-transform: scaleX(1);
             -ms-transform: scaleX(1);
                 transform: scaleX(1); /* reveal*/
+      }
+
+      &:focus:not(:focus-visible) {
+        box-shadow: none;
       }
     }
   }
