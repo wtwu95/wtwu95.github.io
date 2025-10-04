@@ -218,7 +218,7 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
   width: auto;
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 40rem) {
   .publication-controls {
     flex-wrap: nowrap;
     align-items: center;
@@ -235,7 +235,7 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
   }
 }
 
-@media (max-width: 55.99rem) {
+@media (max-width: 39.99rem) {
   .publication-controls select {
     flex: 1 1 0;
     min-width: 0;
