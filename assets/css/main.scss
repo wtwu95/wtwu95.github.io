@@ -169,7 +169,7 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 
 .publication-controls {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 0.85rem;
   align-items: stretch;
   margin-bottom: 1.5rem;
@@ -202,9 +202,25 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 }
 
 
+#publication-type-filter {
+  grid-column: 1 / span 4;
+}
+
+#publication-year-filter {
+  grid-column: 5 / span 4;
+}
+
+#publication-year-sort {
+  grid-column: 9 / span 4;
+}
+
 .publication-controls select,
 .publication-controls button {
   justify-self: stretch;
+}
+
+.publication-search {
+  grid-column: 1 / -1;
 }
 
 .publication-controls button {
@@ -217,16 +233,19 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
   justify-content: center;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 64rem) {
   .publication-controls {
-    grid-template-columns: minmax(16rem, 1fr) repeat(3, max-content);
+    grid-template-columns: minmax(18rem, 3fr) repeat(3, minmax(10rem, 1fr));
   }
 
-  .publication-controls select,
-  .publication-controls button {
-    width: auto;
-    min-width: 0;
-    justify-self: start;
+  .publication-search {
+    grid-column: 1 / span 1;
+  }
+
+  #publication-type-filter,
+  #publication-year-filter,
+  #publication-year-sort {
+    grid-column: auto;
   }
 }
 
