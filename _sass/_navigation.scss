@@ -273,25 +273,11 @@
       color: var(--masthead-hidden-link-color, #{$masthead-link-color});
       line-height: 1.5;
       text-align: center;
-      transition: background-color 0.2s ease, color 0.2s ease,
-        box-shadow 0.2s ease;
+      transition: background-color 0.2s ease, color 0.2s ease;
 
       &:hover {
         color: var(--masthead-hidden-link-hover-color, #{$masthead-link-color-hover});
         background: var(--masthead-hidden-link-hover-bg, #{mix(#fff, $primary-color, 75%)});
-      }
-
-      &:focus-visible {
-        color: var(--masthead-hidden-link-hover-color, #{$masthead-link-color-hover});
-        background: var(--masthead-hidden-link-hover-bg, #{mix(#fff, $primary-color, 75%)});
-        outline: none;
-        box-shadow: inset 0 0 0 1px
-          var(--masthead-hidden-link-hover-color, #{$masthead-link-color-hover});
-      }
-
-      &:focus:not(:focus-visible) {
-        outline: none;
-        box-shadow: none;
       }
     }
 

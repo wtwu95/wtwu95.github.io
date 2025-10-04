@@ -146,13 +146,6 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
   --publication-accent: #224b8d;
   --publication-accent-hover: #1a3a6d;
   --publication-accent-soft: rgba(34, 75, 141, 0.18);
-  --publication-control-bg: #fff;
-  --publication-control-color: #1f2937;
-  --publication-control-border: #c1c7d0;
-  --publication-control-hover-bg: #f1f5f9;
-  --publication-control-hover-color: var(--publication-accent);
-  --publication-control-placeholder: #6b7280;
-  --publication-control-option-color: #0f172a;
   --citation-modal-overlay: rgba(15, 23, 42, 0.45);
   --citation-modal-dialog-bg: #fff;
   --citation-modal-dialog-color: #0f172a;
@@ -188,9 +181,8 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 .publication-search {
   padding: 0 0.85rem;
   border-radius: 0.45rem;
-  border: 1px solid var(--publication-control-border);
-  background-color: var(--publication-control-bg);
-  color: var(--publication-control-color);
+  border: 1px solid #c1c7d0;
+  background-color: #fff;
   font-size: 0.95rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease,
     background-color 0.2s ease, color 0.2s ease;
@@ -212,9 +204,9 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 
 .publication-controls button {
   cursor: pointer;
-  background-color: var(--publication-control-bg);
-  color: var(--publication-control-color);
-  border-color: var(--publication-control-border);
+  background-color: #fff;
+  color: #4b5563;
+  border-color: #c1c7d0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,22 +264,13 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 }
 
 .publication-controls button:hover {
-  background-color: var(--publication-control-hover-bg);
-  color: var(--publication-control-hover-color);
+  background-color: inherit;
+  color: var(--publication-accent);
 }
 
 .publication-controls button:active {
-  background-color: var(--publication-control-hover-bg);
-  color: var(--publication-control-hover-color);
-}
-
-.publication-controls button:focus-visible {
-  color: var(--publication-control-hover-color);
-}
-
-.publication-controls button:focus:not(:focus-visible) {
-  color: var(--publication-control-color);
-  background-color: var(--publication-control-bg);
+  background-color: inherit;
+  color: var(--publication-accent);
 }
 
 .publication-controls select:hover,
@@ -298,16 +281,6 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 .publication-search:focus-visible {
   border-color: var(--publication-accent);
   box-shadow: 0 0 0 3px var(--publication-accent-soft);
-  background-color: var(--publication-control-hover-bg);
-}
-
-.publication-search::placeholder {
-  color: var(--publication-control-placeholder);
-  transition: color 0.2s ease;
-}
-
-.publication-controls select option {
-  color: var(--publication-control-option-color);
 }
 
 ol.publication-list {
