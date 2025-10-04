@@ -213,6 +213,16 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
   line-height: 1;
 }
 
+.publication-sort-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+.publication-sort-icon--asc {
+  transform: rotate(180deg);
+}
+
 .publication-controls select,
 .publication-controls button {
   flex: 0 1 auto;
