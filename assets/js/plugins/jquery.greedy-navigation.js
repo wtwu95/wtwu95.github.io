@@ -9,6 +9,7 @@ var $nav = $('#site-nav');
 var $btn = $('[data-nav-toggle]');
 var $vlinks = $('#site-nav .visible-links');
 var $hlinks = $('.greedy-nav__more .hidden-links');
+var docClickHandler = null;
 
 function getVisibleItems() {
   return $vlinks.children();
@@ -19,6 +20,29 @@ function getHiddenItems() {
 }
 
 var breaks = [];
+
+function manageDocClickListener(shouldBind) {
+  if(shouldBind) {
+    if(!docClickHandler) {
+      docClickHandler = function(event) {
+        if(!$(event.target).closest('.greedy-nav__more').length) {
+          setMenuOpen(false);
+        }
+      };
+      $(document).on('click.greedyNavOutside', docClickHandler);
+    }
+  } else if(docClickHandler) {
+    $(document).off('click.greedyNavOutside', docClickHandler);
+    docClickHandler = null;
+  }
+}
+
+function setMenuOpen(isOpen) {
+  $hlinks.toggleClass('hidden', !isOpen);
+  $btn.toggleClass('close', isOpen);
+  $btn.attr('aria-expanded', isOpen ? 'true' : 'false');
+  manageDocClickListener(isOpen);
+}
 
 function updateNav() {
 
@@ -60,10 +84,8 @@ function updateNav() {
     // Hide the dropdown btn if hidden list is empty
     if(getHiddenItems().length < 1) {
       $btn.addClass('hidden');
-      $hlinks.addClass('hidden');
+      setMenuOpen(false);
       breaks = [];
-      $btn.removeClass('close');
-      $btn.attr('aria-expanded', 'false');
     }
   }
 
@@ -85,9 +107,13 @@ $(window).resize(function() {
 
 $btn.on('click', function() {
   var isHidden = $hlinks.hasClass('hidden');
-  $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
-  $(this).attr('aria-expanded', isHidden ? 'true' : 'false');
+  setMenuOpen(isHidden);
+});
+
+$btn.on('keydown', function(event) {
+  if(event.key === 'Escape' || event.keyCode === 27) {
+    setMenuOpen(false);
+  }
 });
 
 updateNav();
