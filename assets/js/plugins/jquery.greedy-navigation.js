@@ -39,6 +39,7 @@ function manageDocClickListener(shouldBind) {
 
 function setMenuOpen(isOpen) {
   $hlinks.toggleClass('hidden', !isOpen);
+  $hlinks.attr('aria-hidden', isOpen ? 'false' : 'true');
   $btn.toggleClass('close', isOpen);
   $btn.attr('aria-expanded', isOpen ? 'true' : 'false');
   manageDocClickListener(isOpen);
@@ -63,6 +64,7 @@ function updateNav() {
       $btn.removeClass('hidden');
       $btn.removeClass('close');
       $btn.attr('aria-expanded', 'false');
+      $hlinks.attr('aria-hidden', 'true');
     }
 
   // The visible list is not overflowing
@@ -85,6 +87,8 @@ function updateNav() {
     if(getHiddenItems().length < 1) {
       $btn.addClass('hidden');
       setMenuOpen(false);
+      $hlinks.attr('aria-hidden', 'true');
+      $btn.attr('aria-expanded', 'false');
       breaks = [];
     }
   }
@@ -108,6 +112,7 @@ $(window).resize(function() {
 $btn.on('click', function() {
   var isHidden = $hlinks.hasClass('hidden');
   setMenuOpen(isHidden);
+  $hlinks.attr('aria-hidden', isHidden ? 'false' : 'true');
 });
 
 $btn.on('keydown', function(event) {
