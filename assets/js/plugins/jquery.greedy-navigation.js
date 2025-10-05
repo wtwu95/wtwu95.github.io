@@ -11,25 +11,6 @@ var $vlinks = $('#site-nav .visible-links');
 var $hlinks = $('.greedy-nav__more .hidden-links');
 var docClickHandler = null;
 var resizeTimer;
-var closeTimer = null;
-
-function raf(callback) {
-  if (typeof window.requestAnimationFrame === 'function') {
-    window.requestAnimationFrame(callback);
-    return;
-  }
-
-  window.setTimeout(callback, 16);
-}
-
-function cancelCloseHandlers() {
-  if (closeTimer !== null) {
-    window.clearTimeout(closeTimer);
-    closeTimer = null;
-  }
-
-  $hlinks.off('transitionend.greedyNavVisibility');
-}
 
 function getVisibleItems() {
   return $vlinks.children();
@@ -57,48 +38,9 @@ function manageDocClickListener(shouldBind) {
   }
 }
 
-function setMenuOpen(isOpen, options) {
-  var settings = $.extend({ immediate: false }, options);
-
-  cancelCloseHandlers();
-
-  if (isOpen) {
-    $hlinks.removeClass('hidden');
-
-    var activate = function () {
-      $hlinks.addClass('is-open');
-    };
-
-    if (settings.immediate) {
-      activate();
-    } else {
-      raf(activate);
-    }
-
-    $hlinks.attr('aria-hidden', 'false');
-  } else {
-    $hlinks.removeClass('is-open');
-    $hlinks.attr('aria-hidden', 'true');
-
-    if (settings.immediate) {
-      $hlinks.addClass('hidden');
-    } else {
-      $hlinks.on('transitionend.greedyNavVisibility', function (event) {
-        if (event.target !== this) {
-          return;
-        }
-
-        cancelCloseHandlers();
-        $hlinks.addClass('hidden');
-      });
-
-      closeTimer = window.setTimeout(function () {
-        cancelCloseHandlers();
-        $hlinks.addClass('hidden');
-      }, 250);
-    }
-  }
-
+function setMenuOpen(isOpen) {
+  $hlinks.toggleClass('hidden', !isOpen);
+  $hlinks.attr('aria-hidden', isOpen ? 'false' : 'true');
   $btn.toggleClass('close', isOpen);
   $btn.attr('aria-expanded', isOpen ? 'true' : 'false');
   manageDocClickListener(isOpen);
@@ -145,7 +87,8 @@ function updateNav() {
     // Hide the dropdown btn if hidden list is empty
     if(getHiddenItems().length < 1) {
       $btn.addClass('hidden');
-      setMenuOpen(false, { immediate: true });
+      setMenuOpen(false);
+      $hlinks.attr('aria-hidden', 'true');
       $btn.attr('aria-expanded', 'false');
       breaks = [];
     }
@@ -177,6 +120,7 @@ $(window).on('resize', function() {
 $btn.on('click', function() {
   var isHidden = $hlinks.hasClass('hidden');
   setMenuOpen(isHidden);
+  $hlinks.attr('aria-hidden', isHidden ? 'false' : 'true');
 });
 
 $btn.on('keydown', function(event) {
