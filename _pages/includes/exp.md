@@ -40,7 +40,7 @@
       Supervisor: Professor <a href="https://scholar.google.com/citations?user=LVnHobEAAAAJ"><b>Yang Shi</b></a> (Fellow of RSC, CAE, EIC, IEEE, ASME, CSME)
     </div>
     <div class="cv-sub" data-lang="zh" hidden>
-      导师：<a href="https://scholar.google.com/citations?user=LVnHobEAAAAJ"><b>施阳教授</b></a>（加拿大皇家学院院士、加拿大工程院院士、加拿大工程研究院院士、IEEE Fellow、ASME Fellow、CSME Fellow）
+      导师：<a href="https://scholar.google.com/citations?user=LVnHobEAAAAJ"><b>施阳教授</b></a>（加拿大皇家学会院士、加拿大工程院院士、加拿大工程研究院院士、IEEE Fellow、ASME Fellow、CSME Fellow）
     </div>
   </li>
 </ul>
