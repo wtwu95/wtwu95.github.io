@@ -59,11 +59,13 @@
           data-nav-toggle
           aria-label="Toggle navigation menu"
           aria-expanded="false"
+          aria-controls="masthead-hidden-links"
+          aria-haspopup="true"
         >
           <span class="sr-only">Toggle navigation</span>
           <div class="navicon" aria-hidden="true"></div>
         </button>
-        <ul class="hidden-links hidden"></ul>
+        <ul class="hidden-links hidden" id="masthead-hidden-links" aria-hidden="true"></ul>
       </div>
     </div>
   </div>
