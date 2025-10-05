@@ -10,6 +10,7 @@ var $btn = $('[data-nav-toggle]');
 var $vlinks = $('#site-nav .visible-links');
 var $hlinks = $('.greedy-nav__more .hidden-links');
 var docClickHandler = null;
+var resizeTimer;
 
 function getVisibleItems() {
   return $vlinks.children();
@@ -101,8 +102,15 @@ function updateNav() {
 
 // Window listeners
 
-$(window).resize(function() {
-  updateNav();
+$(window).on('resize', function() {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function() {
+    if(typeof window.requestAnimationFrame === 'function') {
+      window.requestAnimationFrame(updateNav);
+    } else {
+      updateNav();
+    }
+  }, 150);
 });
 
 $btn.on('click', function() {
