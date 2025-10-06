@@ -41,11 +41,6 @@ function manageDocClickListener(shouldBind) {
 function setMenuOpen(isOpen) {
   $hlinks.toggleClass('hidden', !isOpen);
   $hlinks.attr('aria-hidden', isOpen ? 'false' : 'true');
-  if (isOpen) {
-    $hlinks.removeAttr('hidden');
-  } else {
-    $hlinks.attr('hidden', '');
-  }
   $btn.toggleClass('close', isOpen);
   $btn.attr('aria-expanded', isOpen ? 'true' : 'false');
   manageDocClickListener(isOpen);
@@ -71,7 +66,6 @@ function updateNav() {
       $btn.removeClass('close');
       $btn.attr('aria-expanded', 'false');
       $hlinks.attr('aria-hidden', 'true');
-      $hlinks.attr('hidden', '');
     }
 
   // The visible list is not overflowing
