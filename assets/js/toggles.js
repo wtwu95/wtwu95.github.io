@@ -14,65 +14,16 @@
   const themeToggles = Array.from(document.querySelectorAll('[data-theme-toggle]'));
   const languageToggles = Array.from(document.querySelectorAll('[data-language-toggle]'));
 
-  const LANGUAGE_STATUS_TEXT = {
-    en: {
-      label: 'Current: English | Switch: 中文',
-      aria: 'Current language: English. Switch to Chinese.',
-    },
-    zh: {
-      label: '当前：中文 | 切换：English',
-      aria: '当前语言：中文。切换到英文。',
-    },
-  };
-
-  const THEME_STATUS_TEXT = {
-    light: {
-      en: {
-        label: 'Current: Light ☀ | Switch: Dark 🌙',
-        aria: 'Current theme: Light mode. Switch to dark mode.',
-      },
-      zh: {
-        label: '当前：浅色 ☀ | 切换：深色 🌙',
-        aria: '当前主题：浅色模式。切换到深色模式。',
-      },
-    },
-    dark: {
-      en: {
-        label: 'Current: Dark 🌙 | Switch: Light ☀',
-        aria: 'Current theme: Dark mode. Switch to light mode.',
-      },
-      zh: {
-        label: '当前：深色 🌙 | 切换：浅色 ☀',
-        aria: '当前主题：深色模式。切换到浅色模式。',
-      },
-    },
-  };
-
-  function updateToggleButtonLabel(toggle, labels) {
-    if (!toggle) {
-      return;
-    }
-
-    const labelContainer = toggle.querySelector('.toggle-button__label');
-
-    if (!labelContainer) {
-      return;
-    }
-
-    const englishLabel = labelContainer.querySelector('[data-lang="en"]');
-    const chineseLabel = labelContainer.querySelector('[data-lang="zh"]');
-
-    if (englishLabel && labels.en) {
-      englishLabel.textContent = labels.en;
-    }
-
-    if (chineseLabel && labels.zh) {
-      chineseLabel.textContent = labels.zh;
-    }
-  }
-
   function getActiveLanguage() {
     return html.getAttribute('data-language') === 'zh' ? 'zh' : 'en';
+  }
+
+  function getThemeAriaLabel(isDark, language) {
+    if (language === 'zh') {
+      return isDark ? '切换到浅色模式' : '切换到深色模式';
+    }
+
+    return isDark ? 'Switch to light mode' : 'Switch to dark mode';
   }
 
   function updateMetaThemeColor(theme) {
@@ -97,15 +48,7 @@
 
     themeToggles.forEach(function (toggle) {
       toggle.setAttribute('aria-pressed', String(isDark));
-      const statusText = THEME_STATUS_TEXT[normalized] || THEME_STATUS_TEXT.light;
-      const languageMessages = statusText[language] || statusText.en;
-
-      updateToggleButtonLabel(toggle, {
-        en: statusText.en ? statusText.en.label : '',
-        zh: statusText.zh ? statusText.zh.label : '',
-      });
-
-      toggle.setAttribute('aria-label', languageMessages.aria);
+      toggle.setAttribute('aria-label', getThemeAriaLabel(isDark, language));
     });
 
     updateMetaThemeColor(normalized);
@@ -181,14 +124,10 @@
 
     languageToggles.forEach(function (toggle) {
       toggle.setAttribute('aria-pressed', String(isChinese));
-      const languageMessages = isChinese ? LANGUAGE_STATUS_TEXT.zh : LANGUAGE_STATUS_TEXT.en;
-
-      updateToggleButtonLabel(toggle, {
-        en: LANGUAGE_STATUS_TEXT.en ? LANGUAGE_STATUS_TEXT.en.label : '',
-        zh: LANGUAGE_STATUS_TEXT.zh ? LANGUAGE_STATUS_TEXT.zh.label : '',
-      });
-
-      toggle.setAttribute('aria-label', languageMessages.aria);
+      toggle.setAttribute(
+        'aria-label',
+        isChinese ? '切换到英文' : 'Switch to Chinese'
+      );
 
       toggle.dataset.nextLanguage = nextLanguage;
     });
