@@ -194,65 +194,9 @@
     loadMapScript(apiKey, language);
   }
 
-  function initVisitorMapLazyLoad() {
-    var visitorContainer = document.querySelector('.author__map--visitors');
-    if (!visitorContainer) {
-      return;
-    }
-
-    var placeholder = visitorContainer.querySelector('#mapmyvisitors-placeholder');
-    if (!placeholder) {
-      return;
-    }
-
-    var scriptSrc = placeholder.getAttribute('data-script-src');
-    if (!scriptSrc) {
-      return;
-    }
-
-    var scriptLoaded = false;
-
-    function loadVisitorScript() {
-      if (scriptLoaded || document.getElementById('mapmyvisitors')) {
-        scriptLoaded = true;
-        return;
-      }
-
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.id = 'mapmyvisitors';
-      script.src = scriptSrc;
-      placeholder.appendChild(script);
-      scriptLoaded = true;
-    }
-
-    if (!('IntersectionObserver' in window)) {
-      loadVisitorScript();
-      return;
-    }
-
-    var observer = new window.IntersectionObserver(function (entries) {
-      for (var i = 0; i < entries.length; i += 1) {
-        var entry = entries[i];
-        if (entry.isIntersecting) {
-          loadVisitorScript();
-          observer.disconnect();
-          break;
-        }
-      }
-    });
-
-    observer.observe(visitorContainer);
-  }
-
-  function initAuthorMaps() {
-    init();
-    initVisitorMapLazyLoad();
-  }
-
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initAuthorMaps);
+    document.addEventListener('DOMContentLoaded', init);
   } else {
-    initAuthorMaps();
+    init();
   }
 })();
