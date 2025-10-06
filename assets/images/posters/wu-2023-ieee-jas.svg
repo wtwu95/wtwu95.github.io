@@ -1,0 +1,26 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-jas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="shine-jas" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grad-jas)" rx="28" />
+  <rect x="32" y="36" width="736" height="378" fill="#0f172a" opacity="0.35" rx="20" />
+  <rect x="32" y="36" width="736" height="378" fill="url(#shine-jas)" opacity="0.4" rx="20" />
+  <g fill="#f8fafc" font-family="'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="198" font-size="48" font-weight="600">IEEE/CAA JAS 2024</text>
+    <text x="400" y="250" font-size="30" font-weight="500">Safety-Critical Trajectory Tracking</text>
+    <text x="400" y="302" font-size="24" opacity="0.8">Simulation Preview</text>
+  </g>
+  <circle cx="120" cy="88" r="42" fill="#38bdf8" opacity="0.45" />
+  <circle cx="696" cy="360" r="36" fill="#1d4ed8" opacity="0.45" />
+  <path d="M360 336L448 336" stroke="#f8fafc" stroke-width="6" stroke-linecap="round" opacity="0.5" />
+  <path d="M392 318L416 354" stroke="#f8fafc" stroke-width="6" stroke-linecap="round" opacity="0.5" />
+</svg>

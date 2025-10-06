@@ -33,7 +33,10 @@ redirect_from:
 <span data-lang="zh" hidden>点击 **[出版物](/publications/)** 查看完整列表。</span>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE/CAA JAS 2024</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.gif' | relative_url }}' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE/CAA JAS 2024</div><video class="paper-box-media" playsinline muted loop autoplay preload="metadata" poster="{{ '/assets/images/posters/wu-2023-ieee-jas.svg' | relative_url }}">
+  <source src="{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-JAS.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance](/assets/papers/SCI/WuWentao-2023-IEEE-JAS.pdf)<br />
@@ -48,7 +51,10 @@ redirect_from:
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TIV 2022</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.gif' | relative_url }}' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TIV 2022</div><video class="paper-box-media" playsinline muted loop autoplay preload="metadata" poster="{{ '/assets/images/posters/wu-2022-ieee-tiv.svg' | relative_url }}">
+  <source src="{{ '/assets/Video/Video-Sim/WuWentao-2022-IEEE-TIV.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video></div></div>
 <div class='paper-box-text' markdown="1">
 
 [A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train](https://ieeexplore.ieee.org/abstract/document/9762043)<br />
@@ -62,7 +68,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CYB 2021</div><img src='{{ '/assets/Video/Video-Exp/WuWentao-2021-IEEE-TCYB.png' | relative_url }}' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-CYB 2021</div><img src='{{ '/assets/Video/Video-Exp/WuWentao-2021-IEEE-TCYB.png' | relative_url }}' alt="sym" width="100%" loading="lazy" decoding="async"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results](/assets/papers/SCI/WuWentao-2021-IEEE-TCYB.pdf)<br />
@@ -91,7 +97,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2024</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.gif' | relative_url }}' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE T-SMCA 2024</div><img src='{{ '/assets/Video/Video-Sim/WuWentao-2023-IEEE-TSMCA.gif' | relative_url }}' alt="sym" width="100%" loading="lazy" decoding="async"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Constrained Safe Cooperative Maneuvering of Autonomous Surface Vehicles: A Control Barrier Function Approach](/assets/papers/SCI/WuWentao-2023-IEEE-TSMCA.pdf)

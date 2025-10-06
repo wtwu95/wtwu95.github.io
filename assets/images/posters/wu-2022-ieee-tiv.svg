@@ -1,0 +1,25 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-tiv" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#052e16" />
+      <stop offset="50%" stop-color="#15803d" />
+      <stop offset="100%" stop-color="#4ade80" />
+    </linearGradient>
+    <radialGradient id="pulse-tiv" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(640 120) scale(220 220)">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#grad-tiv)" rx="28" />
+  <circle cx="640" cy="120" r="180" fill="url(#pulse-tiv)" />
+  <rect x="40" y="48" width="720" height="354" rx="24" fill="#022c22" opacity="0.35" />
+  <g fill="#f0fdf4" font-family="'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="200" font-size="46" font-weight="600">IEEE TIV 2022</text>
+    <text x="400" y="248" font-size="28" font-weight="500">Cooperative Control Architecture</text>
+    <text x="400" y="292" font-size="24" opacity="0.85">Simulation Preview</text>
+  </g>
+  <path d="M196 340C228 300 292 300 324 340" stroke="#f0fdf4" stroke-width="6" stroke-linecap="round" opacity="0.55" />
+  <path d="M476 340C508 300 572 300 604 340" stroke="#f0fdf4" stroke-width="6" stroke-linecap="round" opacity="0.55" />
+  <circle cx="260" cy="320" r="18" fill="#bbf7d0" opacity="0.65" />
+  <circle cx="540" cy="320" r="18" fill="#bbf7d0" opacity="0.65" />
+</svg>
