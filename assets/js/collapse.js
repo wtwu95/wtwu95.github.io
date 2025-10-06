@@ -6,11 +6,9 @@
       var $header = $(this);
       var $content = $header.next();
 
-      var willBeVisible = !$content.is(':visible');
-
-      $header.text(willBeVisible ? 'Collapse' : 'Expand');
-
-      $content.stop(true, true).slideToggle(500);
+      $content.stop(true, true).slideToggle(500, function () {
+        $header.text($content.is(':visible') ? 'Collapse' : 'Expand');
+      });
     });
   });
 })(jQuery);
