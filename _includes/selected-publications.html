@@ -1,0 +1,52 @@
+{% assign publications = site.data.selected_publications | default: empty %}
+{% if include.limit %}
+  {% assign publications = publications | slice: 0, include.limit %}
+{% endif %}
+
+{% for publication in publications %}
+  <div class='paper-box'>
+    <div class='paper-box-image'>
+      <div>
+        {% if publication.badge %}
+          <div class="badge">{{ publication.badge }}</div>
+        {% endif %}
+        {% if publication.image %}
+          {% assign publication_image = publication.image %}
+          {% if publication_image contains '://' %}
+            <img src='{{ publication_image }}' alt="{{ publication.image_alt | default: 'Publication image' }}" width="100%">
+          {% else %}
+            <img src='{{ publication_image | relative_url }}' alt="{{ publication.image_alt | default: 'Publication image' }}" width="100%">
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+    <div class='paper-box-text' markdown="1">
+{% assign publication_title_url = publication.title_url %}{% if publication_title_url %}{% if publication_title_url contains '://' %}
+[{{ publication.title }}]({{ publication_title_url }})<br />
+{% else %}
+[{{ publication.title }}]({{ publication_title_url | relative_url }})<br />
+{% endif %}{% else %}
+{{ publication.title }}<br />
+{% endif %}
+{{ publication.authors }}<br />
+{% assign publication_journal_url = publication.journal_url %}{% if publication_journal_url %}{% if publication_journal_url contains '://' %}
+[**{{ publication.journal }}**]({{ publication_journal_url }})<br />
+{% else %}
+[**{{ publication.journal }}**]({{ publication_journal_url | relative_url }})<br />
+{% endif %}{% else %}
+**{{ publication.journal }}**<br />
+{% endif %}
+{% if publication.citation or publication.resources %}
+<div class="publication-actions">
+  {% if publication.citation %}
+  <button type="button" class="publication-cite" data-citation-modal-trigger="" data-citation-index="{{ publication.citation.index }}" data-citation-plain="{{ publication.citation.plain | escape_once }}" data-citation-bibtex="{{ publication.citation.bibtex | replace: '\n', '&#10;' | escape_once }}"><img src="https://img.shields.io/badge/Link-Cite-0969da?labelColor=555" alt="Cite badge"></button>
+  {% endif %}
+  {% for resource in publication.resources %}
+  {% assign resource_href = resource.href %}
+  <a class="publication-badge" href="{% if resource_href contains '://' %}{{ resource_href }}{% else %}{{ resource_href | relative_url }}{% endif %}"><img alt="{{ resource.image_alt }}" src="{{ resource.image_src }}"></a>
+  {% endfor %}
+</div>
+{% endif %}
+    </div>
+  </div>
+{% endfor %}
