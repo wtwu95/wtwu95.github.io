@@ -3,6 +3,9 @@
 <ul class="cv-list">
   <li class="cv-item">
     <div class="cv-row">
+      <div class="cv-logo">
+        <img src="/images/logos/sjtu.svg" alt="Shanghai Jiao Tong University logo" loading="lazy">
+      </div>
       <div class="cv-main" data-lang="en">
         <span class="cv-degree">Ph.D.</span>, Electronic Information Engineering in
         <a href="https://sais.sjtu.edu.cn/">School of Automation and Intelligent Sensing</a> (<a href="https://automation.sjtu.edu.cn/">Department of Automation</a>),
@@ -25,6 +28,9 @@
 
   <li class="cv-item">
     <div class="cv-row">
+      <div class="cv-logo">
+        <img src="/images/logos/dmu.svg" alt="Dalian Maritime University logo" loading="lazy">
+      </div>
       <div class="cv-main" data-lang="en">
         <span class="cv-degree">M.E.</span>, Electrical Engineering in
         <a href="https://cbdq.dlmu.edu.cn/index.htm">College of Marine Electrical Engineering</a>,
@@ -47,6 +53,9 @@
 
   <li class="cv-item">
     <div class="cv-row">
+      <div class="cv-logo">
+        <img src="/images/logos/hust.svg" alt="Harbin University of Science and Technology logo" loading="lazy">
+      </div>
       <div class="cv-main" data-lang="en">
         <span class="cv-degree">B.E.</span>, Electrical Engineering and Automation in
         <a href="https://www.seiee.sjtu.edu.cn/">School of Electrical and Electronic Engineering</a>,
