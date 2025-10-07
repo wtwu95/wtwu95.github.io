@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title desc">
-  <title id="title">Dalian Maritime University logo</title>
-  <desc id="desc">Blue circular emblem with stylized waves and the letters DMU</desc>
-  <circle cx="40" cy="40" r="34" fill="#0d3b8e" stroke="#0a2961" stroke-width="4" />
-  <path fill="#ffffff" d="M18 42c2.8-9.3 11.3-16 22-16 10.9 0 19.8 6.8 22.1 16h-6.7c-2-6.3-7.7-10.4-15.4-10.4-7.6 0-13.3 4-15.4 10.4H18Z" />
-  <path fill="#7fc8ff" d="M22 48c2.4 4.9 8.6 8.5 16.1 8.5 7.6 0 13.5-3.5 15.9-8.5H22Z" />
-  <text x="40" y="34" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif">DMU</text>
-</svg>
