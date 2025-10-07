@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title desc">
-  <title id="title">Harbin University of Science and Technology logo</title>
-  <desc id="desc">Green emblem with geometric lightning bolt and the letters HUST</desc>
-  <rect x="6" y="6" width="68" height="68" rx="16" fill="#0d9a44" />
-  <path fill="#ffffff" d="M24 52h8l6.2-10.8h.1L44 52h8l-10-17.4L52 24h-8l-6 10.1h-.1L32 24h-8l10.1 17.1L24 52Z" />
-  <text x="40" y="60" text-anchor="middle" font-size="12" font-weight="600" fill="#e9ffe6" font-family="'Segoe UI', Arial, sans-serif">HUST</text>
-</svg>
