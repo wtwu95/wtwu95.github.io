@@ -2,6 +2,9 @@
 <ul class="cv-list">
   <li class="cv-item">
     <div class="cv-row">
+      <div class="cv-logo">
+        <img src="/images/logos/polyu.svg" alt="The Hong Kong Polytechnic University logo" loading="lazy">
+      </div>
       <div class="cv-main" data-lang="en">
         <span class="cv-role">Postdoctoral Fellow</span> in
         <a href="https://www.polyu.edu.hk/rclae/">Research Centre for Low Altitude Economy (RCLAE)</a>,
@@ -25,6 +28,9 @@
 
   <li class="cv-item">
     <div class="cv-row">
+      <div class="cv-logo">
+        <img src="/images/logos/uvic.svg" alt="University of Victoria logo" loading="lazy">
+      </div>
       <div class="cv-main" data-lang="en">
         <span class="cv-role">Visiting Scholar</span> in
         <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Department of Mechanical Engineering (ME)</a>,
