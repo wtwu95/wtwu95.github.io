@@ -2,16 +2,21 @@
 <ul class="cv-list">
   <li class="cv-item">
     <div class="cv-row">
-      <div class="cv-main" data-lang="en">
-        <span class="cv-role">Postdoctoral Fellow</span> in
-        <a href="https://www.polyu.edu.hk/rclae/">Research Centre for Low Altitude Economy (RCLAE)</a>,
-        <a href="https://www.polyu.edu.hk/aae/">Department of Aeronautical and Aviation Engineering (AAE)</a>,
-        <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University (PolyU)</a>, Hong Kong, China
+      <div class="cv-logo">
+        <img src="/images/logos/PolyU.svg" alt="PolyU logo" loading="lazy" />
       </div>
-      <div class="cv-main" data-lang="zh" hidden>
-        <span class="cv-role">博士后研究员</span>，<a href="https://www.polyu.edu.hk/">香港理工大学（PolyU）</a>，
-        <a href="https://www.polyu.edu.hk/aae/">航空及民航工程学系（AAE）</a>、
-        <a href="https://www.polyu.edu.hk/rclae/">低空经济研究中心（RCLAE）</a>，中国香港
+      <div class="cv-details">
+        <div class="cv-main" data-lang="en">
+          <span class="cv-role">Postdoctoral Fellow</span> in
+          <a href="https://www.polyu.edu.hk/rclae/">Research Centre for Low Altitude Economy (RCLAE)</a>,
+          <a href="https://www.polyu.edu.hk/aae/">Department of Aeronautical and Aviation Engineering (AAE)</a>,
+          <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University (PolyU)</a>, Hong Kong, China
+        </div>
+        <div class="cv-main" data-lang="zh" hidden>
+          <span class="cv-role">博士后研究员</span>，<a href="https://www.polyu.edu.hk/">香港理工大学（PolyU）</a>，
+          <a href="https://www.polyu.edu.hk/aae/">航空及民航工程学系（AAE）</a>、
+          <a href="https://www.polyu.edu.hk/rclae/">低空经济研究中心（RCLAE）</a>，中国香港
+        </div>
       </div>
       <div class="cv-date">04/2025–Present</div>
     </div>
@@ -25,14 +30,19 @@
 
   <li class="cv-item">
     <div class="cv-row">
-      <div class="cv-main" data-lang="en">
-        <span class="cv-role">Visiting Scholar</span> in
-        <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Department of Mechanical Engineering (ME)</a>,
-        <a href="https://www.uvic.ca/">University of Victoria (UVic)</a>, Victoria, Canada
+      <div class="cv-logo">
+        <img src="/images/logos/UVic.svg" alt="University of Victoria logo" loading="lazy" />
       </div>
-      <div class="cv-main" data-lang="zh" hidden>
-        <span class="cv-role">访问学者</span>，<a href="https://www.uvic.ca/">维多利亚大学（UVic）</a>，
-        <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">机械工程系（ME）</a>，加拿大维多利亚
+      <div class="cv-details">
+        <div class="cv-main" data-lang="en">
+          <span class="cv-role">Visiting Scholar</span> in
+          <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">Department of Mechanical Engineering (ME)</a>,
+          <a href="https://www.uvic.ca/">University of Victoria (UVic)</a>, Victoria, Canada
+        </div>
+        <div class="cv-main" data-lang="zh" hidden>
+          <span class="cv-role">访问学者</span>，<a href="https://www.uvic.ca/">维多利亚大学（UVic）</a>，
+          <a href="https://www.uvic.ca/ecs/mechanical/prospective-students/undergraduate/index.php">机械工程系（ME）</a>，加拿大维多利亚
+        </div>
       </div>
       <div class="cv-date">01/2024–11/2024</div>
     </div>
