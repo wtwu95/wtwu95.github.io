@@ -243,6 +243,20 @@ html.theme-dark .cv-item {
   border-bottom-color: rgba(255, 255, 255, 0.12);
 }
 
+html.theme-dark .cv-logo,
+html[data-theme="dark"] .cv-logo {
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.78), rgba(15, 23, 42, 0.92));
+  border-color: rgba(148, 163, 184, 0.32);
+  box-shadow: 0 22px 48px rgba(2, 6, 23, 0.55);
+}
+
+html.theme-dark .cv-logo img,
+html.theme-dark .cv-logo object,
+html[data-theme="dark"] .cv-logo img,
+html[data-theme="dark"] .cv-logo object {
+  filter: brightness(1.08) saturate(1.04);
+}
+
 html.theme-dark .cv-main {
   color: rgba(226, 232, 240, 0.92);
 }
