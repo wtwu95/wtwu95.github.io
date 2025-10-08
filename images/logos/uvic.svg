@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title desc">
-  <title id="title">University of Victoria logo</title>
-  <desc id="desc">Blue and gold shield with the letters UVic</desc>
-  <path fill="#0a2d5c" d="M12 18c0-3.3 2.7-6 6-6h44c3.3 0 6 2.7 6 6v24c0 14.4-12 26-28 26S12 56.4 12 42V18Z" />
-  <path fill="#f7d117" d="M40 59c10.4 0 19.4-7.1 21.5-16.5H18.5C20.6 51.9 29.6 59 40 59Z" />
-  <path fill="#ffffff" d="M21 22h10v22H21V22Zm14 0h10v22H35V22Zm14 0h10v22H49V22Z" />
-  <text x="40" y="67" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif">UVic</text>
-</svg>
