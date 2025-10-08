@@ -175,19 +175,18 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 /* 移动端收紧布局：logo、日期纵向堆叠 */
 @media (max-width: 640px) {
   .cv-row {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(96px, 120px) minmax(0, 1fr);
     grid-template-areas:
-      "logo"
-      "date"
-      "main";
-    row-gap: 12px;
-    justify-items: start;
+      "logo main"
+      "date main";
+    column-gap: 16px;
+    row-gap: 10px;
+    align-items: start;
   }
 
   .cv-logo {
-    justify-self: start;
-    width: 100%;
-    max-width: 164px;
+    justify-self: stretch;
+    width: auto;
     padding: 8px 10px;
     border-radius: 14px;
   }
