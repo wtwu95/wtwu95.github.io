@@ -16,7 +16,16 @@
 
     var closeTimer = null;
 
+    function getController() {
+      return toggleButton.greedyNavController || null;
+    }
+
     function hasHiddenItems() {
+      var controller = getController();
+      if (controller && typeof controller.hasHiddenItems === 'function') {
+        return controller.hasHiddenItems();
+      }
+
       return hiddenLinks.children.length > 0;
     }
 
@@ -33,11 +42,23 @@
         return;
       }
 
+      var controller = getController();
+      if (controller && typeof controller.open === 'function') {
+        controller.open();
+        return;
+      }
+
       toggleButton.click();
     }
 
     function closeMenu() {
       if (toggleButton.getAttribute('aria-expanded') !== 'true') {
+        return;
+      }
+
+      var controller = getController();
+      if (controller && typeof controller.close === 'function') {
+        controller.close();
         return;
       }
 

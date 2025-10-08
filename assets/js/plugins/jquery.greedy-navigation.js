@@ -46,6 +46,46 @@ function setMenuOpen(isOpen) {
   manageDocClickListener(isOpen);
 }
 
+function isMenuOpen() {
+  return $btn.attr('aria-expanded') === 'true';
+}
+
+function hasHiddenItems() {
+  return getHiddenItems().length > 0;
+}
+
+function openMenu() {
+  if($btn.hasClass('hidden')) {
+    return false;
+  }
+
+  if(!hasHiddenItems()) {
+    setMenuOpen(false);
+    return false;
+  }
+
+  if(isMenuOpen()) {
+    return true;
+  }
+
+  setMenuOpen(true);
+  return true;
+}
+
+function closeMenu() {
+  if(!isMenuOpen()) {
+    return false;
+  }
+
+  setMenuOpen(false);
+  return true;
+}
+
+function toggleMenu(forceState) {
+  var shouldOpen = typeof forceState === 'boolean' ? forceState : !isMenuOpen();
+  return shouldOpen ? openMenu() : closeMenu();
+}
+
 function updateNav() {
 
   var availableSpace = $nav.width();
@@ -87,7 +127,7 @@ function updateNav() {
     // Hide the dropdown btn if hidden list is empty
     if(getHiddenItems().length < 1) {
       $btn.addClass('hidden');
-      setMenuOpen(false);
+      closeMenu();
       $hlinks.attr('aria-hidden', 'true');
       $btn.attr('aria-expanded', 'false');
       breaks = [];
@@ -118,15 +158,30 @@ $(window).on('resize', function() {
 });
 
 $btn.on('click', function() {
-  var isHidden = $hlinks.hasClass('hidden');
-  setMenuOpen(isHidden);
-  $hlinks.attr('aria-hidden', isHidden ? 'false' : 'true');
+  toggleMenu();
 });
 
 $btn.on('keydown', function(event) {
   if(event.key === 'Escape' || event.keyCode === 27) {
-    setMenuOpen(false);
+    closeMenu();
   }
 });
+
+function assignController() {
+  var buttonNode = $btn.get(0);
+  if(!buttonNode) {
+    return;
+  }
+
+  buttonNode.greedyNavController = {
+    open: openMenu,
+    close: closeMenu,
+    toggle: toggleMenu,
+    isOpen: isMenuOpen,
+    hasHiddenItems: hasHiddenItems
+  };
+}
+
+assignController();
 
 updateNav();
