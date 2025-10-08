@@ -117,14 +117,49 @@ h1:before, .anchor:before {
 
 .cv-row {
   display: grid;
-  grid-template-columns: 1fr auto;   /* 主体 + 右侧日期 */
-  gap: 12px;
-  align-items: baseline;
+  grid-template-columns: auto 1fr auto;   /* 标识 + 主体 + 日期 */
+  gap: 16px;
+  align-items: center;
+}
+
+.cv-logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+  padding: 6px;
+}
+
+.cv-logo img,
+.cv-logo object {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.cv-logo object {
+  pointer-events: none;
+}
+
+.cv-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .cv-main { font-size: 15.5px; line-height: 1.5; color: #222; }
 .cv-role, .cv-degree { font-weight: 600; }
-.cv-date { font-size: 13px; color: #666; white-space: nowrap; }
+.cv-date {
+  font-size: 13px;
+  color: #666;
+  white-space: nowrap;
+  align-self: center;
+}
 
 .cv-sub {
   margin-top: 2px;
@@ -137,8 +172,22 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 
 /* 移动端收紧布局：日期换行到下一行 */
 @media (max-width: 640px) {
-  .cv-row { grid-template-columns: 1fr; gap: 4px; }
-  .cv-date { order: 2; }
+  .cv-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    align-items: start;
+  }
+  .cv-logo {
+    order: 1;
+    width: 52px;
+    height: 52px;
+    justify-content: flex-start;
+  }
+  .cv-details { order: 2; }
+  .cv-date {
+    order: 3;
+    align-self: start;
+  }
 }
 :root {
   --publication-control-height: 2.5rem;
