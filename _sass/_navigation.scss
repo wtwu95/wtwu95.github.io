@@ -267,7 +267,25 @@
     display: grid;
     gap: 0.25rem;
     overflow: hidden;
-    transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    opacity: 0;
+    transform: translateY(-0.25rem);
+    pointer-events: none;
+    visibility: hidden;
+    transition:
+      opacity 0.18s ease,
+      transform 0.18s ease,
+      visibility 0s linear 0.18s,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease,
+      background-color 0.2s ease;
+
+    &.is-open {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      visibility: visible;
+      transition-delay: 0s, 0s, 0s, 0s, 0s, 0s;
+    }
 
     @supports ((-webkit-backdrop-filter: blur(14px)) or (backdrop-filter: blur(14px))) {
       -webkit-backdrop-filter: blur(14px);
