@@ -267,11 +267,30 @@
     display: grid;
     gap: 0.25rem;
     overflow: hidden;
-    transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease,
+                opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0s;
 
     @supports ((-webkit-backdrop-filter: blur(14px)) or (backdrop-filter: blur(14px))) {
       -webkit-backdrop-filter: blur(14px);
               backdrop-filter: blur(14px);
+    }
+
+    &.hidden {
+      display: grid;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      -webkit-transform: translateY(-0.5rem);
+          -ms-transform: translateY(-0.5rem);
+              transform: translateY(-0.5rem);
+      transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease,
+                  opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.2s;
     }
 
     a {
