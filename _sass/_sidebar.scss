@@ -124,10 +124,12 @@
 
 .author__name {
   margin: 0;
+  text-align: left;
 
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: left;
   }
 }
 
@@ -141,10 +143,12 @@
 
 .author__bio {
   margin: 0;
+  text-align: left;
 
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
+    text-align: left;
   }
 }
 
