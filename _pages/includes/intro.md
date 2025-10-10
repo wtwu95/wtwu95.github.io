@@ -36,7 +36,7 @@
 </p>
 <p data-lang="zh" hidden>
   我的研究兴趣包括分布式控制、安全关键控制、强化学习、博弈论及其在自主车辆和多智能体系统中的应用。目前在 IEEE T-CYB、IEEE/CAA JAS、
-  IEEE T-ITS、IEEE T-FS、IEEE CDC 等国际顶级期刊与会议发表 SCI/EI 论文 30 余篇
+  IEEE T-ITS、IEEE T-FS、IEEE CDC、IROS 等国际顶级期刊与会议发表 SCI/EI 论文 30 余篇
   <a href='https://scholar.google.com/citations?user=e2ban1wAAAAJ'>
     <img src="https://img.shields.io/endpoint?logo=Google%20Scholar&amp;url=https://raw.githubusercontent.com/wtwu95/wtwu95.github.io/google-scholar-stats/gs_data_shieldsio.json&amp;labelColor=f6f6f6&amp;color=9cf&amp;style=flat&amp;label=citations" alt="Google Scholar 引用数">
   </a>。
