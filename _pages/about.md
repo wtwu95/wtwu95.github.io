@@ -115,10 +115,6 @@ Explore the full list of publications on the [Publications](/publications/) page
 </p> -->
 {% include citation-modal.html %}
 
-<span class='anchor' id='-teaching'></span>
-# <span data-lang="en">👨🏻‍🏫 Teaching</span><span data-lang="zh" hidden>👨🏻‍🏫 教学</span>
-- <span data-lang="en"><strong>Teaching Assistant</strong>, Dynamical Systems and Control, PolyU, Fall 2025</span><span data-lang="zh" hidden><strong>助教</strong>: Dynamical Systems and Control, 香港理工大学，2025年秋季学期</span>
-
 <span class='anchor' id='-awards'></span>
 # <span data-lang="en">🎖 Selected Awards</span><span data-lang="zh" hidden>🎖 荣誉奖励</span>
 
@@ -134,6 +130,12 @@ Explore the full list of publications on the [Publications](/publications/) page
     <span data-lang="zh" hidden>-- 查看全部奖励 --</span>
   </a>
 </p>
+
+
+<span class='anchor' id='-teaching'></span>
+# <span data-lang="en">👨🏻‍🏫 Teaching</span><span data-lang="zh" hidden>👨🏻‍🏫 教学</span>
+- <span data-lang="en"><strong>Teaching Assistant</strong>, Dynamical Systems and Control, PolyU, Fall 2025</span><span data-lang="zh" hidden><strong>助教</strong>: Dynamical Systems and Control, 香港理工大学，2025年秋季学期</span>
+
 
 {% include_relative includes/exp.md %}
 
