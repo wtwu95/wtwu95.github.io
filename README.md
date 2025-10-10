@@ -34,7 +34,7 @@
   <a href='https://scholar.google.com/citations?user=e2ban1wAAAAJ'>
     <img src="https://img.shields.io/endpoint?logo=Google%20Scholar&amp;url=https://raw.githubusercontent.com/wtwu95/wtwu95.github.io/google-scholar-stats/gs_data_shieldsio.json&amp;labelColor=f6f6f6&amp;color=9cf&amp;style=flat&amp;label=citations" alt="Google Scholar citations">
   </a>
-  in top journals and international conferences such as IEEE T-CYB, IEEE/CAA JAS, IEEE T-ITS, IEEE T-FS, and IEEE CDC.
+  in top journals and international conferences such as IEEE T-CYB, IEEE/CAA JAS, IEEE T-ITS, IEEE T-FS, IEEE CDC, and IROS.
 </p>
 <p data-lang="zh" hidden>
   我的研究兴趣包括分布式控制、安全关键控制、强化学习、博弈论及其在自主车辆和多智能体系统中的应用。目前在 IEEE T-CYB、IEEE/CAA JAS、
@@ -50,7 +50,7 @@
   <a href="mailto:wen-tao.wu@polyu.edu.hk">wen-tao.wu@polyu.edu.hk</a>.
 </p>
 <p data-lang="zh" hidden>
-  随时欢迎学术交流与合作，可通过邮箱
+  随时欢迎学术交流与合作，可通过
   <a href="mailto:wtwu95@gmail.com">wtwu95@gmail.com</a> 或
   <a href="mailto:wen-tao.wu@polyu.edu.hk">wen-tao.wu@polyu.edu.hk</a> 联系。
 </p>
