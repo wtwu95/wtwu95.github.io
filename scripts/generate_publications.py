@@ -271,6 +271,34 @@ def parse_tail(tail: str) -> dict:
     return data
 
 
+def format_tail_from_info(info: dict) -> str:
+    parts = []
+    if info.get("volume"):
+        parts.append(f"vol. {info['volume']}")
+    if info.get("number"):
+        parts.append(f"no. {info['number']}")
+    if info.get("pages"):
+        parts.append(f"pp. {info['pages']}")
+    elif info.get("article"):
+        parts.append(f"art. {info['article']}")
+    if info.get("month") and info.get("year"):
+        parts.append(f"{info['month']} {info['year']}")
+    elif info.get("year"):
+        parts.append(str(info['year']))
+    if info.get("note"):
+        parts.append(info["note"])
+    parts.extend(info.get("extra", []))
+    tail = ""
+    if parts:
+        tail = ", " + ", ".join(parts) + "."
+    if info.get("doi"):
+        if tail:
+            tail += f" doi: {info['doi']}."
+        else:
+            tail = f", doi: {info['doi']}."
+    return tail
+
+
 def format_authors(authors):
     display_parts = []
     plain_parts = []
@@ -361,6 +389,8 @@ def build_bibtex(entry, authors_bib, info):
         fields.append(f"  pages={{{pages}}}")
     elif info['article'] and entry_type == 'ARTICLE':
         fields.append(f"  pages={{{info['article']}}}")
+    if info['month']:
+        fields.append(f"  month={{{info['month']}}}")
     if year:
         fields.append(f"  year={{{year}}}")
     if info['doi']:
@@ -370,9 +400,7 @@ def build_bibtex(entry, authors_bib, info):
     return f"@{entry_type}{{{key},\n" + ",\n".join(fields) + "\n}"
 
 
-def generate():
-    path = Path('_pages/includes/pub.md')
-    entries = load_entries(path)
+def render_publications(entries):
     output_lines = ["<ul id=\"publication-source\" class=\"publication-source\" hidden>"]
     for entry in entries:
         authors_display, authors_plain, authors_bib = format_authors(entry['authors'])
@@ -411,12 +439,13 @@ def generate():
         if not plain_text.endswith('.'):
             plain_text += '.'
         bibtex = build_bibtex(entry, authors_bib, info)
+        bibtex_attr = html.escape(bibtex).replace("\n", "&#10;")
         li_attrs = [
             f"data-type=\"{entry['type']}\"",
             f"data-year=\"{entry['year']}\"" if entry['year'] else '',
             f"data-date=\"{entry['date']}\"" if entry['date'] else '',
             f"data-citation-plain=\"{html.escape(plain_text)}\"",
-            f"data-citation-bibtex=\"{html.escape(bibtex).replace('\n', '&#10;')}\"",
+            f"data-citation-bibtex=\"{bibtex_attr}\"",
         ]
         li_attrs = [attr for attr in li_attrs if attr]
         output_lines.append(f"  <li {' '.join(li_attrs)}>")
@@ -425,7 +454,13 @@ def generate():
             output_lines.append(f"    <strong><span class='show_paper_citations' data='{entry['citation_id']}'></span></strong>")
         output_lines.append("  </li>")
     output_lines.append("</ul>")
-    print('\n'.join(output_lines))
+    return '\n'.join(output_lines)
+
+
+def generate():
+    path = Path('_pages/includes/pub.md')
+    entries = load_entries(path)
+    print(render_publications(entries))
 
 
 if __name__ == '__main__':
