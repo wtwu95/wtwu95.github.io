@@ -1,7 +1,7 @@
 # <span data-lang="en">👨🏻‍🎓 Biography</span><span data-lang="zh" hidden>👨🏻‍🎓 个人简介</span>
 
 <p data-lang="en">
-  I am currently a Postdoctoral Fellow in
+  I am a Postdoctoral Fellow in
   <a href="https://www.polyu.edu.hk/rclae/">Research Centre for Low Altitude Economy</a>,
   <a href="https://www.polyu.edu.hk/aae/">Department of Aeronautical and Aviation Engineering</a>,
   <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University</a>, under the supervision of Prof.
