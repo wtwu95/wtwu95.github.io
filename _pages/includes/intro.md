@@ -48,7 +48,7 @@
   <a href="mailto:wen-tao.wu@polyu.edu.hk">wen-tao.wu@polyu.edu.hk</a>.
 </p>
 <p data-lang="zh" hidden>
-  随时欢迎学术交流与合作，可通过邮箱
+  随时欢迎学术交流与合作，可通过
   <a href="mailto:wtwu95@gmail.com">wtwu95@gmail.com</a> 或
   <a href="mailto:wen-tao.wu@polyu.edu.hk">wen-tao.wu@polyu.edu.hk</a> 联系。
 </p>
