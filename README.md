@@ -10,7 +10,7 @@
   <a href="https://scholar.google.com/citations?user=UfIb9GkAAAAJ">Wen-Hua Chen</a>.
 </p>
 <p data-lang="zh" hidden>
-  我目前在<a href="https://www.polyu.edu.hk/rclae/">香港理工大学低空经济研究中心</a>、
+  目前，我在<a href="https://www.polyu.edu.hk/rclae/">香港理工大学低空经济研究中心</a>、
   <a href="https://www.polyu.edu.hk/aae/">航空及民航工程学系</a>担任博士后研究员，合作导师为
   <a href="https://scholar.google.com/citations?user=UfIb9GkAAAAJ">陈文华教授</a>。
 </p>
