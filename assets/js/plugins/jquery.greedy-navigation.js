@@ -11,8 +11,6 @@ var $vlinks = $('#site-nav .visible-links');
 var $hlinks = $('.greedy-nav__more .hidden-links');
 var docClickHandler = null;
 var resizeTimer;
-var closeTimer = null;
-var transitionEndHandler = null;
 
 function getVisibleItems() {
   return $vlinks.children();
@@ -23,18 +21,6 @@ function getHiddenItems() {
 }
 
 var breaks = [];
-
-function clearCloseHandlers() {
-  if (transitionEndHandler) {
-    $hlinks.off('transitionend.greedyNav', transitionEndHandler);
-    transitionEndHandler = null;
-  }
-
-  if (closeTimer) {
-    window.clearTimeout(closeTimer);
-    closeTimer = null;
-  }
-}
 
 function manageDocClickListener(shouldBind) {
   if(shouldBind) {
@@ -52,79 +38,12 @@ function manageDocClickListener(shouldBind) {
   }
 }
 
-function setMenuOpen(isOpen, options) {
-  var settings = $.extend({ animate: true }, options || {});
-  var shouldAnimate = settings.animate !== false;
-
-  if(isOpen) {
-    clearCloseHandlers();
-    $hlinks.removeClass('hidden');
-
-    if(shouldAnimate && typeof window.requestAnimationFrame === 'function') {
-      window.requestAnimationFrame(function() {
-        $hlinks.addClass('is-open');
-      });
-    } else if(shouldAnimate) {
-      window.setTimeout(function() {
-        $hlinks.addClass('is-open');
-      }, 16);
-    } else {
-      $hlinks.addClass('is-open');
-    }
-
-    $hlinks.attr('aria-hidden', 'false');
-    $btn.addClass('close');
-    $btn.attr('aria-expanded', 'true');
-    manageDocClickListener(true);
-    return;
-  }
-
-  $btn.removeClass('close');
-  $btn.attr('aria-expanded', 'false');
-  manageDocClickListener(false);
-
-  $hlinks.attr('aria-hidden', 'true');
-
-  clearCloseHandlers();
-
-  function finalizeClose() {
-    clearCloseHandlers();
-    $hlinks.addClass('hidden');
-  }
-
-  if(!shouldAnimate) {
-    $hlinks.removeClass('is-open');
-    finalizeClose();
-    return;
-  }
-
-  if($hlinks.hasClass('is-open') && $hlinks.is(':visible')) {
-    transitionEndHandler = function(event) {
-      if(event.target !== $hlinks[0]) {
-        return;
-      }
-
-      var propertyName = event.originalEvent ? event.originalEvent.propertyName : event.propertyName;
-
-      if(propertyName && propertyName !== 'opacity') {
-        return;
-      }
-
-      finalizeClose();
-    };
-
-    $hlinks.on('transitionend.greedyNav', transitionEndHandler);
-
-    closeTimer = window.setTimeout(finalizeClose, 250);
-
-    // Force reflow to help the transition trigger consistently
-    void $hlinks[0].offsetWidth;
-
-    $hlinks.removeClass('is-open');
-  } else {
-    $hlinks.removeClass('is-open');
-    finalizeClose();
-  }
+function setMenuOpen(isOpen) {
+  $hlinks.toggleClass('hidden', !isOpen);
+  $hlinks.attr('aria-hidden', isOpen ? 'false' : 'true');
+  $btn.toggleClass('close', isOpen);
+  $btn.attr('aria-expanded', isOpen ? 'true' : 'false');
+  manageDocClickListener(isOpen);
 }
 
 function updateNav() {
@@ -168,7 +87,9 @@ function updateNav() {
     // Hide the dropdown btn if hidden list is empty
     if(getHiddenItems().length < 1) {
       $btn.addClass('hidden');
-      setMenuOpen(false, { animate: false });
+      setMenuOpen(false);
+      $hlinks.attr('aria-hidden', 'true');
+      $btn.attr('aria-expanded', 'false');
       breaks = [];
     }
   }
@@ -199,6 +120,7 @@ $(window).on('resize', function() {
 $btn.on('click', function() {
   var isHidden = $hlinks.hasClass('hidden');
   setMenuOpen(isHidden);
+  $hlinks.attr('aria-hidden', isHidden ? 'false' : 'true');
 });
 
 $btn.on('keydown', function(event) {
