@@ -12,10 +12,6 @@ redirect_from:
 
 {% include_relative includes/intro.md %}
 
-{% include_relative includes/exp.md %}
-
-{% include_relative includes/edu.md %}
-
 <span class='anchor' id='-news'></span>
 {% include_relative includes/news.md limit=5 show_button=true %}
 
@@ -139,6 +135,10 @@ Explore the full list of publications on the [Publications](/publications/) page
   </a>
 </p>
 
+{% include_relative includes/exp.md %}
+
+{% include_relative includes/edu.md %}
+
 <span class='anchor' id='-professional-services'></span>
 # <span data-lang="en">🧑🏻‍💻 Professional Services</span><span data-lang="zh" hidden>🧑🏻‍💻 学术服务</span>
 
@@ -155,6 +155,7 @@ Explore the full list of publications on the [Publications](/publications/) page
     <span data-lang="zh" hidden>-- 查看更多学术服务 --</span>
   </a>
 </p>
+
 
 <span class='anchor' id='-miscellaneous'></span>
 {% include_relative includes/misc.md %}
