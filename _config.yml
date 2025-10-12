@@ -70,10 +70,10 @@ author:
 google_maps:
   api_key: "AIzaSyAifVZM7XgfNimiR_YlTaTmweRs72RgCmA"
   location:
-    lat: 22.3043
-    lng: 114.1795
-    title: "The Hong Kong Polytechnic University"
-  zoom: 16
+    lat: 22.304743610338203
+    lng: 114.17984288194279
+    title: "Choi Kai Yau Building, The Hong Kong Polytechnic University"
+  zoom: 18
   language: en
   placeholder: "Set your Google Maps API key in _config.yml to display the location map."
 
