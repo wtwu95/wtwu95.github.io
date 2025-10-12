@@ -211,8 +211,6 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
   --publication-accent: #224b8d;
   --publication-accent-hover: #1a3a6d;
   --publication-accent-soft: rgba(34, 75, 141, 0.18);
-  --publication-sort-text: #fff;
-  --publication-sort-hover-text: #fff;
   --citation-modal-overlay: rgba(15, 23, 42, 0.45);
   --citation-modal-dialog-bg: #fff;
   --citation-modal-dialog-color: #0f172a;
@@ -338,19 +336,6 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 .publication-controls button:active {
   background-color: inherit;
   color: var(--publication-accent);
-}
-
-.publication-controls .publication-sort {
-  background-color: var(--publication-accent);
-  border-color: var(--publication-accent);
-  color: var(--publication-sort-text);
-}
-
-.publication-controls .publication-sort:hover,
-.publication-controls .publication-sort:focus-visible,
-.publication-controls .publication-sort:active {
-  background-color: var(--publication-accent-hover);
-  color: var(--publication-sort-hover-text);
 }
 
 .publication-controls select:hover,
@@ -648,8 +633,6 @@ mark.publication-highlight {
     --publication-accent: #60a5fa;
     --publication-accent-hover: #3b82f6;
     --publication-accent-soft: rgba(96, 165, 250, 0.25);
-    --publication-sort-text: #0f172a;
-    --publication-sort-hover-text: #0b1120;
     --citation-modal-overlay: rgba(15, 23, 42, 0.75);
     --citation-modal-dialog-bg: #0f172a;
     --citation-modal-dialog-color: #e2e8f0;
@@ -682,19 +665,6 @@ mark.publication-highlight {
     background-color: #1f2937;
     color: #bfdbfe;
   }
-
-  .publication-controls .publication-sort {
-    background-color: var(--publication-accent);
-    border-color: var(--publication-accent);
-    color: var(--publication-sort-text);
-  }
-
-  .publication-controls .publication-sort:hover,
-  .publication-controls .publication-sort:focus-visible,
-  .publication-controls .publication-sort:active {
-    background-color: var(--publication-accent-hover);
-    color: var(--publication-sort-hover-text);
-  }
 }
 
 html.theme-dark,
@@ -703,8 +673,6 @@ html[data-theme="dark"] {
   --publication-accent: #60a5fa;
   --publication-accent-hover: #3b82f6;
   --publication-accent-soft: rgba(96, 165, 250, 0.25);
-  --publication-sort-text: #0f172a;
-  --publication-sort-hover-text: #0b1120;
   --citation-modal-overlay: rgba(15, 23, 42, 0.75);
   --citation-modal-dialog-bg: #0f172a;
   --citation-modal-dialog-color: #e2e8f0;
