@@ -270,29 +270,12 @@ h1,h2,h3 { margin-top: 14px; margin-bottom: 10px; }
 .publication-controls button {
   cursor: pointer;
   background-color: #fff;
-  color: var(--masthead-toggle-color, #4b5563);
+  color: #4b5563;
   border-color: #c1c7d0;
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
-}
-
-.publication-controls .publication-sort {
-  color: var(--masthead-toggle-color, #4b5563);
-}
-
-.publication-controls .publication-sort:hover,
-.publication-controls .publication-sort:focus-visible,
-.publication-controls .publication-sort:active {
-  color: var(--masthead-toggle-hover-color, #374151);
-  background-color: #fff;
-  border-color: var(--masthead-toggle-hover-color, #374151);
-  box-shadow: 0 0 0 2px var(--masthead-toggle-focus-shadow, rgba(122, 130, 136, 0.35));
-}
-
-.publication-controls .publication-sort:focus:not(:focus-visible) {
-  box-shadow: none;
 }
 
 .publication-sort-icon {
