@@ -4,6 +4,11 @@ html.theme-light {
   --selection-color: #f8fafc;
 }
 
+html.theme-light .publication-controls .publication-sort {
+  background-color: #f1f5f9;
+  color: var(--masthead-toggle-color);
+}
+
 html.theme-dark {
   color-scheme: dark;
   --cv-logo-bg: rgba(15, 23, 42, 0.78);
