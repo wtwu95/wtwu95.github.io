@@ -9,20 +9,20 @@
       <div class="cv-details">
         <div class="cv-main" data-lang="en">
           <span class="cv-degree">Ph.D.</span>, Electronic Information Engineering in
-          <a href="https://sais.sjtu.edu.cn/">School of Automation and Intelligent Sensing</a> (<a href="https://automation.sjtu.edu.cn/">Department of Automation</a>),
+          <a href="https://automation.sjtu.edu.cn/">Department of Automation</a>,
           <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>, Shanghai, China
         </div>
         <div class="cv-sub" data-lang="en">
-          Supervisors: Chair Professor <a href="https://automation.sjtu.edu.cn/wdzhang"><b>Weidong Zhang</b></a> and Professor <a href="https://automation.sjtu.edu.cn/Jun-Guo"><b>Junguo Lu</b></a>
+          Supervisors: Chair Professor <a href="https://sais.sjtu.edu.cn/faculty/zhangweidong.html"><b>Weidong Zhang</b></a> and Professor <a href="https://sais.sjtu.edu.cn/faculty/lujunguo.html"><b>Junguo Lu</b></a>
         </div>
         <div class="cv-main" data-lang="zh" hidden>
           <span class="cv-degree">博士</span>（电子信息工程），
           <a href="https://www.sjtu.edu.cn/">上海交通大学（SJTU）</a>，
-          <a href="https://sais.sjtu.edu.cn/">自动化与智能感知学院</a>（<a href="https://automation.sjtu.edu.cn/">自动化系</a>），
+          <a href="https://automation.sjtu.edu.cn/">自动化系</a>，
           中国上海
         </div>
         <div class="cv-sub" data-lang="zh" hidden>
-          导师：<a href="https://automation.sjtu.edu.cn/wdzhang"><b>张卫东教授</b></a>、<a href="https://automation.sjtu.edu.cn/Jun-Guo"><b>卢俊国教授</b></a>
+          导师：<a href="https://sais.sjtu.edu.cn/faculty/zhangweidong.html"><b>张卫东教授</b></a>、<a href="https://sais.sjtu.edu.cn/faculty/lujunguo.html"><b>卢俊国教授</b></a>
         </div>
       </div>
       <div class="cv-date">09/2021–03/2025</div>
