@@ -2,10 +2,10 @@
 
 <div class="photo-gallery">
   <figure class="photo-gallery__item">
-    <img src="/images/activities/2025-10-15-Prof_Hug_Hong_Tao_Liu's_Talk1.jpg" alt="Wentao Wu presenting at Innovation Day 2024" loading="lazy">
+    <img src="/images/activities/2025-10-15-Prof_Hug_Hong_Tao_Liu's_Talk1.jpg" alt="15/10/2025" loading="lazy">
     <figcaption>
-      <span data-lang="en">Innovation Day 2024 &mdash; Autonomous systems demos with industry partners.</span>
-      <span data-lang="zh" hidden>2024 创新日——与产业伙伴共同展示自主系统成果。</span>
+      <span data-lang="en">Prof. Hugh Hong Tao Liu from the University of Toronto visited PolyU. </span>
+      <span data-lang="zh" hidden>与多伦多大学 Prof. Hugh Hong Tao Liu 讨论交流</span>
     </figcaption>
   </figure>
   <figure class="photo-gallery__item">
