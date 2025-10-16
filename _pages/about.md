@@ -22,6 +22,9 @@ redirect_from:
   </a>
 </p>
 
+<span class='anchor' id='-event-highlights'></span>
+{% include_relative includes/event-gallery.md %}
+
 <span class='anchor' id='-publications'></span>
 # <span data-lang="en">📚 Selected Publications</span><span data-lang="zh" hidden>📚 代表性成果</span>
 
