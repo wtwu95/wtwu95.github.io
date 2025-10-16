@@ -998,7 +998,6 @@ html[data-theme="dark"] .custom-license-footer {
 .photo-gallery__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 0.65rem;
 }
 
@@ -1012,13 +1011,14 @@ html[data-theme="dark"] .custom-license-footer {
 
 
 .photo-gallery__item figcaption {
+  margin-top: auto; /* ← 核心代码 */
   width: 100%;
+  /* 其他原有样式保持不变 */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* 水平居中文字（可按需改为 flex-start/left） */
   gap: 0.25rem;
   font-size: 0.95rem;
-  line-height: 1.45;
   text-align: center;
   color: #1f2937;
 }
