@@ -1,4 +1,4 @@
-# <span data-lang="en">📸 Pictures</span><span data-lang="zh" hidden>📸 活动掠影</span>
+# <span data-lang="en">📸 Photos </span><span data-lang="zh" hidden>📸 活动掠影</span>
 
 <div class="photo-gallery">
   <figure class="photo-gallery__item">
