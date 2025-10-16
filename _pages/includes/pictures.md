@@ -4,8 +4,8 @@
   <figure class="photo-gallery__item">
     <img src="/images/activities/2025-10-15-Prof_Hug_Hong_Tao_Liu's_Talk1.jpg" alt="15/10/2025" loading="lazy">
     <figcaption>
-      <span data-lang="en">Prof. Hugh Hong Tao Liu from the University of Toronto visited PolyU. </span>
-      <span data-lang="zh" hidden>与多伦多大学 Prof. Hugh Hong Tao Liu 讨论交流</span>
+      <span data-lang="en">Prof. Hugh Hong Tao Liu from the University of Toronto, Canada, visited PolyU. </span>
+      <span data-lang="zh" hidden>加拿大多伦多大学刘泓涛教授来理大访问交流。</span>
     </figcaption>
   </figure>
   <figure class="photo-gallery__item">
