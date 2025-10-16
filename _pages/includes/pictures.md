@@ -2,14 +2,20 @@
 
 <div class="photo-gallery">
   <figure class="photo-gallery__item">
-    <img src="/images/activities/2025-10-15-Prof_Hug_Hong_Tao_Liu's_Talk1.jpg" alt="15/10/2025" loading="lazy">
+    <div class="photo-gallery__image">
+      <span class="photo-gallery__timestamp">2025.10.15</span>
+      <img src="/images/activities/2025-10-15-Prof_Hug_Hong_Tao_Liu's_Talk1.jpg" alt="15/10/2025" loading="lazy">
+    </div>
     <figcaption>
       <span data-lang="en">Welcome Prof. Hugh Hong Tao Liu from the University of Toronto, Canada, to visit PolyU. </span>
       <span data-lang="zh" hidden>欢迎加拿大多伦多大学刘泓涛教授来理大访问交流。</span>
     </figcaption>
   </figure>
   <figure class="photo-gallery__item">
-    <img src="/images/activities/2025-10-09-PolyU-ILAES.jpg" alt="International Low-Altitude Economy Summit" loading="lazy">
+    <div class="photo-gallery__image">
+      <span class="photo-gallery__timestamp">2025.10.09</span>
+      <img src="/images/activities/2025-10-09-PolyU-ILAES.jpg" alt="International Low-Altitude Economy Summit" loading="lazy">
+    </div>
     <figcaption>
       <span data-lang="en">International Low-Altitude Economy Summit</span>
       <span data-lang="zh" hidden>2025年国际低空经济高峰会</span>
