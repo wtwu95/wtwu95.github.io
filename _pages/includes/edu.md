@@ -1,4 +1,4 @@
-# <span data-lang="en">🎓 Educations</span><span data-lang="zh" hidden>🎓 教育背景</span>
+# <span data-lang="en">🎓 Education</span><span data-lang="zh" hidden>🎓 教育背景</span>
 
 <ul class="cv-list">
   <li class="cv-item">
