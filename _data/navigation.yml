@@ -16,10 +16,6 @@ main:
     title_zh: "动态"
     url: "/#-news"
 
-  - title_en: "Event Highlights"
-    title_zh: "活动掠影"
-    url: "/events/"
-
   - title_en: "Publications"
     title_zh: "出版物"
     url: "/#-publications"
@@ -39,3 +35,7 @@ main:
   - title_en: "Miscellaneous"
     title_zh: "实用链接"
     url: "/#-miscellaneous"
+
+  - title_en: "Pictures"
+    title_zh: "活动掠影"
+    url: "/pictures/"
