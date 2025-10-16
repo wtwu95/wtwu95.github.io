@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="grad2" x1="0" x2="1" y1="1" y2="0">
+      <stop offset="0%" stop-color="#2d046e" />
+      <stop offset="100%" stop-color="#662d91" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grad2)" rx="32" ry="32" />
+  <g fill="#ffd166" opacity="0.25">
+    <circle cx="180" cy="620" r="140" />
+    <circle cx="1030" cy="640" r="180" />
+    <circle cx="880" cy="200" r="120" />
+  </g>
+  <g fill="#ffe6f7">
+    <text x="80" y="150" font-size="60" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="600">Robotics Workshop</text>
+    <text x="80" y="220" font-size="36" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" opacity="0.85">Distributed Control Lab</text>
+  </g>
+  <g fill="#ffe6f7" opacity="0.95">
+    <rect x="320" y="360" width="140" height="220" rx="30" />
+    <rect x="360" y="300" width="60" height="60" rx="14" />
+    <circle cx="350" cy="340" r="16" />
+    <circle cx="430" cy="340" r="16" />
+    <rect x="520" y="340" width="320" height="240" rx="24" />
+    <circle cx="580" cy="410" r="40" />
+    <circle cx="780" cy="410" r="40" />
+    <rect x="600" y="470" width="160" height="60" rx="18" />
+  </g>
+</svg>
