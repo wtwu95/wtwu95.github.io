@@ -1066,18 +1066,30 @@ html[data-theme="dark"] .custom-license-footer {
 }
 
 
+
 .photo-gallery__item figcaption {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center; /* 水平居中 */
   font-size: 0.95rem;
   line-height: 1.45;
   color: #1f2937;
   margin: 0; /* 消除默认 margin */
-  padding: 0; /* 消除默认 padding */
+  padding: 0.35rem 0.75rem; /* 给予文字呼吸空间 */
+  min-height: 3.6rem; /* 统一高度，避免行数不一造成错落 */
 }
 
 .photo-gallery__item figcaption span {
   display: inline-block;
+}
+
+@media (max-width: 640px) {
+  .photo-gallery__item figcaption {
+    min-height: 3rem; /* 小屏幕适当收窄高度 */
+    padding: 0.3rem 0.5rem;
+  }
 }
 
 html[data-language="en"] .photo-gallery__item figcaption span[data-lang="zh"],
