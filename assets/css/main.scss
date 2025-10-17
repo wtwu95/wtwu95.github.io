@@ -999,6 +999,28 @@ html[data-theme="dark"] .custom-license-footer {
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
+  position: relative;
+}
+
+.photo-gallery__timestamp {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background-color: rgba(0, 54, 159, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(0, 54, 159, 0.18);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
 }
 
 .photo-gallery__item img {
@@ -1033,6 +1055,15 @@ html[data-language="zh"] .photo-gallery__item figcaption span[data-lang="en"] {
   font-size: 0.92rem;
 }
 
+html[data-language="en"] .photo-gallery__timestamp [data-lang="zh"],
+html[data-language="zh"] .photo-gallery__timestamp [data-lang="en"] {
+  display: none;
+}
+
+.photo-gallery__timestamp [data-lang="zh"] {
+  font-size: 0.74rem;
+}
+
 @media (max-width: 640px) {
   .photo-gallery {
     gap: 1.1rem;
@@ -1040,6 +1071,13 @@ html[data-language="zh"] .photo-gallery__item figcaption span[data-lang="en"] {
 }
 
 @media (prefers-color-scheme: dark) {
+  .photo-gallery__timestamp {
+    background-color: rgba(96, 165, 250, 0.95);
+    border-color: rgba(191, 219, 254, 0.8);
+    color: #0b1120;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.45);
+  }
+
   .photo-gallery__item img {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.35);
   }
@@ -1057,4 +1095,12 @@ html[data-theme="dark"] .photo-gallery__item img {
 html.theme-dark .photo-gallery__item figcaption,
 html[data-theme="dark"] .photo-gallery__item figcaption {
   color: rgba(226, 232, 240, 0.94);
+}
+
+html.theme-dark .photo-gallery__timestamp,
+html[data-theme="dark"] .photo-gallery__timestamp {
+  background-color: rgba(96, 165, 250, 0.95);
+  border-color: rgba(191, 219, 254, 0.8);
+  color: #0b1120;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.45);
 }
