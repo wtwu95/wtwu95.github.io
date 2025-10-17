@@ -1005,13 +1005,14 @@ html[data-theme="dark"] .custom-license-footer {
 .photo-gallery__timestamp {
   position: absolute;
   top: 0.5em;
-  left: -.5em;
+  left: .5em;
   z-index: 2;
   padding: 0.3rem 0.75rem;
   font-size: 0.8em;
   font-weight: normal;
   color: white;
   background-color: #00369f;
+  border-radius: 4px;
 }
 
 .photo-gallery__item img {
