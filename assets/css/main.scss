@@ -1001,45 +1001,12 @@ html[data-theme="dark"] .custom-license-footer {
   gap: 0.65rem;
 }
 
-.photo-gallery__image-wrapper {
-  position: relative;
-  display: block;
-}
-
 .photo-gallery__item img {
   width: 100%;
   display: block;
   object-fit: cover;
   border-radius: 0.65rem;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-}
-
-.photo-gallery__timestamp {
-  position: absolute;
-  top: 0.65rem;
-  left: 0.65rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.2rem 0.75rem;
-  border-radius: 999px;
-  color: #ffffff;
-  background-color: #00369f;
-  font-size: 0.75rem;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
-}
-
-.photo-gallery__timestamp span[data-lang="zh"] {
-  font-size: 0.72rem;
-}
-
-.photo-gallery__timestamp span[data-lang] {
-  display: inline-block;
-}
-
-.photo-gallery__timestamp span[data-lang][hidden] {
-  display: none;
 }
 
 
@@ -1066,11 +1033,6 @@ html[data-language="zh"] .photo-gallery__item figcaption span[data-lang="en"] {
   font-size: 0.92rem;
 }
 
-html[data-language="en"] .photo-gallery__timestamp span[data-lang="zh"],
-html[data-language="zh"] .photo-gallery__timestamp span[data-lang="en"] {
-  display: none;
-}
-
 @media (max-width: 640px) {
   .photo-gallery {
     gap: 1.1rem;
@@ -1085,12 +1047,6 @@ html[data-language="zh"] .photo-gallery__timestamp span[data-lang="en"] {
   .photo-gallery__item figcaption {
     color: rgba(226, 232, 240, 0.94);
   }
-
-  .photo-gallery__timestamp {
-    color: rgba(226, 232, 240, 0.94);
-    background-color: rgba(37, 99, 235, 0.85);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  }
 }
 
 html.theme-dark .photo-gallery__item img,
@@ -1101,11 +1057,4 @@ html[data-theme="dark"] .photo-gallery__item img {
 html.theme-dark .photo-gallery__item figcaption,
 html[data-theme="dark"] .photo-gallery__item figcaption {
   color: rgba(226, 232, 240, 0.94);
-}
-
-html.theme-dark .photo-gallery__timestamp,
-html[data-theme="dark"] .photo-gallery__timestamp {
-  color: rgba(226, 232, 240, 0.94);
-  background-color: rgba(37, 99, 235, 0.85);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
