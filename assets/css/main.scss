@@ -1070,9 +1070,8 @@ html[data-theme="dark"] .custom-license-footer {
 .photo-gallery__item figcaption {
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center; /* 水平居中 */
   font-size: 0.95rem;
   line-height: 1.45;
   color: #1f2937;
@@ -1112,7 +1111,7 @@ html[data-language="zh"] .photo-gallery__timestamp [data-lang="en"] {
 
 @media (max-width: 640px) {
   .photo-gallery {
-    gap: 1.1rem;
+    gap: .8rem;
   }
 }
 
