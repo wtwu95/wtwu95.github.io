@@ -39,3 +39,6 @@ main:
   - title_en: "Photos"
     title_zh: "活动掠影"
     url: "/pictures/"
+  - title_en: "Academic Card"
+    title_zh: "学术名片"
+    url: "/academic-card/"
