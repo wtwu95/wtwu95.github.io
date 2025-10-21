@@ -304,3 +304,324 @@ html.theme-dark .author__urls:after {
 html.theme-dark .author__urls li {
   background: transparent;
 }
+
+.academic-card-page {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 3rem 1.5rem 4rem;
+  background: linear-gradient(160deg, rgba(37, 99, 235, 0.12), rgba(14, 116, 144, 0.08));
+  border-radius: 32px;
+  box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+}
+
+.academic-card {
+  width: 100%;
+  max-width: 960px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 26px 60px rgba(15, 23, 42, 0.18);
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  color: #0f172a;
+}
+
+.academic-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.academic-card__identity {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.academic-card__avatar {
+  width: 108px;
+  height: 108px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.25);
+}
+
+.academic-card__title-group h1 {
+  font-size: clamp(1.8rem, 2.4vw, 2.6rem);
+  margin-bottom: 0.35rem;
+}
+
+.academic-card__tagline {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+}
+
+.academic-card__institution {
+  font-size: 0.98rem;
+  color: #334155;
+}
+
+.academic-card__qr {
+  display: grid;
+  justify-items: center;
+  gap: 0.6rem;
+}
+
+.academic-card__qr img {
+  width: 132px;
+  height: 132px;
+  border-radius: 18px;
+  padding: 0.6rem;
+  background: #f8fafc;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.15);
+}
+
+.academic-card__qr-caption {
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.academic-card__content {
+  display: grid;
+  gap: 2.2rem;
+}
+
+.academic-card__section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1d4ed8;
+}
+
+.academic-card__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.5rem;
+  color: #1e293b;
+  font-size: 1rem;
+}
+
+.academic-card__highlights {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.academic-card__highlight {
+  padding: 1.2rem 1.4rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(37, 99, 235, 0));
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+}
+
+.academic-card__highlight h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+  color: #1e40af;
+}
+
+.academic-card__highlight p {
+  margin: 0;
+  color: #1f2937;
+  font-size: 0.98rem;
+}
+
+.academic-card__contacts {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.academic-card__contacts dt {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2563eb;
+  margin-bottom: 0.2rem;
+}
+
+.academic-card__contacts dd {
+  margin: 0;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.academic-card__contacts a {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.academic-card__contacts a:hover,
+.academic-card__contacts a:focus {
+  color: #1d4ed8;
+}
+
+.academic-card__collaboration {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1e293b;
+  background: rgba(14, 116, 144, 0.08);
+  border-radius: 18px;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid rgba(14, 116, 144, 0.18);
+}
+
+.academic-card__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+
+.academic-card__action {
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.75rem 1.6rem;
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  border: none;
+}
+
+.academic-card__location {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+@media (min-width: 720px) {
+  .academic-card__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .academic-card__qr {
+    align-self: center;
+  }
+
+  .academic-card__highlights {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .academic-card__contacts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .academic-card__footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .academic-card {
+    padding: 3rem;
+  }
+
+  .academic-card__avatar {
+    width: 124px;
+    height: 124px;
+  }
+
+  .academic-card__qr img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .academic-card-page {
+    padding: 1.5rem 0.75rem 3rem;
+    border-radius: 20px;
+  }
+
+  .academic-card {
+    padding: 1.8rem;
+    gap: 1.8rem;
+  }
+
+  .academic-card__identity {
+    align-items: flex-start;
+  }
+
+  .academic-card__avatar {
+    width: 92px;
+    height: 92px;
+  }
+
+  .academic-card__qr img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+  }
+
+  .page__inner-wrap {
+    padding: 0 !important;
+  }
+
+  .academic-card-page {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .academic-card {
+    box-shadow: none;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+  }
+
+  .masthead,
+  .page__footer,
+  .sidebar {
+    display: none !important;
+  }
+}
+
+html.theme-dark .academic-card {
+  background: rgba(15, 23, 42, 0.92);
+  color: #e2e8f0;
+  box-shadow: 0 26px 60px rgba(2, 6, 23, 0.55);
+}
+
+html.theme-dark .academic-card__tagline {
+  color: #e2e8f0;
+}
+
+html.theme-dark .academic-card__institution,
+html.theme-dark .academic-card__highlight p,
+html.theme-dark .academic-card__list,
+html.theme-dark .academic-card__contacts dd,
+html.theme-dark .academic-card__collaboration,
+html.theme-dark .academic-card__location {
+  color: rgba(226, 232, 240, 0.9);
+}
+
+html.theme-dark .academic-card__highlight {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(59, 130, 246, 0.08));
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.55);
+}
+
+html.theme-dark .academic-card__collaboration {
+  background: rgba(14, 116, 144, 0.25);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+html.theme-dark .academic-card__contacts a {
+  color: #93c5fd;
+}
+
+html.theme-dark .academic-card__contacts a:hover,
+html.theme-dark .academic-card__contacts a:focus {
+  color: #bfdbfe;
+}
