@@ -166,9 +166,4 @@
   {% endfor %}
 </ul>
 
-
-
-
-
-
 {% include citation-modal.html %}
