@@ -32,7 +32,8 @@
 
 ## <span data-lang="en">Conference Reviewer</span><span data-lang="zh" hidden>会议审稿</span>
 
-- IEEE Conference on Decision and Control (CDC)
+- [IEEE International Conference on Robotics and Automation (ICRA)](https://2026.ieee-icra.org/)
+- [IEEE Conference on Decision and Control (CDC)](https://cdc2025.ieeecss.org/)
 - American Control Conference (ACC)
 - Annual Conference of the IEEE Industrial Electronics Society (IECON)
 - Chinese Control Conference (CCC)
