@@ -3,6 +3,8 @@
 ## <span data-lang="en">Journal Editorial Boards</span><span data-lang="zh" hidden>期刊编委</span>
 
 - <span data-lang="en">**Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)</span><span data-lang="zh" hidden>**青年编委**： [Journal of Artificial Intelligence &amp; Control Systems](http://www.coscipress.com/journal/JAICS)（2025 至今）</span>
+- <span data-lang="en">**Young Editorial Board Member**: [Intelligence & Robotics](https://www.oaepublish.com/ir) (2025-present)</span><span data-lang="zh" hidden>**青年编委**： [Intelligence & Robotics](https://www.oaepublish.com/ir)（2025 至今）</span>
+
 
 ## <span data-lang="en">Conference Program Committee and Editorial</span><span data-lang="zh" hidden>会议组织与编委</span>
 
