@@ -146,7 +146,7 @@ Explore the full list of publications on the [Publications](/publications/) page
 
 
 - <span data-lang="en"><strong>Young Editorial Board Member</strong>: <a href="http://www.coscipress.com/journal/JAICS">Journal of Artificial Intelligence & Control Systems</a> (2025-present)</span><span data-lang="zh" hidden><strong>青年编委</strong>：<a href="http://www.coscipress.com/journal/JAICS">Journal of Artificial Intelligence & Control Systems</a>（2025 年至今）</span>
-- <span data-lang="en"><strong>Young Editorial Board Member</strong>: <a href="https://www.oaepublish.com/ir">Journal of Artificial Intelligence & Control Systems</a> (2025-present)</span><span data-lang="zh" hidden><strong>青年编委</strong>：<a href="https://www.oaepublish.com/ir">Intelligence & Robotics</a>（2025 年至今）</span>
+- <span data-lang="en"><strong>Young Editorial Board Member</strong>: <a href="https://www.oaepublish.com/ir">Intelligence & Robotics</a> (2025-present)</span><span data-lang="zh" hidden><strong>青年编委</strong>：<a href="https://www.oaepublish.com/ir">Intelligence & Robotics</a>（2025 年至今）</span>
 
 
 - <span data-lang="en"><strong>Organizer</strong> for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)</span><span data-lang="zh" hidden><strong>组织者</strong>：2025 第十届亚太智能机器人系统大会（ACIRS）专题二“机器人系统的分布式优化与控制”</span>
