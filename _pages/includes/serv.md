@@ -5,10 +5,13 @@
 - <span data-lang="en">**Young Editorial Board Member**: [Journal of Artificial Intelligence & Control Systems](http://www.coscipress.com/journal/JAICS) (2025-present)</span><span data-lang="zh" hidden>**青年编委**： [Journal of Artificial Intelligence &amp; Control Systems](http://www.coscipress.com/journal/JAICS)（2025 至今）</span>
 - <span data-lang="en">**Young Editorial Board Member**: [Intelligence & Robotics](https://www.oaepublish.com/ir) (2025-present)</span><span data-lang="zh" hidden>**青年编委**： [Intelligence & Robotics](https://www.oaepublish.com/ir)（2025 至今）</span>
 
-
 ## <span data-lang="en">Conference Program Committee and Editorial</span><span data-lang="zh" hidden>会议组织与编委</span>
 
-- <span data-lang="en">**Organizer** for "Special Session 2. Distributed Optimization and Control for Robot Systems" at the 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)</span><span data-lang="zh" hidden>**组织者**：2025 第十届亚太智能机器人系统大会（ACIRS）专题二“机器人系统的分布式优化与控制”</span>
+- <span data-lang="en"><strong>Invited Session Chair</strong>: 2026 20th IEEE International Conference on Control and Automation (ICCA) </span><span data-lang="zh" hidden><strong>专题主席</strong>：2026 第二十届国际控制与自动化会议 (ICCA 2026)</span>
+
+- <span data-lang="en">**Invited Session Chair**: 2026 20th IEEE International Conference on Control and Automation (ICCA 2026)</span><span data-lang="zh" hidden>**专题主席**：2026 第二十届国际控制与自动化会议 (ICCA 2026)”</span>
+
+- <span data-lang="en">**Invited Session Chair**: 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)</span><span data-lang="zh" hidden>**专题主席**：2025 第十届亚太智能机器人系统大会（ACIRS）</span>
 
 ## <span data-lang="en">Journal Reviewer</span><span data-lang="zh" hidden>期刊审稿</span>
 
