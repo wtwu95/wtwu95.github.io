@@ -7,8 +7,6 @@
 
 ## <span data-lang="en">Conference Program Committee and Editorial</span><span data-lang="zh" hidden>会议组织与编委</span>
 
-- <span data-lang="en"><strong>Invited Session Chair</strong>: 2026 20th IEEE International Conference on Control and Automation (ICCA) </span><span data-lang="zh" hidden><strong>专题主席</strong>：2026 第二十届国际控制与自动化会议 (ICCA 2026)</span>
-
 - <span data-lang="en">**Invited Session Chair**: 2026 20th IEEE International Conference on Control and Automation (ICCA 2026)</span><span data-lang="zh" hidden>**专题主席**：2026 第二十届国际控制与自动化会议 (ICCA 2026)”</span>
 
 - <span data-lang="en">**Invited Session Chair**: 2025 10th Asia-Pacific Conference on Intelligent Robot Systems (ACIRS)</span><span data-lang="zh" hidden>**专题主席**：2025 第十届亚太智能机器人系统大会（ACIRS）</span>
