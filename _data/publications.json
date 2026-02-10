@@ -2,6 +2,13 @@
   {
     "type": "journal",
     "year": 2026,
+    "date": "2026-02",
+    "scholar_id": "",
+    "body_html": "<p><strong>W. Wu</strong>, L. Xu, R. Liu, and W. Zhang, \"Hierarchical optimal event-triggered framework for robust formation control of underactuated ASVs,\" <em class=\"publication-venue publication-venue--top-journal\">Automatica</em>, 2026.</p>"
+  },
+  {
+    "type": "journal",
+    "year": 2026,
     "date": "2026-01",
     "scholar_id": "",
     "body_html": "<p><strong>W. Wu</strong>, L. Xu, Y. Zhang, W. Zhang, Y. Shi, “<a href=\"https://ieeexplore.ieee.org/document/11361125\">Optimal Event-Triggered Consensus for Multiagent Systems via Game-Theoretic Approache</a>,” <em class=\"publication-venue publication-venue--ieee-journal\"><a href=\"https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856\">IEEE Transactions on Automation and Science Engineering</a></em>, Jan. 2026, doi: 10.1109/TASE.2026.3656938. <a href=\"/assets/papers/SCI/WuWentao-2026-IEEE-TASE.pdf\"><img alt=\"PDF badge\" src=\"https://img.shields.io/badge/Link-PDF-gree\"/></a></p>"
