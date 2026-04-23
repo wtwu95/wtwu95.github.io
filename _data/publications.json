@@ -4,7 +4,7 @@
     "year": 2026,
     "date": "2026-04",
     "scholar_id": "",
-    "body_html": "<p><strong>W. Wu</strong>, L. Xu, R. Liu, and W. Zhang, "<a href=\"https://www.sciencedirect.com/science/article/pii/S0005109826001676?dgcid=author\">Hierarchical optimal event-triggered framework for robust formation control of underactuated ASVs</a>," <em class=\"publication-venue publication-venue--top-journal\"><a href=\"https://www.sciencedirect.com/journal/automatica\">Automatica</a></em>, vol. 189, pp. 112983, Apr. 2026. [Regular Paper]<a href=\"/assets/papers/SCI/WuWentao-2026-Auto.pdf\"><img alt=\"PDF badge\" src=\"https://img.shields.io/badge/Link-PDF-gree\"/></a></p>"
+    "body_html": "<p><strong>W. Wu</strong>, L. Xu, R. Liu, and W. Zhang, “<a href=\"https://www.sciencedirect.com/science/article/pii/S0005109826001676?dgcid=author\">Hierarchical optimal event-triggered framework for robust formation control of underactuated ASVs</a>,” <em class=\"publication-venue publication-venue--top-journal\"><a href=\"https://www.sciencedirect.com/journal/automatica\">Automatica</a></em>, vol. 189, pp. 112983, Apr. 2026. [Regular Paper]<a href=\"/assets/papers/SCI/WuWentao-2026-Auto.pdf\"><img alt=\"PDF badge\" src=\"https://img.shields.io/badge/Link-PDF-gree\"/></a></p>"
   },
   {
     "type": "journal",
@@ -81,7 +81,7 @@
     "year": 2025,
     "date": "2025-08",
     "scholar_id": "WGp4lBIAAAAJ:2KloaMYe4IUC",
-    "body_html": "<p>X. Dong, T. Xie, <strong>W. Wu</strong>, H. Chen, C. Zhang, and W. Zhang, “<a href=\" \">A Nonsmooth Dynamic Output Feedback Strategy for Nonlinear Systems with Nonparametric Uncertainties: Application to Robot Manipulators</a>,” <em class=\"publication-venue publication-venue--ieee-journal\"><a href=\"https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=41\">IEEE Transactions on Industrial Electronics</a></em>, 2025. doi: 10.1109/TIE.2025.3600515. <a href=\"/assets/papers/SCI/DongXin-2025-IEEE-TIE.pdf\"><img alt=\"PDF badge\" src=\"https://img.shields.io/badge/Link-PDF-gree\"/></a></p>"
+    "body_html": "<p>X. Dong, T. Xie, <strong>W. Wu</strong>, H. Chen, C. Zhang, and W. Zhang, “<a href=\"https://doi.org/10.1109/TIE.2025.3600515\">A Nonsmooth Dynamic Output Feedback Strategy for Nonlinear Systems with Nonparametric Uncertainties: Application to Robot Manipulators</a>,” <em class=\"publication-venue publication-venue--ieee-journal\"><a href=\"https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=41\">IEEE Transactions on Industrial Electronics</a></em>, 2025. doi: 10.1109/TIE.2025.3600515. <a href=\"/assets/papers/SCI/DongXin-2025-IEEE-TIE.pdf\"><img alt=\"PDF badge\" src=\"https://img.shields.io/badge/Link-PDF-gree\"/></a></p>"
   },
   {
     "type": "journal",
@@ -204,7 +204,7 @@
     "type": "conference",
     "year": 2023,
     "date": "2023-09",
-    "body_html": "<p><strong>W. Wu</strong>, C. Zhang, Z. Li, W. Zhang, and Y. Zhang, “<a href=\"https://link.springer.com/chapter/10.1007/978-981-97-3328-6_16\">Finite-time Extended State Observer-Based Performance-Critical Control for Uncertain MIMO Nonlinear Systems</a>,” in <em class=\"publication-venue publication-venue--conference\"><a href=\"http://ccsicc.c2.org.cn/\">2023 7th Chinese Conference on Swarm Intelligence and Cooperative Control (CCSICC)</a></em>, pp. 178-191, 2023. <a href=\"/assets/papers/EI/2023-CCSICC.pdf\"><img alt=\"PDF badge\" src=\"https://img.shields.io/badge/Link-PDF-gree\"/></a> <a href=\" \"><img alt=\"Award badge\" src=\"https://img.shields.io/badge/%F0%9F%8E%89Best%20Student%20Paper%20Nomination%20Award-8A2BE2\"/></a></p>"
+    "body_html": "<p><strong>W. Wu</strong>, C. Zhang, Z. Li, W. Zhang, and Y. Zhang, “<a href=\"https://link.springer.com/chapter/10.1007/978-981-97-3328-6_16\">Finite-time Extended State Observer-Based Performance-Critical Control for Uncertain MIMO Nonlinear Systems</a>,” in <em class=\"publication-venue publication-venue--conference\"><a href=\"http://ccsicc.c2.org.cn/\">2023 7th Chinese Conference on Swarm Intelligence and Cooperative Control (CCSICC)</a></em>, pp. 178-191, 2023. <a href=\"/assets/papers/EI/2023-CCSICC.pdf\"><img alt=\"PDF badge\" src=\"https://img.shields.io/badge/Link-PDF-gree\"/></a> <a href=\"#\"><img alt=\"Award badge\" src=\"https://img.shields.io/badge/%F0%9F%8E%89Best%20Student%20Paper%20Nomination%20Award-8A2BE2\"/></a></p>"
   },
   {
     "type": "conference",
