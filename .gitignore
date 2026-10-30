@@ -4,3 +4,4 @@ push.sh
 /github_myprofile_updater/README.md
 /docs/backups/
 /assets/papers/归档.zip
+__pycache__/

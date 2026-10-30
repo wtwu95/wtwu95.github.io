@@ -1,39 +1,97 @@
-name: Update IEEE metadata
+name: Update publication records
 
 on:
   schedule:
-    - cron: '0 0 1 * *'
+    # Every month on day 1 at 09:23 Hong Kong time (01:23 UTC).
+    - cron: '23 1 1 * *'
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Check and report without changing publication data
+        type: boolean
+        default: false
+
+concurrency:
+  group: publication-record-updates
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: pip
+          cache-dependency-path: scripts/requirements-publications.txt
 
       - name: Install dependencies
-        run: pip install beautifulsoup4 requests
+        run: python -m pip install -r scripts/requirements-publications.txt
 
-      - name: Refresh IEEE metadata
-        run: python scripts/update_ieee_metadata.py
+      - name: Run regression tests
+        run: python -m unittest discover -s scripts/tests -v
 
-      - name: Commit and push changes
+      - name: Check incomplete records and missing files
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet; then
-            echo "No changes to commit"
-            exit 0
+          if [ "$DRY_RUN" = "true" ]; then
+            python scripts/update_publications.py --report "$RUNNER_TEMP/publication-checks.json"
+          else
+            python scripts/update_publications.py --write --report "$RUNNER_TEMP/publication-checks.json"
           fi
-          git add _pages/includes/pub.md README.md
-          git commit -m "chore: refresh IEEE metadata"
-          git push
+
+      - name: Save check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publication-checks
+          path: ${{ runner.temp }}/publication-checks.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Summarize checks
+        if: always()
+        env:
+          REPORT_PATH: ${{ runner.temp }}/publication-checks.json
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path(os.environ['REPORT_PATH'])
+          if path.exists():
+              report = json.loads(path.read_text())
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as output:
+                  output.write('### Publication checks\n\n')
+                  output.write('```json\n' + json.dumps(report['summary'], indent=2) + '\n```\n')
+                  output.write('Full evidence and unresolved resources are in the publication-checks artifact.\n')
+          PY
+
+      - name: Commit verified changes and request Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then exit 0; fi
+          git add -- _data/publications.json _data/publication_checks.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'chore: verify incomplete publication records'
+            # Preserve concurrent main updates; stop safely if a data edit conflicts.
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          # Pushes with GITHUB_TOKEN do not trigger branch-based Pages builds.
+          # Request on reruns too, so a failed deployment request is recoverable.
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
