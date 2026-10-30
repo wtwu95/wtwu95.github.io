@@ -15,33 +15,39 @@
     }
 
     var closeTimer = null;
+    var openedByHover = false;
+    var hoverQuery = window.matchMedia ? window.matchMedia('(hover: hover) and (pointer: fine)') : null;
 
     function hasHiddenItems() {
       return hiddenLinks.children.length > 0;
     }
 
+    function isMenuOpen() {
+      return !hiddenLinks.classList.contains('hidden') &&
+        !toggleButton.classList.contains('hidden') && hasHiddenItems();
+    }
+
+    function syncMenuState() {
+      var isOpen = isMenuOpen();
+      if (!isOpen) {
+        openedByHover = false;
+      }
+      hiddenLinks.setAttribute('aria-hidden', String(!isOpen));
+      toggleButton.setAttribute('aria-expanded', String(isOpen));
+      toggleButton.classList.toggle('close', isOpen);
+    }
+
     function openMenu() {
-      if (toggleButton.classList.contains('hidden')) {
-        return;
+      if (!isMenuOpen() && !toggleButton.classList.contains('hidden') && hasHiddenItems()) {
+        openedByHover = true;
+        hiddenLinks.classList.remove('hidden');
+        syncMenuState();
       }
-
-      if (toggleButton.getAttribute('aria-expanded') === 'true') {
-        return;
-      }
-
-      if (!hasHiddenItems()) {
-        return;
-      }
-
-      toggleButton.click();
     }
 
     function closeMenu() {
-      if (toggleButton.getAttribute('aria-expanded') !== 'true') {
-        return;
-      }
-
-      toggleButton.click();
+      hiddenLinks.classList.add('hidden');
+      syncMenuState();
     }
 
     function clearCloseTimer() {
@@ -54,14 +60,19 @@
     function scheduleClose() {
       clearCloseTimer();
       closeTimer = window.setTimeout(function () {
-        closeMenu();
+        // Keep keyboard users' focused links visible when the pointer leaves.
+        if (!moreContainer.contains(document.activeElement)) {
+          closeMenu();
+        }
         closeTimer = null;
       }, 150);
     }
 
     moreContainer.addEventListener('mouseenter', function () {
       clearCloseTimer();
-      openMenu();
+      if (!hoverQuery || hoverQuery.matches) {
+        openMenu();
+      }
     });
 
     moreContainer.addEventListener('mouseleave', function () {
@@ -70,7 +81,6 @@
 
     moreContainer.addEventListener('focusin', function () {
       clearCloseTimer();
-      openMenu();
     });
 
     moreContainer.addEventListener('focusout', function (event) {
@@ -80,6 +90,49 @@
 
       scheduleClose();
     });
+
+    // The bundled navigation owns button clicks and responsive link movement.
+    // A pointer's first click should keep the menu it just opened by hover open.
+    // Reset that transient state before the bundle handles the same click.
+    toggleButton.addEventListener('click', function (event) {
+      if (event.detail > 0 && openedByHover && isMenuOpen()) {
+        closeMenu();
+      }
+    }, true);
+    toggleButton.addEventListener('click', function () {
+      openedByHover = false;
+      syncMenuState();
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!moreContainer.contains(event.target)) {
+        clearCloseTimer();
+        closeMenu();
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && isMenuOpen()) {
+        var restoreFocus = hiddenLinks.contains(document.activeElement);
+        clearCloseTimer();
+        closeMenu();
+        event.preventDefault();
+        if (restoreFocus) {
+          toggleButton.focus({ preventScroll: true });
+        }
+      }
+    });
+
+    if (window.MutationObserver) {
+      var menuObserver = new MutationObserver(syncMenuState);
+      menuObserver.observe(hiddenLinks, {
+        attributes: true,
+        attributeFilter: ['class'],
+        childList: true
+      });
+    }
+
+    syncMenuState();
   }
 
   if (document.readyState === 'loading') {

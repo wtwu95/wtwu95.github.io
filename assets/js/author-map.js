@@ -85,8 +85,16 @@
         return;
       }
 
+      // Maps replaces its target's children; keep the fallback iframe outside it.
+      var canvas = document.createElement('div');
+      canvas.style.position = 'absolute';
+      canvas.style.inset = '0';
+      canvas.style.width = '100%';
+      canvas.style.height = '100%';
+      mapContainer.appendChild(canvas);
+
       var center = { lat: lat, lng: lng };
-      var map = new window.google.maps.Map(mapContainer, {
+      var map = new window.google.maps.Map(canvas, {
         zoom: zoom,
         center: center,
         mapTypeControl: false,
@@ -120,7 +128,6 @@
           showFallback(mapContainer);
         }
       }, 4000);
-      }
     };
   }
 

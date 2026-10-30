@@ -8,6 +8,16 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  // Apply the existing preference before the first paint, even on slow connections.
+  (function () {
+    var theme;
+    try { theme = window.localStorage.getItem('site-theme-preference'); } catch (error) {}
+    if (theme !== 'dark' && theme !== 'light') {
+      theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.classList.add('theme-' + theme);
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
 </script>
 
 <!-- For all browsers -->

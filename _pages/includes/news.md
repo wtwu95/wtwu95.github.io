@@ -1,6 +1,6 @@
 # <span data-lang="en">💬 Recent News</span><span data-lang="zh" hidden>💬 最新动态</span>
 
-{% assign news_items = site.data.news | default: [] %}
+{% assign news_items = site.data.news %}
 {% assign news_count = news_items | size %}
 {% assign limit = include.limit %}
 {% if limit %}

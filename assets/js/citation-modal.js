@@ -20,6 +20,7 @@
     copyFeedbackTimer: null,
     pendingRoots: [],
     pendingOpen: null,
+    previousFocus: null,
     boundElements: typeof WeakSet !== 'undefined' ? new WeakSet() : null,
   };
 
@@ -140,27 +141,45 @@
   }
 
   function fallbackCopy(text) {
+    var previousFocus = document.activeElement;
     var textarea = document.createElement('textarea');
     textarea.value = text;
     textarea.setAttribute('readonly', '');
     textarea.style.position = 'absolute';
     textarea.style.left = '-9999px';
-    document.body.appendChild(textarea);
+    var parent = state.dialog || document.body;
+    parent.appendChild(textarea);
     textarea.select();
+    var copied = false;
     try {
-      document.execCommand('copy');
+      copied = document.execCommand('copy');
     } catch (error) {
-      console.warn('Copy command is not supported');
+      copied = false;
     }
-    document.body.removeChild(textarea);
+    parent.removeChild(textarea);
+    if (previousFocus && typeof previousFocus.focus === 'function') {
+      previousFocus.focus({ preventScroll: true });
+    }
+    return copied;
+  }
+
+  function copyWithFallback(text) {
+    showCopyFeedback(fallbackCopy(text)
+      ? 'Citation copied to clipboard'
+      : 'Copy failed. Please select and copy the citation text.');
   }
 
   function closeModal() {
-    if (!state.modal) {
+    if (!isVisible(state.modal)) {
       return;
     }
     state.modal.setAttribute('hidden', '');
     hideCopyFeedback();
+    if (state.previousFocus && document.documentElement.contains(state.previousFocus) &&
+        typeof state.previousFocus.focus === 'function') {
+      state.previousFocus.focus({ preventScroll: true });
+    }
+    state.previousFocus = null;
   }
 
   function handleActionClick(event) {
@@ -187,12 +206,10 @@
             showCopyFeedback('Citation copied to clipboard');
           })
           .catch(function () {
-            fallbackCopy(citationText);
-            showCopyFeedback('Citation copied to clipboard');
+            copyWithFallback(citationText);
           });
       } else {
-        fallbackCopy(citationText);
-        showCopyFeedback('Citation copied to clipboard');
+        copyWithFallback(citationText);
       }
     } else if (action === 'download') {
       hideCopyFeedback();
@@ -215,13 +232,16 @@
     }
   }
 
-  function openModal(citation) {
+  function openModal(citation, trigger) {
     if (!state.initialized) {
-      state.pendingOpen = citation;
+      state.pendingOpen = { citation: citation, trigger: trigger };
       return;
     }
     if (!state.modal || !citation) {
       return;
+    }
+    if (!isVisible(state.modal)) {
+      state.previousFocus = trigger || document.activeElement;
     }
     state.currentCitation = {
       index: citation.index || '',
@@ -278,7 +298,7 @@
       if (!citation) {
         return;
       }
-      openModal(citation);
+      openModal(citation, element);
     });
   }
 
@@ -379,8 +399,31 @@
     }
 
     document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && isVisible(state.modal)) {
+      if (!isVisible(state.modal)) {
+        return;
+      }
+      if (event.key === 'Escape') {
+        event.preventDefault();
         closeModal();
+      } else if (event.key === 'Tab' && state.dialog) {
+        var focusable = toArray(state.dialog.querySelectorAll(
+          'button, [href], input, select, textarea, [tabindex]'
+        )).filter(function (element) {
+          return !element.disabled && element.tabIndex >= 0 && element.getClientRects().length > 0;
+        });
+        var first = focusable[0];
+        var last = focusable[focusable.length - 1];
+        var active = document.activeElement;
+        if (!first) {
+          event.preventDefault();
+          state.dialog.focus({ preventScroll: true });
+        } else if (event.shiftKey && (active === first || active === state.dialog || !state.dialog.contains(active))) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && (active === last || active === state.dialog || !state.dialog.contains(active))) {
+          event.preventDefault();
+          first.focus();
+        }
       }
     });
 
@@ -392,7 +435,7 @@
     if (state.pendingOpen) {
       var pending = state.pendingOpen;
       state.pendingOpen = null;
-      openModal(pending);
+      openModal(pending.citation, pending.trigger);
     }
   }
 

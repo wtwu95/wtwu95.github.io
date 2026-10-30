@@ -328,6 +328,7 @@
 
         listEl.appendChild(li);
       });
+      document.dispatchEvent(new Event('publications:rendered'));
     }
 
     typeSelect.addEventListener('change', render);
