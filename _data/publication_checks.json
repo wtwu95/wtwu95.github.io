@@ -1,81 +1,21 @@
 {
-  "checked_at": "2026-10-30T04:15:04+00:00",
+  "checked_at": "2026-10-30T04:19:26+00:00",
   "provider": "Crossref (publisher-deposited metadata)",
   "summary": {
     "total": 35,
-    "checked": 29,
-    "updated": 28,
+    "checked": 3,
+    "updated": 0,
     "errors": 0,
-    "pending": 3,
-    "manual_verified": 1
+    "pending": 3
   },
   "entries": [
-    {
-      "entry": 1,
-      "title": "Hierarchical optimal event-triggered framework for robust formation control of underactuated ASVs",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1016%2Fj.automatica.2026.112983",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 2,
-      "title": "Optimal Event-Triggered Consensus for Multiagent Systems via Game-Theoretic Approache",
-      "issues_before": [
-        "missing_volume",
-        "missing_pages_or_article_number"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftase.2026.3656938",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 3,
-      "title": "Robust Safety-Preserving Rendezvous Control for Coordinated Heterogeneous Marine Vehicles: An Observer-Based Structure-Keeping Port-Hamiltonian Approach",
-      "issues_before": [
-        "missing_doi",
-        "missing_volume",
-        "missing_pages_or_article_number"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftcyb.2026.3652215",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 4,
-      "title": "Saturation-Tolerant Tunnel Prescribed Control for Vessel-Train Formation of Underactuated MSVs",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftvt.2024.3450845",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 5,
-      "title": "Switched Command-Filtered-Based Adaptive Fuzzy Output-Feedback Funnel Control for Switched Nonlinear MIMO-Delayed Systems",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftfuzz.2024.3434711",
-      "resource_repairs": [],
-      "issues_after": []
-    },
     {
       "entry": 6,
       "title": "Adaptive Fault-Tolerant Fuzzy Containment Control for Networked Autonomous Surface Vehicles: A Noncooperative Game Approach",
       "issues_before": [
-        "missing_doi",
         "missing_file:/assets/Video/Video-Sim/WuWentao-2024-IEEE-TFS.mp4"
       ],
-      "result": "updated",
+      "result": "unchanged",
       "source": "https://api.crossref.org/works/10.1109%2Ftfuzz.2024.3386849",
       "resource_repairs": [],
       "issues_after": [
@@ -83,58 +23,13 @@
       ]
     },
     {
-      "entry": 7,
-      "title": "Tunnel Prescribed Performance Control for Distributed Path Maneuvering of Multi-UAV Swarms via Distributed Neural Predictor",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftcsii.2024.3371981",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 8,
-      "title": "Dynamic Output Feedback Fault-Tolerant Control for Switched Vehicle Active Suspension Delayed Systems",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftvt.2024.3370094",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 9,
-      "title": "Output-Feedback Consensus Maneuvering of Uncertain MIMO Strict-Feedback Multiagent Systems Based on a High-Order Neural Observer",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftcyb.2024.3351476",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 10,
-      "title": "Constrained Safe Cooperative Maneuvering of Autonomous Surface Vehicles: A Control Barrier Function Approach",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftsmc.2023.3345847",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
       "entry": 12,
-      "title": "A Nonsmooth Dynamic Output Feedback Strategy for Nonlinear Systems with Nonparametric Uncertainties: Application to Robot Manipulators",
+      "title": "A Nonsmooth Dynamic Output Feedback Strategy for Nonlinear Systems With Nonparametric Uncertainties: Application to Robot Manipulators",
       "issues_before": [
-        "missing_volume",
-        "missing_pages_or_article_number",
+        "missing_pdf_resource",
         "missing_file:/assets/papers/SCI/DongXin-2025-IEEE-TIE.pdf"
       ],
-      "result": "updated",
+      "result": "unchanged",
       "source": "https://api.crossref.org/works/10.1109%2Ftie.2025.3600515",
       "resource_repairs": [
         {
@@ -147,133 +42,6 @@
         "missing_pdf_resource",
         "missing_file:/assets/papers/SCI/DongXin-2025-IEEE-TIE.pdf"
       ]
-    },
-    {
-      "entry": 14,
-      "title": "Robust Adaptive Fault-Tolerant Control for Path Maneuvering of Autonomous Surface Vehicles with Actuator Faults Based on the Noncooperative Game Strategy",
-      "issues_before": [
-        "missing_doi",
-        "missing_pages_or_article_number"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1016%2Fj.oceaneng.2023.116541",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 15,
-      "title": "Transient-Reinforced Tunnel Coordinated Control of Underactuated Marine Surface Vehicles with Actuator Faults",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftits.2023.3324346",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 16,
-      "title": "Safety-Critical Trajectory Tracking for Mobile Robots with Guaranteed Performance",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Fjas.2023.123864",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 17,
-      "title": "Neural Predictor-Based Dynamic Surface Parallel Control for MIMO Uncertain Nonlinear Strict-Feedback Systems",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftcsii.2023.3252562",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 18,
-      "title": "Noncooperative Game-Based Cooperative Maneuvering of Intelligent Surface Vehicles Via Accelerated Learning-Based Neural Predictors",
-      "issues_before": [
-        "missing_doi",
-        "inconsistent_year"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftiv.2022.3222009",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 19,
-      "title": "Distributed Finite-Time Performance-Prescribed Time-Varying Formation Control of Autonomous Surface Vehicles with Saturated Inputs",
-      "issues_before": [
-        "missing_doi",
-        "missing_pages_or_article_number"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1016%2Fj.oceaneng.2022.112866",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 20,
-      "title": "Output-Feedback Finite-Time Safety-Critical Coordinated Control of Path-Guided Marine Surface Vehicles Based on Neurodynamic Optimization",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftsmc.2022.3205637",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 21,
-      "title": "Curiosity-Driven Attention for Anomaly Road Obstacles Segmentation in Autonomous Driving",
-      "issues_before": [
-        "missing_doi",
-        "inconsistent_year"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftiv.2022.3204714",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 22,
-      "title": "A General Safety-Certified Cooperative Control Architecture for Interconnected Intelligent Surface Vehicles with Applications to Vessel Train",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftiv.2022.3168974",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 23,
-      "title": "Anti-Disturbance Leader–Follower Synchronization Control of Marine Vessels for Underway Replenishment Based on Robust Exact Differentiators",
-      "issues_before": [
-        "missing_doi",
-        "missing_pages_or_article_number"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1016%2Fj.oceaneng.2022.110686",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 24,
-      "title": "Network-Based Line-of-Sight Path Tracking of Underactuated Unmanned Surface Vehicles with Experiment Results",
-      "issues_before": [
-        "missing_doi",
-        "inconsistent_year"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Ftcyb.2021.3074396",
-      "resource_repairs": [],
-      "issues_after": []
     },
     {
       "entry": 28,
@@ -289,80 +57,6 @@
         "missing_pages_or_article_number",
         "missing_pdf_resource"
       ]
-    },
-    {
-      "entry": 29,
-      "title": "Maneuvering Control of Uncertain Nonlinear Systems: An Output Regulation Viewpoint",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Fcdc56724.2024.10886193",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 31,
-      "title": "Noncooperative Containment Control for Multiple Unmanned Surface Vehicles With Improved Extended State Observer",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Fcac59555.2023.10451380",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 32,
-      "title": "DSC-based Parallel Control for Consensus Maneuvering of Multi-agent Systems subject to Unmatched Uncertainties based on Distributed Nash Equilibrium Seeking",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Fcac57257.2022.10056005",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 33,
-      "title": "Safety-Certified Consensus Control of Multi-Agent Systems Based on Finite-Time Control Barrier Function",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.23919%2Fccc55666.2022.9902172",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 34,
-      "title": "Event-triggered LOS Guidance for Path Following of an Unmanned Surface Vehicle over Wireless Network",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.23919%2Fccc50068.2020.9189015",
-      "resource_repairs": [],
-      "issues_after": []
-    },
-    {
-      "entry": 35,
-      "title": "Robust distributed guidance and control of multiple autonomous surface vehicles based on extended state observers and finite-set model predictive control",
-      "issues_before": [
-        "missing_doi"
-      ],
-      "result": "updated",
-      "source": "https://api.crossref.org/works/10.1109%2Fcacre50138.2020.9230166",
-      "resource_repairs": [],
-      "issues_after": []
-    }
-  ],
-  "manual_verifications": [
-    {
-      "entry": 27,
-      "doi": "10.19693/j.issn.1673-3185.01734",
-      "source": "https://www.ship-research.com/article/doi/10.19693/j.issn.1673-3185.01734",
-      "result": "verified and added DOI from official journal record; not indexed by Crossref"
     }
   ]
 }
